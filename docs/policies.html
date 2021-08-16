@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Policies &amp; Values</title>
+
+<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/ionicons-2.0.1/css/ionicons.min.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Ψ 511</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="about.html">About</a>
+</li>
+<li>
+  <a href="schedule.html">Schedule</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Lecture notes
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Week 1</a>
+      <ul class="dropdown-menu" role="menu">
+        <li class="dropdown-header">2021-08-25</li>
+        <li class="dropdown-header">2021-08-27</li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Week 2</a>
+      <ul class="dropdown-menu" role="menu">
+        <li class="dropdown-header">2021-09-01</li>
+        <li class="dropdown-header">2021-09-03</li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Week 3</a>
+      <ul class="dropdown-menu" role="menu">
+        <li class="dropdown-header">2021-09-08</li>
+        <li class="dropdown-header">2021-09-10</li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Week 4</a>
+      <ul class="dropdown-menu" role="menu">
+        <li class="dropdown-header">2021-09-15</li>
+        <li class="dropdown-header">2021-09-17</li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Week 5</a>
+      <ul class="dropdown-menu" role="menu">
+        <li class="dropdown-header">2021-09-22</li>
+        <li class="dropdown-header">2021-09-24</li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Week 6</a>
+      <ul class="dropdown-menu" role="menu">
+        <li class="dropdown-header">2021-09-29</li>
+        <li class="dropdown-header">2021-10-01</li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Week 7</a>
+      <ul class="dropdown-menu" role="menu">
+        <li class="dropdown-header">2021-10-06</li>
+        <li class="dropdown-header">2021-10-08</li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Week 8</a>
+      <ul class="dropdown-menu" role="menu">
+        <li class="dropdown-header">2021-10-13</li>
+        <li class="dropdown-header">2021-10-15</li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Week 9</a>
+      <ul class="dropdown-menu" role="menu">
+        <li class="dropdown-header">2021-10-20</li>
+        <li class="dropdown-header">2021-10-22</li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Week 10</a>
+      <ul class="dropdown-menu" role="menu">
+        <li class="dropdown-header">2021-10-27</li>
+        <li class="dropdown-header">2021-10-29</li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Week 11</a>
+      <ul class="dropdown-menu" role="menu">
+        <li class="dropdown-header">2021-11-03</li>
+        <li class="dropdown-header">2021-11-05</li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Week 12</a>
+      <ul class="dropdown-menu" role="menu">
+        <li class="dropdown-header">2021-11-10</li>
+        <li class="dropdown-header">2021-11-12</li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Week 13</a>
+      <ul class="dropdown-menu" role="menu">
+        <li class="dropdown-header">2021-11-17</li>
+        <li class="dropdown-header">2021-11-19</li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Week 14</a>
+      <ul class="dropdown-menu" role="menu">
+        <li class="dropdown-header">2021-12-01</li>
+        <li class="dropdown-header">2021-11-03</li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Week 15</a>
+      <ul class="dropdown-menu" role="menu">
+        <li class="dropdown-header">2021-12-08</li>
+        <li class="dropdown-header">2021-11-10</li>
+      </ul>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="evaluation.html">Evaluation</a>
+</li>
+<li>
+  <a href="policies.html">Policies</a>
+</li>
+<li>
+  <a href="values.html">Values</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="site-info.html">Site info</a>
+</li>
+<li>
+  <a href="https://github.com/psu-psychology/psy-511-scan-fdns-2021">
+    <span class="ion ion-social-github"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Policies &amp; Values</h1>
+
+</div>
+
+
+<div id="academic-integrity" class="section level3">
+<h3>Academic Integrity</h3>
+<p>Penn State defines academic integrity as the pursuit of scholarly activity in an open, honest and responsible manner. All students should act with personal integrity, respect others dignity, rights and property, and help create and maintain an environment in which all can succeed through the fruits of their efforts (Faculty Senate Policy 49-20). Sanctions for academic misconduct can include a grade of F for the course as well as other penalties.</p>
+<p>Students are responsible for maintaining academic integrity. Violations include cheating on exams, talking to others during exams, looking at another student’s test materials or answers during an exam, removing exams from the classroom without consent from the instructor, plagiarizing (do not copy from someone else!), and dishonesty in any aspect of course participation.</p>
+<p>When you complete assignments, remember the <strong>ABC</strong>s to avoid plagiarism: <strong>A</strong>lways place copied information within quotation marks, include information about the quoted or paraphrased source in a <strong>B</strong>ibliography, and <strong>C</strong>ite the source in the body (in the text) of your paper immediately after the quoted or paraphrased information. When in doubt, cite in the text and include the source in a bibliography.</p>
+</div>
+<div id="late-missed-or-make-up-assignments" class="section level3">
+<h3>Late, missed or make-up assignments</h3>
+<div id="exams" class="section level4">
+<h4>Exams</h4>
+<p>Make-up exams may be permitted under unusual circumstances such as (a) an interview for graduate school or a job, (b) illness, (c) religious observance, (d) the death of a family member, or (e) any other event recognized by the university as a valid excuse for absence from class.</p>
+<p>If you must miss class on the day an exam is scheduled, you must do the following:</p>
+<ol style="list-style-type: decimal">
+<li>Contact the TA or the instructor by telephone, email, or in person in advance of the exam. Twenty-four hours notice is expected. If you do not contact the TA or instructor in advance, it is possible that you may not be able to schedule a make-up exam.</li>
+<li>Arrange with the TA or instructor to take a make-up exam as soon as possible, but no later than one (1) week following the date of the scheduled exam. It is your responsibility, not the TA’s or the instructor’s to schedule an approved make-up exam in a timely way.</li>
+</ol>
+</div>
+<div id="quizzes" class="section level4">
+<h4>Quizzes</h4>
+<p>No make-up quizzes will be given except under unusual circumstances. You may ask for a copy of the quiz for studying purposes, however.</p>
+</div>
+<div id="accommodation-for-persons-with-disabilities" class="section level4">
+<h4>Accommodation for persons with disabilities</h4>
+<p>Penn State welcomes students with disabilities into the University’s educational programs. Please refer to the information provided by Student Disability Resources (SDR) at <a href="http://equity.psu.edu/student-disability-resources/" class="uri">http://equity.psu.edu/student-disability-resources/</a> for information about the procedures required to obtain reasonable accommodations in this course. Students should discussSDR-approved accommodations with their instructor as early in the semester as possible, even if they have taken another course with the instructor. Please note: students are not required to provide their instructor with information about the nature of their condition.</p>
+<p>Penn State students are also welcome to contact other units for assistance with personal concerns that interfere with academic progress, including: Counseling and Psychological Services (CAPS; <a href="http://studentaffairs.psu.edu/counseling/" class="uri">http://studentaffairs.psu.edu/counseling/</a>), the Office of Student Affairs (<a href="http://studentaffairs.psu.edu/" class="uri">http://studentaffairs.psu.edu/</a>), Career Services (<a href="http://studentaffairs.psu.edu/career/" class="uri">http://studentaffairs.psu.edu/career/</a>), the Center for Women Students (<a href="http://studentaffairs.psu.edu/womenscenter/" class="uri">http://studentaffairs.psu.edu/womenscenter/</a>), the LGBTQA Student Resource Center (<a href="http://studentaffairs.psu.edu/lgbtqa/" class="uri">http://studentaffairs.psu.edu/lgbtqa/</a>), the Office of Sexual Misconduct Prevention and Response (<a href="http://titleix.psu.edu/" class="uri">http://titleix.psu.edu/</a>), Penn State Educational Equity (<a href="http://equity.psu.edu/" class="uri">http://equity.psu.edu/</a>), the Multicultural Resource Center (<a href="http://equity.psu.edu/mrc" class="uri">http://equity.psu.edu/mrc</a>), and University Health Services (<a href="http://studentaffairs.psu.edu/health/" class="uri">http://studentaffairs.psu.edu/health/</a>).</p>
+</div>
+</div>
+<div id="nondiscrimination-statement" class="section level3">
+<h3>Nondiscrimination Statement</h3>
+<p>The Pennsylvania State University is committed to equal access to programs, facilities, admission and employment for all persons. It is the policy of the University to maintain an environment free of harassment and free of discrimination against any person because of age, race, color, ancestry, national origin, religion, creed, service in the uniformed services (as defined in state and federal law), veteran status, sex, sexual orientation, marital or family status, pregnancy, pregnancy-related conditions, physical or mental disability, gender, perceived gender, gender identity, genetic information or political ideas. Discriminatory conduct and harassment, as well as sexual misconduct and relationship violence, violates the dignity of individuals, impedes the realization of the University’s educational mission, and will not be tolerated.</p>
+<p>Direct all inquiries regarding the nondiscrimination policy to:</p>
+<p>Dr. Kenneth Lehrman III</br> Vice Provost for Affirmative Action</br> Affirmative Action Office</br> The Pennsylvania State University</br> 328 Boucke Building</br> University Park, PA 16802-5901</br> Email: <a href="mailto:kfl2@psu.edu" class="email">kfl2@psu.edu</a></br> Tel (814) 863-0471</p>
+</div>
+<div id="diversity-statement" class="section level3">
+<h3>Diversity Statement</h3>
+<p>This classroom is a place where you will be treated with respect. All members of this class are expected to contribute to a respectful, welcoming and inclusive environment for every other member of the class. Penn State is committed to creating an educational environment which is free from intolerance directed toward individuals or groups and strives to create and maintain an environment that fosters respect for others as stated in Policy AD29 Statement on Intolerance.</p>
+</div>
+<div id="mandated-reporting-statement" class="section level3">
+<h3>Mandated Reporting Statement</h3>
+<p>Penn State’s policies require me, as a faculty member, to share information about incidents of sex-based discrimination and harassment (discrimination, harassment, sexual harassment, sexual misconduct, dating violence, domestic violence, stalking, and retaliation) with Penn State’s Title IX coordinator or deputy coordinators, regardless of whether the incidents are stated to me in person or shared by students as part of their coursework. For more information regarding the University’s policies and procedures for responding to reports of sexual or gender-based harassment or misconduct, please visit <a href="http://titleix.psu.edu" class="uri">http://titleix.psu.edu</a>.</p>
+<p>Additionally, I am required to make a report on any reasonable suspicion of child abuse in accordance with the Pennsylvania Child Protective Services Law.</p>
+</div>
+<div id="covid-safety-information-last-updated-2021-08-12" class="section level3">
+<h3>COVID safety information (last updated 2021-08-12)</h3>
+<p>Please consult the Penn State Covid-19 Dashboard for updates on masking policies, instructional-mode changes, etc. <a href="https://virusinfo.psu.edu/covid-19-dashboard/" class="uri">https://virusinfo.psu.edu/covid-19-dashboard/</a>.</p>
+<p>This class will meet in-person unless there is a change in University policy.</p>
+<p>Penn State University requires everyone to wear a face mask in all university buildings, including classrooms, regardless of vaccination status. <strong>ALL STUDENTS MUST</strong> wear a mask appropriately (i.e., covering both your mouth and nose) while you are indoors on campus. This is to protect your health and safety as well as the health and safety of your classmates, instructor, and the university community. Anyone attending class without a mask will be asked to put one on or leave. Instructors may end class if anyone present refuses to appropriately wear a mask for the duration of class. Students who refuse to wear masks appropriately may face disciplinary action for Code of Conduct violations. If you feel you cannot wear a mask during class, please speak with your adviser immediately about your options for altering your schedule.</p>
+</div>
+<div id="zoom" class="section level3">
+<h3>Zoom</h3>
+<p>At some point in the semester, I may decide to use Zoom to allow students who are unable to attend class in person to participate.</p>
+<p>While you are on Zoom, keep in mind that this is a classroom environment and others should be treated with respect. Please keep your microphone muted unless you want to ask a question or interact with someone. If your microphone is not muted, the entire class will be able to hear what is going on in your environment. As an instructor, I personally like to see people’s faces. As a participant, I am more involved when I have my camera on. I realize, however, that there are many reasons why you might not want to turn on your camera such as poor internet connection, joining via phone, or other privacy concerns. It is your choice as to whether you would like to have the camera on or not.</p>
+</div>
+
+<p>Copyright &copy; Rick O. Gilmore</p>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

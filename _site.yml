@@ -1,0 +1,120 @@
+name: "PSY 511.001 Fall 2021"
+navbar:
+  title: "\u03A8 511"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+    - text: "Schedule"
+      href: schedule.html
+    - text: "Lecture notes"
+      menu:
+      - text: "Week 1"
+        menu: 
+          - text: "2021-08-25"
+            href: 
+          - text: "2021-08-27"
+            href:
+      - text: "Week 2"
+        menu:
+          - text: "2021-09-01"
+            href:
+          - text: "2021-09-03"
+            href:
+      - text: "Week 3"
+        menu:
+          - text: "2021-09-08"
+            href:
+          - text: "2021-09-10"
+            href:
+      - text: "Week 4" 
+        menu:
+          - text: "2021-09-15"
+            href:
+          - text: "2021-09-17"
+      - text: "Week 5"
+        menu:
+          - text: "2021-09-22"
+            href:
+          - text: "2021-09-24"
+            href:
+      - text: "Week 6"
+        menu:
+          - text: "2021-09-29"
+            href:
+          - text: "2021-10-01"
+            href:
+      - text: "Week 7"
+        menu:
+          - text: "2021-10-06"
+            href:
+          - text: "2021-10-08"
+            href:            
+      - text: "Week 8"
+        menu:
+          - text: "2021-10-13"
+            href:
+          - text: "2021-10-15"
+            href:
+      - text: "Week 9"
+        menu:
+          - text: "2021-10-20"
+            href:
+          - text: "2021-10-22"
+            href:                  
+      - text: "Week 10"
+        menu:
+          - text: "2021-10-27"
+            href:
+          - text: "2021-10-29"
+            href:                  
+      - text: "Week 11"
+        menu:
+          - text: "2021-11-03"
+            href:
+          - text: "2021-11-05"
+            href:                  
+      - text: "Week 12"
+        menu:
+          - text: "2021-11-10"
+            href:
+          - text: "2021-11-12"
+            href: 
+      - text: "Week 13"
+        menu:
+          - text: "2021-11-17"
+            href:
+          - text: "2021-11-19"
+            href:      
+      - text: "Week 14"
+        menu:
+          - text: "2021-12-01"
+            href:
+          - text: "2021-11-03"
+            href:
+      - text: "Week 15"
+        menu:
+          - text: "2021-12-08"
+            href:
+          - text: "2021-11-10"
+            href:
+    - text: "Evaluation"
+      href: evaluation.html
+    - text: "Policies"
+      href: policies.html
+    - text: "Values"
+      href: values.html
+  right:
+    - text: "Site info"
+      href: site-info.html
+    - icon: ion-social-github
+      href: https://github.com/psu-psychology/psy-511-scan-fdns-2021
+output_dir: "docs"
+css: site.css
+output:
+  html_document:
+    theme: flatly
+    highlight: textmate
+    include:
+      after_body: footer.html
