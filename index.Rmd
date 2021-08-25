@@ -1,5 +1,5 @@
 ---
-title: "PSY 511.001, Fall 2020"
+title: "PSY 511.001, Fall 2021"
 ---
 
 # Foundations of Cognitive and Affective Neuroscience
