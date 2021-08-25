@@ -166,7 +166,7 @@ knitr::include_graphics("https://stats.idre.ucla.edu/wp-content/uploads/2016/02/
 - Single parts -> multiple functions
 - Single functions -> multiple parts
 
----
+## e.g., "equifinality" in micro-circuits
 
 <div class="centered">
 ```{r, out.height="500px"}
@@ -230,9 +230,38 @@ knitr::include_graphics("https://i.stack.imgur.com/3B00P.png")
 
 ---
 
+```{r, fig.cap="[[@Cisek2019-vq]](http://dx.doi.org/10.3758/s13414-019-01760-1)"}
+knitr::include_graphics("https://media.springernature.com/full/springer-static/image/art%3A10.3758%2Fs13414-019-01760-1/MediaObjects/13414_2019_1760_Fig1_HTML.png?as=webp")
+```
+
+---
+
 ### **Outputs**
 
 - To brain, body, environment
+
+## How do $\Psi$ functions map to structures?
+
+```{r, fig.cap="[[@Cisek2019-vq]](http://dx.doi.org/10.3758/s13414-019-01760-1)"}
+knitr::include_graphics("https://media.springernature.com/full/springer-static/image/art%3A10.3758%2Fs13414-019-01760-1/MediaObjects/13414_2019_1760_Fig8_HTML.png?as=webp")
+```
+
+## And *vice versa*? [[@Cepelewicz2021-rg]](https://www.quantamagazine.org/mental-phenomena-dont-map-into-the-brain-as-expected-20210824/)
+
+<iframe src="https://www.quantamagazine.org/mental-phenomena-dont-map-into-the-brain-as-expected-20210824/" height=400px>
+</iframe>
+
+---
+
+> "*The brainwide representation of behavioral variables suggests that information encoded nearly anywhere in the forebrain is combined with behavioral state variables into a mixed representation...Our data indicate that it happens as early as primary sensory cortex.*"
+> 
+> -- [[@Stringer2019-vf]](http://dx.doi.org/10.1126/science.aav7893)
+
+## And do we have the right "psychological" structures?
+
+> "Psychological sciences have identified a wealth of cognitive processes and behavioral phenomena, yet struggle to produce cumulative knowledge. Progress is hamstrung by siloed scientific traditions and a focus on explanation over prediction, two issues that are particularly damaging for the study of **multifaceted constructs like self-regulation**...We conclude that self-regulation lacks coherence as a construct..."
+>
+> -- [[@Eisenberg2019-iy]](http://dx.doi.org/10.1038/s41467-019-10301-1)
 
 # The connectome and beyond
 
@@ -240,27 +269,13 @@ knitr::include_graphics("https://i.stack.imgur.com/3B00P.png")
 
 Swanson, L. W., & Lichtman, J. W. (2016). From Cajal to Connectome and Beyond. *Annual Review of Neuroscience*, *39*, 197–216.
 
-<https://via.hypothes.is/https://psu-psychology.github.io/psy-511-scan-fdns-2021/pdf/swanson-2016.pdf>
+<http://doi.org/10.1146/annurev-neuro-071714-033954>
 
 ## Key ideas
 
 - Form <> function
 - "*What differs between species is the architecture of nervous systems....*"
 - Connectomes at different levels of analysis
-
-<!-- Scrolling final reference page -->
-<!-- http://stackoverflow.com/q/38260799 -->
-<style>
-slides > slide { overflow: scroll; }
-slides > slide:not(.nobackground):before {
-  background: none;
-  }
-slides > slide:not(.nobackground):after {
-  content: '';
-  background: none;
-  }
-}
-</style>
 
 ---
 
@@ -338,3 +353,18 @@ knitr::include_graphics("https://raw.githubusercontent.com/psu-psychology/psy-51
 - When thinking about *outputs* make sure to distinguish between *behaviors* (e.g., movements, facial expressions, vocalizations) and *physiological states* (e.g., changes in heart rate, hormone concentrations in the blood, etc.)
 
 ## References {.smaller}
+
+<!-- Scrolling final reference page -->
+<!-- http://stackoverflow.com/q/38260799 -->
+<style>
+slides > slide { overflow: scroll; }
+slides > slide:not(.nobackground):before {
+  background: none;
+  }
+slides > slide:not(.nobackground):after {
+  content: '';
+  background: none;
+  }
+}
+</style>
+
