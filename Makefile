@@ -1,16 +1,22 @@
-SITE_HTML=index.html about.html schedule.html evaluation.html policies.html values.html site-info.html
-LECTURE_DIR=lectures
+SITE_HTML = index.html about.html schedule.html evaluation.html policies.html values.html site-info.html
+LECTURES_HTML := $(shell ls lectures/*.Rmd | sed 's/Rmd/html/')
+LECTURES_MD := $(shell ls lectures/*.md)
+LECTURE_DIR = lectures
+SITE_DIR = docs
 
-all : $(SITE_HTML)
-	echo Full site rendered
+lectures : $(LECTURES_HTML)
 
-site : $(SITE_HTML)
-	cp *.html docs/.
-	echo Full site rendered
+clean_lectures :
+	rm -f $(LECTURE_DIR)/*.html
+	rm -f $(LECTURE_DIR)/*.md
 	
-lectures : $(LECTURE_DIR)/*.html
-	cp -r lectures docs/.
-	echo Lectures rendered
+clean_page :
+	rm -f *.html
+	
+clean : clean_page clean_lectures
+	
+%.pdf : %.html
+	pandoc -f html -t pdf
 	
 %.html : %.Rmd
-  Rscript -e 'rmarkdown::render("%<")'
+	Rscript -e 'rmarkdown::render("$<", output_format = "html_document")'

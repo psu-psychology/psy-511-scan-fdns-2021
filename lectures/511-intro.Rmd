@@ -32,7 +32,9 @@ knitr::opts_chunk$set(echo = FALSE, cache=TRUE,
 
 ## Prelude
 
->"*If understanding everything we need to know about the brain is a mile, how far have we walked?*"
+> "*If understanding everything we need to know about the brain is a mile, how far have we walked?*"
+> 
+> -- Jeff Lichtman ultra dude
 
 ---
 

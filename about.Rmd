@@ -1,5 +1,5 @@
 ---
-title: "About the course"
+title: "About this course"
 ---
 
 The first scientific psychologists were physiologists fascinated by the possibility of understanding the mind by studying the brain.
