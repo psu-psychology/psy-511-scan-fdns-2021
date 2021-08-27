@@ -32,6 +32,8 @@ knitr::opts_chunk$set(echo = FALSE, cache=TRUE,
 
 ## Prelude
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JB7jSFeVz1U" frameborder="0" allowfullscreen></iframe>
+
 ## Today's topics
 
 - Levels of analysis
