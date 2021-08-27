@@ -13,7 +13,7 @@ title: "Schedule"
     + The connectome and beyond
     + A bit about systems
 - Read/Watch
-    - Swanson, L. W., & Lichtman, J. W. (2016). From Cajal to Connectome and Beyond. *Annual Review of Neuroscience*, *39*, 197–216. <https://doi.org/10.1146/annurev-neuro-071714-033954>. [PDF](pdf/swanson-2016.pdf).
+    - Swanson, L. W., & Lichtman, J. W. (2016). From Cajal to Connectome and Beyond. *Annual Review of Neuroscience*, *39*, 197–216. <https://doi.org/10.1146/annurev-neuro-071714-033954>.
 - Materials
     - [Notes](lectures/511-intro.html)
     
@@ -25,7 +25,7 @@ title: "Schedule"
     + Does neuroscience need behavior? Does behavioral science need the brain?
 - Read/Watch
     - Churchland, P. S., & Sejnowski, T. J. (1988). Perspectives on cognitive neuroscience. Science, 242(4879), 741–745. https://www.ncbi.nlm.nih.gov/pubmed/3055294.
-    - Krakauer, J. W., Ghazanfar, A. A., Gomez-Marin, A., MacIver, M. A., & Poeppel, D. (2017). Neuroscience needs behavior: Correcting a reductionist bias. *Neuron*, *93*(3), 480–490. <https://dx.doi.org/10.1016/j.neuron.2016.12.041>. [pdf](pdf/krakauer-et-al-2017.pdf).
+    - Krakauer, J. W., Ghazanfar, A. A., Gomez-Marin, A., MacIver, M. A., & Poeppel, D. (2017). Neuroscience needs behavior: Correcting a reductionist bias. *Neuron*, *93*(3), 480–490. <https://dx.doi.org/10.1016/j.neuron.2016.12.041>.
 - Materials
     - [Notes](lectures/511-levels.html)
 
