@@ -19,9 +19,9 @@ navbar:
       - text: "Week 2"
         menu:
           - text: "2021-09-01"
-            href:
+            href: "lectures/511-methods.html"
           - text: "2021-09-03"
-            href:
+            href: "lectures/511-methods.html"
       - text: "Week 3"
         menu:
           - text: "2021-09-08"
