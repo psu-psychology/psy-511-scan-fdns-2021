@@ -12,6 +12,7 @@ output:
     widescreen: true
     incremental: false
     transition: default
+    self_contained: false
   html_document:
     keep_md: true
   pdf_document:
@@ -150,8 +151,8 @@ knitr::include_graphics("img/nested-causality-labels.png")
 
 ## May be thought of as [networks](https://en.wikipedia.org/wiki/Network_science)
 
-```{r, out.height=500}
-knitr::include_graphics("https://d2ufo47lrtsv5s.cloudfront.net/content/sci/342/6158/1238411/F1.large.jpg")
+```{r, out.height=500, fig.cap="https://source.wustl.edu/2013/08/brain-flexible-hub-network-helps-humans-adapt/"}
+knitr::include_graphics("https://source.wustl.edu/wp-content/uploads/2013/08/ColeCoverFlexHub470x340.jpg")
 ```
 
 ## At multiple levels of organization...

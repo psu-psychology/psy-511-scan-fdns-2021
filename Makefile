@@ -37,5 +37,5 @@ all : lectures_html lectures_pdf assignments_html syllabus_pdf
 	Rscript -e 'rmarkdown::render("$<", output_format = "html_document")'
 	
 %.pdf : %.Rmd
-	Rscript -e 'pagedown::chrome_print("$<")'
+	Rscript -e 'pagedown::chrome_print("$<", wait = 2)'
 	
