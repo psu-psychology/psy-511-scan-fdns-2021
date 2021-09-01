@@ -8,7 +8,6 @@ bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 output:
   ioslides_presentation:
-    self_contained: false
     lib_dir: libs
     widescreen: true
     incremental: false

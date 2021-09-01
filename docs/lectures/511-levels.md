@@ -2,7 +2,7 @@
 title: "PSY 511"
 subtitle: "Levels"
 author: "Rick Gilmore"
-date: "2021-08-27 11:36:56"
+date: "2021-09-01 07:51:03"
 css: css/ioslides.css
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
@@ -15,7 +15,6 @@ output:
     widescreen: true
     incremental: false
     transition: default
-
   pdf_document:
     toc: true
     toc_depth: 1
@@ -28,6 +27,8 @@ output:
 
 
 ## Prelude
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JB7jSFeVz1U" frameborder="0" allowfullscreen></iframe>
 
 ## Today's topics
 
@@ -89,9 +90,7 @@ output:
 
 ## Discussion of...
 
-Krakauer, J. W., Ghazanfar, A. A., Gomez-Marin, A., MacIver, M. A., & Poeppel, D. (2017). Neuroscience needs behavior: Correcting a reductionist bias. *Neuron*, *93*(3), 480–490. <https://dx.doi.org/10.1016/j.neuron.2016.12.041>. 
-
-<https://via.hypothes.is/https://psu-psychology.github.io/psy-511-scan-fdns-2020/pdf/krakauer-et-al-2017.pdf>
+Krakauer, J. W., Ghazanfar, A. A., Gomez-Marin, A., MacIver, M. A., & Poeppel, D. (2017). Neuroscience needs behavior: Correcting a reductionist bias. *Neuron*, *93*(3), 480–490. <https://dx.doi.org/10.1016/j.neuron.2016.12.041>.
 
 ## Key points
 

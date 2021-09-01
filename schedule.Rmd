@@ -15,7 +15,7 @@ title: "Schedule"
 - Read/Watch
     - Swanson, L. W., & Lichtman, J. W. (2016). From Cajal to Connectome and Beyond. *Annual Review of Neuroscience*, *39*, 197–216. <https://doi.org/10.1146/annurev-neuro-071714-033954>.
 - Materials
-    - [Notes](lectures/511-intro.html)
+    - [Notes](lectures/511-intro.html). [PDF](lectures/511-intro.pdf)
     
 
 ### Friday, August 27
@@ -27,7 +27,7 @@ title: "Schedule"
     - Churchland, P. S., & Sejnowski, T. J. (1988). Perspectives on cognitive neuroscience. Science, 242(4879), 741–745. https://www.ncbi.nlm.nih.gov/pubmed/3055294.
     - Krakauer, J. W., Ghazanfar, A. A., Gomez-Marin, A., MacIver, M. A., & Poeppel, D. (2017). Neuroscience needs behavior: Correcting a reductionist bias. *Neuron*, *93*(3), 480–490. <https://dx.doi.org/10.1016/j.neuron.2016.12.041>.
 - Materials
-    - [Notes](lectures/511-levels.html)
+    - [Notes](lectures/511-levels.html). [PDF](lectures/511-levels.pdf)
 
 ---
 
@@ -42,7 +42,7 @@ title: "Schedule"
     + Cognitive Psychology and Cognitive Neuroscience/Behavioural and Neuroscience Methods. <https://en.wikibooks.org/wiki/Cognitive_Psychology_and_Cognitive_Neuroscience/Behavioural_and_Neuroscience_Methods>
     + (Recommended) Cohen, M. X. (2017). Where Does EEG Come From and What Does It Mean? *Trends in Neurosciences*, *40*(4), 208–218. Retrieved from <https://dx.doi.org/10.1016/j.tins.2017.02.004>
 - Materials
-    - [Notes](lectures/511-methods.html)
+    - [Notes](lectures/511-methods.html). [PDF](lectures/511-methods.pdf).
 
 ### Friday, September 1
 
@@ -52,7 +52,7 @@ title: "Schedule"
     + (Recommended) Hillman, E. M. C. (2014). Coupling mechanism and significance of the BOLD signal: a status report. *Annual Review of Neuroscience*, *37*, 161–181. Retrieved from <https://dx.doi.org/10.1146/annurev-neuro-071013-014111>.
     + (Optional) Logothetis, N. K., Pauls, J., Augath, M., Trinath, T., & Oeltermann, A. (2001). Neurophysiological investigation of the basis of the fMRI signal. *Nature*, *412*(6843), 150–157. Retrieved January 20, 2016, from <https://www.nature.com/nature/journal/v412/n6843/abs/412150a0.html>
 - Materials
-    - [Notes](lectures/511-methods.html)
+    - [Notes](lectures/511-methods.html). [PDF](lectures/511-methods.pdf).
 
 ---
 
