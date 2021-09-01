@@ -105,6 +105,8 @@ navbar:
       href: policies.html
     - text: "Values"
       href: values.html
+    - text: "Syllabus"
+      href: psy-511-2021-fall-gilmore-syllabus.pdf
   right:
     - text: "Site info"
       href: site-info.html

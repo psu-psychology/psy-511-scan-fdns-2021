@@ -43,8 +43,9 @@ title: "Schedule"
     + (Recommended) Cohen, M. X. (2017). Where Does EEG Come From and What Does It Mean? *Trends in Neurosciences*, *40*(4), 208–218. Retrieved from <https://dx.doi.org/10.1016/j.tins.2017.02.004>
 - Materials
     - [Notes](lectures/511-methods.html). [PDF](lectures/511-methods.pdf).
+    - [Getting to know you assignment](assignments/getting-to-know-you.html)
 
-### Friday, September 1
+### Friday, September 3
 
 - Topics
     + Methods in neuroscience

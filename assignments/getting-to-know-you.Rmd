@@ -1,0 +1,24 @@
+---
+title: "Getting to know you..."
+author: "Rick Gilmore"
+date: "`r Sys.time()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Vlx6gQWfjp0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Getting to know you...
+
+#### 1. Pick two papers you want to read and (better) understand
+
+- Email me APA formatted citation (with DOIs)
+- Indicate three concepts/terms you are especially interested in understanding
+
+#### 2. Choose a behavior or mental state you want to (better) understand
+
+- Take an information processing perspective and briefly sketch out (in no more than a short paragraph) the main inputs, outputs, and computations involved.
+- When thinking about *outputs* make sure to distinguish between *behaviors* (e.g., movements, facial expressions, vocalizations) and *physiological states* (e.g., changes in heart rate, hormone concentrations in the blood, etc.)

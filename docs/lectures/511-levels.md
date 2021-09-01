@@ -2,7 +2,7 @@
 title: "PSY 511"
 subtitle: "Levels"
 author: "Rick Gilmore"
-date: "2021-09-01 07:51:03"
+date: "2021-09-01 14:00:31"
 css: css/ioslides.css
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl

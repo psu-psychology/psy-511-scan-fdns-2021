@@ -1,0 +1,355 @@
+---
+title: "PSY 511"
+subtitle: "Course intro"
+author: "Rick Gilmore"
+date: "2021-09-01 14:00:17"
+css: css/ioslides.css
+bibliography: bib/bibliography.bib
+csl: bib/apa.csl
+output:
+  ioslides_presentation:
+    lib_dir: libs
+    widescreen: true
+    incremental: false
+    transition: default
+  html_document:
+    keep_md: true
+  pdf_document:
+    toc: true
+    toc_depth: 1
+    keep_tex: true
+    latex_engine: lualatex
+    fig_width: 7
+    fig_height: 6
+---
+
+
+
+## Prelude
+
+> "*If understanding everything we need to know about the brain is a mile, how far have we walked?*"
+> 
+> -- Jeff Lichtman ultra dude
+
+---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nvXuq9jRWKE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+---
+
+<div class="centered">
+### PSY 511 {.flexbox .vcenter}
+### Foundations of Cognitive and Affective Neuroscience
+<img src="img/fesi-source.jpg"/>
+
+Rick O. Gilmore, Ph.D.</br>
+Professor of Psychology
+</div>
+
+---
+
+<div class="centered">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/DenverCP.JPG/266px-DenverCP.JPG" height=150px/>
+<img src="http://watson.brown.edu/ds/sites/all/themes/ds/img/header/brown_large.png" height=150px/>
+<img src="https://www.wheretraveler.com/sites/default/files/styles/wt17_promoted/public/WashingtonDC-shutterstock_93633676.jpg?itok=IT7CL9PU" height=150px/>
+<img src="https://ai.cs.cmu.edu/sites/default/files/CMU.png" height=150px/>
+<img src="http://onwardstate.com/wp-content/uploads/2014/10/93" height=150px/>
+<img src="img/sleic.jpg" height=150px/></br>
+<img src="https://nyu.databrary.org/web/images/logo/databrary-nav.svg" height=150px>
+<img src="https://www.play-project.org/img/PLAY-logo.png" height=150px/>
+</div>
+<!-- Gilmore photo biography -->
+
+---
+
+- Hiking, camping/backpacking, cycling, paddling
+- Music, theatre
+- Activism
+- Amateur radio (K3ROG), computing
+
+## Today's topics
+
+- Why neuroscience is harder than physics
+- Course overview
+- The connectome and beyond
+- Does neuroscience need behavior? Does behavioral science need the brain?
+
+# Why neuroscience is harder than physics
+
+---
+
+<img src="img/psych-harder-1.jpg" width="800px" style="display: block; margin: auto;" />
+
+---
+
+<img src="img/psych-harder-2.jpg" width="800px" style="display: block; margin: auto;" />
+
+## What do we need to know to answer the question?
+
+- What is the state...
+    - Of the world ($W$)
+    - Of the organism
+        - Body ($B$)
+        - Nervous system ($N$)
+        - Mind ($M$)
+
+---
+
+<img src="img/nested-causality-labels.png" width="800px" style="display: block; margin: auto;" />
+
+## Some states are more easily measured than others
+
+- $W$, $B$, $N$ more or less **directly**
+
+---
+
+<div class="centered">
+<a href="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fnn.3839/MediaObjects/41593_2014_Article_BFnn3839_Fig1_HTML.jpg?as=webp">
+<img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fnn.3839/MediaObjects/41593_2014_Article_BFnn3839_Fig1_HTML.jpg?as=webp" width="600px">
+</a>
+
+<small>
+[Sejnowski 2014](http://doi.org/10.1038/nn.3839)
+</small>
+</div>
+
+## Measure mental states ($M$)
+
+- **indirectly**
+- Via $N$, $B$, $W$ (+ prior beliefs/knowledge)
+- Examples?
+
+## What are essential components/dimensions of $W$?
+
+## What are essential components/dimensions of $B$?
+
+## Brain & behavior are complex, dynamic *systems* with
+
+- Components
+- Interactions
+- Forces/influences
+- Boundaries
+- Inputs/outputs/processes
+
+## Systems...
+
+- "Behave" or change state across time
+- Return to starting state
+- Appear to be regulated, controlled, influenced by feedback loops
+- $B(t+1) = f(W(t), B(t), N(t), M(t))$
+
+## May be thought of as [networks](https://en.wikipedia.org/wiki/Network_science)
+
+<img src="https://d2ufo47lrtsv5s.cloudfront.net/content/sci/342/6158/1238411/F1.large.jpg" width="800px" height="500" style="display: block; margin: auto;" />
+
+## At multiple levels of organization...
+
+<div class="centered">
+<img src="https://stats.idre.ucla.edu/wp-content/uploads/2016/02/sem_1.png" width="700" style="display: block; margin: auto;" />
+</div>
+
+## Studying systems is hard because...
+
+- Single parts -> multiple functions
+- Single functions -> multiple parts
+
+## e.g., "equifinality" in micro-circuits
+
+<div class="centered">
+<img src="img/calabrese-2018.jpg" width="800px" height="500px" style="display: block; margin: auto;" />
+
+[[@Calabrese2018-ve]](http://doi.org/10.1016/j.tins.2018.05.006)
+</div>
+
+## Studying systems is hard because...
+
+- Change structure/function over time
+- Biological systems not "designed" like human-engineered ones
+- Hard to measure what is being exchanged, what is being controlled
+
+# Course overview
+
+## PSY 511.001 Goals
+
+- Master fundamentals of neuroscientific concepts and facts
+- Prepare to read primary source literature in behavioral, cognitive, affective, and clinical neuroscience
+
+## Structure
+
+<https://psu-psychology.github.io/psy-511-scan-fdns-2021/>
+
+## Questions
+
+- What is the basic organizational plan of the nervous system?
+- How do neurons work?
+- How do neurons connected in networks achieve behavioral goals?
+- How does the nervous system develop? How has it evolved?
+- How do disorders of the mind reveal themselves in the nervous system?
+
+## Approach
+
+- Brain architecture (neuroanatomy)
+- Brain function (neurophysiology)
+- Brain communication (neurochemistry)
+- Changes over evolutionary and developmental time
+
+## Approach
+
+- The nervous system as an information processing system
+
+---
+
+<img src="https://i.stack.imgur.com/3B00P.png" width="800" style="display: block; margin: auto;" />
+
+---
+
+### **Inputs**
+- From environment, body, brain
+
+### **Processing**
+- Current inputs + brain state + body state + possible future states...
+- Stored information
+- Physiological & behavioral goals
+
+---
+
+<div class="figure" style="text-align: center">
+<img src="https://media.springernature.com/full/springer-static/image/art%3A10.3758%2Fs13414-019-01760-1/MediaObjects/13414_2019_1760_Fig1_HTML.png?as=webp" alt="[[@Cisek2019-vq]](http://dx.doi.org/10.3758/s13414-019-01760-1)" width="800px" />
+<p class="caption">[[@Cisek2019-vq]](http://dx.doi.org/10.3758/s13414-019-01760-1)</p>
+</div>
+
+---
+
+### **Outputs**
+
+- To brain, body, environment
+
+## How do $\Psi$ functions map to structures?
+
+<div class="figure" style="text-align: center">
+<img src="https://media.springernature.com/full/springer-static/image/art%3A10.3758%2Fs13414-019-01760-1/MediaObjects/13414_2019_1760_Fig8_HTML.png?as=webp" alt="[[@Cisek2019-vq]](http://dx.doi.org/10.3758/s13414-019-01760-1)" width="800px" />
+<p class="caption">[[@Cisek2019-vq]](http://dx.doi.org/10.3758/s13414-019-01760-1)</p>
+</div>
+
+## And *vice versa*? [[@Cepelewicz2021-rg]](https://www.quantamagazine.org/mental-phenomena-dont-map-into-the-brain-as-expected-20210824/)
+
+<iframe src="https://www.quantamagazine.org/mental-phenomena-dont-map-into-the-brain-as-expected-20210824/" height=400px>
+</iframe>
+
+---
+
+> "*The brainwide representation of behavioral variables suggests that information encoded nearly anywhere in the forebrain is combined with behavioral state variables into a mixed representation...Our data indicate that it happens as early as primary sensory cortex.*"
+> 
+> -- [[@Stringer2019-vf]](http://dx.doi.org/10.1126/science.aav7893)
+
+## And do we have the right "psychological" structures?
+
+> "Psychological sciences have identified a wealth of cognitive processes and behavioral phenomena, yet struggle to produce cumulative knowledge. Progress is hamstrung by siloed scientific traditions and a focus on explanation over prediction, two issues that are particularly damaging for the study of **multifaceted constructs like self-regulation**...We conclude that self-regulation lacks coherence as a construct..."
+>
+> -- [[@Eisenberg2019-iy]](http://dx.doi.org/10.1038/s41467-019-10301-1)
+
+# The connectome and beyond
+
+## Discussion of...
+
+Swanson, L. W., & Lichtman, J. W. (2016). From Cajal to Connectome and Beyond. *Annual Review of Neuroscience*, *39*, 197–216.
+
+<http://doi.org/10.1146/annurev-neuro-071714-033954>
+
+## Key ideas
+
+- Form <> function
+- "*What differs between species is the architecture of nervous systems....*"
+- Connectomes at different levels of analysis
+
+---
+
+<div class="figure" style="text-align: center">
+<img src="https://www.annualreviews.org/na101/home/literatum/publisher/ar/journals/content/neuro/2016/neuro.2016.39.issue-1/annurev-neuro-071714-033954/20160711/images/large/ne390197.f1.jpeg" alt="Fig 1. Swanson &amp; Lichtman, 2016" width="800px" />
+<p class="caption">Fig 1. Swanson & Lichtman, 2016</p>
+</div>
+
+---
+
+<div class="figure" style="text-align: center">
+<img src="https://www.annualreviews.org/na101/home/literatum/publisher/ar/journals/content/neuro/2016/neuro.2016.39.issue-1/annurev-neuro-071714-033954/20160711/images/medium/ne390197.f2.gif" alt="Fig 2. Swanson &amp; Lichtman, 2016" width="800px" />
+<p class="caption">Fig 2. Swanson & Lichtman, 2016</p>
+</div>
+
+---
+
+<div class="figure" style="text-align: center">
+<img src="https://www.annualreviews.org/na101/home/literatum/publisher/ar/journals/content/neuro/2016/neuro.2016.39.issue-1/annurev-neuro-071714-033954/20160711/images/medium/ne390197.f3.gif" alt="Fig 3. Swanson &amp; Lichtman, 2016" width="800px" />
+<p class="caption">Fig 3. Swanson & Lichtman, 2016</p>
+</div>
+
+---
+
+<div class="figure" style="text-align: center">
+<img src="https://www.annualreviews.org/na101/home/literatum/publisher/ar/journals/content/neuro/2016/neuro.2016.39.issue-1/annurev-neuro-071714-033954/20160711/images/large/ne390197.f4.jpeg" alt="Fig 3. Swanson &amp; Lichtman, 2016" width="800px" />
+<p class="caption">Fig 3. Swanson & Lichtman, 2016</p>
+</div>
+
+---
+
+>"*The so-called explanatory gap (Horgan 1999) between what we can know and what we want to understand is not necessarily made smaller by more information. Rather, such omics information pushes neuroscience into a different realm where information rather than ideas is the currency.*"
+
+[[@Swanson2016-qr]](http://dx.doi.org/10.1146/annurev-neuro-071714-033954)
+
+---
+
+>"*In this realm, a detailed, bottom-up description of a biological system is mined for whatever conceptual insights might be revealed rather than top-down concepts of what we care about being used as a setup for experiments. In this sense, the data give us a more accurate view of the way things are and, at the same time, push us away from intelligible, albeit facile, answers to the enduring puzzles of the brain.*"
+
+[[@Swanson2016-qr]](http://dx.doi.org/10.1146/annurev-neuro-071714-033954)
+
+## Cajal/Swanson Architecture {.flexbox .vcenter}
+
+<div class="centered">
+<img src="https://raw.githubusercontent.com/psu-psychology/psy-511-scan-fdns-2017/master/lectures/img/swanson-2005-fig-1.jpg" width="700px" style="display: block; margin: auto;" />
+
+[Swanson, 2005](http://dx.doi.org/10.1002/cne.20733)
+</div>
+
+---
+
+<div class="centered">
+<img src="https://raw.githubusercontent.com/psu-psychology/psy-511-scan-fdns-2017/master/lectures/img/swanson-2005-fig-3.jpg" width="700px" style="display: block; margin: auto;" />
+
+[Swanson, 2005](http://dx.doi.org/10.1002/cne.20733)
+</div>
+
+## Main points
+
+- Psychology is harder than physics
+- Connectomics and beyond
+
+## Your turn
+
+#### 1. Pick two papers you want to read and (better) understand
+
+- Email me APA formatted citation (with DOIs)
+- Indicate three concepts/terms you are especially interested in understanding
+
+---
+
+#### 2. Choose a behavior or mental state you want to (better) understand
+
+- Take an information processing perspective and briefly sketch out (in no more than a short paragraph) the main inputs, outputs, and computations involved.
+- When thinking about *outputs* make sure to distinguish between *behaviors* (e.g., movements, facial expressions, vocalizations) and *physiological states* (e.g., changes in heart rate, hormone concentrations in the blood, etc.)
+
+## References {.smaller}
+
+<!-- Scrolling final reference page -->
+<!-- http://stackoverflow.com/q/38260799 -->
+<style>
+slides > slide { overflow: scroll; }
+slides > slide:not(.nobackground):before {
+  background: none;
+  }
+slides > slide:not(.nobackground):after {
+  content: '';
+  background: none;
+  }
+}
+</style>
+
