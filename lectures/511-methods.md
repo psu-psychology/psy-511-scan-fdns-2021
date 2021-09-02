@@ -2,7 +2,7 @@
 title: "PSY 511"
 subtitle: "Methods"
 author: "Rick Gilmore"
-date: "2021-09-02 07:47:10"
+date: "2021-09-02 13:09:08"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -216,6 +216,7 @@ output:
 - Realignment gives off radio frequency (RF) signals
 - Strength of RF ~ density of $H$ (or other target)
 - K-space (frequency/phase) -> anatomical space
+    - [Fourier analysis and synthesis](https://en.wikipedia.org/wiki/Fourier_transform) important for psychological/neural science, but possibly unfamiliar to many.
 
 ---
 
@@ -357,6 +358,10 @@ output:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GHLBcCv4rqk" frameborder="0" allowfullscreen></iframe>
 
+<https://www.youtube.com/embed/GHLBcCv4rqk>
+
+---
+
 - Radioactive tracers (glucose, oxygen)
 - Positron decay activates paired detectors
 - Tomographic techniques reconstruct 3D geometry
@@ -365,6 +370,8 @@ output:
 - Temporal (~ s) and spatial (mm-cm) resolution worse than fMRI
 - Radioactive exposures + mildly invasive 
 - Dose < airline crew exposure in 1 yr
+
+#### Comparing PET and fMRI
 
 <div class="figure" style="text-align: center">
 <img src="https://ars.els-cdn.com/content/image/1-s2.0-S105381191830586X-gr2_lrg.jpg" alt="[[@Rischka2018-pk](http://dx.doi.org/10.1016/j.neuroimage.2018.06.079)]"  />
@@ -375,7 +382,7 @@ output:
 
 > The brain's energy budget can be non-invasively assessed with different imaging modalities such as functional MRI (fMRI) and PET (fPET), which are sensitive to oxygen and glucose demands, respectively. The introduction of hybrid PET/MRI systems further enables the simultaneous acquisition of these parameters...The absence of a correlation and the different activation pattern between fPET and fMRI suggest that glucose metabolism and oxygen demand capture complementary aspects of energy demands.
 >
-> [[@Rischka2018-pk](http://dx.doi.org/10.1016/j.neuroimage.2018.06.079)]
+> [[@Rischka2018-pk]](http://dx.doi.org/10.1016/j.neuroimage.2018.06.079)]
 
 ## Functional Magnetic Resonance Imaging (fMRI)
 
@@ -384,7 +391,7 @@ output:
 - Oxygenated vs. deoxygenated hemoglobin ≠ magnetic susceptibility
 - How do regional blood $O_2$ levels (& flow & volume) vary with behavior X?
 - MRI "signals" relate to the speed (1/T) of "relaxation" of the perturbed nuclei to their state of alignment with the main ($B_0$) magnetic field.
-- Imaging protocols emphasize different time constants of this relaxation ($T1$, $T2$, $T2^*$); $T^2*$ for BOLD imaging
+- Imaging protocols emphasize different time constants of this relaxation ($T1$, $T2$, $T2^*$); $T^{2^*}$ for BOLD imaging
 
 ### Evaluating fMRI
 
@@ -488,7 +495,7 @@ Generate "predicted" BOLD response to event; compare to actual
 #### Evaluating EEG
 
 - High temporal, poor spatial resolution
-- Analyze activity in different 'bands' of frequencies
+- Analyze activity in different 'bands' of frequencies (via [Fourier](https://en.wikipedia.org/wiki/Fourier_transform) analysis)
     + LOW: deep sleep (delta or $\delta$ band)
     + MIDDLE: Quiet, alert state (alpha $\alpha$ band)
     + HIGHER: Sensorimotor activity reflecting observed actions? (mu or $\mu$ band), [[@Hobson2017-oj]](https://dx.doi.org/10.1098/rsos.160662)
@@ -506,9 +513,6 @@ Generate "predicted" BOLD response to event; compare to actual
 - EEGs time-locked to some event 
 - ...Averaged over many such events (trials)
 
-<!-- <a href="https://2.bp.blogspot.com/_2ob-1_LsjJs/TAUjw9i_dYI/AAAAAAAAAQQ/9AfiHsnD-P8/s1600/ERP_technique.gif"> -->
-<!-- <img src="https://2.bp.blogspot.com/_2ob-1_LsjJs/TAUjw9i_dYI/AAAAAAAAAQQ/9AfiHsnD-P8/s1600/ERP_technique.gif" height=500px/> -->
-<!-- </a> -->
 <img src="https://2.bp.blogspot.com/_2ob-1_LsjJs/TAUjw9i_dYI/AAAAAAAAAQQ/9AfiHsnD-P8/s1600/ERP_technique.gif" width="700px" style="display: block; margin: auto;" />
 
 #### [Brain Computer Interface (BCI)](https://computer.howstuffworks.com/brain-computer-interface.htm) {.smaller}
@@ -524,6 +528,12 @@ Generate "predicted" BOLD response to event; compare to actual
 - High temporal resolution
 - Magnetic fields propagate w/o distortion
     - But are orthogonal to electric field
+    
+<div class="figure" style="text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Onde_electromagnetique.svg/220px-Onde_electromagnetique.svg.png" alt="https://en.wikipedia.org/wiki/Electromagnetic_field"  />
+<p class="caption">https://en.wikipedia.org/wiki/Electromagnetic_field</p>
+</div>
+    
 - Requires shielded chamber (to keep out strong magnetic fields)
 - ++ cost vs. EEG
 
@@ -540,10 +550,9 @@ New device minimizes problems with motion
 
 >Figure 1. A paediatric MEG system: a Experimental setup for three participants age 2- (left), 5- (centre) and 24-years (right). OPMs, housed in a modified bike helmet, measured the MEG signal. b Time-frequency spectra from a single (synthesised gradiometer) channel. Changes in neural oscillations are shown; blue indicates a reduction in oscillatory amplitude relative to baseline; yellow indicates an increase. Note reduction in beta (13–30 Hz) and mu (8–13 Hz) amplitude. c The spatial signature of beta modulation during the period of tactile stimulation (0 s < t < 2 s) (blue overlay)
 
-### How do EEG/MEG and fMRI relate? {.flexbox .vcenter}
+### How do EEG/MEG and fMRI relate?
 
 <div class="centered">
-<!-- <img src="img/logothetis-2001.jpg"/> -->
 <img src="img/logothetis-2001.jpg" width="800px" style="display: block; margin: auto;" />
 
 [[@Logothetis2001-ul]](https://doi.org/10.1038/35084005)
@@ -564,7 +573,7 @@ New device minimizes problems with motion
 - Stroke, head injury, tumor
 - Neuropsychology
 
-#### Phineas Gage {.flexbox .vcenter .smaller}
+#### Phineas Gage
 
 <div class="figure" style="text-align: center">
 <img src="http://www.doctorsimpossible.com/wp-content/uploads/2017/11/Phineas-Gage-with-skull-picture.png" alt="http://www.doctorsimpossible.com/the-curious-case-of-phineas-gage/" height="500px" />
@@ -618,8 +627,6 @@ New device minimizes problems with motion
 - Mimics brain activity
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FlGbznBmx8M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-<https://www.youtube.com/embed/FlGbznBmx8M>
 
 <https://youtu.be/FlGbznBmx8M>
 

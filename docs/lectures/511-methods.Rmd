@@ -225,6 +225,7 @@ knitr::include_graphics("https://miro.medium.com/max/1024/1*j09PgBpdJIHXhlyjcby0
 - Realignment gives off radio frequency (RF) signals
 - Strength of RF ~ density of $H$ (or other target)
 - K-space (frequency/phase) -> anatomical space
+    - [Fourier analysis and synthesis](https://en.wikipedia.org/wiki/Fourier_transform) important for psychological/neural science, but possibly unfamiliar to many.
 
 ---
 
@@ -376,6 +377,10 @@ knitr::include_graphics("https://www.researchgate.net/profile/Milena_Korostenska
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GHLBcCv4rqk" frameborder="0" allowfullscreen></iframe>
 
+<https://www.youtube.com/embed/GHLBcCv4rqk>
+
+---
+
 - Radioactive tracers (glucose, oxygen)
 - Positron decay activates paired detectors
 - Tomographic techniques reconstruct 3D geometry
@@ -385,6 +390,8 @@ knitr::include_graphics("https://www.researchgate.net/profile/Milena_Korostenska
 - Radioactive exposures + mildly invasive 
 - Dose < airline crew exposure in 1 yr
 
+#### Comparing PET and fMRI
+
 ```{r, fig.cap="[[@Rischka2018-pk](http://dx.doi.org/10.1016/j.neuroimage.2018.06.079)]"}
 knitr::include_graphics("https://ars.els-cdn.com/content/image/1-s2.0-S105381191830586X-gr2_lrg.jpg")
 ```
@@ -393,7 +400,7 @@ knitr::include_graphics("https://ars.els-cdn.com/content/image/1-s2.0-S105381191
 
 > The brain's energy budget can be non-invasively assessed with different imaging modalities such as functional MRI (fMRI) and PET (fPET), which are sensitive to oxygen and glucose demands, respectively. The introduction of hybrid PET/MRI systems further enables the simultaneous acquisition of these parameters...The absence of a correlation and the different activation pattern between fPET and fMRI suggest that glucose metabolism and oxygen demand capture complementary aspects of energy demands.
 >
-> [[@Rischka2018-pk](http://dx.doi.org/10.1016/j.neuroimage.2018.06.079)]
+> [[@Rischka2018-pk]](http://dx.doi.org/10.1016/j.neuroimage.2018.06.079)]
 
 ## Functional Magnetic Resonance Imaging (fMRI)
 
@@ -402,7 +409,7 @@ knitr::include_graphics("https://ars.els-cdn.com/content/image/1-s2.0-S105381191
 - Oxygenated vs. deoxygenated hemoglobin ≠ magnetic susceptibility
 - How do regional blood $O_2$ levels (& flow & volume) vary with behavior X?
 - MRI "signals" relate to the speed (1/T) of "relaxation" of the perturbed nuclei to their state of alignment with the main ($B_0$) magnetic field.
-- Imaging protocols emphasize different time constants of this relaxation ($T1$, $T2$, $T2^*$); $T^2*$ for BOLD imaging
+- Imaging protocols emphasize different time constants of this relaxation ($T1$, $T2$, $T2^*$); $T^{2^*}$ for BOLD imaging
 
 ### Evaluating fMRI
 
@@ -501,7 +508,7 @@ knitr::include_graphics("img/baby-eeg.jpg")
 #### Evaluating EEG
 
 - High temporal, poor spatial resolution
-- Analyze activity in different 'bands' of frequencies
+- Analyze activity in different 'bands' of frequencies (via [Fourier](https://en.wikipedia.org/wiki/Fourier_transform) analysis)
     + LOW: deep sleep (delta or $\delta$ band)
     + MIDDLE: Quiet, alert state (alpha $\alpha$ band)
     + HIGHER: Sensorimotor activity reflecting observed actions? (mu or $\mu$ band), [[@Hobson2017-oj]](https://dx.doi.org/10.1098/rsos.160662)
@@ -518,9 +525,6 @@ knitr::include_graphics("img/eeg-frequency.jpg")
 - EEGs time-locked to some event 
 - ...Averaged over many such events (trials)
 
-<!-- <a href="https://2.bp.blogspot.com/_2ob-1_LsjJs/TAUjw9i_dYI/AAAAAAAAAQQ/9AfiHsnD-P8/s1600/ERP_technique.gif"> -->
-<!-- <img src="https://2.bp.blogspot.com/_2ob-1_LsjJs/TAUjw9i_dYI/AAAAAAAAAQQ/9AfiHsnD-P8/s1600/ERP_technique.gif" height=500px/> -->
-<!-- </a> -->
 ```{r, out.width="700px", fig.align='center'}
 knitr::include_graphics("https://2.bp.blogspot.com/_2ob-1_LsjJs/TAUjw9i_dYI/AAAAAAAAAQQ/9AfiHsnD-P8/s1600/ERP_technique.gif")
 ```
@@ -540,6 +544,11 @@ knitr::include_graphics("https://scx1.b-cdn.net/csz/news/800/2015/562df18a48c5c.
 - High temporal resolution
 - Magnetic fields propagate w/o distortion
     - But are orthogonal to electric field
+    
+```{r, fig.cap="https://en.wikipedia.org/wiki/Electromagnetic_field"}
+knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Onde_electromagnetique.svg/220px-Onde_electromagnetique.svg.png")
+```
+    
 - Requires shielded chamber (to keep out strong magnetic fields)
 - ++ cost vs. EEG
 
@@ -554,10 +563,9 @@ knitr::include_graphics("https://media.springernature.com/full/springer-static/i
 
 >Figure 1. A paediatric MEG system: a Experimental setup for three participants age 2- (left), 5- (centre) and 24-years (right). OPMs, housed in a modified bike helmet, measured the MEG signal. b Time-frequency spectra from a single (synthesised gradiometer) channel. Changes in neural oscillations are shown; blue indicates a reduction in oscillatory amplitude relative to baseline; yellow indicates an increase. Note reduction in beta (13–30 Hz) and mu (8–13 Hz) amplitude. c The spatial signature of beta modulation during the period of tactile stimulation (0 s < t < 2 s) (blue overlay)
 
-### How do EEG/MEG and fMRI relate? {.flexbox .vcenter}
+### How do EEG/MEG and fMRI relate?
 
 <div class="centered">
-<!-- <img src="img/logothetis-2001.jpg"/> -->
 ```{r, out.width="800px"}
 knitr::include_graphics("img/logothetis-2001.jpg")
 ```
@@ -580,7 +588,7 @@ knitr::include_graphics("img/logothetis-2001.jpg")
 - Stroke, head injury, tumor
 - Neuropsychology
 
-#### Phineas Gage {.flexbox .vcenter .smaller}
+#### Phineas Gage
 
 ```{r, out.height="500px", fig.align='center', fig.cap="http://www.doctorsimpossible.com/the-curious-case-of-phineas-gage/"}
 knitr::include_graphics("http://www.doctorsimpossible.com/wp-content/uploads/2017/11/Phineas-Gage-with-skull-picture.png")
@@ -634,8 +642,6 @@ knitr::include_graphics("img/deep-brain-stimulation.jpg")
 - Mimics brain activity
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FlGbznBmx8M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-<https://www.youtube.com/embed/FlGbznBmx8M>
 
 <https://youtu.be/FlGbznBmx8M>
 

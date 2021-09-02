@@ -202,7 +202,7 @@ pre code {
 <h1 class="title toc-ignore">PSY 511</h1>
 <h3 class="subtitle">Methods</h3>
 <h4 class="author">Rick Gilmore</h4>
-<h4 class="date">2021-09-02 07:47:10</h4>
+<h4 class="date">2021-09-02 13:09:08</h4>
 
 </div>
 
@@ -270,7 +270,10 @@ pre code {
 <ul>
 <li><a href="#singlemulti-unit-recording">Single/multi-unit Recording</a></li>
 <li><a href="#electrocorticography-ecog"><span>Electrocorticography (ECoG)</span></a></li>
-<li><a href="#positron-emission-tomography-pet"><span>Positron Emission Tomography (PET)</span></a></li>
+<li><a href="#positron-emission-tomography-pet"><span>Positron Emission Tomography (PET)</span></a>
+<ul>
+<li><a href="#comparing-pet-and-fmri">Comparing PET and fMRI</a></li>
+</ul></li>
 </ul></li>
 <li><a href="#functional-magnetic-resonance-imaging-fmri">Functional Magnetic Resonance Imaging (fMRI)</a>
 <ul>
@@ -527,7 +530,10 @@ pre code {
 <li>Rate/timing of realignment varies by tissue</li>
 <li>Realignment gives off radio frequency (RF) signals</li>
 <li>Strength of RF ~ density of <span class="math inline">\(H\)</span> (or other target)</li>
-<li>K-space (frequency/phase) -&gt; anatomical space</li>
+<li>K-space (frequency/phase) -&gt; anatomical space
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Fourier_transform">Fourier analysis and synthesis</a> important for psychological/neural science, but possibly unfamiliar to many.</li>
+</ul></li>
 </ul>
 <hr />
 <div class="centered">
@@ -682,6 +688,8 @@ pre code {
 <h3><a href="https://en.wikipedia.org/wiki/Positron_emission_tomography">Positron Emission Tomography (PET)</a></h3>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GHLBcCv4rqk" frameborder="0" allowfullscreen>
 </iframe>
+<p><a href="https://www.youtube.com/embed/GHLBcCv4rqk" class="uri">https://www.youtube.com/embed/GHLBcCv4rqk</a></p>
+<hr />
 <ul>
 <li>Radioactive tracers (glucose, oxygen)</li>
 <li>Positron decay activates paired detectors</li>
@@ -692,6 +700,8 @@ pre code {
 <li>Radioactive exposures + mildly invasive</li>
 <li>Dose &lt; airline crew exposure in 1 yr</li>
 </ul>
+<div id="comparing-pet-and-fmri" class="section level4">
+<h4>Comparing PET and fMRI</h4>
 <div class="figure" style="text-align: center">
 <img src="https://ars.els-cdn.com/content/image/1-s2.0-S105381191830586X-gr2_lrg.jpg" alt="[[@Rischka2018-pk](http://dx.doi.org/10.1016/j.neuroimage.2018.06.079)]"  />
 <p class="caption">
@@ -703,8 +713,9 @@ pre code {
 </blockquote>
 <blockquote>
 <p>The brain’s energy budget can be non-invasively assessed with different imaging modalities such as functional MRI (fMRI) and PET (fPET), which are sensitive to oxygen and glucose demands, respectively. The introduction of hybrid PET/MRI systems further enables the simultaneous acquisition of these parameters…The absence of a correlation and the different activation pattern between fPET and fMRI suggest that glucose metabolism and oxygen demand capture complementary aspects of energy demands.</p>
-<p>[<span class="citation">(Rischka et al., 2018)</span>(<a href="http://dx.doi.org/10.1016/j.neuroimage.2018.06.079" class="uri">http://dx.doi.org/10.1016/j.neuroimage.2018.06.079</a>)]</p>
+<p><a href="http://dx.doi.org/10.1016/j.neuroimage.2018.06.079"><span class="citation">(Rischka et al., 2018)</span></a>]</p>
 </blockquote>
+</div>
 </div>
 </div>
 <div id="functional-magnetic-resonance-imaging-fmri" class="section level2">
@@ -715,7 +726,7 @@ pre code {
 <li>Oxygenated vs. deoxygenated hemoglobin ≠ magnetic susceptibility</li>
 <li>How do regional blood <span class="math inline">\(O_2\)</span> levels (&amp; flow &amp; volume) vary with behavior X?</li>
 <li>MRI “signals” relate to the speed (1/T) of “relaxation” of the perturbed nuclei to their state of alignment with the main (<span class="math inline">\(B_0\)</span>) magnetic field.</li>
-<li>Imaging protocols emphasize different time constants of this relaxation (<span class="math inline">\(T1\)</span>, <span class="math inline">\(T2\)</span>, <span class="math inline">\(T2^*\)</span>); <span class="math inline">\(T^2*\)</span> for BOLD imaging</li>
+<li>Imaging protocols emphasize different time constants of this relaxation (<span class="math inline">\(T1\)</span>, <span class="math inline">\(T2\)</span>, <span class="math inline">\(T2^*\)</span>); <span class="math inline">\(T^{2^*}\)</span> for BOLD imaging</li>
 </ul>
 <div id="evaluating-fmri" class="section level3">
 <h3>Evaluating fMRI</h3>
@@ -838,7 +849,7 @@ Source: <a href="https://nirx.net" class="uri">https://nirx.net</a>
 <h4>Evaluating EEG</h4>
 <ul>
 <li>High temporal, poor spatial resolution</li>
-<li>Analyze activity in different ‘bands’ of frequencies
+<li>Analyze activity in different ‘bands’ of frequencies (via <a href="https://en.wikipedia.org/wiki/Fourier_transform">Fourier</a> analysis)
 <ul>
 <li>LOW: deep sleep (delta or <span class="math inline">\(\delta\)</span> band)</li>
 <li>MIDDLE: Quiet, alert state (alpha <span class="math inline">\(\alpha\)</span> band)</li>
@@ -860,9 +871,6 @@ Source: <a href="https://nirx.net" class="uri">https://nirx.net</a>
 <li>EEGs time-locked to some event</li>
 <li>…Averaged over many such events (trials)</li>
 </ul>
-<!-- <a href="https://2.bp.blogspot.com/_2ob-1_LsjJs/TAUjw9i_dYI/AAAAAAAAAQQ/9AfiHsnD-P8/s1600/ERP_technique.gif"> -->
-<!-- <img src="https://2.bp.blogspot.com/_2ob-1_LsjJs/TAUjw9i_dYI/AAAAAAAAAQQ/9AfiHsnD-P8/s1600/ERP_technique.gif" height=500px/> -->
-<!-- </a> -->
 <p><img src="https://2.bp.blogspot.com/_2ob-1_LsjJs/TAUjw9i_dYI/AAAAAAAAAQQ/9AfiHsnD-P8/s1600/ERP_technique.gif" width="700px" style="display: block; margin: auto;" /></p>
 </div>
 <div id="brain-computer-interface-bci" class="section level4 smaller">
@@ -883,6 +891,14 @@ Source: <a href="https://nirx.net" class="uri">https://nirx.net</a>
 <ul>
 <li>But are orthogonal to electric field</li>
 </ul></li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Onde_electromagnetique.svg/220px-Onde_electromagnetique.svg.png" alt="https://en.wikipedia.org/wiki/Electromagnetic_field"  />
+<p class="caption">
+<a href="https://en.wikipedia.org/wiki/Electromagnetic_field" class="uri">https://en.wikipedia.org/wiki/Electromagnetic_field</a>
+</p>
+</div>
+<ul>
 <li>Requires shielded chamber (to keep out strong magnetic fields)</li>
 <li>++ cost vs. EEG</li>
 </ul>
@@ -903,10 +919,9 @@ New device minimizes problems with motion
 <p>Figure 1. A paediatric MEG system: a Experimental setup for three participants age 2- (left), 5- (centre) and 24-years (right). OPMs, housed in a modified bike helmet, measured the MEG signal. b Time-frequency spectra from a single (synthesised gradiometer) channel. Changes in neural oscillations are shown; blue indicates a reduction in oscillatory amplitude relative to baseline; yellow indicates an increase. Note reduction in beta (13–30 Hz) and mu (8–13 Hz) amplitude. c The spatial signature of beta modulation during the period of tactile stimulation (0 s &lt; t &lt; 2 s) (blue overlay)</p>
 </blockquote>
 </div>
-<div id="how-do-eegmeg-and-fmri-relate" class="section level3 flexbox vcenter">
-<h3 class="flexbox vcenter">How do EEG/MEG and fMRI relate?</h3>
+<div id="how-do-eegmeg-and-fmri-relate" class="section level3">
+<h3>How do EEG/MEG and fMRI relate?</h3>
 <div class="centered">
-<!-- <img src="img/logothetis-2001.jpg"/> -->
 <p><img src="img/logothetis-2001.jpg" width="800px" style="display: block; margin: auto;" /></p>
 <p><a href="https://doi.org/10.1038/35084005"><span class="citation">(Logothetis, Pauls, Augath, Trinath, &amp; Oeltermann, 2001)</span></a></p>
 </div>
@@ -930,8 +945,8 @@ New device minimizes problems with motion
 <li>Stroke, head injury, tumor</li>
 <li>Neuropsychology</li>
 </ul>
-<div id="phineas-gage" class="section level4 flexbox vcenter smaller">
-<h4 class="flexbox vcenter smaller">Phineas Gage</h4>
+<div id="phineas-gage" class="section level4">
+<h4>Phineas Gage</h4>
 <div class="figure" style="text-align: center">
 <img src="http://www.doctorsimpossible.com/wp-content/uploads/2017/11/Phineas-Gage-with-skull-picture.png" alt="http://www.doctorsimpossible.com/the-curious-case-of-phineas-gage/" height="500px" />
 <p class="caption">
@@ -991,7 +1006,6 @@ New device minimizes problems with motion
 </ul>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FlGbznBmx8M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
 </iframe>
-<p><a href="https://www.youtube.com/embed/FlGbznBmx8M" class="uri">https://www.youtube.com/embed/FlGbznBmx8M</a></p>
 <p><a href="https://youtu.be/FlGbznBmx8M" class="uri">https://youtu.be/FlGbznBmx8M</a></p>
 </div>
 </div>
