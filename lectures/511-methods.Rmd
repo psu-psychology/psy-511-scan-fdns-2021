@@ -316,21 +316,21 @@ knitr::include_graphics("http://1.bp.blogspot.com/-YO3h0cRqTEc/UIRKEC_0N8I/AAAAA
 
 ---
 
-<div class="centered">
-<img src="http://4.bp.blogspot.com/-j3_rRdZXx0Q/VQXD0vGD8uI/AAAAAAAACr0/MYTD4MhC8rY/s1600/tractography_2014%2Bcopy.png" width=800px>
-</div>
-
-<div class="centered">
-<img src="https://www.nap.edu/openbook/13373/xhtml/images/p26.jpg"/>
-</div>
+```{r, fig.align="center", fig.cap="https://www.nap.edu/openbook/13373/xhtml/images/p26.jpg"}
+knitr::include_graphics("https://www.nap.edu/openbook/13373/xhtml/images/p26.jpg")
+```
 
 ### Visualizing the connectome
 
-```{r, out.height="500px", fig.align='center'}
+```{r, out.height="500px", fig.align='center', fig.cap="[[@Bonilha2015-qx]](http://dx.doi.org/10.1371/journal.pone.0135247)"}
 knitr::include_graphics("https://journals.plos.org/plosone/article/figure/image?size=large&download=&id=10.1371/journal.pone.0135247.g002")
 ```
 
-```{r, out.width="600px"}
+> Fig 2. Link-wise ICCs. Each matrix entry represents the ICC observed for the white matter link between the gray matter ROI in the row and the gray matter ROI in the column. https://doi.org/10.1371/journal.pone.0135247.g002
+>
+> [[@Bonilha2015-qx]](http://dx.doi.org/10.1371/journal.pone.0135247)
+
+```{r, out.width="600px", fig.cap="http://www.humanconnectome.org"}
 knitr::include_graphics("http://www.humanconnectome.org/storage/app/media/news/2015/09/CCA_mode.jpg")
 ```
 
@@ -368,14 +368,9 @@ knitr::include_graphics("https://www.researchgate.net/profile/Milena_Korostenska
 
 ---- 
 
-<div class="centered">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HluVToAamXY" frameborder="0" allowfullscreen></iframe>
-</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/u50HPRe3rOY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<div class="notes">
-Story about child who underwent ECoG surgery.
-</div>
-
+<https://www.youtube.com/watch?v=u50HPRe3rOY>
 
 ### [Positron Emission Tomography (PET)](https://en.wikipedia.org/wiki/Positron_emission_tomography)
 
@@ -389,6 +384,16 @@ Story about child who underwent ECoG surgery.
 - Temporal (~ s) and spatial (mm-cm) resolution worse than fMRI
 - Radioactive exposures + mildly invasive 
 - Dose < airline crew exposure in 1 yr
+
+```{r, fig.cap="[[@Rischka2018-pk](http://dx.doi.org/10.1016/j.neuroimage.2018.06.079)]"}
+knitr::include_graphics("https://ars.els-cdn.com/content/image/1-s2.0-S105381191830586X-gr2_lrg.jpg")
+```
+
+> Fig. 2. Task-specific changes during finger tapping and visual stimulation obtained with fPET and fMRI across all subjects. Good agreement between CMRGlu and BOLD was observed for primary motor and visual cortices. However, in secondary areas (e.g., supplementary motor area, cerebellum, secondary visual areas) significant changes were only detected with fMRI but not with fPET (Table 2). Statistical maps were corrected for multiple comparisons at p<0.05 FWE corrected voxel-level.
+
+> The brain's energy budget can be non-invasively assessed with different imaging modalities such as functional MRI (fMRI) and PET (fPET), which are sensitive to oxygen and glucose demands, respectively. The introduction of hybrid PET/MRI systems further enables the simultaneous acquisition of these parameters...The absence of a correlation and the different activation pattern between fPET and fMRI suggest that glucose metabolism and oxygen demand capture complementary aspects of energy demands.
+>
+> [[@Rischka2018-pk](http://dx.doi.org/10.1016/j.neuroimage.2018.06.079)]
 
 ## Functional Magnetic Resonance Imaging (fMRI)
 
@@ -422,35 +427,27 @@ knitr::include_graphics("img/hemodynamic-response-function.png")
 <div class="centered">
 Generate "predicted" BOLD response to event; compare to actual
 
-```{r, out.width="800px", fig.align='center'}
+```{r, out.width="800px"}
 knitr::include_graphics("https://mriquestions.com/uploads/3/4/5/7/34572113/convolution-of-3-events_orig.gif")
 ```
 
 </div>
 
-### Higher field strengths (3 Tesla vs. 7 Tesla) {.smaller}
+### Higher field strengths (3 Tesla vs. 7 Tesla)
 
 ```{r, out.height="450px", fig.align='center', fig.cap='[[@Sladky2013-bu]](https://dx.doi.org/10.1016/j.ejrad.2011.09.025)'}
 knitr::include_graphics("https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3629563/bin/gr3.jpg")
 ```
 
-### but fMRI underpowered {.smaller}
+### but fMRI underpowered
 
-<div class="centered">
-```{r, out.width="700px", fig.align='center'}
+```{r, out.width="700px", fig.cap="[[@Szucs2017-fc]]((https://doi.org/10.1371/journal.pbio.2000797))"}
 knitr::include_graphics("https://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.2000797.g003&type=large")
 ```
 
-([Szucs & Ioannides, 2017](https://doi.org/10.1371/journal.pbio.2000797))
-</div>
-
----
-
-<div class="centered">
-> "*Assuming a realistic range of prior probabilities for null hypotheses, false report probability is likely to exceed 50% for the whole literature.*"
-
-<small>([Szucs & Ioannides, 2017](https://doi.org/10.1371/journal.pbio.2000797))</small>
-</div>
+> Assuming a realistic range of prior probabilities for null hypotheses, false report probability is likely to exceed 50% for the whole literature.
+>
+> [[@Szucs2017-fc]]((https://doi.org/10.1371/journal.pbio.2000797))
 
 ---
 
@@ -458,7 +455,7 @@ knitr::include_graphics("https://journals.plos.org/plosbiology/article/file?id=1
     - Make data, materials (analysis code) more widely and openly available
     - [OpenNeuro.org](https://openneuro.org), [Human Connectome Project](https://www.humanconnectomeproject.org/), [Databrary.org](https://databrary.org), etc.
     - Reuse shared data (e.g., [Adolescent Brain & Cognitive Development (ABCD) Study](https://abcdstudy.org/))
-    - Increases sample size, improves detection of small effects
+    - Increase sample sizes, improve detection of small effects
 
 ### Functional Near-infrared Spectroscopy (fNIRS)
 
@@ -615,14 +612,9 @@ knitr::include_graphics("https://upload.wikimedia.org/wikipedia/en/9/98/The_Man_
 - Epilepsy
 - Parkinson’s Disease 
 
-<div class="centered">
-<!-- <img src="img/deep-brain-stimulation.jpg"/> -->
-```{r, out.width="700px"}
+```{r, out.width="700px", fig.cap="https://www.nimh.nih.gov/images/health-and-outreach/mental-health-topic-brain-stimulation-therapies/dbs_60715_3.jpg"}
 knitr::include_graphics("img/deep-brain-stimulation.jpg")
 ```
-
-<https://www.nimh.nih.gov/images/health-and-outreach/mental-health-topic-brain-stimulation-therapies/dbs_60715_3.jpg>
-</div>
 
 ---
 
@@ -632,20 +624,18 @@ knitr::include_graphics("img/deep-brain-stimulation.jpg")
 
 ### [Optogenetics](https://en.wikipedia.org/wiki/Optogenetics)
 
----
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/I64X7vHSHOE" frameborder="0" allowfullscreen></iframe>
 
----
+<https://www.youtube.com/embed/I64X7vHSHOE>
 
 - Gene splicing techniques insert light-sensitive molecules into neuronal membranes
 - Application of light at specific wavelengths alters neuronal function
 - Cell-type specific and temporally precise control
 - Mimics brain activity
 
----
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FlGbznBmx8M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<https://www.youtube.com/embed/FlGbznBmx8M>
 
 <https://youtu.be/FlGbznBmx8M>
 

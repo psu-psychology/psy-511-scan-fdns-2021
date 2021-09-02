@@ -2,7 +2,7 @@
 title: "PSY 511"
 subtitle: "Methods"
 author: "Rick Gilmore"
-date: "2021-09-01 14:03:52"
+date: "2021-09-02 07:47:10"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -14,6 +14,7 @@ output:
     toc_depth: 5
     toc_float: no
     code_folding: hide
+    self_contained: false
   pdf_document:
     toc: true
     toc_depth: 1
@@ -136,6 +137,8 @@ output:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/c-NMfp13Uug" frameborder="0" allowfullscreen></iframe>
 
+<https://www.youtube.com/embed/c-NMfp13Uug>
+
 ### [CUBIC](https://en.wikipedia.org/wiki/CUBIC)
 
 - CUBIC (“clear, unobstructed brain/body imaging cocktails and computational analysis")
@@ -236,6 +239,8 @@ output:
 <p class="caption">[[@Lee2021-ae]](http://dx.doi.org/10.1016/j.biopsych.2020.10.014)</p>
 </div>
 
+> *Figure 1*. Longitudinal trajectories of total cerebral volume, gray matter volume, and white matter volume from early to middle childhood (A) in boys with autism spectrum disorder (ASD) and typically developing (TD) boys and (B) in boys with ASD and disproportionate megalencephaly (ASD-DM), boys with ASD with normative cerebral volume-to-height ratio (ASD-N), and TD boys.
+
 #### MR Spectroscopy (specific metabolites)
 
 <img src="https://images.radiopaedia.org/images/556479/0dc08a48892084b4c3b717feb9dfa4_big_gallery.jpg" height="550px" style="display: block; margin: auto;" />
@@ -251,8 +256,11 @@ output:
 <p class="caption">[[@Pomarol-Clotet2010-tq]](https://dx.doi.org/10.1038/mp.2009.146)</p>
 </div>
 
+> Top panel: (a) voxel-based morphometry (VBM) findings. Regions showing significant volume reduction thresholded at P=0.01 in the schizophrenic patients are shown in orange. Bottom panel: (b) functional magnetic resonance imaging (fMRI) findings. Regions are shown where there were significant differences between patients and controls during performance of the n-back task (2-back vs baseline comparison), thresholded at P=0.01. Blue indicates hypoactivation, that is, areas where controls activated significantly more than the patients. Orange indicates areas where the schizophrenic patients showed failure to deactivate in comparison to controls. The right side of the images represents the left side of the brain.
+
 - Volume differences in schizophrenics vs. controls
-- Colored portions are statistical maps placed on top of a base structural map. - Maps provide information about the comparison in brain volumes between patients and controls in those areas
+- Colored portions are statistical maps placed on top of a base structural map.
+- Maps (a) provide information about the comparison in brain volumes between patients and controls in those areas, and in (b) functional imaging differences in an n-back task.
 
 ## Mapping the wiring diagram ("connectome")
 
@@ -272,6 +280,8 @@ output:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nvXuq9jRWKE" frameborder="0" allowfullscreen></iframe>
 
+<https://www.youtube.com/embed/nvXuq9jRWKE>
+
 ### Diffusion Tensor Imaging (DTI)
 
 - Structural MRI technique
@@ -285,19 +295,26 @@ output:
 
 ---
 
-<div class="centered">
-<img src="http://4.bp.blogspot.com/-j3_rRdZXx0Q/VQXD0vGD8uI/AAAAAAAACr0/MYTD4MhC8rY/s1600/tractography_2014%2Bcopy.png" width=800px>
-</div>
-
-<div class="centered">
-<img src="https://www.nap.edu/openbook/13373/xhtml/images/p26.jpg"/>
+<div class="figure" style="text-align: center">
+<img src="https://www.nap.edu/openbook/13373/xhtml/images/p26.jpg" alt="https://www.nap.edu/openbook/13373/xhtml/images/p26.jpg"  />
+<p class="caption">https://www.nap.edu/openbook/13373/xhtml/images/p26.jpg</p>
 </div>
 
 ### Visualizing the connectome
 
-<img src="https://journals.plos.org/plosone/article/figure/image?size=large&download=&id=10.1371/journal.pone.0135247.g002" height="500px" style="display: block; margin: auto;" />
+<div class="figure" style="text-align: center">
+<img src="https://journals.plos.org/plosone/article/figure/image?size=large&download=&id=10.1371/journal.pone.0135247.g002" alt="[[@Bonilha2015-qx]](http://dx.doi.org/10.1371/journal.pone.0135247)" height="500px" />
+<p class="caption">[[@Bonilha2015-qx]](http://dx.doi.org/10.1371/journal.pone.0135247)</p>
+</div>
 
-<img src="http://www.humanconnectome.org/storage/app/media/news/2015/09/CCA_mode.jpg" width="600px" style="display: block; margin: auto;" />
+> Fig 2. Link-wise ICCs. Each matrix entry represents the ICC observed for the white matter link between the gray matter ROI in the row and the gray matter ROI in the column. https://doi.org/10.1371/journal.pone.0135247.g002
+>
+> [[@Bonilha2015-qx]](http://dx.doi.org/10.1371/journal.pone.0135247)
+
+<div class="figure" style="text-align: center">
+<img src="http://www.humanconnectome.org/storage/app/media/news/2015/09/CCA_mode.jpg" alt="http://www.humanconnectome.org" width="600px" />
+<p class="caption">http://www.humanconnectome.org</p>
+</div>
 
 # Functional methods
 
@@ -332,14 +349,9 @@ output:
 
 ---- 
 
-<div class="centered">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HluVToAamXY" frameborder="0" allowfullscreen></iframe>
-</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/u50HPRe3rOY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<div class="notes">
-Story about child who underwent ECoG surgery.
-</div>
-
+<https://www.youtube.com/watch?v=u50HPRe3rOY>
 
 ### [Positron Emission Tomography (PET)](https://en.wikipedia.org/wiki/Positron_emission_tomography)
 
@@ -353,6 +365,17 @@ Story about child who underwent ECoG surgery.
 - Temporal (~ s) and spatial (mm-cm) resolution worse than fMRI
 - Radioactive exposures + mildly invasive 
 - Dose < airline crew exposure in 1 yr
+
+<div class="figure" style="text-align: center">
+<img src="https://ars.els-cdn.com/content/image/1-s2.0-S105381191830586X-gr2_lrg.jpg" alt="[[@Rischka2018-pk](http://dx.doi.org/10.1016/j.neuroimage.2018.06.079)]"  />
+<p class="caption">[[@Rischka2018-pk](http://dx.doi.org/10.1016/j.neuroimage.2018.06.079)]</p>
+</div>
+
+> Fig. 2. Task-specific changes during finger tapping and visual stimulation obtained with fPET and fMRI across all subjects. Good agreement between CMRGlu and BOLD was observed for primary motor and visual cortices. However, in secondary areas (e.g., supplementary motor area, cerebellum, secondary visual areas) significant changes were only detected with fMRI but not with fPET (Table 2). Statistical maps were corrected for multiple comparisons at p<0.05 FWE corrected voxel-level.
+
+> The brain's energy budget can be non-invasively assessed with different imaging modalities such as functional MRI (fMRI) and PET (fPET), which are sensitive to oxygen and glucose demands, respectively. The introduction of hybrid PET/MRI systems further enables the simultaneous acquisition of these parameters...The absence of a correlation and the different activation pattern between fPET and fMRI suggest that glucose metabolism and oxygen demand capture complementary aspects of energy demands.
+>
+> [[@Rischka2018-pk](http://dx.doi.org/10.1016/j.neuroimage.2018.06.079)]
 
 ## Functional Magnetic Resonance Imaging (fMRI)
 
@@ -391,28 +414,23 @@ Generate "predicted" BOLD response to event; compare to actual
 
 </div>
 
-### Higher field strengths (3 Tesla vs. 7 Tesla) {.smaller}
+### Higher field strengths (3 Tesla vs. 7 Tesla)
 
 <div class="figure" style="text-align: center">
 <img src="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3629563/bin/gr3.jpg" alt="[[@Sladky2013-bu]](https://dx.doi.org/10.1016/j.ejrad.2011.09.025)" height="450px" />
 <p class="caption">[[@Sladky2013-bu]](https://dx.doi.org/10.1016/j.ejrad.2011.09.025)</p>
 </div>
 
-### but fMRI underpowered {.smaller}
+### but fMRI underpowered
 
-<div class="centered">
-<img src="https://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.2000797.g003&type=large" width="700px" style="display: block; margin: auto;" />
-
-([Szucs & Ioannides, 2017](https://doi.org/10.1371/journal.pbio.2000797))
+<div class="figure" style="text-align: center">
+<img src="https://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.2000797.g003&type=large" alt="[[@Szucs2017-fc]]((https://doi.org/10.1371/journal.pbio.2000797))" width="700px" />
+<p class="caption">[[@Szucs2017-fc]]((https://doi.org/10.1371/journal.pbio.2000797))</p>
 </div>
 
----
-
-<div class="centered">
-> "*Assuming a realistic range of prior probabilities for null hypotheses, false report probability is likely to exceed 50% for the whole literature.*"
-
-<small>([Szucs & Ioannides, 2017](https://doi.org/10.1371/journal.pbio.2000797))</small>
-</div>
+> Assuming a realistic range of prior probabilities for null hypotheses, false report probability is likely to exceed 50% for the whole literature.
+>
+> [[@Szucs2017-fc]]((https://doi.org/10.1371/journal.pbio.2000797))
 
 ---
 
@@ -420,7 +438,7 @@ Generate "predicted" BOLD response to event; compare to actual
     - Make data, materials (analysis code) more widely and openly available
     - [OpenNeuro.org](https://openneuro.org), [Human Connectome Project](https://www.humanconnectomeproject.org/), [Databrary.org](https://databrary.org), etc.
     - Reuse shared data (e.g., [Adolescent Brain & Cognitive Development (ABCD) Study](https://abcdstudy.org/))
-    - Increases sample size, improves detection of small effects
+    - Increase sample sizes, improve detection of small effects
 
 ### Functional Near-infrared Spectroscopy (fNIRS)
 
@@ -548,7 +566,10 @@ New device minimizes problems with motion
 
 #### Phineas Gage {.flexbox .vcenter .smaller}
 
-<img src="https://lh3.googleusercontent.com/proxy/srnSL0LRvcaXO2FpMsj6hCmXrzZR4xY5i5S8_i3ixeU9uRfocp5OTNL8c1X3cS-K-hbIaJml-odzYPk2422xDY2ncTuRShEn3UClAM-FbjCCe0EJAxl_ML4Eq7wPczUAZS0u41k1vZq_SsgtcUGS9CsVF4NYWi0" height="500px" style="display: block; margin: auto;" />
+<div class="figure" style="text-align: center">
+<img src="http://www.doctorsimpossible.com/wp-content/uploads/2017/11/Phineas-Gage-with-skull-picture.png" alt="http://www.doctorsimpossible.com/the-curious-case-of-phineas-gage/" height="500px" />
+<p class="caption">http://www.doctorsimpossible.com/the-curious-case-of-phineas-gage/</p>
+</div>
 
 ---
 
@@ -574,11 +595,9 @@ New device minimizes problems with motion
 - Epilepsy
 - Parkinson’s Disease 
 
-<div class="centered">
-<!-- <img src="img/deep-brain-stimulation.jpg"/> -->
-<img src="img/deep-brain-stimulation.jpg" width="700px" style="display: block; margin: auto;" />
-
-<https://www.nimh.nih.gov/images/health-and-outreach/mental-health-topic-brain-stimulation-therapies/dbs_60715_3.jpg>
+<div class="figure" style="text-align: center">
+<img src="img/deep-brain-stimulation.jpg" alt="https://www.nimh.nih.gov/images/health-and-outreach/mental-health-topic-brain-stimulation-therapies/dbs_60715_3.jpg" width="700px" />
+<p class="caption">https://www.nimh.nih.gov/images/health-and-outreach/mental-health-topic-brain-stimulation-therapies/dbs_60715_3.jpg</p>
 </div>
 
 ---
@@ -589,20 +608,18 @@ New device minimizes problems with motion
 
 ### [Optogenetics](https://en.wikipedia.org/wiki/Optogenetics)
 
----
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/I64X7vHSHOE" frameborder="0" allowfullscreen></iframe>
 
----
+<https://www.youtube.com/embed/I64X7vHSHOE>
 
 - Gene splicing techniques insert light-sensitive molecules into neuronal membranes
 - Application of light at specific wavelengths alters neuronal function
 - Cell-type specific and temporally precise control
 - Mimics brain activity
 
----
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FlGbznBmx8M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<https://www.youtube.com/embed/FlGbznBmx8M>
 
 <https://youtu.be/FlGbznBmx8M>
 
@@ -612,17 +629,17 @@ New device minimizes problems with motion
 - Example: neural networks
 - Cheap, noninvasive, can be stimulated or “lesioned”
 
-<div class="centered">
-Blue Brain project
+### Blue Brain project
 
-<!-- <img src="https://www.nature.com/nrn/journal/v7/n2/images/nrn1848-f4.jpg"> -->
-<img src="https://www.nature.com/nrn/journal/v7/n2/images/nrn1848-f4.jpg" width="600px" style="display: block; margin: auto;" />
-
-[Markram, 2006](https://doi.org/10.1038/nrn1848)
+<div class="figure" style="text-align: center">
+<img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fnrn1848/MediaObjects/41583_2006_Article_BFnrn1848_Fig4_HTML.jpg?as=webp" alt="[[@Markram2006-vu]](http://dx.doi.org/10.1038/nrn1848)" width="600px" />
+<p class="caption">[[@Markram2006-vu]](http://dx.doi.org/10.1038/nrn1848)</p>
 </div>
 
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gn4nRCC9TwQ" frameborder="0" allowfullscreen></iframe>
+
+<https://www.youtube.com/embed/gn4nRCC9TwQ>
 
 ## References
