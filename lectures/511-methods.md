@@ -2,7 +2,7 @@
 title: "PSY 511"
 subtitle: "Methods"
 author: "Rick Gilmore"
-date: "2021-09-02 13:09:08"
+date: "2021-09-03 07:28:50"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -371,6 +371,21 @@ output:
 - Radioactive exposures + mildly invasive 
 - Dose < airline crew exposure in 1 yr
 
+#### Example: Neurotransmitter receptor binding and behavior
+
+<div class="figure" style="text-align: center">
+<img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41398-021-01559-5/MediaObjects/41398_2021_1559_Fig3_HTML.png?as=webp" alt="[[@Kantonen2021-to]](http://dx.doi.org/10.1038/s41398-021-01559-5)"  />
+<p class="caption">[[@Kantonen2021-to]](http://dx.doi.org/10.1038/s41398-021-01559-5)</p>
+</div>
+
+> The blue outline marks brain regions where lower [11C]carfentanil binding potential (BPND) associated with higher External eating score, age and PET scanner as nuisance covariates, cluster forming threshold p < 0.01, FWE corrected. In the red–yellow T-score scale shown are also additional bilateral associations significant with more lenient cluster-defining threshold (p < 0.05, FWE corrected) for visualization purposes.
+>
+> [[@Kantonen2021-to]](http://dx.doi.org/10.1038/s41398-021-01559-5)
+
+> Our main finding was that higher DEBQ scores were associated with lower central availability of MORs and CB1Rs in healthy, nonobese humans. MOR and CB1R systems however showed distinct patterns of associations with specific dimensions of self-reported eating: While CB1Rs were associated in general negatively with different DEBQ subscale scores (and most saliently with the Total DEBQ score), MORs were specifically and negatively associated with externally driven eating only. Our results support the view that variation in endogenous opioid and endocannabinoid systems explain interindividual variation in feeding, with distinct effects on eating behavior measured with DEBQ.
+>
+> [[@Kantonen2021-to]](http://dx.doi.org/10.1038/s41398-021-01559-5)
+
 #### Comparing PET and fMRI
 
 <div class="figure" style="text-align: center">
@@ -648,5 +663,22 @@ New device minimizes problems with motion
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gn4nRCC9TwQ" frameborder="0" allowfullscreen></iframe>
 
 <https://www.youtube.com/embed/gn4nRCC9TwQ>
+
+## Or synthesizing one...
+
+### Human brain organoids
+
+> Brain organoids represent a powerful tool for studying human neurological diseases, particularly those that affect brain growth and structure. However, many diseases manifest with clear evidence of physiological and network abnormality in the absence of anatomical changes, raising the question of whether organoids possess sufficient neural network complexity to model these conditions. Here, we explore the network-level functions of brain organoids using calcium sensor imaging and extracellular recording approaches that together reveal the existence of complex network dynamics reminiscent of intact brain preparations. We demonstrate highly abnormal and epileptiform-like activity in organoids derived from induced pluripotent stem cells from individuals with Rett syndrome, accompanied by transcriptomic differences revealed by single-cell analyses. We also rescue key physiological activities with an unconventional neuroregulatory drug, pifithrin-α. Together, these findings provide an essential foundation for the utilization of brain organoids to study intact and disordered human brain network formation and illustrate their utility in therapeutic discovery.
+>
+> [[@Samarasinghe2021-dk]](http://dx.doi.org/10.1038/s41593-021-00906-5)
+
+<div class="figure" style="text-align: center">
+<img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41593-021-00906-5/MediaObjects/41593_2021_906_Fig2_HTML.png?as=webp" alt="[[@Samarasinghe2021-dk]](http://dx.doi.org/10.1038/s41593-021-00906-5)"  />
+<p class="caption">[[@Samarasinghe2021-dk]](http://dx.doi.org/10.1038/s41593-021-00906-5)</p>
+</div>
+
+> a, Schematic illustrating the identification of active neurons by virtue of their Ca2+ transients (I), representation of their network organization (II) and methods used to collect extracellular recordings (III). b, Example of live two-photon microscopy imaging of an H9 hESC-derived fusion organoid demonstrating acquisition of regions of interest (red circles) and the resulting activity profile shown as normalized ΔF/F values, where each line is an individual neuron (middle) and representation of the same data as a colorized amplitude plot (right). c, Addition of 100 μM BMI had a minimal effect on Cx + Cx fusions (top) yet elicited spontaneous synchronization of neural activities in Cx + GE organoids (bottom). d, These synchronizations can be transformed into a normalized amplitude-versus-time plot for quantitative analyses (left) and further visualized as a clustergram following hierarchical clustering of calcium spiking data (right). e, Pooled data of the amplitude measurements. Plots display the full distribution of individual data points. Dashed and dotted lines indicate the median and quartile values, respectively. n = 3 independent experiments for Cx + Cx and Cx + GE. Analysis of variance (ANOVA) P = 0.0011, F = 8.301, d.f. (between columns) = 3 followed by Tukey’s multiple-comparison test; **P = 0.0028 for Cx + Cx versus Cx + GE BMI; **P = 0.0100 for Cx + Cx BMI versus Cx + GE BMI; **P = 0.0031 for Cx + GE versus Cx + GE BMI. f–h, LFPs measured from a representative Cx + GE fusion revealed robust oscillatory activities at multiple frequencies during a 5-min period, reflected in both raw traces (f) and the spectrogram (g). Spectral density analysis in h demonstrates the presence of multiple distinct oscillatory peaks ranging from ~1–100 Hz. i–k, Cx + Cx fusion organoids by contrast lack measurable oscillatory activities. Representative traces in f–h are taken from three independent experiments and in i–k from four independent experiments. NS, not significant.
+>
+> [[@Samarasinghe2021-dk]](http://dx.doi.org/10.1038/s41593-021-00906-5)
 
 ## References
