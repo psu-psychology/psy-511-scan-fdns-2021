@@ -25,7 +25,7 @@ navbar:
       - text: "Week 3"
         menu:
           - text: "2021-09-08"
-            href:
+            href: "lectures/511-cells.html"
           - text: "2021-09-10"
             href:
       - text: "Week 4" 

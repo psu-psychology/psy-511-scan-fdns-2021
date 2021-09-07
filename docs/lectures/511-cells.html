@@ -1,0 +1,1487 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Rick O. Gilmore" />
+
+
+<title>PSY 511</title>
+
+<script src="511-cells_files/header-attrs-2.9/header-attrs.js"></script>
+<script src="511-cells_files/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="511-cells_files/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
+<script src="511-cells_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="511-cells_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="511-cells_files/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="511-cells_files/navigation-1.1/tabsets.js"></script>
+<script src="511-cells_files/navigation-1.1/codefolding.js"></script>
+<link href="511-cells_files/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="511-cells_files/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+<style type="text/css">
+/* for pandoc --citeproc since 2.11 */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="css/outline.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div id="header">
+
+<div class="btn-group pull-right float-right">
+<button type="button" class="btn btn-default btn-xs btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu dropdown-menu-right" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+</ul>
+</div>
+
+
+
+<h1 class="title toc-ignore"><a href="https://psu-psychology.github.io/psy-511-scan-fdns-2021">PSY 511</a></h1>
+<h3 class="subtitle">Cells of the nervous system</h3>
+<h4 class="author">Rick O. Gilmore</h4>
+<h4 class="date">2021-09-07 07:55:22</h4>
+
+</div>
+
+<div id="TOC">
+<ul>
+<li><a href="#fun">Fun</a></li>
+<li><a href="#cellular-neuroanatomy">Cellular neuroanatomy</a>
+<ul>
+<li><a href="#how-many-neurons-and-glia">How many neurons and glia?</a></li>
+<li><a href="#glia-neuroglia">Glia (neuroglia)</a>
+<ul>
+<li><a href="#astrocytes">Astrocytes</a></li>
+<li><a href="#myelinating-cells">Myelinating cells</a>
+<ul>
+<li><a href="#oligodendrocytes">Oligodendrocytes</a></li>
+<li><a href="#schwann-cells">Schwann cells</a></li>
+</ul></li>
+<li><a href="#microglia">Microglia</a></li>
+</ul></li>
+<li><a href="#neurons">Neurons</a>
+<ul>
+<li><a href="#what-makes-neurons-special">What makes neurons “special”</a></li>
+<li><a href="#macrostructure">Macrostructure</a>
+<ul>
+<li><a href="#dendrites">Dendrites</a>
+<ul>
+<li><a href="#dendritic-spines">Dendritic Spines</a></li>
+</ul></li>
+<li><a href="#soma-cell-body">Soma (cell body)</a></li>
+<li><a href="#axons">Axons</a>
+<ul>
+<li><a href="#axon-hillock">Axon hillock</a></li>
+<li><a href="#initial-segment">Initial segment</a></li>
+<li><a href="#nodes-of-ranvier">Nodes of Ranvier</a></li>
+<li><a href="#axon-terminals">Axon terminals</a></li>
+<li><a href="#synaptic-bouton-terminal-button">Synaptic bouton (terminal button)</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#classifying-neurons">Classifying neurons</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#neurophysiology">Neurophysiology</a>
+<ul>
+<li><a href="#why-animals-need-brains">Why animals need brains</a></li>
+<li><a href="#neural-communication-types">Neural communication types</a></li>
+<li><a href="#electrical-communication">Electrical communication</a>
+<ul>
+<li><a href="#basic-principles">Basic principles</a></li>
+<li><a href="#resting-potential">Resting potential</a>
+<ul>
+<li><a href="#contributors-to">Contributors to</a></li>
+<li><a href="#party-metaphor">Party metaphor</a></li>
+<li><a href="#ion-channels">Ion channels</a></li>
+<li><a href="#conditions">Conditions</a></li>
+</ul></li>
+<li><a href="#action-potential">Action potential</a>
+<ul>
+<li><a href="#components">Components</a>
+<ul>
+<li><a href="#neuron-at-rest">Neuron at rest</a></li>
+<li><a href="#rising-phase">Rising phase</a></li>
+<li><a href="#peak">Peak</a></li>
+<li><a href="#falling-phase">Falling phase</a></li>
+<li><a href="#refractory-phase">Refractory phase</a></li>
+</ul></li>
+<li><a href="#aps-and-information-processing">APs and Information Processing</a></li>
+<li><a href="#generating-action-potentials">Generating action potentials</a></li>
+<li><a href="#propagation-of-action-potentials">Propagation of action potentials</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#chemical-communication-synaptic-transmission">Chemical communication: Synaptic transmission</a>
+<ul>
+<li><a href="#what-happens-when-ap-runs-out-of-axon">What happens when AP runs out of axon?</a></li>
+<li><a href="#receptorchannel-types">Receptor/channel types</a>
+<ul>
+<li><a href="#leakpassive">Leak/passive</a></li>
+<li><a href="#transportersexchangers">Transporters/exchangers</a></li>
+<li><a href="#ionotropic-receptors-receptor-ion-channel">Ionotropic receptors (receptor + ion channel)</a></li>
+<li><a href="#metabotropic-receptors-receptor-only">Metabotropic receptors (receptor only)</a></li>
+</ul></li>
+<li><a href="#receptors-generate-postsynaptic-potentials-psps">Receptors generate <em>postsynaptic potentials (PSPs)</em></a></li>
+<li><a href="#nts-inactivated">NTs inactivated</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+
+<div id="fun" class="section level1">
+<h1>Fun</h1>
+<div class="centered">
+<iframe src="https://player.vimeo.com/video/210206930" width="800" height="450" frameborder="0" allowfullscreen>
+</iframe>
+<p><a href="http://www.gregadunn.com/" class="uri">http://www.gregadunn.com/</a></p>
+</div>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/nvXuq9jRWKE" frameborder="0" allowfullscreen>
+</iframe>
+<p><a href="https://www.youtube.com/embed/nvXuq9jRWKE" class="uri">https://www.youtube.com/embed/nvXuq9jRWKE</a></p>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/w15F4r09Pro" frameborder="0" allowfullscreen>
+</iframe>
+<p><a href="https://www.youtube.com/embed/nvXuq9jRWKE" class="uri">https://www.youtube.com/embed/nvXuq9jRWKE</a></p>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/_ul7X5js1vE" frameborder="0" allowfullscreen>
+</iframe>
+<p><a href="https://www.youtube.com/embed/nvXuq9jRWKE" class="uri">https://www.youtube.com/embed/nvXuq9jRWKE</a></p>
+</div>
+<div id="cellular-neuroanatomy" class="section level1">
+<h1>Cellular neuroanatomy</h1>
+<div id="how-many-neurons-and-glia" class="section level2">
+<h2>How many neurons and glia?</h2>
+<ul>
+<li>Old “lore”: ~100 billion neurons</li>
+<li>New estimate <span class="citation">(Azevedo et al., 2009)</span>:
+<ul>
+<li>~86 +/- 8 billion neurons</li>
+<li>85 +/- 9 billion glia</li>
+</ul></li>
+</ul>
+<blockquote>
+<p><em>“These findings challenge the common view that humans stand out from other primates in their brain composition and indicate that, with regard to numbers of neuronal and nonneuronal cells, the human brain is an isometrically scaled-up primate brain.”</em></p>
+</blockquote>
+<p><a href="http://doi.org/10.1002/cne.21974"><span class="citation">(Azevedo et al., 2009)</span></a></p>
+<div class="figure" style="text-align: center">
+<img src="img/azevedo-et-al-fig-1.jpg" alt="[[@azevedo2009equal]](http://doi.org/10.1002/cne.21974)" width="699" />
+<p class="caption">
+<a href="http://doi.org/10.1002/cne.21974"><span class="citation">(Azevedo et al., 2009)</span></a>
+</p>
+</div>
+<p><img src="511-cells_files/figure-html/unnamed-chunk-2-1.png" style="display: block; margin: auto;" /></p>
+<p><img src="511-cells_files/figure-html/unnamed-chunk-3-1.png" style="display: block; margin: auto;" /></p>
+<p><img src="https://mitpress.mit.edu/sites/default/files/styles/large_book_cover/http/mitp-content-server.mit.edu%3A18180/books/covers/cover/%3Fcollid%3Dbooks_covers_0%26isbn%3D9780262034258%26type%3D.jpg?itok=cF8pgUnB" style="display: block; margin: auto;" /></p>
+</div>
+<div id="glia-neuroglia" class="section level2">
+<h2>Glia (neuroglia)</h2>
+<ul>
+<li>Functions
+<ul>
+<li>Structural support</li>
+<li>Metabolic support</li>
+<li>Brain development</li>
+</ul></li>
+</ul>
+<div id="astrocytes" class="section level3">
+<h3>Astrocytes</h3>
+<ul>
+<li>“Star-shaped”</li>
+<li>Probably most numerous cell type in CNS</li>
+<li>Physical and metabolic support
+<ul>
+<li>Support blood/brain barrier</li>
+<li>Regulate local blood flow</li>
+</ul></li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Human_astrocyte.png" alt="https://en.wikipedia.org/wiki/Astrocyte"  />
+<p class="caption">
+<a href="https://en.wikipedia.org/wiki/Astrocyte" class="uri">https://en.wikipedia.org/wiki/Astrocyte</a>
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Astrocyte5.jpg/1024px-Astrocyte5.jpg" alt="https://en.wikipedia.org/wiki/Astrocyte"  />
+<p class="caption">
+<a href="https://en.wikipedia.org/wiki/Astrocyte" class="uri">https://en.wikipedia.org/wiki/Astrocyte</a>
+</p>
+</div>
+<ul>
+<li>Interact with neurons
+<ul>
+<li>Ion (Ca++/K+) buffering</li>
+<li>Neurotransmitter (e.g., glutamate) buffering</li>
+</ul></li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Metabolic_interactions_between_astrocytes_and_neurons_with_major_reactions.png" alt="https://en.wikipedia.org/wiki/Astrocyte"  />
+<p class="caption">
+<a href="https://en.wikipedia.org/wiki/Astrocyte" class="uri">https://en.wikipedia.org/wiki/Astrocyte</a>
+</p>
+</div>
+<ul>
+<li>Shape brain development, contribute to <a href="https://en.wikipedia.org/wiki/Synaptic_plasticity">synaptic plasticity</a></li>
+<li>Disruption linked to cognitive impairment, disease <a href="http://doi.org/10.1038/nn.4142"><span class="citation">(Chung, Welsh, Barres, &amp; Stevens, 2015)</span></a></li>
+</ul>
+</div>
+<div id="myelinating-cells" class="section level3">
+<h3>Myelinating cells</h3>
+<div id="oligodendrocytes" class="section level4">
+<h4>Oligodendrocytes</h4>
+<ul>
+<li>In brain and spinal cord (CNS)</li>
+<li>1:many neurons</li>
+</ul>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Oligodendendrocytes_in_rat_brain.tif/lossy-page1-800px-Oligodendendrocytes_in_rat_brain.tif.jpg" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Neuron_with_oligodendrocyte_and_myelin_sheath.svg/615px-Neuron_with_oligodendrocyte_and_myelin_sheath.svg.png" alt="https://en.wikipedia.org/wiki/Oligodendrocyte"  />
+<p class="caption">
+<a href="https://en.wikipedia.org/wiki/Oligodendrocyte" class="uri">https://en.wikipedia.org/wiki/Oligodendrocyte</a>
+</p>
+</div>
+</div>
+<div id="schwann-cells" class="section level4">
+<h4>Schwann cells</h4>
+<ul>
+<li>In PNS</li>
+<li>1:1 neuron</li>
+<li>Facilitate neuro-regeneration</li>
+</ul>
+<p><img src="http://www.sciencellonline.com/media/catalog/product/cache/1/image/a6f8fb4f61eb724cff40f184d1fbcab0/m/1/m1700_3.jpg" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Neuron_Hand-tuned.svg/1920px-Neuron_Hand-tuned.svg.png" alt="https://en.wikipedia.org/wiki/Schwann_cell"  />
+<p class="caption">
+<a href="https://en.wikipedia.org/wiki/Schwann_cell" class="uri">https://en.wikipedia.org/wiki/Schwann_cell</a>
+</p>
+</div>
+<ul>
+<li>Mnemonics: COPS/SPOC</li>
+</ul>
+</div>
+</div>
+<div id="microglia" class="section level3">
+<h3>Microglia</h3>
+<ul>
+<li>Phagocytosis</li>
+<li>Clean-up damaged, dead tissue</li>
+<li>Role in ‘pruning’ of synapses in normal development</li>
+</ul>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Microglia_and_neurons.jpg/1200px-Microglia_and_neurons.jpg" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="neurons" class="section level2">
+<h2>Neurons</h2>
+<div id="what-makes-neurons-special" class="section level3">
+<h3>What makes neurons “special”</h3>
+<ul>
+<li>Long-lived (most generated b/w 3-25 weeks gestational age)</li>
+<li>Extended branching (dendrites and axons)</li>
+<li>Electrically excitable</li>
+<li>Connect to small #s of other cells via synapses</li>
+<li>Release neurotransmitters</li>
+</ul>
+</div>
+<div id="macrostructure" class="section level3">
+<h3>Macrostructure</h3>
+<ul>
+<li>Dendrites</li>
+<li>Soma</li>
+<li>Axons</li>
+<li>Terminal buttons (boutons)</li>
+</ul>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Complete_neuron_cell_diagram_en.svg/1280px-Complete_neuron_cell_diagram_en.svg.png" style="display: block; margin: auto;" /></p>
+<div id="dendrites" class="section level4">
+<h4>Dendrites</h4>
+<ul>
+<li>Majority of input to neuron</li>
+<li>Passive (do not generate current flows) vs. active (generate current flows like axons)</li>
+<li>“Polarized” or directional information flow</li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="https://i.stack.imgur.com/kfriB.jpg" alt="https://biology.stackexchange.com/questions/44082/can-the-dendrites-of-sensory-neurons-be-a-meter-long"  />
+<p class="caption">
+<a href="https://biology.stackexchange.com/questions/44082/can-the-dendrites-of-sensory-neurons-be-a-meter-long" class="uri">https://biology.stackexchange.com/questions/44082/can-the-dendrites-of-sensory-neurons-be-a-meter-long</a>
+</p>
+</div>
+<div id="dendritic-spines" class="section level5">
+<h5>Dendritic Spines</h5>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Dendritic_spines.jpg" style="display: block; margin: auto;" /></p>
+<ul>
+<li>Concentrate effects of local current flows, biochemical reactions</li>
+</ul>
+</div>
+</div>
+<div id="soma-cell-body" class="section level4">
+<h4>Soma (cell body)</h4>
+<ul>
+<li>Varied shapes</li>
+<li>Nucleus
+<ul>
+<li>Chromosomes</li>
+</ul></li>
+<li>Organelles
+<ul>
+<li>Mitochondria</li>
+<li>Smooth and Rough Endoplasmic reticulum (ER)</li>
+</ul></li>
+</ul>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Complete_neuron_cell_diagram_en.svg/1280px-Complete_neuron_cell_diagram_en.svg.png" style="display: block; margin: auto;" /></p>
+</div>
+<div id="axons" class="section level4">
+<h4>Axons</h4>
+<div id="axon-hillock" class="section level5">
+<h5>Axon hillock</h5>
+<ul>
+<li>Transitional zone between soma and axon</li>
+</ul>
+</div>
+<div id="initial-segment" class="section level5">
+<h5>Initial segment</h5>
+<ul>
+<li>Action potential generated</li>
+</ul>
+</div>
+<div id="nodes-of-ranvier" class="section level5">
+<h5>Nodes of Ranvier</h5>
+<ul>
+<li>Gaps in myelin sheath</li>
+<li>Neuronal membrane exposed to extracellular space</li>
+<li>Action potential regenerates</li>
+</ul>
+</div>
+<div id="axon-terminals" class="section level5">
+<h5>Axon terminals</h5>
+<p><img src="http://droualb.faculty.mjc.edu/Course%20Materials/Physiology%20101/Chapter%20Notes/Fall%202007/figure_07_02_labeled.jpg" style="display: block; margin: auto;" /></p>
+</div>
+<div id="synaptic-bouton-terminal-button" class="section level5">
+<h5>Synaptic bouton (terminal button)</h5>
+<ul>
+<li><em>Synapse</em> (~5-10K per neuron)</li>
+<li><em>Pre-</em> (sending side) and <em>postsynaptic</em> (receiving side) <em>membranes</em></li>
+<li><em>Synaptic cleft</em></li>
+<li><em>Synaptic vesicles</em>
+<ul>
+<li>Store/release neurotransmitters</li>
+</ul></li>
+<li><em>Autoreceptors</em> &amp; <em>transporters</em></li>
+</ul>
+<p><img src="http://antranik.org/wp-content/uploads/2012/04/synapse.jpg" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+</div>
+<div id="classifying-neurons" class="section level3">
+<h3>Classifying neurons</h3>
+<ul>
+<li>Functional role
+<ul>
+<li>Input (sensory), output (motor/secretory), interneurons</li>
+</ul></li>
+<li>Anatomy
+<ul>
+<li><em>Unipolar</em></li>
+<li><em>Bipolar</em></li>
+<li><em>Multipolar</em></li>
+</ul></li>
+</ul>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Neurons_uni_bi_multi_pseudouni.svg/2000px-Neurons_uni_bi_multi_pseudouni.svg.png" style="display: block; margin: auto;" /></p>
+<ul>
+<li>By specific anatomy
+<ul>
+<li>Pyramidal cells</li>
+<li>Stellate cells</li>
+<li>Purkinje cells</li>
+<li>Granule cells</li>
+</ul></li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/GolgiStainedPyramidalCell.jpg" alt="Pyramidal cell (Wikipedia)"  />
+<p class="caption">
+Pyramidal cell (Wikipedia)
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Pyramsdal-and-Spiny-stellate-cell.JPG" alt="Pyramidal cell (left) | Stellate cell (right)"  />
+<p class="caption">
+Pyramidal cell (left) | Stellate cell (right)
+</p>
+</div>
+<p><strong>Morphology, physiology, gene transcription</strong></p>
+<div class="figure" style="text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Neurons_uni_bi_multi_pseudouni.svg/2000px-Neurons_uni_bi_multi_pseudouni.svg.png" alt="[[@Zeng2017-sg]](http://doi.org/10.1038/nrn.2017.85)"  />
+<p class="caption">
+<a href="http://doi.org/10.1038/nrn.2017.85"><span class="citation">(Zeng &amp; Sanes, 2017)</span></a>
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fnrn.2017.85/MediaObjects/41583_2017_Article_BFnrn201785_Fig1_HTML.jpg?as=webp" alt="[[@Zeng2017-sg]](http://doi.org/10.1038/nrn.2017.85)"  />
+<p class="caption">
+<a href="http://doi.org/10.1038/nrn.2017.85"><span class="citation">(Zeng &amp; Sanes, 2017)</span></a>
+</p>
+</div>
+<blockquote>
+<p>Neurons can be classified using morphological, physiological and molecular criteria. a | Representative examples of five subclasses of cortical neurons obtained from brain slices. The cells were filled with biocytin, stained and imaged following patch clamp recording (see part b). Each subclass has distinct morphological features. For the four interneurons on the left, the dendrites are shown in dark grey and the axons in light grey. The soma of the 5-hydroxytryptamine receptor 3A-expressing (HTR3A+) sparse neuro- gliaform cell is located in layer 1, and its axons are also concentrated in this layer. The vasoactive intestinal peptide-expressing (VIP+) bipolar cell has a characteristic bipolar dendritic extension. The soma of the somatostatin-expressing (SST+) deep Martinotti cell is located in layer 5/6, and its axons extend upward into layer 1. The parvalbumin-expressing (PVALB+) basket cell has basket-like axonal arborisation. For the excitatory neuron on the right, the apical dendrites are shown in dark grey and the basal dendrites in light grey. This is a layer 5, thick-tufted cell from a retinol-binding protein 4 (Rbp4) gene promoter-driven Cre-expressing mouse. The cell features thick apical dendritic tufts extending into layer 1. These morphological features are consistent with those described in published reports49,130,140. b | Differential electrophysiological responses of the five subclasses of neurons shown in part a to square pulses of current in patch clamp recordings. For example, the HTR3A+ cell is late spiking, whereas the PVALB+ cell is fast spiking. These responses are consistent with those described in published reports49,130,140. c | Differential molecular signatures of the five subclasses of cortical neurons illustrated in part a derived from single-cell RNA-sequencing data. The violin plot shows the collective gene expression profile for each gene of all the cells in a type (cluster). We define the smallest discrete clusters of cells as types and the aggregates of types that share common features as classes or subclasses. Each transcriptomic cell type is shown as a column of data points with the same colour (the colour coding corresponds to that of the transcriptomic taxonomy shown in Fig. 5). Shown here are three interneuron cell types expressing Htr3a but notVip, six interneuron cell types expressing Vip, six interneuron cell types expressing Sst and seven interneuron cell types expressing Pvalb. All of the interneurons express glutamate decarboxylase 1 (Gad1). Also shown are eight layer 5 excitatory neuron types, all of which express solute carrier family 17 member 7 (Slc17a7). All of the cells express synaptosome-associated protein 25 (Snap25). The height of each ‘violin’-shaped data point represents the range of expression levels of the gene, and the width represents the proportion of cells displaying a particular level of expression. Parts a and b are from the Allen Cell Types Database (see Further Information). Part c is adapted with permission from Ref. 136.</p>
+<p><a href="http://doi.org/10.1038/nrn.2017.85"><span class="citation">(Zeng &amp; Sanes, 2017)</span></a></p>
+</blockquote>
+<div class="figure" style="text-align: center">
+<img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fnrn.2017.85/MediaObjects/41583_2017_Article_BFnrn201785_Fig6_HTML.jpg?as=webp" alt="[[@Zeng2017-sg]](http://doi.org/10.1038/nrn.2017.85)"  />
+<p class="caption">
+<a href="http://doi.org/10.1038/nrn.2017.85"><span class="citation">(Zeng &amp; Sanes, 2017)</span></a>
+</p>
+</div>
+<blockquote>
+<p>The figure shows a proposed hierarchical classification of cells in the retina (a) and cerebral cortex (b). In both areas, individual cell types can be grouped into classes, and intermediate levels of subclasses can be determined based on distinct morphological, physiological and molecular features. Higher-order groupings (such as those shown in part a, including sensory neurons, interneurons and projection neurons) may emerge once enough areas have been provided and compared. Types are the commonly recognized (‘validated’) terminal branches in the current hierarchical arrangement of cell types. Lower-order groupings into subtypes may largely be provisional until additional data are collected that could determine if they could form new types or should be merged into other types. Dashed lines indicate the presence of additional types that cannot be labelled due to lack of space. The question marks in part a indicate that the hierarchical relationship among the indicated cell types remains unclear. The question mark in part b indicates that the status of the cortical cell groups indicated may be either subclasses, types or subtypes. CT, cortico-thalamic neurons; DS, direction-selective retinal ganglion cells (RGCs); F, forkhead box P2 (Foxp2)-expressing RGCs; HTR3A, 5-hydroxytryptamine receptor 3A; ipRGC, intrinsically photosensitive RGCs; IT, intratelencephalic neurons; L4, layer 4; L6b, layer 6b subplate neurons; nGnG, non-GABAergic-non-glycinergic amacrine cells; ooDSGC, ON-OFF direction-selective RGCs; PT, pyramidal tract neurons; PVALB, parvalbumin; SST, somatostatin; VIP, vasoactive intestinal peptide.</p>
+<p><a href="http://doi.org/10.1038/nrn.2017.85"><span class="citation">(Zeng &amp; Sanes, 2017)</span></a></p>
+</blockquote>
+<div class="figure" style="text-align: center">
+<img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41593-018-0205-2/MediaObjects/41593_2018_205_Fig4_HTML.png?as=webp" alt="[[@Boldog2018-dj]](http://doi.org/10.1038/s41593-018-0205-2)"  />
+<p class="caption">
+<a href="http://doi.org/10.1038/s41593-018-0205-2"><span class="citation">(Boldog et al., 2018)</span></a>
+</p>
+</div>
+<blockquote>
+<p>a, Examples of different firing patterns induced by current injections in layer 1 interneurons. Firing pattern of an RC (top), an NGFC (middle), and an unidentified layer 1 interneuron (bottom). b, SVM-based wrapper-feature selection of electrophysiological parameters for the identification of RCs. Anatomically identified RCs (red dots) and other types of interneurons with known morphology (black dots) are mapped to the distribution of electrophysiological features ranked as the two best delineators by SVM. Black lines show the best hyperplane separating RCs from other interneuron types. c,d, RCs exhibit a distinct impedance profile relative to neurogliaform and other human interneurons in layer 1. (c) Individual responses of anatomically identified rosehip (red), neurogliaform (blue), and other (black) interneurons to current injections with an exponential chirp (0.2–200 Hz; top). Traces were normalized to the amplitude of the rosehip response at 200 Hz. (d) Left: normalized impedance (Z) profiles of distinct groups of interneurons. RCs (n=5) had higher impedance in the range of 0.9–12.4 Hz compared to neurogliaform (n=5) and other (n=5) interneurons. Shaded regions represent s.d. Right: impedances were similar at the lowest frequency (Z0.2 Hz; left), but resonance magnitude (Q) calculated as maximal impedance value divided by the impedance at lowest frequency (middle) and frequencies of maximal impedance (fmax; right) showed significant differences (P &lt; 0.05, ANOVA with Bonferroni post hoc correction). e, Automatized selection of recording periods for assessing subthreshold membrane potential oscillations (boxed segments) and detection of bursts (bars) for measuring intraburst spiking frequency demonstrated on an RC response to near-rheobasic stimulation showing stuttering firing behavior. f, Averaged fast fast Fourier transforms (FFTs) of membrane potential oscillations had higher power between 3.8 and 80 Hz in RCs compared to neurogliaform and other interneurons. g, Intraburst frequency of RCs peaked in the gamma range. AP, action potential.</p>
+<p><a href="http://doi.org/10.1038/s41593-018-0205-2"><span class="citation">(Boldog et al., 2018)</span></a></p>
+</blockquote>
+<blockquote>
+<p>We describe convergent evidence from transcriptomics, morphology, and physiology for a specialized GABAergic neuron subtype in human cortex…with anatomical features never described in rodents…These cells are therefore positioned for potent local control of distal dendritic computation in cortical pyramidal neurons.</p>
+<p><a href="http://doi.org/10.1038/s41593-018-0205-2"><span class="citation">(Boldog et al., 2018)</span></a></p>
+</blockquote>
+</div>
+</div>
+</div>
+<div id="neurophysiology" class="section level1">
+<h1>Neurophysiology</h1>
+<div id="why-animals-need-brains" class="section level2">
+<h2>Why animals need brains</h2>
+<p><a href="https://mitpress.mit.edu/neuraldesign%20">Sterling &amp; Laughlin, 2015</a></p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Escherichia_coli"><em>Escherichia Coli (E. Coli)</em></a>
+<ul>
+<li>Tiny, single-celled bacterium</li>
+<li>Feeds on glucose</li>
+<li>Chemo (“taste”) receptors on surface membrane</li>
+<li>Flagellum for movement</li>
+<li>Food concentration regulates duration of “move” phase</li>
+<li>~4 ms for chemical signal to diffuse from anterior/posterior</li>
+</ul></li>
+</ul>
+<div class="centered">
+<iframe width="800" height="450" src="https://www.youtube.com/embed/QGAm6hMysTA?rel=0" frameborder="0" allowfullscreen>
+</iframe>
+</div>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Paramecium"><em>Paramecium</em></a>
+<ul>
+<li>300K larger than E. Coli</li>
+<li>Propulsion through coordinated beating of cilia</li>
+<li>Diffusion from head to tail ~40 s!</li>
+<li>Use <em>electrical</em> signaling instead
+<ul>
+<li><span class="math inline">\(Na^+\)</span> channel opens (e.g., when stretched)</li>
+<li>Voltage-gated <span class="math inline">\(Ca^{++}\)</span> channels open, <span class="math inline">\(Ca^{++}\)</span> enters, triggers cilia</li>
+<li>Signal across cell within ms</li>
+</ul></li>
+</ul></li>
+</ul>
+<div class="centered">
+<iframe width="800" height="450" src="https://www.youtube.com/embed/GgZHziFWR7M?rel=0" frameborder="0" allowfullscreen>
+</iframe>
+</div>
+<div class="notes">
+<p>C Elegans swimming.</p>
+</div>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Caenorhabditis_elegans"><em>Caenorhabditis Elegans (C. Elegans)</em></a>
+<ul>
+<li>~10x larger than paramecium</li>
+<li>302 neurons + 56 glial cells (out of 959)</li>
+<li>Swim, forage, mate</li>
+</ul></li>
+</ul>
+</div>
+<div id="neural-communication-types" class="section level2">
+<h2>Neural communication types</h2>
+<ul>
+<li>Electrical
+<ul>
+<li>Fast(er)</li>
+<li>Within neurons</li>
+</ul></li>
+<li>Chemical
+<ul>
+<li>Diffusion slow(er)</li>
+<li>Within &amp; between neurons</li>
+<li>or other cells</li>
+</ul></li>
+</ul>
+</div>
+<div id="electrical-communication" class="section level2">
+<h2>Electrical communication</h2>
+<ul>
+<li>Electrical potential (== voltage)
+<ul>
+<li>Think of potential energy</li>
+<li>Voltage ~ pressure</li>
+<li>Energy that will be released if something changes</li>
+</ul></li>
+</ul>
+<div id="basic-principles" class="section level3">
+<h3>Basic principles</h3>
+<p><span class="math display">\[E = IR\]</span></p>
+<ul>
+<li>Current flow (<span class="math inline">\(I\)</span>) across membrane</li>
+<li>Membrane varies in resistance (<span class="math inline">\(R\)</span>) or permeability (<span class="math inline">\(1/R\)</span>) to ion flow</li>
+<li>Product <span class="math inline">\(IR\)</span> is electrical voltage <span class="math inline">\(E\)</span></li>
+</ul>
+<p><img src="https://ka-perseus-images.s3.amazonaws.com/16b4aecbaae9e2a5e0b50fc70ace724f471ad0c0.svg" style="display: block; margin: auto;" /></p>
+<ul>
+<li>Membrane stores (&amp; releases) charge like <em>capacitor</em></li>
+</ul>
+<p><img src="http://hyperphysics.phy-astr.gsu.edu/hbase/electric/imgele/capchg.png" style="display: block; margin: auto;" /></p>
+<p><img src="http://physics20project.weebly.com/uploads/1/6/4/8/16484122/1358825569.png" style="display: block; margin: auto;" /></p>
+</div>
+<div id="resting-potential" class="section level3">
+<h3>Resting potential</h3>
+<ul>
+<li>Measurement
+<ul>
+<li>Electrode on inside</li>
+<li>Electrode on outside (reference)</li>
+<li>Inside - Outside = potential</li>
+</ul></li>
+</ul>
+<p><img src="http://www.physiologyweb.com/lecture_notes/resting_membrane_potential/figs/measuring_the_membrane_potential_w.jpg" style="display: block; margin: auto;" /></p>
+<ul>
+<li>Neuron (and other cells) have <em>potential energy</em>
+<ul>
+<li>Inside is -60-70 mV, with respect to outside</li>
+<li>~1/20th typical <span class="math inline">\(1.5V\)</span> AAA battery</li>
+</ul></li>
+<li>Like charges repel, opposites attract, so
+<ul>
+<li>Positively charged particles pulled in</li>
+<li>Negatively charged particles pushed out</li>
+</ul></li>
+</ul>
+<div id="contributors-to" class="section level4">
+<h4>Contributors to</h4>
+<ul>
+<li>Ions
+<ul>
+<li>Potassium, <span class="math inline">\(K^+\)</span></li>
+<li>Sodium, <span class="math inline">\(Na^+\)</span></li>
+<li>Chloride, <span class="math inline">\(Cl^-\)</span></li>
+<li>Calcium, <span class="math inline">\(Ca^{++}\)</span></li>
+<li>Organic anions, <span class="math inline">\(A^-\)</span></li>
+</ul></li>
+<li>Ion channels</li>
+<li>Separation between charges</li>
+<li>A balance of forces</li>
+</ul>
+</div>
+<div id="party-metaphor" class="section level4">
+<h4>Party metaphor</h4>
+<ul>
+<li>Annie (<span class="math inline">\(A^-\)</span>) was having a party.
+<ul>
+<li>Used to date Nate (<span class="math inline">\(Na^+\)</span>), but now sees Karl (<span class="math inline">\(K^+\)</span>)</li>
+</ul></li>
+<li>Hired bouncers called
+<ul>
+<li>“The Channels”</li>
+<li>Let Karl and friends in or out, keep Nate out</li>
+</ul></li>
+<li>Annie’s friends (<span class="math inline">\(A^-\)</span>) and Karl’s (<span class="math inline">\(K^+\)</span>) mostly inside</li>
+<li>Nate and friends (<span class="math inline">\(Na^+\)</span>) mostly outside</li>
+<li>Claude/Claudia (<span class="math inline">\(Cl^-\)</span>) tagging along</li>
+</ul>
+<p><img src="http://3.bp.blogspot.com/_HtLvymcBlKo/TJJ9YcQNAtI/AAAAAAAAAB8/E2bzWvAzBew/s1600/10.png" style="display: block; margin: auto;" /></p>
+</div>
+<div id="ion-channels" class="section level4">
+<h4>Ion channels</h4>
+<ul>
+<li>Macromolecules that form openings in membrane</li>
+<li>Different types of subunits</li>
+</ul>
+<p><img src="http://www.nature.com/nrn/journal/v2/n4/images/nrn0401_240a_f1.gif" style="display: block; margin: auto;" /></p>
+<ul>
+<li>Selective</li>
+<li>Vary in permeability</li>
+<li>Types
+<ul>
+<li>Passive/leak</li>
+<li>Voltage-gated</li>
+<li>Ligand-gated (chemically-gated)</li>
+<li>Transporters</li>
+</ul></li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="http://www.zoology.ubc.ca/~gardner/F21-08.GIF" alt="http://www.zoology.ubc.ca/~gardner/F21-08.GIF"  />
+<p class="caption">
+<a href="http://www.zoology.ubc.ca/~gardner/F21-08.GIF" class="uri">http://www.zoology.ubc.ca/~gardner/F21-08.GIF</a>
+</p>
+</div>
+</div>
+<div id="conditions" class="section level4">
+<h4>Conditions</h4>
+<p><strong>Neuron at rest permeable to <span class="math inline">\(K^+\)</span></strong></p>
+<ul>
+<li>Passive <span class="math inline">\(K^+\)</span> channels open</li>
+<li><span class="math inline">\(K^+\)</span> flows out</li>
+<li><span class="math inline">\(K^+\)</span> outflow creates charge separation from A-</li>
+<li>Charge separation creates voltage</li>
+<li>Voltage prevents <span class="math inline">\(K^+\)</span> concentration from equalizing b/w inside and out</li>
+</ul>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Diffusion.en.svg/1000px-Diffusion.en.svg.png" style="display: block; margin: auto;" /></p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Bubble_bath.jpg" style="display: block; margin: auto;" /></p>
+<iframe width="844px" height="596px" frameborder="no" scrolling="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" src="https://lab.concord.org/embeddable.html#interactives/sam/diffusion/4-semipermeable.json">
+</iframe>
+<ul>
+<li>Force of diffusion
+<ul>
+<li><span class="math inline">\(K^+\)</span> moves from high concentration (~140 mM inside) to low (~4 mM outside)</li>
+<li>Movement of charged particles == current</li>
+</ul></li>
+<li>Electrostatic pressure
+<ul>
+<li>Voltage build-up stops <span class="math inline">\(K^+\)</span> outflow</li>
+<li>Voltage called “reversal potential”</li>
+<li><span class="math inline">\(K^+\)</span> positive, so reversal potential negative (w/ respect to outside)</li>
+<li>Reversal potential close to resting potential</li>
+</ul></li>
+</ul>
+<p><strong>Equilibrium potential and the Nernst equation</strong></p>
+<p><img src="http://www.physiologyweb.com/lecture_notes/resting_membrane_potential/figs/nernst_equation_v_k.gif" style="display: block; margin: auto;" /></p>
+<p><strong>Neuron at resting potential has low <span class="math inline">\(Na^+\)</span> permeability</strong></p>
+<ul>
+<li><p><span class="math inline">\(Na^+\)</span> concentrated outside neuron (~145 mM) vs. inside (~12 mM)</p></li>
+<li><p>Equilibrium potential is positive (with respect to outside)</p></li>
+<li><p>Some <span class="math inline">\(Na^+\)</span> flows <em>in</em></p></li>
+<li><p>Calculate net effects of ion flow across membrane via</p></li>
+<li><p>Goldman-Hodgkin-Katz equation</p></li>
+</ul>
+<p><img src="http://www.physiologyweb.com/calculators/figs/ghk_equation.gif" style="display: block; margin: auto;" /></p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/MembraneCircuit.jpg/500px-MembraneCircuit.jpg" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="http://3.bp.blogspot.com/_HtLvymcBlKo/TJJ9YcQNAtI/AAAAAAAAAB8/E2bzWvAzBew/s1600/10.png" alt="Ions contributing to the resting potential"  />
+<p class="caption">
+Ions contributing to the resting potential
+</p>
+</div>
+<p><strong>Summary of forces</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Ion</th>
+<th>Concentration gradient</th>
+<th>Electrostatic force</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(K^+\)</span></td>
+<td>Inside &gt;&gt; Outside, outward</td>
+<td>- (pulls <span class="math inline">\(K^+\)</span> in)</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(Na^+\)</span></td>
+<td>Outside &gt;&gt; Inside, inward</td>
+<td>- (pulls <span class="math inline">\(Na^+\)</span> in)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>“Driving Force” on a given ion depends on its equilibrium potential AND current membrane potential.</li>
+<li>Driving force &gt;&gt; if membrane potential far from equilibrium potential for ion.</li>
+<li><em>Equilibrium potential</em>
+<ul>
+<li>Voltage that keeps current (inside/outside) concentrations the same</li>
+<li>Voltage membrane potential will approach if <strong>only</strong> that ion flows</li>
+</ul></li>
+</ul>
+<p><strong><a href="http://www.physiologyweb.com/calculators/nernst_potential_calculator.html">Equilibrium potentials</a></strong></p>
+<p>Under typical conditions</p>
+<table>
+<thead>
+<tr class="header">
+<th>Ion</th>
+<th>[inside]</th>
+<th>[outside]</th>
+<th>Voltage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(K^+\)</span></td>
+<td>~150 mM</td>
+<td>~4 mM</td>
+<td>~ -90 mV</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(Na^+\)</span></td>
+<td>~10 mM</td>
+<td>~140 mM</td>
+<td>~ +55-60 mV</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(Cl-\)</span></td>
+<td>~10 mM</td>
+<td>~110 mM</td>
+<td>- 65-80 mV</td>
+</tr>
+</tbody>
+</table>
+<p><img src="http://www.physiologyweb.com/lecture_notes/resting_membrane_potential/figs/nernst_equation_v_k.gif" style="display: block; margin: auto;" /></p>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/PtKAeihnbv0" frameborder="0" allowfullscreen>
+</iframe>
+<!-- ### The action potential -->
+<!-- #### Review of initial conditions -->
+<!-- **The $K^+$ story** -->
+<!-- - $Na^+$/$K^+$ pump pulls $K^+$ **in** -->
+<!-- - $[K^+]_{in}$ (~150 mM) >> $[K^+]_{out}$ (~4 mM) -->
+<!-- - Outward flow of $K^+$ through passive/leak channels -->
+<!-- - Outflow stops when *membrane potential*, $V_m$ = *equilibrium potential* for $K^+$ -->
+<!-- **Equilibrium potential** -->
+<!-- - Voltage ($V_{K}$) that keeps system in equilibrium -->
+<!--     - $[K^+]_{in}$ >> $[K^+]_{out}$ -->
+<!-- - Nernst equation -->
+<!--     - $V_{K}$ = $\frac{RT}{(+1)F}ln(\frac{[K^+]_{out}}{[K^+]_{in}})$ -->
+<!--     - $V_{K}$ = ~ -90 mV -->
+<!--     - Negative in/positive out keeps in/out concentration gradient -->
+<!-- - $K^+$ flows out through passive/leak channels; most remains near membrane -->
+<!-- - Separation from $A^-$ creates charge $\frac{K+K+K+K+K+}{A-A-A-A-A-}$ along capacitor-like membrane -->
+<!-- - $V_m$ -> $V_{K}$ -->
+<!-- **The $Na^+$ story** -->
+<!-- - $Na^+$/$K^+$ pump pushes $Na^+$ **out** -->
+<!-- - $[Na^+]_{in}$ (~10 mM) << $[Na^+]_{out}$ (~140 mM) -->
+<!-- - Equilibrium potential for $Na^+$, $V_{Na}$ = ~ +55 mV -->
+<!--     - Inside positive/outside negative to maintain outside > inside concentration gradient -->
+<!-- - If $Na^+$ alone, $V_m$ -> $V_{Na}$ (~ +55 mV) -->
+<!-- ## "Resting" potential -->
+<!-- - Sum of outward $K^+$ and inward $Na^+$ -->
+<!--     - Membrane more permeable to $K^+$ than $Na^+$, $p_{$K^+}$>$p_{Na^+}$ -->
+<!--     - Outward flow of $K^+$ > inward flow of $Na^+$ -->
+<!--     - Resting potential (~-70 mV) closer to $V_{K}$ (-90 mV) than $V_{Na}$ (+55 mV) -->
+<!-- - Goldman-Hodgkin-Katz equation -->
+<!--     - $V_m = \frac{RT}{F}ln(\frac{p_{K^+}[K^+]_{out}+p_{Na^+}[Na^+]_{out}}{p_{K^+}[K^+]_{in}+p_{Na^+}[Na^+]_{in}})$ -->
+<!-- ### "Driving force" and equilibrium potential -->
+<!-- - "Driving Force" on a given ion depends on difference between -->
+<!--     - Equilibrium potential for given ion -->
+<!--     - Membrane potential = effects of all ions -->
+<!-- - Anthropomorphic metaphor -->
+<!--     - $K^+$ "wants" to flow out (pull neuron toward $V_{K}$) -->
+<!--     - $Na^+$ "wants" to flow in (pull neuron toward $V_{Na}$) -->
+<!--     - Strength of that "desire" depends on distance from equilibrium potential -->
+</div>
+</div>
+<div id="action-potential" class="section level3">
+<h3>Action potential</h3>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Action_potential.svg/300px-Action_potential.svg.png" style="display: block; margin: auto;" /></p>
+<ul>
+<li>Rapid rise, fall of membrane potential</li>
+<li>Threshold of excitation</li>
+<li>Increase (rising phase/depolarization)</li>
+<li>Peak
+<ul>
+<li>at positive voltage</li>
+</ul></li>
+<li>Decline (falling phase/repolarization)</li>
+<li>Return to resting potential (refractory period)</li>
+</ul>
+<div id="components" class="section level4">
+<h4>Components</h4>
+<table>
+<colgroup>
+<col width="57%" />
+<col width="42%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Phase</th>
+<th>Neuron State</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Resting potential</td>
+<td>Passive <span class="math inline">\(K^+\)</span> allow outward flow; passive <span class="math inline">\(Na^+\)</span> allow inward flow; <span class="math inline">\(Na^+\)</span>/<span class="math inline">\(K^+\)</span> moves <span class="math inline">\(K^+\)</span> in and <span class="math inline">\(Na^+\)</span> out</td>
+</tr>
+<tr class="even">
+<td>Rise to threshold</td>
+<td>+ input makes membrane potential more +</td>
+</tr>
+<tr class="odd">
+<td>Rising phase</td>
+<td>Voltage-gated <span class="math inline">\(Na^+\)</span> channels open, <span class="math inline">\(Na^+\)</span> enters</td>
+</tr>
+<tr class="even">
+<td>Peak</td>
+<td>Voltage-gated <span class="math inline">\(Na^+\)</span> channels close and deactivate; voltage-gated <span class="math inline">\(K^+\)</span> channels open</td>
+</tr>
+<tr class="odd">
+<td>Falling phase</td>
+<td><span class="math inline">\(K^+\)</span> exits</td>
+</tr>
+<tr class="even">
+<td>Refractory period</td>
+<td><span class="math inline">\(Na^+\)</span>/<span class="math inline">\(K^+\)</span> pump restores [<span class="math inline">\(Na^+\)</span>], [<span class="math inline">\(K^+\)</span>]; voltage-gated <span class="math inline">\(K^+\)</span> channels close</td>
+</tr>
+<tr class="odd">
+<td>Resting potential</td>
+<td>Passive <span class="math inline">\(K^+\)</span> allow outward flow; passive <span class="math inline">\(Na^+\)</span> allow inward flow; <span class="math inline">\(Na^+\)</span>/<span class="math inline">\(K^+\)</span> moves <span class="math inline">\(K^+\)</span> in and <span class="math inline">\(Na^+\)</span> out</td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Action_potential.svg/300px-Action_potential.svg.png" style="display: block; margin: auto;" /></p>
+<p><img src="http://hyperphysics.phy-astr.gsu.edu/hbase/Biology/imgbio/actpot4.gif" style="display: block; margin: auto;" /></p>
+<div id="neuron-at-rest" class="section level5">
+<h5>Neuron at rest</h5>
+<ul>
+<li>Driving force on <span class="math inline">\(K^+\)</span> weakly out
+<ul>
+<li>-70 mV - (-90 mV) = +20 mV</li>
+</ul></li>
+<li>Driving force on <span class="math inline">\(Na^+\)</span> strongly in
+<ul>
+<li>-70 mV - (+55 mV) = -125 mV</li>
+</ul></li>
+<li><span class="math inline">\(Na^+\)</span>/<span class="math inline">\(K^+\)</span> pump maintains concentrations</li>
+</ul>
+<p><img src="http://hyperphysics.phy-astr.gsu.edu/hbase/Biology/imgbio/actpot4.gif" style="display: block; margin: auto;" /></p>
+<hr />
+<table>
+<thead>
+<tr class="header">
+<th>Phase</th>
+<th>Ion</th>
+<th>Driving force</th>
+<th>Flow direction</th>
+<th>Flow magnitude</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Rest</td>
+<td><span class="math inline">\(K^+\)</span></td>
+<td>20 mV</td>
+<td>out</td>
+<td>small</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><span class="math inline">\(Na^+\)</span></td>
+<td>125 mV</td>
+<td>in</td>
+<td>small</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="rising-phase" class="section level5">
+<h5>Rising phase</h5>
+<ul>
+<li>Voltage-gated <span class="math inline">\(Na^+\)</span> channels open</li>
+<li>Membrane permeability to <span class="math inline">\(Na^+\)</span> increases
+<ul>
+<li><span class="math inline">\(Na^+\)</span> inflow through passive + voltage-gated channels</li>
+<li>continued <span class="math inline">\(K^+\)</span> outflow through passive channels</li>
+</ul></li>
+</ul>
+<p><img src="http://hyperphysics.phy-astr.gsu.edu/hbase/Biology/imgbio/actpot4.gif" style="display: block; margin: auto;" /></p>
+<hr />
+<table>
+<thead>
+<tr class="header">
+<th>Phase</th>
+<th>Ion</th>
+<th>Driving force</th>
+<th>Flow direction</th>
+<th>Flow magnitude</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Rising</td>
+<td><span class="math inline">\(K^+\)</span></td>
+<td>growing</td>
+<td>out</td>
+<td>growing</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><span class="math inline">\(Na^+\)</span></td>
+<td>shrinking</td>
+<td>in</td>
+<td>high</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="peak" class="section level5">
+<h5>Peak</h5>
+<ul>
+<li>Membrane permeability to <span class="math inline">\(Na^+\)</span> reverts to resting state
+<ul>
+<li>Voltage-gated <span class="math inline">\(Na^+\)</span> channels close &amp; inactivate</li>
+<li>Slow inflow due to small driving force (+30 mV - 55mV = -25 mv)</li>
+</ul></li>
+<li>Membrane permeability to <span class="math inline">\(K^+\)</span> increases
+<ul>
+<li>Voltage-gated <span class="math inline">\(K^+\)</span> channels open</li>
+<li>Fast outflow due to strong driving force (+30 mv - (-90 mv) = +120 mV)</li>
+</ul></li>
+</ul>
+<p><img src="http://hyperphysics.phy-astr.gsu.edu/hbase/Biology/imgbio/actpot4.gif" style="display: block; margin: auto;" /></p>
+<hr />
+<table>
+<thead>
+<tr class="header">
+<th>Phase</th>
+<th>Ion</th>
+<th>Driving force</th>
+<th>Flow direction</th>
+<th>Flow magnitude</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Peak</td>
+<td><span class="math inline">\(K^+\)</span></td>
+<td>120 mV</td>
+<td>out</td>
+<td>high</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><span class="math inline">\(Na^+\)</span></td>
+<td>20 mV</td>
+<td>in</td>
+<td>small</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="falling-phase" class="section level5">
+<h5>Falling phase</h5>
+<ul>
+<li><span class="math inline">\(K^+\)</span> outflow
+<ul>
+<li>Through voltage-gated <span class="math inline">\(K^+\)</span> and passive <span class="math inline">\(K^+\)</span> channels</li>
+</ul></li>
+<li><span class="math inline">\(Na^+\)</span> inflow
+<ul>
+<li>Through passive channels only</li>
+</ul></li>
+</ul>
+<p><img src="http://hyperphysics.phy-astr.gsu.edu/hbase/Biology/imgbio/actpot4.gif" style="display: block; margin: auto;" /></p>
+<hr />
+<table>
+<thead>
+<tr class="header">
+<th>Phase</th>
+<th>Ion</th>
+<th>Driving force</th>
+<th>Flow direction</th>
+<th>Flow magnitude</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Falling</td>
+<td>K</td>
+<td>shrinking</td>
+<td>out</td>
+<td>high</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><span class="math inline">\(Na^+\)</span></td>
+<td>growing</td>
+<td>in</td>
+<td>small</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="refractory-phase" class="section level5">
+<h5>Refractory phase</h5>
+<p><strong>Absolute</strong></p>
+<ul>
+<li>Cannot generate action potential (AP) no matter the size of the stimulus</li>
+<li>Membrane potential more negative (-90 mV) than at rest (-70 mV)</li>
+<li>Voltage-gated <span class="math inline">\(Na^+\)</span> channels still inactivated
+<ul>
+<li>Driving force on <span class="math inline">\(Na^+\)</span> high (-90 mv - 55 mV = -145 mV), but too bad</li>
+</ul></li>
+<li>Voltage-gated <span class="math inline">\(K^+\)</span> channels closing
+<ul>
+<li>Driving force on <span class="math inline">\(K^+\)</span> tiny or absent</li>
+</ul></li>
+<li><span class="math inline">\(Na^+\)</span>/<span class="math inline">\(K^+\)</span> pump restoring concentration balance</li>
+</ul>
+<p><img src="http://hyperphysics.phy-astr.gsu.edu/hbase/Biology/imgbio/actpot4.gif" style="display: block; margin: auto;" /></p>
+<p><strong>Relative</strong></p>
+<ul>
+<li>Can generate AP with larg(er) stimulus</li>
+<li>Some voltage-gated <span class="math inline">\(Na^+\)</span> ‘de-inactivate,’ can open if
+<ul>
+<li>Larger input</li>
+<li>Membrane potential is more negative than resting potential</li>
+</ul></li>
+</ul>
+<p><img src="http://hyperphysics.phy-astr.gsu.edu/hbase/Biology/imgbio/actpot4.gif" style="display: block; margin: auto;" /></p>
+<table>
+<thead>
+<tr class="header">
+<th>Phase</th>
+<th>Ion</th>
+<th>Driving force</th>
+<th>Flow direction</th>
+<th>Flow magnitude</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Refractory</td>
+<td>K</td>
+<td>~0 mV</td>
+<td>out</td>
+<td>small</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><span class="math inline">\(Na^+\)</span></td>
+<td>145 mV</td>
+<td>in</td>
+<td>small</td>
+</tr>
+</tbody>
+</table>
+<iframe width="800" height="550" src="https://phet.colorado.edu/sims/html/neuron/latest/neuron_en.html" frameborder="0" allowfullscreen>
+</iframe>
+</div>
+</div>
+<div id="aps-and-information-processing" class="section level4">
+<h4>APs and Information Processing</h4>
+<ul>
+<li>AP amplitudes don’t vary (much)
+<ul>
+<li>All or none</li>
+<li><span class="math inline">\(V_{K}\)</span> and <span class="math inline">\(V_{Na}\)</span> don’t vary much b/c <span class="math inline">\(Na^+\)</span>/<span class="math inline">\(K^+\)</span> pump always working</li>
+</ul></li>
+<li>AP frequency and timing vary
+<ul>
+<li>Rate vs. timing codes</li>
+<li>Same rates, but different timing</li>
+<li>“Grandmother” cells and single spikes</li>
+</ul></li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="http://www.frontiersin.org/files/Articles/490/fnins-03-002/image_n/fnins-03-002-g001.gif" alt="[[@eyherabide_bursts_2009]](http://dx.doi.org/10.3389/neuro.01.002.2009)"  />
+<p class="caption">
+<a href="http://dx.doi.org/10.3389/neuro.01.002.2009"><span class="citation">(Eyherabide et al., 2009)</span></a>
+</p>
+</div>
+</div>
+<div id="generating-action-potentials" class="section level4">
+<h4>Generating action potentials</h4>
+<ul>
+<li><em>Axon hillock</em>
+<ul>
+<li>Portion of soma adjacent to axon</li>
+<li>Integrates/sums input to soma</li>
+</ul></li>
+<li><em>Axon initial segment</em>
+<ul>
+<li>Umyelinated portion of axon adjacent to soma</li>
+<li>Voltage-gated <span class="math inline">\(Na^+\)</span> and <span class="math inline">\(K^+\)</span> channels exposed</li>
+<li>If sum of input to soma &gt; threshold, voltage-gated <span class="math inline">\(Na^+\)</span> channels open</li>
+</ul></li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Axon_Hillock.png" alt="Wikipedia"  />
+<p class="caption">
+Wikipedia
+</p>
+</div>
+</div>
+<div id="propagation-of-action-potentials" class="section level4">
+<h4>Propagation of action potentials</h4>
+<ul>
+<li>Propagation
+<ul>
+<li>move down axon, away from soma, toward axon terminals.</li>
+</ul></li>
+<li>Unmyelinated axon
+<ul>
+<li>Each segment “excites” the next</li>
+</ul></li>
+</ul>
+<iframe width="800" height="600" src="https://www.youtube.com/embed/H0K2dvB-7WY" frameborder="0" allowfullscreen>
+</iframe>
+<ul>
+<li>Myelinated axon
+<ul>
+<li>AP “jumps” between <em>Nodes of Ranvier</em> –&gt; <em>saltatory conduction</em></li>
+<li>Nodes of Ranvier == unmyelinated sections of axon</li>
+<li>voltage-gated <span class="math inline">\(Na^+\)</span>, <span class="math inline">\(K^+\)</span> channels exposed</li>
+<li>Current flows through myelinated segments</li>
+</ul></li>
+<li>Why does AP flow in one direction, away from soma?
+<ul>
+<li>Soma does not have (many) voltage-gated <span class="math inline">\(Na^+\)</span> channels.</li>
+<li>Soma is not myelinated.</li>
+<li>Refractory periods mean polarization only in one direction.</li>
+</ul></li>
+</ul>
+<p><strong>Conduction velocities</strong></p>
+<iframe width="700" height="450" src="https://en.wikipedia.org/wiki/Nerve_conduction_velocity" frameborder="0" allowfullscreen>
+</iframe>
+<p><strong>Hodgkin-Huxley Equations</strong></p>
+<iframe width="700" height="450" src="https://en.wikipedia.org/wiki/Hodgkin–Huxley_model" frameborder="0" allowfullscreen>
+</iframe>
+<ul>
+<li>Measuring APs in actual neurons. <a href="https://www.youtube.com/embed/k48jXzFGMc8" class="uri">https://www.youtube.com/embed/k48jXzFGMc8</a></li>
+<li>Interview with Sir Alan Hodgkin, <a href="https://www.youtube.com/embed/vSIXbfunHYg" class="uri">https://www.youtube.com/embed/vSIXbfunHYg</a></li>
+<li>Simulations
+<ul>
+<li><a href="http://alexhwilliams.info/code/pyneuron_morph.html" class="uri">http://alexhwilliams.info/code/pyneuron_morph.html</a></li>
+<li><a href="http://briansimulator.org/demo/" class="uri">http://briansimulator.org/demo/</a></li>
+<li><a href="http://www.gribblelab.org/compneuro/3_Modelling_Action_Potentials.html" class="uri">http://www.gribblelab.org/compneuro/3_Modelling_Action_Potentials.html</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="chemical-communication-synaptic-transmission" class="section level2">
+<h2>Chemical communication: Synaptic transmission</h2>
+<ul>
+<li>Synapse permits neuron to pass electrical or chemical messages to another neuron or target cell (muscle, gland, etc.)</li>
+</ul>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Blausen_0843_SynapseTypes.png" style="display: block; margin: auto;" /></p>
+<ul>
+<li>Gap junctions
+<ul>
+<li><em>Cytosol</em> flows through adjacent neurons</li>
+<li>Bidirectional ion flow (current) between neurons</li>
+</ul></li>
+</ul>
+<div id="what-happens-when-ap-runs-out-of-axon" class="section level3">
+<h3>What happens when AP runs out of axon?</h3>
+<ul>
+<li>Rapid change in voltage triggers neurotransmitter (NT) release</li>
+<li>Voltage-gated calcium Ca++ channels open</li>
+<li>Ca++ causes <em>synaptic vesicles</em> to bind with presynaptic membrane, merge</li>
+<li>NTs diffuse across <em>synaptic cleft</em></li>
+<li>NTs bind with <em>receptors</em> on <em>postsynaptic membrane</em></li>
+<li>NTs unbind, are inactivated</li>
+</ul>
+</div>
+<div id="receptorchannel-types" class="section level3">
+<h3>Receptor/channel types</h3>
+<div id="leakpassive" class="section level4">
+<h4>Leak/passive</h4>
+<ul>
+<li>Vary in selectivity, permeability</li>
+</ul>
+</div>
+<div id="transportersexchangers" class="section level4">
+<h4>Transporters/exchangers</h4>
+<ul>
+<li>Ionic
+<ul>
+<li><span class="math inline">\(Na^+\)</span>/<span class="math inline">\(K^+\)</span></li>
+</ul></li>
+<li>Chemical
+<ul>
+<li>e.g., Dopamine transporter (DAT)</li>
+</ul></li>
+</ul>
+</div>
+<div id="ionotropic-receptors-receptor-ion-channel" class="section level4">
+<h4>Ionotropic receptors (receptor + ion channel)</h4>
+<ul>
+<li>Ligand-gated</li>
+<li>Open/close channel</li>
+</ul>
+</div>
+<div id="metabotropic-receptors-receptor-only" class="section level4">
+<h4>Metabotropic receptors (receptor only)</h4>
+<ul>
+<li>Triggers 2nd messengers</li>
+<li>G-proteins</li>
+<li>Open/close adjacent channels, change metabolism</li>
+</ul>
+<p><img src="https://classconnection.s3.amazonaws.com/94/flashcards/1500094/jpg/chemical_synapse1355159626230.jpg" style="display: block; margin: auto;" /></p>
+<p><img src="http://webvision.med.utah.edu/imageswv/GLU5.jpeg" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="receptors-generate-postsynaptic-potentials-psps" class="section level3">
+<h3>Receptors generate <em>postsynaptic potentials (PSPs)</em></h3>
+<ul>
+<li>Small voltage changes</li>
+<li>Amplitude scales with # of receptors activated</li>
+<li><em>Excitatory PSPs (EPSPs)</em>
+<ul>
+<li>Depolarize neuron (make more +)</li>
+</ul></li>
+<li><em>Inhibitory (IPSPs)</em>
+<ul>
+<li>Hyperpolarize neuron (make more -)</li>
+</ul></li>
+</ul>
+</div>
+<div id="nts-inactivated" class="section level3">
+<h3>NTs inactivated</h3>
+<ul>
+<li>Buffering
+<ul>
+<li>e.g., glutamate into astrocytes</li>
+</ul></li>
+<li>Reuptake via transporters
+<ul>
+<li>e.g., serotonin via serotonin transporter (SERT)</li>
+</ul></li>
+<li>Enzymatic degradation
+<ul>
+<li>e.g., acetylcholine esterase (AChE) degrades acetylcholine (ACh)</li>
+</ul></li>
+</ul>
+<hr />
+</div>
+</div>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1 class="unnumbered">References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
+<div id="ref-azevedo2009equal" class="csl-entry">
+Azevedo, F. A., Carvalho, L. R., Grinberg, L. T., Farfel, J. M., Ferretti, R. E., Leite, R. E., … others. (2009). Equal numbers of neuronal and nonneuronal cells make the human brain an isometrically scaled-up primate brain. <em>Journal of Comparative Neurology</em>, <em>513</em>(5), 532–541. <a href="https://doi.org/10.1002/cne.21974">https://doi.org/10.1002/cne.21974</a>
+</div>
+<div id="ref-Boldog2018-dj" class="csl-entry">
+Boldog, E., Bakken, T. E., Hodge, R. D., Novotny, M., Aevermann, B. D., Baka, J., … Tamás, G. (2018). Transcriptomic and morphophysiological evidence for a specialized human cortical <span>GABAergic</span> cell type. <em>Nature Neuroscience</em>, <em>21</em>(9), 1185–1195. <a href="https://doi.org/10.1038/s41593-018-0205-2">https://doi.org/10.1038/s41593-018-0205-2</a>
+</div>
+<div id="ref-chung_glia_2015" class="csl-entry">
+Chung, W.-S., Welsh, C. A., Barres, B. A., &amp; Stevens, B. (2015). Do glia drive synaptic and cognitive impairment in disease? <em>Nature Neuroscience</em>, <em>18</em>(11), 1539–1545. <a href="https://doi.org/10.1038/nn.4142">https://doi.org/10.1038/nn.4142</a>
+</div>
+<div id="ref-eyherabide_bursts_2009" class="csl-entry">
+Eyherabide, H. G., Rokem, A., Herz, A. V. M., Samengo, I., Eyherabide, H. G., Rokem, A., … Samengo, I. (2009). Bursts generate a non-reducible spike-pattern code. <em>Frontiers in Neuroscience</em>, <em>3</em>, 1. <a href="https://doi.org/10.3389/neuro.01.002.2009">https://doi.org/10.3389/neuro.01.002.2009</a>
+</div>
+<div id="ref-Zeng2017-sg" class="csl-entry">
+Zeng, H., &amp; Sanes, J. R. (2017). Neuronal cell-type classification: Challenges, opportunities and the path forward. <em>Nature Reviews. Neuroscience</em>. <a href="https://doi.org/10.1038/nrn.2017.85">https://doi.org/10.1038/nrn.2017.85</a>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+<script>
+$(document).ready(function () {
+  window.initializeCodeFolding("hide" === "show");
+});
+</script>
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -68,6 +68,8 @@ title: "Schedule"
     + BW 3:61-78.
     + (Optional) Zeng, H., & Sanes, J. R. (2017). Neuronal cell-type classification: challenges, opportunities and the path forward. *Nature Reviews Neuroscience*. Retrieved from <https://dx.doi.org/10.1038/nrn.2017.85>.
     + (Optional) Oliveira, J. F., Sardinha, V. M., Guerra-Gomes, S., Araque, A., & Sousa, N. (2015). Do stars govern our actions? Astrocyte involvement in rodent behavior. *Trends in Neurosciences*, *38*(9), 535–549. Retrieved from <https://dx.doi.org/10.1016/j.tins.2015.07.006>.
+- Materials
+    - [Notes](lectures/511-cells.html). [PDF](lectures/511-cells.pdf)
     
 ### Friday, September 10
 
