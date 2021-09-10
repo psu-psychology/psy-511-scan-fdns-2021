@@ -2,7 +2,7 @@
 title: "[PSY 511](https://psu-psychology.github.io/psy-511-scan-fdns-2021)"
 subtitle: "Cells of the nervous system"
 author: "Rick O. Gilmore"
-date: "2021-09-10 13:59:29"
+date: "2021-09-10 14:07:52"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -405,7 +405,10 @@ $$E = IR$$
 - Macromolecules that form openings in membrane
 - Different types of subunits
 
-<img src="http://www.nature.com/nrn/journal/v2/n4/images/nrn0401_240a_f1.gif" style="display: block; margin: auto;" />
+<div class="figure" style="text-align: center">
+<img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2F35067500/MediaObjects/41583_2001_Article_BF35067500_Fig1_HTML.gif?as=webp" alt="[[@Moss2001-tb]](http://dx.doi.org/10.1038/35067500)"  />
+<p class="caption">[[@Moss2001-tb]](http://dx.doi.org/10.1038/35067500)</p>
+</div>
 
 - Selective
 - Vary in permeability
