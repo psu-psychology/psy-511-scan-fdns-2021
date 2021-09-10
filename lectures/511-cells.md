@@ -2,7 +2,7 @@
 title: "[PSY 511](https://psu-psychology.github.io/psy-511-scan-fdns-2021)"
 subtitle: "Cells of the nervous system"
 author: "Rick O. Gilmore"
-date: "2021-09-07 07:55:22"
+date: "2021-09-10 13:59:29"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css

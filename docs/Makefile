@@ -32,10 +32,13 @@ clean_page :
 clean : clean_page clean_lectures clean_assignments
 
 all : lectures_html lectures_pdf assignments_html syllabus_pdf
+
+site: all
+	Rscript -e 'rmarkdown::render_site()'
 	
-%.html : %.Rmd
+%.html : %.Rmd $(LECTURES_DIR)/css/ioslides.css $(LECTURES_DIR)/bib/bibliography.bib
 	Rscript -e 'rmarkdown::render("$<", output_format = "html_document")'
 	
-%.pdf : %.Rmd
+%.pdf : %.html
 	Rscript -e 'pagedown::chrome_print("$<", wait = 2)'
 	
