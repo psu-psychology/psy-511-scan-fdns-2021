@@ -77,6 +77,8 @@ title: "Schedule"
     + Cellular neuroscience (resting potential)
 - Read/Watch
     + BW 3:78-92.
+- Materials
+    - [Notes](lectures/511-cells.html#neurophysiology)
     
 ---
 

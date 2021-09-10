@@ -2,7 +2,7 @@
 title: "[PSY 511](https://psu-psychology.github.io/psy-511-scan-fdns-2021)"
 subtitle: "Cells of the nervous system"
 author: "Rick O. Gilmore"
-date: "2021-09-10 14:07:52"
+date: "2021-09-10 14:26:28"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -169,13 +169,13 @@ output:
 - "Polarized" or directional information flow
 
 <div class="figure" style="text-align: center">
-<img src="https://i.stack.imgur.com/kfriB.jpg" alt="https://biology.stackexchange.com/questions/44082/can-the-dendrites-of-sensory-neurons-be-a-meter-long"  />
+<img src="https://i.stack.imgur.com/kfriB.jpg" alt="https://biology.stackexchange.com/questions/44082/can-the-dendrites-of-sensory-neurons-be-a-meter-long" width="800px" />
 <p class="caption">https://biology.stackexchange.com/questions/44082/can-the-dendrites-of-sensory-neurons-be-a-meter-long</p>
 </div>
 
 ##### Dendritic Spines
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Dendritic_spines.jpg" style="display: block; margin: auto;" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Dendritic_spines.jpg" width="600px" style="display: block; margin: auto;" />
 
 - Concentrate effects of local current flows, biochemical reactions
 
@@ -217,9 +217,19 @@ output:
 - *Synaptic cleft*
 - *Synaptic vesicles*
     + Store/release neurotransmitters
-- *Autoreceptors* & *transporters*
 
 <img src="http://antranik.org/wp-content/uploads/2012/04/synapse.jpg" style="display: block; margin: auto;" />
+
+- *Autoreceptors* & *transporters*
+
+<div class="figure" style="text-align: center">
+<img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fnrn1008/MediaObjects/41583_2003_Article_BFnrn1008_Fig1_HTML.jpg?as=webp" alt="[[@Torres2003-ry]](http://dx.doi.org/10.1038/nrn1008)"  />
+<p class="caption">[[@Torres2003-ry]](http://dx.doi.org/10.1038/nrn1008)</p>
+</div>
+
+>Monoamine transporters are localized to perisynaptic sites, where they are crucial for the termination of monoamine transmission and the maintenance of presynaptic monoamine storage. Several selective pharmacological agents acting at each monoamine transporter are shown. Amph., amphetamine; DA, dopamine; DAT, Dopamine transporter; L-DOPA, L-3,4-dihydroxyphenylalanine; 5-HT, 5-hydroxytryptamine; MPP+, 1-methyl-4-phenylpyridinium; MDMA, (+)-3,4-methylenedioxymethamphetamine; NA, noradrenaline; NET, noradrenaline transporter; SERT, 5-HT transporter.
+>
+> [[@Torres2003-ry]](http://dx.doi.org/10.1038/nrn1008)
 
 ### Classifying neurons
 

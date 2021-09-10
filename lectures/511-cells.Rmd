@@ -198,13 +198,13 @@ knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/a/
 - Passive (do not generate current flows) vs. active (generate current flows like axons)
 - "Polarized" or directional information flow
 
-```{r, fig.cap="https://biology.stackexchange.com/questions/44082/can-the-dendrites-of-sensory-neurons-be-a-meter-long"}
+```{r, fig.cap="https://biology.stackexchange.com/questions/44082/can-the-dendrites-of-sensory-neurons-be-a-meter-long", out.width="800px"}
 knitr::include_graphics("https://i.stack.imgur.com/kfriB.jpg")
 ```
 
 ##### Dendritic Spines
 
-```{r}
+```{r, out.width="600px"}
 knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/b/b1/Dendritic_spines.jpg")
 ```
 
@@ -252,11 +252,20 @@ knitr::include_graphics("http://droualb.faculty.mjc.edu/Course%20Materials/Physi
 - *Synaptic cleft*
 - *Synaptic vesicles*
     + Store/release neurotransmitters
-- *Autoreceptors* & *transporters*
 
 ```{r}
 knitr::include_graphics("http://antranik.org/wp-content/uploads/2012/04/synapse.jpg")
 ```
+
+- *Autoreceptors* & *transporters*
+
+```{r, fig.cap="[[@Torres2003-ry]](http://dx.doi.org/10.1038/nrn1008)"}
+knitr::include_graphics("https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fnrn1008/MediaObjects/41583_2003_Article_BFnrn1008_Fig1_HTML.jpg?as=webp")
+```
+
+>Monoamine transporters are localized to perisynaptic sites, where they are crucial for the termination of monoamine transmission and the maintenance of presynaptic monoamine storage. Several selective pharmacological agents acting at each monoamine transporter are shown. Amph., amphetamine; DA, dopamine; DAT, Dopamine transporter; L-DOPA, L-3,4-dihydroxyphenylalanine; 5-HT, 5-hydroxytryptamine; MPP+, 1-methyl-4-phenylpyridinium; MDMA, (+)-3,4-methylenedioxymethamphetamine; NA, noradrenaline; NET, noradrenaline transporter; SERT, 5-HT transporter.
+>
+> [[@Torres2003-ry]](http://dx.doi.org/10.1038/nrn1008)
 
 ### Classifying neurons
 
