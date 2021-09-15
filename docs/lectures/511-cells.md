@@ -2,7 +2,7 @@
 title: "[PSY 511](https://psu-psychology.github.io/psy-511-scan-fdns-2021)"
 subtitle: "Cells of the nervous system"
 author: "Rick O. Gilmore"
-date: "2021-09-10 14:26:28"
+date: "2021-09-15 09:36:46"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -438,10 +438,8 @@ $$E = IR$$
 **Neuron at rest permeable to $K^+$**
 
 - Passive $K^+$ channels open
+- $[K^+]_{i} >> [K^+]_{o}]$
 - $K^+$ flows out
-- $K^+$ outflow creates charge separation from A-
-- Charge separation creates voltage
-- Voltage prevents $K^+$ concentration from equalizing b/w inside and out
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Diffusion.en.svg/1000px-Diffusion.en.svg.png" style="display: block; margin: auto;" />
 
@@ -451,13 +449,23 @@ $$E = IR$$
 
 - Force of diffusion
     + $K^+$ moves from high concentration (~140 mM inside) to low (~4 mM outside)
-    - Movement of charged particles == current
+    + $K^+$ outflow would stop when $[K^+]_{o} == [K^2]_{i}]$
+    + But...
+        
+- Na/Ka-ATPase (Na/K Pump)
+    - Keeps concentration gradients
+    - Moves $K+$ in, $Na+$ out
 
 - Electrostatic pressure
+    + $K^+$ has + electric charge
+    + Movement of charged $K^+$ ions creates current
+    + Movement of charged $K^+$ ions creates charge separation
+        - Some $A^-$ no longer have matching $K^+$
+        - Charge separation across membrane creates voltage (~ capacitor)
     + Voltage build-up stops $K^+$ outflow
-    + Voltage called "reversal potential"
+    + Voltage magnitude called "reversal potential" or equilibrium potential
     + $K^+$ positive, so reversal potential negative (w/ respect to outside)
-    + Reversal potential close to resting potential
+    + $K^+$ reversal potential (~90mV) close to, but more negative than neuron resting potential (-70mV)
     
 **Equilibrium potential and the Nernst equation**
 
@@ -465,7 +473,7 @@ $$E = IR$$
 
 **Neuron at resting potential has low $Na^+$ permeability**
 
-- $Na^+$ concentrated outside neuron (~145 mM) vs. inside (~12 mM)
+- $Na^+$ concentrated outside neuron ($[Na^+]_{o}$~145 mM) vs. inside ($[Na^+]_{i}$~12 mM)
 - Equilibrium potential is positive (with respect to outside)
 - Some $Na^+$ flows *in*
 
@@ -483,10 +491,10 @@ $$E = IR$$
 
 **Summary of forces**
 
-| Ion | Concentration gradient | Electrostatic force |
-|-----|------------------------|---------------------|
-| $K^+$  | Inside >> Outside, outward      | - (pulls $K^+$ in)    |
-| $Na^+$ | Outside >> Inside, inward      | - (pulls $Na^+$ in)    |
+| Ion | Concentration gradient | Force of diffusion  | Sign of electrostatic force |
+|--------|--------------------------|---------------------|---------------------|
+| $K^+$  | $[K^+]_{i} >> [K^+]_{o}$ | outward        | -     |
+| $Na^+$ | $[Na^+]_{i} << [Na^+]_{o}$ | inward       | -     |
 
 - "Driving Force" on a given ion depends on its equilibrium potential AND current membrane potential.
 - Driving force >> if membrane potential far from equilibrium potential for ion.
@@ -588,11 +596,13 @@ Under typical conditions
 
 ##### Neuron at rest
 
-- Driving force on $K^+$ weakly out
+- Driving force on $K^+$ weakly <span class="red">outward</span>
     - -70 mV - (-90 mV) = +20 mV
-- Driving force on $Na^+$ strongly in
+- Driving force on $Na^+$ strongly <span class="green">inward</span>
     - -70 mV - (+55 mV) = -125 mV
-- $Na^+$/$K^+$ pump maintains concentrations
+- $Na^+$/$K^+$ pump maintains concentrations ($Na^2$ out; $K^+$ in)
+    - $[K^+]_{i} >> [K^+]_{o}$
+    - $[Na^+]_{i} << [Na^+]_{o}$
 
 <img src="http://hyperphysics.phy-astr.gsu.edu/hbase/Biology/imgbio/actpot4.gif" style="display: block; margin: auto;" />
 

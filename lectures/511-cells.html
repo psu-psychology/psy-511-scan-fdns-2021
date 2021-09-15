@@ -202,7 +202,7 @@ pre code {
 <h1 class="title toc-ignore"><a href="https://psu-psychology.github.io/psy-511-scan-fdns-2021">PSY 511</a></h1>
 <h3 class="subtitle">Cells of the nervous system</h3>
 <h4 class="author">Rick O. Gilmore</h4>
-<h4 class="date">2021-09-10 14:26:28</h4>
+<h4 class="date">2021-09-15 09:36:46</h4>
 
 </div>
 
@@ -805,10 +805,8 @@ Pyramidal cell (left) | Stellate cell (right)
 <p><strong>Neuron at rest permeable to <span class="math inline">\(K^+\)</span></strong></p>
 <ul>
 <li>Passive <span class="math inline">\(K^+\)</span> channels open</li>
+<li><span class="math inline">\([K^+]_{i} &gt;&gt; [K^+]_{o}]\)</span></li>
 <li><span class="math inline">\(K^+\)</span> flows out</li>
-<li><span class="math inline">\(K^+\)</span> outflow creates charge separation from A-</li>
-<li>Charge separation creates voltage</li>
-<li>Voltage prevents <span class="math inline">\(K^+\)</span> concentration from equalizing b/w inside and out</li>
 </ul>
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Diffusion.en.svg/1000px-Diffusion.en.svg.png" style="display: block; margin: auto;" /></p>
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Bubble_bath.jpg" style="display: block; margin: auto;" /></p>
@@ -818,21 +816,34 @@ Pyramidal cell (left) | Stellate cell (right)
 <li>Force of diffusion
 <ul>
 <li><span class="math inline">\(K^+\)</span> moves from high concentration (~140 mM inside) to low (~4 mM outside)</li>
-<li>Movement of charged particles == current</li>
+<li><span class="math inline">\(K^+\)</span> outflow would stop when <span class="math inline">\([K^+]_{o} == [K^2]_{i}]\)</span></li>
+<li>But…</li>
+</ul></li>
+<li>Na/Ka-ATPase (Na/K Pump)
+<ul>
+<li>Keeps concentration gradients</li>
+<li>Moves <span class="math inline">\(K+\)</span> in, <span class="math inline">\(Na+\)</span> out</li>
 </ul></li>
 <li>Electrostatic pressure
 <ul>
+<li><span class="math inline">\(K^+\)</span> has + electric charge</li>
+<li>Movement of charged <span class="math inline">\(K^+\)</span> ions creates current</li>
+<li>Movement of charged <span class="math inline">\(K^+\)</span> ions creates charge separation
+<ul>
+<li>Some <span class="math inline">\(A^-\)</span> no longer have matching <span class="math inline">\(K^+\)</span></li>
+<li>Charge separation across membrane creates voltage (~ capacitor)</li>
+</ul></li>
 <li>Voltage build-up stops <span class="math inline">\(K^+\)</span> outflow</li>
-<li>Voltage called “reversal potential”</li>
+<li>Voltage magnitude called “reversal potential” or equilibrium potential</li>
 <li><span class="math inline">\(K^+\)</span> positive, so reversal potential negative (w/ respect to outside)</li>
-<li>Reversal potential close to resting potential</li>
+<li><span class="math inline">\(K^+\)</span> reversal potential (~90mV) close to, but more negative than neuron resting potential (-70mV)</li>
 </ul></li>
 </ul>
 <p><strong>Equilibrium potential and the Nernst equation</strong></p>
 <p><img src="http://www.physiologyweb.com/lecture_notes/resting_membrane_potential/figs/nernst_equation_v_k.gif" style="display: block; margin: auto;" /></p>
 <p><strong>Neuron at resting potential has low <span class="math inline">\(Na^+\)</span> permeability</strong></p>
 <ul>
-<li><p><span class="math inline">\(Na^+\)</span> concentrated outside neuron (~145 mM) vs. inside (~12 mM)</p></li>
+<li><p><span class="math inline">\(Na^+\)</span> concentrated outside neuron (<span class="math inline">\([Na^+]_{o}\)</span>~145 mM) vs. inside (<span class="math inline">\([Na^+]_{i}\)</span>~12 mM)</p></li>
 <li><p>Equilibrium potential is positive (with respect to outside)</p></li>
 <li><p>Some <span class="math inline">\(Na^+\)</span> flows <em>in</em></p></li>
 <li><p>Calculate net effects of ion flow across membrane via</p></li>
@@ -852,19 +863,22 @@ Ions contributing to the resting potential
 <tr class="header">
 <th>Ion</th>
 <th>Concentration gradient</th>
-<th>Electrostatic force</th>
+<th>Force of diffusion</th>
+<th>Sign of electrostatic force</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><span class="math inline">\(K^+\)</span></td>
-<td>Inside &gt;&gt; Outside, outward</td>
-<td>- (pulls <span class="math inline">\(K^+\)</span> in)</td>
+<td><span class="math inline">\([K^+]_{i} &gt;&gt; [K^+]_{o}\)</span></td>
+<td>outward</td>
+<td>-</td>
 </tr>
 <tr class="even">
 <td><span class="math inline">\(Na^+\)</span></td>
-<td>Outside &gt;&gt; Inside, inward</td>
-<td>- (pulls <span class="math inline">\(Na^+\)</span> in)</td>
+<td><span class="math inline">\([Na^+]_{i} &lt;&lt; [Na^+]_{o}\)</span></td>
+<td>inward</td>
+<td>-</td>
 </tr>
 </tbody>
 </table>
@@ -1015,15 +1029,19 @@ Ions contributing to the resting potential
 <div id="neuron-at-rest" class="section level5">
 <h5>Neuron at rest</h5>
 <ul>
-<li>Driving force on <span class="math inline">\(K^+\)</span> weakly out
+<li>Driving force on <span class="math inline">\(K^+\)</span> weakly <span class="red">outward</span>
 <ul>
 <li>-70 mV - (-90 mV) = +20 mV</li>
 </ul></li>
-<li>Driving force on <span class="math inline">\(Na^+\)</span> strongly in
+<li>Driving force on <span class="math inline">\(Na^+\)</span> strongly <span class="green">inward</span>
 <ul>
 <li>-70 mV - (+55 mV) = -125 mV</li>
 </ul></li>
-<li><span class="math inline">\(Na^+\)</span>/<span class="math inline">\(K^+\)</span> pump maintains concentrations</li>
+<li><span class="math inline">\(Na^+\)</span>/<span class="math inline">\(K^+\)</span> pump maintains concentrations (<span class="math inline">\(Na^2\)</span> out; <span class="math inline">\(K^+\)</span> in)
+<ul>
+<li><span class="math inline">\([K^+]_{i} &gt;&gt; [K^+]_{o}\)</span></li>
+<li><span class="math inline">\([Na^+]_{i} &lt;&lt; [Na^+]_{o}\)</span></li>
+</ul></li>
 </ul>
 <p><img src="http://hyperphysics.phy-astr.gsu.edu/hbase/Biology/imgbio/actpot4.gif" style="display: block; margin: auto;" /></p>
 <hr />

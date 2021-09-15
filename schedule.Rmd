@@ -78,7 +78,7 @@ title: "Schedule"
 - Read/Watch
     + BW 3:78-92.
 - Materials
-    - [Notes](lectures/511-cells.html#neurophysiology)
+    - [Notes](lectures/511-cells.html#neurophysiology). [PDF](lectures/511-cells.pdf)
     
 ---
 
@@ -89,6 +89,8 @@ title: "Schedule"
 - Topics
     + Cellular neuroscience (action potential)
     + Cellular neuroscience (synaptic transmission)
+- Materials
+    - [Notes](lectures/511-cells.html#neurophysiology). [PDF](lectures/511-cells.pdf)
     
 ### Friday, September 17
 
