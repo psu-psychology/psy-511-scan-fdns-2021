@@ -2,7 +2,7 @@
 title: "[PSY 511](https://psu-psychology.github.io/psy-511-scan-fdns-2021)"
 subtitle: "Cells of the nervous system"
 author: "Rick O. Gilmore"
-date: "2021-09-15 09:36:46"
+date: "2021-09-15 14:23:12"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -449,7 +449,7 @@ $$E = IR$$
 
 - Force of diffusion
     + $K^+$ moves from high concentration (~140 mM inside) to low (~4 mM outside)
-    + $K^+$ outflow would stop when $[K^+]_{o} == [K^2]_{i}]$
+    + $K^+$ outflow would stop when $[K^+]_{o} == [K^2]_{i}$
     + But...
         
 - Na/Ka-ATPase (Na/K Pump)
