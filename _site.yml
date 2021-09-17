@@ -33,6 +33,7 @@ navbar:
           - text: "2021-09-15"
             href: "lectures/511-cells.html#neurophysiology"
           - text: "2021-09-17"
+            href: "lectures/511-anatomy.html"
       - text: "Week 5"
         menu:
           - text: "2021-09-22"

@@ -96,6 +96,8 @@ title: "Schedule"
 
 - Topics
     + Neuroanatomy
+- Materials
+    - [Notes](lectures/511-anatomy.html). [PDF](lectures/511-anatomy.pdf)
 
 ---
 

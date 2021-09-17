@@ -2,7 +2,7 @@
 title: "[PSY 511](https://psu-psychology.github.io/psy-511-scan-fdns-2021)"
 subtitle: "Cells of the nervous system"
 author: "Rick O. Gilmore"
-date: "2021-09-15 14:23:12"
+date: "2021-09-15 14:24:45"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -438,7 +438,7 @@ $$E = IR$$
 **Neuron at rest permeable to $K^+$**
 
 - Passive $K^+$ channels open
-- $[K^+]_{i} >> [K^+]_{o}]$
+- $[K^+]_{i} >> [K^+]_{o}$
 - $K^+$ flows out
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Diffusion.en.svg/1000px-Diffusion.en.svg.png" style="display: block; margin: auto;" />
