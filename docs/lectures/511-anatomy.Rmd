@@ -25,11 +25,9 @@ output:
 ---
 
 ```{r set-up, echo=FALSE, error=FALSE, include=FALSE, warning=FALSE, message=FALSE}
-path2figs = 'img'
-knitr::opts_chunk$set(fig.path=path2figs,
-                      echo = FALSE, warning = FALSE, message = FALSE,
-                      fig.align = "center",
-                      out.width = "800px")
+knitr::opts_chunk$set(echo = FALSE, 
+                      cache=FALSE, 
+                      fig.align = "center")
 ```
 
 ---
