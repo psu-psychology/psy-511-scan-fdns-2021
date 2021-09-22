@@ -9,12 +9,12 @@ csl: bib/apa.csl
 output:
   html_document:
     keep_md: true
-  ioslides_presentation:
+    theme: lumen
+    toc: yes
+    toc_depth: 5
+    toc_float: no
+    code_folding: hide
     self_contained: false
-    lib_dir: libs
-    widescreen: true
-    incremental: false
-    transition: default
   pdf_document:
     toc: true
     toc_depth: 1
@@ -25,9 +25,9 @@ output:
 ---
 
 ```{r set-up, include = FALSE}
-knitr::opts_chunk$set(echo = FALSE, cache=TRUE, 
-                      fig.align = "center",
-                      out.width = "800px")
+knitr::opts_chunk$set(echo = FALSE, 
+                      cache=FALSE, 
+                      fig.align = "center")
 ```
 
 ## Prelude

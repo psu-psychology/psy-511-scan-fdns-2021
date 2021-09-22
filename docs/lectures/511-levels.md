@@ -2,19 +2,19 @@
 title: "PSY 511"
 subtitle: "Levels"
 author: "Rick Gilmore"
-date: "2021-09-01 14:00:31"
+date: "2021-09-22 16:01:04"
 css: css/ioslides.css
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 output:
   html_document:
     keep_md: true
-  ioslides_presentation:
+    theme: lumen
+    toc: yes
+    toc_depth: 5
+    toc_float: no
+    code_folding: hide
     self_contained: false
-    lib_dir: libs
-    widescreen: true
-    incremental: false
-    transition: default
   pdf_document:
     toc: true
     toc_depth: 1
@@ -52,28 +52,28 @@ output:
 ## Cognitive science as complexity science [[@Favela2020-uc]](http://dx.doi.org/10.1002/wcs.1525)
 
 <div class="figure" style="text-align: center">
-<img src="https://wires.onlinelibrary.wiley.com/cms/asset/40519f8a-bf86-4289-8b40-aa6e6385b3fb/wcs1525-fig-0001-m.png" alt="[[@Favela2020-uc]](http://dx.doi.org/10.1002/wcs.1525)" width="800px" />
+<img src="https://wires.onlinelibrary.wiley.com/cms/asset/40519f8a-bf86-4289-8b40-aa6e6385b3fb/wcs1525-fig-0001-m.png" alt="[[@Favela2020-uc]](http://dx.doi.org/10.1002/wcs.1525)"  />
 <p class="caption">[[@Favela2020-uc]](http://dx.doi.org/10.1002/wcs.1525)</p>
 </div>
 
 ## David Marr (1945-1980)
 
 <div class="figure" style="text-align: center">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZGutDYqHcIazwkXdQtGfedIVfGG-DcrtMAK_j93DQgrMI8lsiH7WGttQlgdh0-jO_u4w&usqp=CAU" alt="David Marr" width="800px" />
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZGutDYqHcIazwkXdQtGfedIVfGG-DcrtMAK_j93DQgrMI8lsiH7WGttQlgdh0-jO_u4w&usqp=CAU" alt="David Marr"  />
 <p class="caption">David Marr</p>
 </div>
 
 ---
 
 <div class="figure" style="text-align: center">
-<img src="https://mitpress.mit.edu/sites/default/files/styles/large_book_cover/http/mitp-content-server.mit.edu%3A18180/books/covers/cover/%3Fcollid%3Dbooks_covers_0%26isbn%3D9780262514620%26type%3D.jpg?itok=7HDFLFlL" alt="[[@Marr1980-cu]](https://mitpress.mit.edu/books/vision)" width="800px" />
+<img src="https://mitpress.mit.edu/sites/default/files/styles/large_book_cover/http/mitp-content-server.mit.edu%3A18180/books/covers/cover/%3Fcollid%3Dbooks_covers_0%26isbn%3D9780262514620%26type%3D.jpg?itok=7HDFLFlL" alt="[[@Marr1980-cu]](https://mitpress.mit.edu/books/vision)"  />
 <p class="caption">[[@Marr1980-cu]](https://mitpress.mit.edu/books/vision)</p>
 </div>
 
 ## Marr's Three Levels
 
 <div class="figure" style="text-align: center">
-<img src="https://wires.onlinelibrary.wiley.com/cms/asset/baa7ce31-781c-496a-a687-4e9df7a8e371/wcs1525-fig-0003-m.jpg" alt="[[@Favela2020-uc]](http://dx.doi.org/10.1002/wcs.1525)" width="800px" />
+<img src="https://wires.onlinelibrary.wiley.com/cms/asset/baa7ce31-781c-496a-a687-4e9df7a8e371/wcs1525-fig-0003-m.jpg" alt="[[@Favela2020-uc]](http://dx.doi.org/10.1002/wcs.1525)"  />
 <p class="caption">[[@Favela2020-uc]](http://dx.doi.org/10.1002/wcs.1525)</p>
 </div>
 

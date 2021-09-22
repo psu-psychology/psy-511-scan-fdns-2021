@@ -2,7 +2,7 @@
 title: "PSY 511"
 subtitle: "Methods"
 author: "Rick Gilmore"
-date: "2021-09-09 08:17:44"
+date: "2021-09-22 16:01:27"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
