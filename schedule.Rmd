@@ -107,12 +107,16 @@ title: "Schedule"
 
 - Topics
     + Neuroanatomy II
+- Materials
+    - [Notes](lectures/511-anatomy.html). [PDF](lectures/511-anatomy.pdf)
 
 ### Friday, September 24
 
 - Topics
-    + Neuroanatomy in class lab
-    - [**Quiz 1**](). Take home. Due at start of class on Friday, October 1, 2021.
+    - [**Quiz 1**](quiz/quiz-01/psy-511.001-21-quiz-01.docx). Take home. Due at start of class on Friday, October 1, 2021.
+    + Neuroanatomy III
+- Materials
+    - [Notes](lectures/511-anatomy.html#brodmann-areas). [PDF](lectures/511-anatomy.pdf)
 
 ---
 
@@ -120,13 +124,25 @@ title: "Schedule"
 
 ### Wednesday, September 29
 
-- Topic
+- Topics
+    - Neuroanatomy lab
+- Materials
+    - [Handout](handouts/neuroanatomy-lab-handout.html). [PDF](handouts/neuroanatomy-lab-handout.pdf)
+
+### Friday, October 1
+
+- Topics
+    - **Quiz 1 due**. Email it to me.
     + Neurochemistry
 - Read/Watch
     + BW: 4:95-100.
     + BW 4:101-130.
 
-### Friday, October 1
+---
+
+## Week 7
+
+### Wednesday, October 6
 
 - Topic
     - Hormones 
@@ -135,24 +151,11 @@ title: "Schedule"
     + BW 5:125-154.
     + BW 5:131-159.
     - (Optional) Sarkar, A., Lehto, S. M., Harty, S., Dinan, T. G., Cryan, J. F., & Burnet, P. W. J. (2016). Psychobiotics and the manipulation of bacteria-gut-brain signals. *Trends in Neurosciences*, *39*(11), 763–781. Retrieved from <https://dx.doi.org/10.1016/j.tins.2016.09.002>.
-- **Quiz 1 due**. Email it to me.
-
----
-
-## Week 7
-
-### Wednesday, October 6
-
-- Topics
-    + Evolution of the nervous system
-- Reading
-    + BW 6 & 7. 
-    + Optional [Hofman 2014](https://www.frontiersin.org/Journal/Abstract.aspx?s=742&name=neuroanatomy&ART_DOI=10.3389/fnana.2014.00015).
     
 ### Friday, October 8
 
 - Topics
-    + Evolution of the nervous system II
+    + Evolution of the nervous system
 - Reading
     + BW 6 & 7. 
     + Optional [Hofman 2014](https://www.frontiersin.org/Journal/Abstract.aspx?s=742&name=neuroanatomy&ART_DOI=10.3389/fnana.2014.00015).

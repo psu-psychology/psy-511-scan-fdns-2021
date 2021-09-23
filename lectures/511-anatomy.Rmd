@@ -115,7 +115,7 @@ knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/8/
 knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/d/d4/Blausen_0896_Ventricles_Brain.png")
 ```
 
-- Ventricles filled with CSF
+- Ventricles filled with cerebrospinal fluid (CSF)
   - CSF clears metabolites during sleep [@xie2013sleep]?
   - Blockage of CSF flow -> hydrocephalus
 
@@ -269,6 +269,8 @@ knitr::include_graphics("http://antranik.org/wp-content/uploads/2011/11/the-brai
 - "Roof" of the midbrain
 - Superior and inferior colliculus (colliculi is plural for 'little hill')
 - Superior colliculus: Reflexive orienting of eyes, head, ears (superior colliculi)
+    - Input from FEF, parietal lobe
+    - Output to cranial nerve nuclei (III, IV, VI) in tegmentum, pons
 - Inferior colliculus: Auditory processing (from brainstem to auditory thalamus)
 
 ```{r}
@@ -379,8 +381,15 @@ knitr::include_graphics("https://fhs122anatomyelab.files.wordpress.com/2014/05/b
 
 #### Hippocampus
 
+- Hippocampus means "sea horse"
+
+```{r, fig.cap="https://theconversation.com/explainer-what-happens-in-the-hippocampus-32589"}
+knitr::include_graphics("https://images.theconversation.com/files/60945/original/qrtd9rv8-1412620559.JPG?ixlib=rb-1.1.0&q=45&auto=format&w=1000&fit=clip")
+```
+
 - Medial to lateral ventricles
-- Memories of specific facts or events; place memory in non-human animals (& humans?)
+- Store memories of specific facts (semantic memory) or events (episodic memory)
+- Place memory in non-human animals (& humans?)
 - Fornix (axon fiber bundle) projects to (mammillary bodies of) hypothalamus
 
 ```{r, eval=FALSE}
@@ -399,6 +408,7 @@ knitr::include_graphics("http://www.neuro24.de/hip0006.jpg")
 
 - Physiological state, behavioral readiness, affect
 - NOT the fear center! [@ledoux_amygdala_2015].
+- Projection to hypothalamus
 
 ```{r, eval=FALSE}
 knitr::include_graphics("http://homepage.smc.edu/wissmann_paul/physnet/anatomynet/anatomy/amy.jpg")
@@ -492,19 +502,39 @@ knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/8/88/Cen
 knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Lobes_of_the_brain_NL.svg/1024px-Lobes_of_the_brain_NL.svg.png")
 ```
 
-- Primary motor cortex (M1) 
-    + Supplementary motor cortex
+- Primary motor cortex (M-I or M1)
+    - Precentral gyrus
+    
+```{r, fig.cap="https://en.wikipedia.org/wiki/Precentral_gyrus"}
+knitr::include_graphics("https://en.wikipedia.org/wiki/Precentral_gyrus#/media/File:FrontalCaptsLateral.png")
+```
+    
+- Secondary motor areas
+    + Supplementary motor cortex (SMC)
     + Frontal eye fields (FEF)
 - Prefrontal cortex
     + Planning, problem solving, working memory...?
+    
+- Secondary olfactory cortex
+
+```{r, fig.cap="[[@Saive2014-uh]](http://doi.org/10.3389/fnbeh.2014.00240)"}
+knitr::include_graphics("https://www.frontiersin.org/files/Articles/92469/fnbeh-08-00240-HTML/image_m/fnbeh-08-00240-g001.jpg")
+```
+
+> Figure 1. Schematic view of the human olfactory system. The primary and secondary olfactory cortices are represented in blue and green, respectively. Amyg, amygdala; Ento, entorhinal cortex; Hipp, hippocampus; OFC, orbitofrontal cortex; PC, piriform cortex; Thal, thalamus (adapted from Royet et al., 2014).
+>
+> [[@Saive2014-uh]](http://doi.org/10.3389/fnbeh.2014.00240)
+
 - Basal forebrain
     + [Nucleus accumbens (NAcc)](https://en.wikipedia.org/wiki/Nucleus_accumbens), part of ventral striatum
-- [Anterior cingulate cortex (ACC)](https://en.wikipedia.org/wiki/Anterior_cingulate_cortex)
-- Primary olfactory cortex
+
+***Cingulate Gyrus***
 
 ```{r}
 knitr::include_graphics("http://cis.jhu.edu/data.sets/cortical_segmentation_validation/photos/cinggyrus75.jpg")
 ```
+
+- [Anterior cingulate cortex (ACC)](https://en.wikipedia.org/wiki/Anterior_cingulate_cortex)
 
 **Inferior Frontal Gyrus (IFG)**
 
@@ -512,10 +542,21 @@ knitr::include_graphics("http://cis.jhu.edu/data.sets/cortical_segmentation_vali
 knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/b/b2/Gray726_inferior_frontal_gyrus.png")
 ```
 
+- Broca's Area
+
 **Middle Frontal Gyrus (MFG)**
 
 ```{r}
 knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/7/7f/Gray726_middle_frontal_gyrus.png")
+```
+
+**Superior Frontal Gyrus (SFG)**
+
+- Brodmann Area 8
+- Frontal Eye Fields (FEF)
+
+```{r, fig.cap="https://en.wikipedia.org/wiki/Frontal_eye_fields"}
+knitr::include_graphics("https://en.wikipedia.org/wiki/Frontal_eye_fields#/media/File:Brodmann_area_8_animation.gif")
 ```
 
 ##### Temporal lobe 
@@ -527,10 +568,20 @@ knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/7/7f/Gra
 knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/9/96/Brain_diagram_fr.png")
 ```
 
-- Primary auditory cortex (A1)
-- Object, face recognition
-- Storage of memories about events, objects 
-- Amygdala, hippocampus
+- Primary auditory cortex (A-I or A1)
+
+```{r, fig.cap="https://en.wikipedia.org/wiki/Auditory_cortex"}
+knitr::include_graphics("https://en.wikipedia.org/wiki/Auditory_cortex#/media/File:Brodmann_41_42.png")
+```
+
+**Superior Temporal Sulcus**
+
+```{r}
+knitr::include_graphics("https://en.wikipedia.org/wiki/Superior_temporal_sulcus#/media/File:Superior_temporal_sulcus.png")
+```
+
+- Object, face recognition; biological motion processing
+- Language processing
 
 **Inferior Temporal Gyrus (ITG)**
 
@@ -544,6 +595,9 @@ knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/1/18/Gra
 knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/1/15/Medial_surface_of_cerebral_cortex_-_entorhinal_cortex.png")
 ```
 
+- Storage of memories about events, objects 
+- Amygdala, hippocampus
+
 ##### Parietal lobe
 
 - Caudal to frontal lobe
@@ -554,7 +608,14 @@ knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/1/15/Med
 knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/9/96/Brain_diagram_fr.png")
 ```
 
-- Primary somatosensory cortex (S1)
+- Primary somatosensory cortex (S-I or S1)
+  - information from sensors in skin, muscles, tendons, joints and viscera
+- Post-central gyrus
+    
+```{r, fig.cap="https://en.wikipedia.org/wiki/Postcentral_gyrus"}
+knitr::include_graphics("https://en.wikipedia.org/wiki/Postcentral_gyrus#/media/File:Postcentral_gyrus.png")
+```
+    
 - Perception of spatial relations, action planning
 
 **Inferior Parietal Lobule**

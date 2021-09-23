@@ -37,9 +37,9 @@ navbar:
       - text: "Week 5"
         menu:
           - text: "2021-09-22"
-            href:
+            href: "lectures/511-anatomy.html#thalamus"
           - text: "2021-09-24"
-            href:
+            href: "lectures/511-anatomy.html#brodmann-areas"
       - text: "Week 6"
         menu:
           - text: "2021-09-29"

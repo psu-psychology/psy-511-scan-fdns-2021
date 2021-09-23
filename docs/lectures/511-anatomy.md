@@ -2,7 +2,7 @@
 title: "[PSY 511](https://psu-psychology.github.io/psy-511-scan-fdns-2021)"
 subtitle: "Neuroanatomy"
 author: "Rick Gilmore"
-date: "2021-09-22 16:00:53"
+date: "2021-09-23 08:39:26"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -105,7 +105,7 @@ output:
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Blausen_0896_Ventricles_Brain.png" style="display: block; margin: auto;" />
 
-- Ventricles filled with CSF
+- Ventricles filled with cerebrospinal fluid (CSF)
   - CSF clears metabolites during sleep [@xie2013sleep]?
   - Blockage of CSF flow -> hydrocephalus
 
@@ -267,6 +267,8 @@ output:
 - "Roof" of the midbrain
 - Superior and inferior colliculus (colliculi is plural for 'little hill')
 - Superior colliculus: Reflexive orienting of eyes, head, ears (superior colliculi)
+    - Input from FEF, parietal lobe
+    - Output to cranial nerve nuclei (III, IV, VI) in tegmentum, pons
 - Inferior colliculus: Auditory processing (from brainstem to auditory thalamus)
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Gray719.png" style="display: block; margin: auto;" />
@@ -355,8 +357,16 @@ output:
 
 #### Hippocampus
 
+- Hippocampus means "sea horse"
+
+<div class="figure" style="text-align: center">
+<img src="https://images.theconversation.com/files/60945/original/qrtd9rv8-1412620559.JPG?ixlib=rb-1.1.0&q=45&auto=format&w=1000&fit=clip" alt="https://theconversation.com/explainer-what-happens-in-the-hippocampus-32589"  />
+<p class="caption">https://theconversation.com/explainer-what-happens-in-the-hippocampus-32589</p>
+</div>
+
 - Medial to lateral ventricles
-- Memories of specific facts or events; place memory in non-human animals (& humans?)
+- Store memories of specific facts (semantic memory) or events (episodic memory)
+- Place memory in non-human animals (& humans?)
 - Fornix (axon fiber bundle) projects to (mammillary bodies of) hypothalamus
 
 
@@ -371,6 +381,7 @@ output:
 
 - Physiological state, behavioral readiness, affect
 - NOT the fear center! [@ledoux_amygdala_2015].
+- Projection to hypothalamus
 
 
 
@@ -442,25 +453,59 @@ output:
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Lobes_of_the_brain_NL.svg/1024px-Lobes_of_the_brain_NL.svg.png" style="display: block; margin: auto;" />
 
-- Primary motor cortex (M1) 
-    + Supplementary motor cortex
+- Primary motor cortex (M-I or M1)
+    - Precentral gyrus
+    
+<div class="figure" style="text-align: center">
+<img src="https://en.wikipedia.org/wiki/Precentral_gyrus#/media/File:FrontalCaptsLateral.png" alt="https://en.wikipedia.org/wiki/Precentral_gyrus"  />
+<p class="caption">https://en.wikipedia.org/wiki/Precentral_gyrus</p>
+</div>
+    
+- Secondary motor areas
+    + Supplementary motor cortex (SMC)
     + Frontal eye fields (FEF)
 - Prefrontal cortex
     + Planning, problem solving, working memory...?
+    
+- Secondary olfactory cortex
+
+<div class="figure" style="text-align: center">
+<img src="https://www.frontiersin.org/files/Articles/92469/fnbeh-08-00240-HTML/image_m/fnbeh-08-00240-g001.jpg" alt="[[@Saive2014-uh]](http://doi.org/10.3389/fnbeh.2014.00240)"  />
+<p class="caption">[[@Saive2014-uh]](http://doi.org/10.3389/fnbeh.2014.00240)</p>
+</div>
+
+> Figure 1. Schematic view of the human olfactory system. The primary and secondary olfactory cortices are represented in blue and green, respectively. Amyg, amygdala; Ento, entorhinal cortex; Hipp, hippocampus; OFC, orbitofrontal cortex; PC, piriform cortex; Thal, thalamus (adapted from Royet et al., 2014).
+>
+> [[@Saive2014-uh]](http://doi.org/10.3389/fnbeh.2014.00240)
+
 - Basal forebrain
     + [Nucleus accumbens (NAcc)](https://en.wikipedia.org/wiki/Nucleus_accumbens), part of ventral striatum
-- [Anterior cingulate cortex (ACC)](https://en.wikipedia.org/wiki/Anterior_cingulate_cortex)
-- Primary olfactory cortex
+
+***Cingulate Gyrus***
 
 <img src="http://cis.jhu.edu/data.sets/cortical_segmentation_validation/photos/cinggyrus75.jpg" style="display: block; margin: auto;" />
+
+- [Anterior cingulate cortex (ACC)](https://en.wikipedia.org/wiki/Anterior_cingulate_cortex)
 
 **Inferior Frontal Gyrus (IFG)**
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Gray726_inferior_frontal_gyrus.png" style="display: block; margin: auto;" />
 
+- Broca's Area
+
 **Middle Frontal Gyrus (MFG)**
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Gray726_middle_frontal_gyrus.png" style="display: block; margin: auto;" />
+
+**Superior Frontal Gyrus (SFG)**
+
+- Brodmann Area 8
+- Frontal Eye Fields (FEF)
+
+<div class="figure" style="text-align: center">
+<img src="https://en.wikipedia.org/wiki/Frontal_eye_fields#/media/File:Brodmann_area_8_animation.gif" alt="https://en.wikipedia.org/wiki/Frontal_eye_fields"  />
+<p class="caption">https://en.wikipedia.org/wiki/Frontal_eye_fields</p>
+</div>
 
 ##### Temporal lobe 
 
@@ -469,10 +514,19 @@ output:
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Brain_diagram_fr.png" style="display: block; margin: auto;" />
 
-- Primary auditory cortex (A1)
-- Object, face recognition
-- Storage of memories about events, objects 
-- Amygdala, hippocampus
+- Primary auditory cortex (A-I or A1)
+
+<div class="figure" style="text-align: center">
+<img src="https://en.wikipedia.org/wiki/Auditory_cortex#/media/File:Brodmann_41_42.png" alt="https://en.wikipedia.org/wiki/Auditory_cortex"  />
+<p class="caption">https://en.wikipedia.org/wiki/Auditory_cortex</p>
+</div>
+
+**Superior Temporal Sulcus**
+
+<img src="https://en.wikipedia.org/wiki/Superior_temporal_sulcus#/media/File:Superior_temporal_sulcus.png" style="display: block; margin: auto;" />
+
+- Object, face recognition; biological motion processing
+- Language processing
 
 **Inferior Temporal Gyrus (ITG)**
 
@@ -482,6 +536,9 @@ output:
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Medial_surface_of_cerebral_cortex_-_entorhinal_cortex.png" style="display: block; margin: auto;" />
 
+- Storage of memories about events, objects 
+- Amygdala, hippocampus
+
 ##### Parietal lobe
 
 - Caudal to frontal lobe
@@ -490,7 +547,15 @@ output:
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Brain_diagram_fr.png" style="display: block; margin: auto;" />
 
-- Primary somatosensory cortex (S1)
+- Primary somatosensory cortex (S-I or S1)
+  - information from sensors in skin, muscles, tendons, joints and viscera
+- Post-central gyrus
+    
+<div class="figure" style="text-align: center">
+<img src="https://en.wikipedia.org/wiki/Postcentral_gyrus#/media/File:Postcentral_gyrus.png" alt="https://en.wikipedia.org/wiki/Postcentral_gyrus"  />
+<p class="caption">https://en.wikipedia.org/wiki/Postcentral_gyrus</p>
+</div>
+    
 - Perception of spatial relations, action planning
 
 **Inferior Parietal Lobule**
