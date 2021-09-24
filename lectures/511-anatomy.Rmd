@@ -542,13 +542,15 @@ knitr::include_graphics("http://cis.jhu.edu/data.sets/cortical_segmentation_vali
 knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/b/b2/Gray726_inferior_frontal_gyrus.png")
 ```
 
-- Broca's Area
+- Home to Broca's Area
 
 **Middle Frontal Gyrus (MFG)**
 
 ```{r}
 knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/7/7f/Gray726_middle_frontal_gyrus.png")
 ```
+
+- Home to Dorsolateral Prefrontal Cortex ([DLPFC](https://en.wikipedia.org/wiki/Dorsolateral_prefrontal_cortex))
 
 **Superior Frontal Gyrus (SFG)**
 
@@ -589,6 +591,12 @@ knitr::include_graphics("https://en.wikipedia.org/wiki/Superior_temporal_sulcus#
 knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/1/18/Gray726_inferior_temporal_gyrus.png")
 ```
 
+- Continuation of ventral visual processing stream
+
+```{r, fig.cap="https://en.wikipedia.org/wiki/Inferior_temporal_gyrus"}
+knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/f/f6/Inferior_temporal_gyrus_coronal_sections.gif")
+```
+
 **Entorhinal Cortex (ER)**
 
 ```{r}
@@ -624,10 +632,18 @@ knitr::include_graphics("https://en.wikipedia.org/wiki/Postcentral_gyrus#/media/
 knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/e/e3/Gray726_inferior_parietal_lobule.png")
 ```
 
+- e.g., language, mathematical operations, body image, etc.
+
 **Superior Parietal Lobule**
 
 ```{r}
 knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/9/9d/Gray726_superior_parietal_lobule.png")
+```
+
+- damage to can cause spatial hemi-neglect
+
+```{r, fig.cap="https://en.wikipedia.org/wiki/Superior_parietal_lobule"}
+knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/d/d8/Superior_parietal_lobule_sagittal_sections.gif")
 ```
 
 ##### Occipital lobe
