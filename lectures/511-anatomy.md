@@ -2,7 +2,7 @@
 title: "[PSY 511](https://psu-psychology.github.io/psy-511-scan-fdns-2021)"
 subtitle: "Neuroanatomy"
 author: "Rick Gilmore"
-date: "2021-09-24 08:47:54"
+date: "2021-09-24 08:53:02"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -128,6 +128,8 @@ output:
 <img src="https://teachmeanatomy.info/wp-content/uploads/Regional-Blood-Supply-to-the-Cerebrum-1024x380.jpg" alt="https://teachmeanatomy.info/wp-content/uploads/Regional-Blood-Supply-to-the-Cerebrum-1024x380.jpg"  />
 <p class="caption">https://teachmeanatomy.info/wp-content/uploads/Regional-Blood-Supply-to-the-Cerebrum-1024x380.jpg</p>
 </div>
+
+<p><a href="https://commons.wikimedia.org/wiki/File:Cerebrovascular_System.png#/media/File:Cerebrovascular_System.png"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Cerebrovascular_System.png" alt="Cerebrovascular System.png"></a><br>By &lt;a href="//commons.wikimedia.org/wiki/User:BruceBlaus" title="User:BruceBlaus"&gt;BruceBlaus&lt;/a&gt; - &lt;span class="int-own-work" lang="en"&gt;Own work&lt;/span&gt;, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=51638412">Link</a></p>
 
 ### Blood/brain barrier
 
