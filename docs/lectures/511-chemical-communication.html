@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Rick Gilmore" />
+
+
+<title>Chemical communication</title>
+
+<script src="511-chemical-communication_files/header-attrs-2.9/header-attrs.js"></script>
+<script src="511-chemical-communication_files/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="511-chemical-communication_files/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
+<script src="511-chemical-communication_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="511-chemical-communication_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="511-chemical-communication_files/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="511-chemical-communication_files/navigation-1.1/tabsets.js"></script>
+<script src="511-chemical-communication_files/navigation-1.1/codefolding.js"></script>
+<link href="511-chemical-communication_files/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="511-chemical-communication_files/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+<style type="text/css">
+/* for pandoc --citeproc since 2.11 */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="css/outline.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div id="header">
+
+<div class="btn-group pull-right float-right">
+<button type="button" class="btn btn-default btn-xs btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu dropdown-menu-right" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+</ul>
+</div>
+
+
+
+<h1 class="title toc-ignore">Chemical communication</h1>
+<h3 class="subtitle">PSY 511</h3>
+<h4 class="author">Rick Gilmore</h4>
+<h4 class="date">2021-10-01 08:50:11</h4>
+
+</div>
+
+<div id="TOC">
+<ul>
+<li><a href="#fun">Fun</a></li>
+<li><a href="#neural-communication">Neural communication</a>
+<ul>
+<li><a href="#what-triggers-the-action-potential">What triggers the action potential?</a></li>
+<li><a href="#synaptic-transmission">Synaptic transmission</a>
+<ul>
+<li><a href="#synapse-locations">Synapse locations</a></li>
+<li><a href="#synapse-types-locations">Synapse Types &amp; Locations</a></li>
+<li><a href="#steps-in-chemical-transmission">Steps in chemical transmission</a></li>
+<li><a href="#receptorchannel-types">Receptor/channel types</a>
+<ul>
+<li><a href="#leakpassive">Leak/passive</a></li>
+<li><a href="#transportersexchangers">Transporters/exchangers</a></li>
+<li><a href="#ionotropic-receptors-receptor-ion-channel">Ionotropic receptors (receptor + ion channel)</a></li>
+<li><a href="#metabotropic-receptors-receptor-only">Metabotropic receptors (receptor only)</a></li>
+</ul></li>
+<li><a href="#receptors-generate-postsynaptic-potentials-psps">Receptors generate <em>postsynaptic potentials (PSPs)</em></a></li>
+<li><a href="#nts-inactivated">NTs inactivated</a></li>
+<li><a href="#questions-to-ponder">Questions to ponder</a></li>
+<li><a href="#synapse-location-and-function">Synapse location and function</a></li>
+</ul></li>
+<li><a href="#neurotransmitters">Neurotransmitters</a>
+<ul>
+<li><a href="#what-are-they">What are they?</a></li>
+<li><a href="#things-to-know">Things to know</a></li>
+<li><a href="#types">Types</a>
+<ul>
+<li><a href="#glutamate">Glutamate</a></li>
+<li><a href="#gamma-aminobutyric-acid-gaba"><span class="math inline">\(\gamma\)</span> aminobutyric acid (GABA)</a></li>
+<li><a href="#other-amino-acid-nts">Other amino acid NTs</a></li>
+</ul></li>
+<li><a href="#acetylcholine-ach">Acetylcholine (ACh)</a></li>
+<li><a href="#curare">Curare</a></li>
+<li><a href="#atropine">Atropine</a></li>
+</ul></li>
+<li><a href="#monoamine-nts">Monoamine NTs</a>
+<ul>
+<li><a href="#information-processing">Information processing</a></li>
+<li><a href="#dopamine">Dopamine</a></li>
+<li><a href="#norepinephrine">Norepinephrine</a></li>
+<li><a href="#adrenalineepinephrine">Adrenaline/Epinephrine</a></li>
+<li><a href="#serotonin-5-ht">Serotonin (5-HT)</a></li>
+<li><a href="#melatonin">Melatonin</a></li>
+<li><a href="#histamine">Histamine</a></li>
+</ul></li>
+<li><a href="#targets-of-psychotropic-drugs">Targets of psychotropic drugs</a></li>
+<li><a href="#other-nts">Other NTs</a></li>
+</ul></li>
+<li><a href="#hormonal-communication">Hormonal communication</a>
+<ul>
+<li><a href="#examples-of-substances-that-are-both-hormones-and-nts">Examples of substances that are both hormones and NTs</a></li>
+<li><a href="#behaviors-under-hormonal-influence">Behaviors under hormonal influence</a>
+<ul>
+<li><a href="#ingestive-eating-drinking">Ingestive (eating/ drinking)</a></li>
+<li><a href="#reproduction-related">Reproduction-related</a></li>
+<li><a href="#to-threatchallenge">To threat/challenge</a></li>
+<li><a href="#common-factors">Common factors</a></li>
+</ul></li>
+<li><a href="#principles-of-hormonal-action">Principles of hormonal action</a>
+<ul>
+<li><a href="#similarities-between-neural-and-hormonal-communication">Similarities between neural and hormonal communication</a></li>
+<li><a href="#hormonal-release-sites">Hormonal release sites</a></li>
+</ul></li>
+<li><a href="#two-release-systems-from-hypothalamus">Two release systems from hypothalamus</a>
+<ul>
+<li><a href="#direct-release">Direct release</a></li>
+<li><a href="#indirect-release">Indirect release</a></li>
+</ul></li>
+<li><a href="#case-studies">Case studies</a>
+<ul>
+<li><a href="#responses-to-threat-or-challenge">Responses to threat or challenge</a>
+<ul>
+<li><a href="#adrenal-hormones">Adrenal hormones</a></li>
+</ul></li>
+<li><a href="#reproductive-behavior-the-milk-letdown-reflex">Reproductive behavior – the milk letdown reflex</a></li>
+<li><a href="#circadian-rhythms">Circadian rhythms</a>
+<ul>
+<li><a href="#melatonin-1">Melatonin</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#thinking-about-neurochemical-influences">Thinking about neurochemical influences</a>
+<ul>
+<li><a href="#gutbrain-connection">Gut/brain connection</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+
+<div id="fun" class="section level1">
+<h1>Fun</h1>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/gsjcb7w1Y-w" frameborder="0" allowfullscreen>
+</iframe>
+</div>
+<div id="neural-communication" class="section level1">
+<h1>Neural communication</h1>
+<div id="what-triggers-the-action-potential" class="section level2">
+<h2>What triggers the action potential?</h2>
+<ul>
+<li>Soma receives input from dendrites (and on soma directly)</li>
+<li>Axon hillock sums/integrates</li>
+<li>If sum &gt; threshold, action potential “fires”</li>
+<li>Action potential propagates along the axon</li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/1224_Post_Synaptic_Potential_Summation.jpg/512px-1224_Post_Synaptic_Potential_Summation.jpg" alt="Source: https://commons.wikimedia.org/wiki/File%3A1224_Post_Synaptic_Potential_Summation.jpg" width="800px" />
+<p class="caption">
+Source: <a href="https://commons.wikimedia.org/wiki/File%3A1224_Post_Synaptic_Potential_Summation.jpg" class="uri">https://commons.wikimedia.org/wiki/File%3A1224_Post_Synaptic_Potential_Summation.jpg</a>
+</p>
+</div>
+<ul>
+<li>Action potential’s rapid change in voltage triggers neurotransmitter (NT) release</li>
+</ul>
+</div>
+<div id="synaptic-transmission" class="section level2">
+<h2>Synaptic transmission</h2>
+<p><em>Synapse</em> permits neuron to pass electrical or chemical messages to another neuron or target cell (muscle, gland, etc.)</p>
+<div id="synapse-locations" class="section level3">
+<h3>Synapse locations</h3>
+</div>
+<div id="synapse-types-locations" class="section level3">
+<h3>Synapse Types &amp; Locations</h3>
+<ul>
+<li>Chemical</li>
+<li>Electrical
+<ul>
+<li>Gap junctions</li>
+<li><em>Cytosol</em> (and ionic current) flows through adjacent neurons</li>
+</ul></li>
+</ul>
+<p>
+<a href="https://commons.wikimedia.org/wiki/File:Gap_cell_junction-en.svg#/media/File:Gap_cell_junction-en.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Gap_cell_junction-en.svg/1200px-Gap_cell_junction-en.svg.png" alt="Gap cell junction-en.svg"></a><br>By Mariana Ruiz &lt;a href=“//commons.wikimedia.org/wiki/User:LadyofHats” title=“User:LadyofHats”&gt;LadyofHats&lt;/a&gt; - the diagram i made myself using the information on this websites as source: &lt;a rel=“nofollow” class=“external autonumber” href=“<a href="http://academic.brooklyn.cuny.edu/biology/bio4fv/page/gap-junctions.html%22%3E" class="uri">http://academic.brooklyn.cuny.edu/biology/bio4fv/page/gap-junctions.html"&gt;</a>;[1]&lt;/a&gt;, &lt;a rel=”nofollow" class=“external autonumber” href=“<a href="http://www-biology.ucsd.edu/classes/bipn140.FA05/10_2.jpg%22%3E" class="uri">http://www-biology.ucsd.edu/classes/bipn140.FA05/10_2.jpg"&gt;</a>;[2]&lt;/a&gt;, &lt;a rel=”nofollow" class=“external autonumber” href=“<a href="http://www.colorado.edu/MCDB/MCDB1150/ohd/gapjunctionmodel.JPG%22%3E" class="uri">http://www.colorado.edu/MCDB/MCDB1150/ohd/gapjunctionmodel.JPG"&gt;</a>;[3]&lt;/a&gt;, and&lt;a rel=”nofollow" class=“external autonumber” href=“<a href="http://www.lrz-muenchen.de/~jmd/gap%20junction2.gif%22%3E" class="uri">http://www.lrz-muenchen.de/~jmd/gap%20junction2.gif"&gt;</a>;[4]&lt;/a&gt;. Made with Adobe Illustrator. Image renamed from &lt;a href=”//commons.wikimedia.org/w/index.php?title=<a href="File:Gap_cell_junction.svg&amp;amp;action=edit&amp;amp;redlink=1" class="uri">File:Gap_cell_junction.svg&amp;amp;action=edit&amp;amp;redlink=1</a>" class=“new” title=“<a href="File:Gap" class="uri">File:Gap</a> cell junction.svg (page does not exist)”&gt;<a href="File:Gap" class="uri">File:Gap</a> cell junction.svg&lt;/a&gt;, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=6027074">Link</a>
+</p>
+</div>
+<div id="steps-in-chemical-transmission" class="section level3">
+<h3>Steps in chemical transmission</h3>
+<ul>
+<li><em>Voltage-gated calcium Ca++ channels</em> open</li>
+<li>Ca++ influx causes <em>synaptic vesicles</em> to bind with presynaptic membrane, fuse with membrane, spill contents via <em>exocytosis</em></li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnrn2948/MediaObjects/41583_2011_Article_BFnrn2948_Fig1_HTML.jpg?as=webp" alt="[[@Haucke2011-ub]](http://dx.doi.org/10.1038/nrn2948)" width="800px" height="500px" />
+<p class="caption">
+<a href="http://dx.doi.org/10.1038/nrn2948"><span class="citation">(Haucke, Neher, &amp; Sigrist, 2011)</span></a>
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0143416017301495-fx1.jpg" alt="[[@Hastoy2017-it]](https://doi.org/10.1016/j.ceca.2017.10.005)" width="900px" />
+<p class="caption">
+<a href="https://doi.org/10.1016/j.ceca.2017.10.005"><span class="citation">(Hastoy, Clark, Rorsman, &amp; Lang, 2017)</span></a>
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0143416017301495-gr1_lrg.jpg" alt="[[@Hastoy2017-it]](https://doi.org/10.1016/j.ceca.2017.10.005)" width="800px" height="500px" />
+<p class="caption">
+<a href="https://doi.org/10.1016/j.ceca.2017.10.005"><span class="citation">(Hastoy, Clark, Rorsman, &amp; Lang, 2017)</span></a>
+</p>
+</div>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Junctional_complex_and_pinocytotic_vesicles_-_embryonic_brain-TEM.jpg/1502px-Junctional_complex_and_pinocytotic_vesicles_-_embryonic_brain-TEM.jpg" width="800px" height="500px" style="display: block; margin: auto;" /></p>
+<ul>
+<li>NTs diffuse across <em>synaptic cleft</em></li>
+<li>NTs bind with <em>receptors</em> on <em>postsynaptic membrane</em>
+<ul>
+<li>Cause some post-synaptic effect</li>
+</ul></li>
+<li>NTs unbind from receptor</li>
+<li>NTs inactivated</li>
+<li>NTs diffuse along concentration gradient</li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/SynapseSchematic_en.svg/512px-SynapseSchematic_en.svg.png" alt="Source: https://commons.wikimedia.org/wiki/File%3ASynapseSchematic_en.svg" width="800px" />
+<p class="caption">
+Source: <a href="https://commons.wikimedia.org/wiki/File%3ASynapseSchematic_en.svg" class="uri">https://commons.wikimedia.org/wiki/File%3ASynapseSchematic_en.svg</a>
+</p>
+</div>
+<p><strong>Relative sizes</strong></p>
+<ul>
+<li>Neural membrane ~8 nm</li>
+<li>Synaptic vesicles ~40-60 or ~90-120 nm</li>
+<li>Synaptic cleft ~20-50 nm</li>
+<li>Cleft small relative to vesicles</li>
+</ul>
+</div>
+<div id="receptorchannel-types" class="section level3">
+<h3>Receptor/channel types</h3>
+<div id="leakpassive" class="section level4">
+<h4>Leak/passive</h4>
+<ul>
+<li>Vary in selectivity, permeability</li>
+</ul>
+</div>
+<div id="transportersexchangers" class="section level4">
+<h4>Transporters/exchangers</h4>
+<ul>
+<li>Ionic
+<ul>
+<li><span class="math inline">\(Na^+\)</span>/<span class="math inline">\(K^+\)</span> ATP-ase/pump</li>
+</ul></li>
+<li>Chemical
+<ul>
+<li>e.g., Dopamine transporter (DAT)</li>
+</ul></li>
+</ul>
+</div>
+<div id="ionotropic-receptors-receptor-ion-channel" class="section level4">
+<h4>Ionotropic receptors (receptor + ion channel)</h4>
+<ul>
+<li>Ligand-gated</li>
+<li>Open/close channel</li>
+<li>Ions flow in/out depending on membrane voltage and ion type</li>
+<li>Fast-responding (&lt; 2 ms), but short-duration effects (&lt; 100 ms)</li>
+</ul>
+</div>
+<div id="metabotropic-receptors-receptor-only" class="section level4">
+<h4>Metabotropic receptors (receptor only)</h4>
+<ul>
+<li>G-proteins -&gt;</li>
+<li>Trigger 2nd messengers</li>
+<li>Open/close adjacent channels, change metabolism</li>
+</ul>
+<p><img src="http://webvision.med.utah.edu/imageswv/GLU5.jpeg" width="800px" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="receptors-generate-postsynaptic-potentials-psps" class="section level3">
+<h3>Receptors generate <em>postsynaptic potentials (PSPs)</em></h3>
+<ul>
+<li>Small voltage changes</li>
+<li>Amplitude scales with # of receptors activated</li>
+<li><em>Excitatory PSPs (EPSPs)</em>
+<ul>
+<li>Depolarize neuron (make more +)</li>
+</ul></li>
+<li><em>Inhibitory (IPSPs)</em>
+<ul>
+<li>Hyperpolarize neuron (make more -)</li>
+</ul></li>
+</ul>
+</div>
+<div id="nts-inactivated" class="section level3">
+<h3>NTs inactivated</h3>
+<ul>
+<li>Buffering
+<ul>
+<li>e.g., glutamate into astrocytes <span class="citation">(Anderson &amp; Swanson, 2000)</span></li>
+</ul></li>
+<li><em>Reuptake</em> via <em><a href="https://en.wikipedia.org/wiki/Neurotransmitter_transporter">transporters</a></em>
+<ul>
+<li>e.g., serotonin via serotonin transporter (SERT)</li>
+</ul></li>
+<li>Enzymatic degradation
+<ul>
+<li>e.g., acetylcholine esterase (AChE) degrades acetylcholine (ACh)</li>
+</ul></li>
+</ul>
+</div>
+<div id="questions-to-ponder" class="section level3">
+<h3>Questions to ponder</h3>
+<ul>
+<li>Why do NTs diffuse from pre- to post-synaptic membrane?</li>
+<li>Why must NTs be inactivated?</li>
+<li>What sort of PSP would <em>opening</em> a Na+ channel produce?</li>
+<li>What sort of PSP would <em>opening</em> a Cl- channel produce?</li>
+<li>What sort of PSP would <em>closing</em> a K+ produce?</li>
+</ul>
+</div>
+<div id="synapse-location-and-function" class="section level3">
+<h3>Synapse location and function</h3>
+<div class="figure" style="text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Blausen_0843_SynapseTypes.png" alt="Source: Blausen.com staff https://commons.wikimedia.org/wiki/File%3ABlausen_0843_SynapseTypes.png" width="800px" />
+<p class="caption">
+Source: Blausen.com staff <a href="https://commons.wikimedia.org/wiki/File%3ABlausen_0843_SynapseTypes.png" class="uri">https://commons.wikimedia.org/wiki/File%3ABlausen_0843_SynapseTypes.png</a>
+</p>
+</div>
+<ul>
+<li>on dendrites
+<ul>
+<li>usually excitatory</li>
+</ul></li>
+<li>on cell bodies
+<ul>
+<li>usually inhibitory</li>
+</ul></li>
+<li>on axons
+<ul>
+<li>usually modulatory (change p(fire))</li>
+</ul></li>
+</ul>
+<p><img src="https://classconnection.s3.amazonaws.com/94/flashcards/1500094/jpg/chemical_synapse1355159626230.jpg" width="800px" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="neurotransmitters" class="section level2">
+<h2>Neurotransmitters</h2>
+<div id="what-are-they" class="section level3">
+<h3>What are they?</h3>
+<ul>
+<li>Chemicals produced by neurons</li>
+<li>Released by neurons</li>
+<li>Bound by neurons and other cells</li>
+<li>Send messages (have physiological effect on target cells)</li>
+<li>Inactivated after release</li>
+</ul>
+</div>
+<div id="things-to-know" class="section level3">
+<h3>Things to know</h3>
+<ul>
+<li>Neurotransmitter</li>
+<li>Where released from/to</li>
+<li>What receptor(s) bind it</li>
+</ul>
+</div>
+<div id="types" class="section level3">
+<h3>Types</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Family</th>
+<th>Neurotansmitter</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Amino acids</td>
+<td><a href="https://en.wikipedia.org/wiki/Glutamate_(neurotransmitter)">Glutamate</a></td>
+</tr>
+<tr class="even">
+<td></td>
+<td><a href="https://en.wikipedia.org/wiki/Gamma-Aminobutyric_acid"><span class="math inline">\(\gamma\)</span> aminobutyric acid (GABA)</a></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Glycine</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Aspartate</td>
+</tr>
+</tbody>
+</table>
+<div id="glutamate" class="section level4">
+<h4>Glutamate</h4>
+<ul>
+<li>Primary excitatory NT in CNS (~ 1/2 all synapses)</li>
+<li>Role in learning (via NMDA receptor)</li>
+<li>Receptors on neurons and glia (astrocytes and oligodendrocytes)</li>
+<li>Linked to umami (savory) taste sensation (think monosodium glutamate or MSG)</li>
+<li>Dysregulation in schizophrenia <a href="https://doi.org/10.1002/wps.20693"><span class="citation">(McCutcheon, Krystal, &amp; Howes, 2020)</span></a>, mood disorders <a href="http://dx.doi.org/10.1080/14728222.2020.1836160"><span class="citation">(Małgorzata, Paweł, Iwona, Brzostek, &amp; Andrzej, 2020)</span></a></li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Receptor</th>
+<th>Esp Permeable to</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ionotropic</td>
+<td>AMPA</td>
+<td>Na+, K+</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Kainate</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>NMDA</td>
+<td>Ca+</td>
+</tr>
+<tr class="even">
+<td>Metabotropic</td>
+<td>mGlu</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="gamma-aminobutyric-acid-gaba" class="section level4">
+<h4><span class="math inline">\(\gamma\)</span> aminobutyric acid (GABA)</h4>
+<ul>
+<li>Primary inhibitory NT in CNS</li>
+<li>Excitatory in developing CNS, [Cl-] in &gt;&gt; [Cl-] out</li>
+<li>Binding sites for benzodiazepines (BZD; e.g., Valium), barbiturates, ethanol, etc.
+<ul>
+<li>BZD affect subset of GABA-A receptors</li>
+<li>Increase total Cl- influx</li>
+</ul></li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Receptor</th>
+<th>Esp Permeable to</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ionotropic</td>
+<td>GABA-A</td>
+<td>Cl-</td>
+</tr>
+<tr class="even">
+<td>Metabotropic</td>
+<td>GABA-B</td>
+<td>K+</td>
+</tr>
+</tbody>
+</table>
+<div class="figure" style="text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/GABAA-receptor-protein-example.png/1200px-GABAA-receptor-protein-example.png" alt="Source: https://commons.wikimedia.org/wiki/File:GABAA-receptor-protein-example.png#/media/File:GABAA-receptor-protein-example.pn" width="800px" />
+<p class="caption">
+Source: <a href="https://commons.wikimedia.org/wiki/File:GABAA-receptor-protein-example.png#/media/File:GABAA-receptor-protein-example.pn" class="uri">https://commons.wikimedia.org/wiki/File:GABAA-receptor-protein-example.png#/media/File:GABAA-receptor-protein-example.pn</a>
+</p>
+</div>
+</div>
+<div id="other-amino-acid-nts" class="section level4">
+<h4>Other amino acid NTs</h4>
+<ul>
+<li><em>Aspartate</em>
+<ul>
+<li>Like Glu, stimulates NMDA receptor</li>
+</ul></li>
+<li><em>Glycine</em>
+<ul>
+<li>Spinal cord interneurons</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="acetylcholine-ach" class="section level3">
+<h3>Acetylcholine (ACh)</h3>
+<ul>
+<li>Primary excitatory NT of CNS output</li>
+<li>Somatic nervous system (motor neuron -&gt; neuromuscular junction)</li>
+<li>Autonomic nervous system (ANS)
+<ul>
+<li>Sympathetic branch: preganglionic neuron</li>
+<li>Parasympathetic branch: pre/postganglionic</li>
+</ul></li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="http://myzone.hrvfitltd.netdna-cdn.com/wp-content/uploads/2014/09/Image-1.jpg" alt="Source: http://myzone.hrvfitltd.netdna-cdn.com/wp-content/uploads/2014/09/Image-1.jpg" width="800px" />
+<p class="caption">
+Source: <a href="http://myzone.hrvfitltd.netdna-cdn.com/wp-content/uploads/2014/09/Image-1.jpg" class="uri">http://myzone.hrvfitltd.netdna-cdn.com/wp-content/uploads/2014/09/Image-1.jpg</a>
+</p>
+</div>
+<table>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Receptor</th>
+<th>Esp Permeable to</th>
+<th>Blocked by</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ionotropic</td>
+<td>Nicotinic (nAChR)</td>
+<td>Na+, K+</td>
+<td>e.g., Curare</td>
+</tr>
+<tr class="even">
+<td>Metabotropic</td>
+<td>Muscarinic (mAChR)</td>
+<td>K+</td>
+<td>e.g., Atropine</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="curare" class="section level3">
+<h3>Curare</h3>
+<p><img src="https://www.nybg.org/blogs/science-talk/content/uploads/2015/01/Curare-1.jpeg" width="800px" style="display: block; margin: auto;" /></p>
+<p><img src="http://www.general-anaesthesia.com/images/indian-curare.jpg" width="800px" style="display: block; margin: auto;" /></p>
+</div>
+<div id="atropine" class="section level3">
+<h3>Atropine</h3>
+<ul>
+<li>aka, nightshade or belladonna</li>
+<li>inhibits (acts as an antagonist for) muscarinic ACh receptor</li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="https://cdn.britannica.com/92/183192-050-1741C2F9/Belladonna-nightshade-leaves-berries-alkaloids-humans.jpg" alt="https://cdn.britannica.com/92/183192-050-1741C2F9/Belladonna-nightshade-leaves-berries-alkaloids-humans.jpg" width="800px" />
+<p class="caption">
+<a href="https://cdn.britannica.com/92/183192-050-1741C2F9/Belladonna-nightshade-leaves-berries-alkaloids-humans.jpg" class="uri">https://cdn.britannica.com/92/183192-050-1741C2F9/Belladonna-nightshade-leaves-berries-alkaloids-humans.jpg</a>
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Eye_treated_with_dilating_eye_drops.jpg/800px-Eye_treated_with_dilating_eye_drops.jpg" alt="Source: https://commons.wikimedia.org/wiki/File:Eye_treated_with_dilating_eye_drops.jpg" width="800px" />
+<p class="caption">
+Source: <a href="https://commons.wikimedia.org/wiki/File:Eye_treated_with_dilating_eye_drops.jpg" class="uri">https://commons.wikimedia.org/wiki/File:Eye_treated_with_dilating_eye_drops.jpg</a>
+</p>
+</div>
+</div>
+</div>
+<div id="monoamine-nts" class="section level2">
+<h2>Monoamine NTs</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Family</th>
+<th>Neurotransmitter</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Monoamines</td>
+<td>Dopamine (DA)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Norepinephrine (NE)/Noradrenaline (NAd)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Epinephrine (Epi)/Adrenaline (Ad)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Serotonin (5-HT)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Melatonin</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Histamine</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>DA -&gt; NE/NAd -&gt; Epi/Ad</li>
+</ul>
+<div id="information-processing" class="section level3">
+<h3>Information processing</h3>
+<ul>
+<li>Point-to-point
+<ul>
+<li>One sender, small number of recipients</li>
+<li>Glu, GABA</li>
+</ul></li>
+<li>Broadcast
+<ul>
+<li>One sender, widespread recipients</li>
+<li>DA, NE, 5-HT, melatonin, histamine</li>
+</ul></li>
+<li>Need to know
+<ul>
+<li>NT, where projecting, type of receptor to predict function</li>
+</ul></li>
+</ul>
+</div>
+<div id="dopamine" class="section level3">
+<h3>Dopamine</h3>
+<ul>
+<li>Released by
+<ul>
+<li>Substantia nigra -&gt; striatum, <em>meso-striatal projection</em></li>
+<li>Ventral tegmental area (VTA) -&gt; nucleus accumbens, ventral striatum, hippocampus, amygdala, cortex; <em>meso-limbo-cortical projection</em></li>
+</ul></li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="http://thebrain.mcgill.ca/flash/a/a_03/a_03_cl/a_03_cl_que/a_03_cl_que_1a.gif" alt="Source: http://thebrain.mcgill.ca/flash/a/a_03/a_03_cl/a_03_cl_que/a_03_cl_que_1a.gif" width="800px" />
+<p class="caption">
+Source: <a href="http://thebrain.mcgill.ca/flash/a/a_03/a_03_cl/a_03_cl_que/a_03_cl_que_1a.gif" class="uri">http://thebrain.mcgill.ca/flash/a/a_03/a_03_cl/a_03_cl_que/a_03_cl_que_1a.gif</a>
+</p>
+</div>
+<p>Clinical relevance for</p>
+<ul>
+<li>Parkinson’s Disease (mesostriatal)
+<ul>
+<li>DA agonists treat (agonists facilitate/increase transmission)</li>
+</ul></li>
+<li>ADHD (mesolimbocortical)</li>
+<li>Schizophrenia (mesolimbocortical)
+<ul>
+<li>DA antagonists treat</li>
+</ul></li>
+<li>Addiction (mesolimbocortical)</li>
+</ul>
+<p>Inactivated via</p>
+<ul>
+<li>Chemical breakdown (e.g., via monoamine oxidase), <a href="http://www.scholarpedia.org/article/Dopamine_anatomy#Dopamine_receptors" class="uri">http://www.scholarpedia.org/article/Dopamine_anatomy#Dopamine_receptors</a></li>
+<li>Dopamine transporter (DAT)
+<ul>
+<li>Psychostimulants (e.g., cocaine, methylphenidate) act upon. <a href="https://www.sciencedirect.com/topics/neuroscience/dopamine-transporter"><span class="citation">(<span>“Dopamine transporter,”</span> n.d.)</span></a></li>
+<li>DAT also transports norepinephrine (NE)</li>
+</ul></li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="https://ars.els-cdn.com/content/image/3-s2.0-B9780123741059002379-gr1.jpg?_" alt="https://ars.els-cdn.com/content/image/3-s2.0-B9780123741059002379-gr1.jpg?_" width="800px" />
+<p class="caption">
+<a href="https://ars.els-cdn.com/content/image/3-s2.0-B9780123741059002379-gr1.jpg?_" class="uri">https://ars.els-cdn.com/content/image/3-s2.0-B9780123741059002379-gr1.jpg?_</a>
+</p>
+</div>
+<table>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Receptor</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Metabotropic</td>
+<td>D1-like (D1 and D5)</td>
+<td>more prevalent</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>D2-like (D2, D3, D4)</td>
+<td>target of many antipsychotics</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="norepinephrine" class="section level3">
+<h3>Norepinephrine</h3>
+<ul>
+<li>Released by
+<ul>
+<li><em><a href="http://www.scholarpedia.org/article/Locus_coeruleus">locus coeruleus</a></em> in pons/caudal tegmentum</li>
+<li>postganglionic sympathetic neurons onto target tissues</li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Locus_coeruleus_highlighted.jpg/300px-Locus_coeruleus_highlighted.jpg" alt="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Locus_coeruleus_highlighted.jpg/300px-Locus_coeruleus_highlighted.jpg" width="800px" />
+<p class="caption">
+<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Locus_coeruleus_highlighted.jpg/300px-Locus_coeruleus_highlighted.jpg" class="uri">https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Locus_coeruleus_highlighted.jpg/300px-Locus_coeruleus_highlighted.jpg</a>
+</p>
+</div></li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="https://www.researchgate.net/publication/338194613/figure/fig1/AS:842586742857728@1577899742543/Locus-coeruleus-LC-efferent-pathways-and-relevant-functions-LC-projects-throughout-the.png" alt="https://www.researchgate.net/publication/338194613/figure/fig1/AS:842586742857728@1577899742543/Locus-coeruleus-LC-efferent-pathways-and-relevant-functions-LC-projects-throughout-the.png" width="800px" />
+<p class="caption">
+<a href="https://www.researchgate.net/publication/338194613/figure/fig1/AS:842586742857728@1577899742543/Locus-coeruleus-LC-efferent-pathways-and-relevant-functions-LC-projects-throughout-the.png" class="uri">https://www.researchgate.net/publication/338194613/figure/fig1/AS:842586742857728@1577899742543/Locus-coeruleus-LC-efferent-pathways-and-relevant-functions-LC-projects-throughout-the.png</a>
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="http://myzone.hrvfitltd.netdna-cdn.com/wp-content/uploads/2014/09/Image-1.jpg" alt="Source: http://myzone.hrvfitltd.netdna-cdn.com/wp-content/uploads/2014/09/Image-1.jpg" width="800px" />
+<p class="caption">
+Source: <a href="http://myzone.hrvfitltd.netdna-cdn.com/wp-content/uploads/2014/09/Image-1.jpg" class="uri">http://myzone.hrvfitltd.netdna-cdn.com/wp-content/uploads/2014/09/Image-1.jpg</a>
+</p>
+</div>
+<ul>
+<li>Role in arousal, mood, eating, sexual behavior</li>
+<li>Clinical relevance for ADHD, Alzheimer’s, Parkinson’s, depression</li>
+<li>Inactivated by norepinephrine transporter (NET), aka noradrenaline transporter (NAT)
+<ul>
+<li>Contributes to DA uptake, too.</li>
+</ul></li>
+<li>Also monoamine oxidase inhibitors (MAOIs)
+<ul>
+<li>inactivate monoamines in neurons, astrocytes</li>
+<li>MAOIs increase NE, DA</li>
+<li>Treatment for depression</li>
+</ul></li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fnrn1883/MediaObjects/41583_2006_Article_BFnrn1883_Fig1_HTML.jpg?as=webp" alt="[[@Youdim2006-wk]](http://dx.doi.org/10.1038/nrn1883)" width="800px" />
+<p class="caption">
+<a href="http://dx.doi.org/10.1038/nrn1883"><span class="citation">(Youdim, Edmondson, &amp; Tipton, 2006)</span></a>
+</p>
+</div>
+<!-- MAOIs figure -->
+<table>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Receptor</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Metabotropic</td>
+<td><span class="math inline">\(\alpha\)</span> (1,2)</td>
+<td>antagonists treat anxiety, panic</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><span class="math inline">\(\beta\)</span> (1,2,3)</td>
+<td>‘beta blockers’ in cardiac disease</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="adrenalineepinephrine" class="section level3">
+<h3>Adrenaline/Epinephrine</h3>
+<ul>
+<li>Synthesized from norepinephrine</li>
+<li>As NT: Released in small amounts by medulla oblongata</li>
+<li>As hormone: Released by adrenal medulla</li>
+<li>Binds to (<span class="math inline">\(\alpha_{1,2}\)</span>, <span class="math inline">\(\beta_{1,2,3}\)</span> receptors in blood vessels, cardiac muscle, lungs, eye muscles controlling pupil dilation, liver, pancreas, etc.</li>
+<li>Release enhanced by cortisol from adrenal cortex</li>
+<li>Unusual in NOT being part of negative feedback system controlling its own release</li>
+</ul>
+</div>
+<div id="serotonin-5-ht" class="section level3">
+<h3>Serotonin (5-HT)</h3>
+<ul>
+<li><p>Released by <em>raphe nuclei</em> in brainstem</p></li>
+<li><p>Role in mood, sleep, eating, pain, nausea, cognition, memory</p></li>
+<li><p>Modulates release of other NTs</p></li>
+<li><p>Most (90%; <a href="http://dx.doi.org/10.1136/gut.2003.035568"><span class="citation">(De Ponti, 2004)</span></a>) of body’s 5-HT regulates digestion</p></li>
+<li><p>Separate cortical, subcortical 5-HT projection pathways?</p></li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="https://3c1703fe8d.site.internapcdn.net/newman/csz/news/800/2018/anewmapofthe.jpg" alt="[[@Ren2018-zl]](http://dx.doi.org/10.1016/j.cell.2018.07.043)" width="800px" />
+<p class="caption">
+<a href="http://dx.doi.org/10.1016/j.cell.2018.07.043"><span class="citation">(Ren et al., 2018)</span></a>
+</p>
+</div>
+<ul>
+<li>Seven receptor families (5-HT 1-7) with 14 types</li>
+<li>All but one metabotropic</li>
+</ul>
+<p>Clinically significant because</p>
+<ul>
+<li>Ecstasy (MDMA) disturbs serotonin</li>
+<li>So does LSD</li>
+<li>Fluoxetine (Prozac)
+<ul>
+<li><em>Selective Serotonin Reuptake Inhibitor (SSRI)</em></li>
+<li>Treats depression, panic, eating disorders, others</li>
+</ul></li>
+<li>5-HT3 receptor antagonists are anti-mimetics used in treating nausea</li>
+</ul>
+<p>
+<a href="https://commons.wikimedia.org/wiki/File:Pubmed_equitativa_hormonal.png#/media/File:Pubmed_equitativa_hormonal.png"><img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Pubmed_equitativa_hormonal.png" alt="In this drawing of the brain, the serotonergic system is red and the mesolimbic dopamine pathway is blue. There is one collection of serotonergic neurons in the upper brainstem that sends axons upwards to the whole cerebrum, and one collection next to the cerebellum that sends axons downward to the spinal cord. Slightly forward the upper serotonergic neurons is the ventral tegmental area (VTA), which contains dopaminergic neurons. These neurons' axons then connect to the nucleus accumbens, hippocampus, and the frontal cortex. Over the VTA is another collection of dopaminergic cells, the substansia nigra, which send axons to the striatum."></a><br>Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=45159949">Link</a>
+</p>
+<ul>
+<li>Different psychological roles (passive vs. active coping) associated with different 5-HT receptor subtypes? <a href="http://dx.doi.org/10.1177/0269881117725915"><span class="citation">(Carhart-Harris &amp; Nutt, 2017)</span></a></li>
+</ul>
+</div>
+<div id="melatonin" class="section level3">
+<h3>Melatonin</h3>
+<ul>
+<li>Released by pineal gland (pine cone-like appearance)</li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="http://www.vivo.colostate.edu/hbooks/pathphys/endocrine/otherendo/pinealgland.jpg" alt="http://www.vivo.colostate.edu/hbooks/pathphys/endocrine/otherendo/pinealgland.jpg" width="800px" />
+<p class="caption">
+<a href="http://www.vivo.colostate.edu/hbooks/pathphys/endocrine/otherendo/pinealgland.jpg" class="uri">http://www.vivo.colostate.edu/hbooks/pathphys/endocrine/otherendo/pinealgland.jpg</a>
+</p>
+</div>
+</div>
+<div id="histamine" class="section level3">
+<h3>Histamine</h3>
+<ul>
+<li>Released by hypothalamus, projects to whole brain</li>
+<li><span class="math inline">\(H_1\)</span>-<span class="math inline">\(H_4\)</span> Metabotropic receptors, one ionotropic type in thalamus/hypothalamus</li>
+<li>Role in arousal/sleep regulation</li>
+<li>In body, part of immune/inflammatory response</li>
+</ul>
+</div>
+</div>
+<div id="targets-of-psychotropic-drugs" class="section level2">
+<h2>Targets of psychotropic drugs</h2>
+<div class="figure" style="text-align: center">
+<img src="img/psychotropic-drug-targets.jpg" alt="Source: https://stahlonline.cambridge.org/essential_4th_chapter.jsf?page=chapter2_summary.htm&amp;name=Chapter%202&amp;title=Summary" width="800px" />
+<p class="caption">
+Source: <a href="https://stahlonline.cambridge.org/essential_4th_chapter.jsf?page=chapter2_summary.htm&amp;name=Chapter%202&amp;title=Summary" class="uri">https://stahlonline.cambridge.org/essential_4th_chapter.jsf?page=chapter2_summary.htm&amp;name=Chapter%202&amp;title=Summary</a>
+</p>
+</div>
+</div>
+<div id="other-nts" class="section level2">
+<h2>Other NTs</h2>
+<ul>
+<li>Gases
+<ul>
+<li><em>Nitric Oxide (NO)</em>, <em>carbon monoxide (CO)</em></li>
+</ul></li>
+<li>Neuropeptides
+<ul>
+<li><em>Substance P</em> and <em>endorphins</em> (endogenous morphine-like compounds) have role in pain</li>
+<li><em>Orexin/hypocretin</em>, project from lateral hypothalamus across brain, regulates appetite, arousal</li>
+<li><em>Cholecystokinin (CCK)</em> stimulates digestion</li>
+</ul></li>
+<li>Purines
+<ul>
+<li><em>Adenosine</em> (inhibited by caffeine)</li>
+</ul></li>
+<li>Others
+<ul>
+<li><em>Anandamide</em> (activates endogenous cannabinoid receptors)</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="hormonal-communication" class="section level1">
+<h1>Hormonal communication</h1>
+<ul>
+<li>Chemicals secreted into blood</li>
+<li>Act on specific target tissues via receptors</li>
+<li>Produce specific effects</li>
+</ul>
+<div id="examples-of-substances-that-are-both-hormones-and-nts" class="section level2">
+<h2>Examples of substances that are both hormones and NTs</h2>
+<ul>
+<li>Melatonin</li>
+<li>Epinephrine/adrenaline</li>
+<li>Oxytocin</li>
+<li>Vasopressin</li>
+</ul>
+</div>
+<div id="behaviors-under-hormonal-influence" class="section level2">
+<h2>Behaviors under hormonal influence</h2>
+<div id="ingestive-eating-drinking" class="section level3">
+<h3>Ingestive (eating/ drinking)</h3>
+<ul>
+<li>￼Fluid levels</li>
+<li>Na, K, Ca levels</li>
+<li>Digestion</li>
+<li>Blood glucose levels</li>
+</ul>
+</div>
+<div id="reproduction-related" class="section level3">
+<h3>Reproduction-related</h3>
+<ul>
+<li>Sexual Maturation</li>
+<li>Mating</li>
+<li>Birth</li>
+<li>Care giving</li>
+</ul>
+</div>
+<div id="to-threatchallenge" class="section level3">
+<h3>To threat/challenge</h3>
+<ul>
+<li>Metabolism</li>
+<li>Heart rate, blood pressure</li>
+<li>Digestion</li>
+<li>Arousal</li>
+</ul>
+</div>
+<div id="common-factors" class="section level3">
+<h3>Common factors</h3>
+<ul>
+<li>Biological imperatives</li>
+<li>Proscribed in space and time</li>
+<li>Foraging/hunting
+<ul>
+<li>Find targets distributed in space, evaluate, act upon</li>
+</ul></li>
+<li>Often involve others</li>
+</ul>
+</div>
+</div>
+<div id="principles-of-hormonal-action" class="section level2">
+<h2>Principles of hormonal action</h2>
+<ul>
+<li>Gradual action</li>
+<li>Change intensity or probability of behavior</li>
+<li>Behavior influences/influenced by hormones
+<ul>
+<li>+/- Feedback</li>
+</ul></li>
+<li>Multiple effects on different tissues</li>
+<li>Produced in small amounts; released in bursts</li>
+<li>Levels vary daily, seasonally
+<ul>
+<li>or are triggered by specific external/internal events</li>
+</ul></li>
+<li>Effect cellular metabolism</li>
+<li>Influence only cells with receptors</li>
+<li>Point to point vs.“broadcast”
+<ul>
+<li>Wider broadcast than neuromodulators</li>
+</ul></li>
+<li>Fast vs. slow-acting</li>
+<li>Short-acting vs. long-acting</li>
+<li>Digital (yes-no) vs. analog (graded)</li>
+<li>Voluntary control vs. involuntary</li>
+</ul>
+<div id="similarities-between-neural-and-hormonal-communication" class="section level3">
+<h3>Similarities between neural and hormonal communication</h3>
+<ul>
+<li>Chemical messengers stored for later release</li>
+<li>Release follows stimulation</li>
+<li>Action depends on specific receptors</li>
+<li>2nd messenger systems common</li>
+</ul>
+</div>
+<div id="hormonal-release-sites" class="section level3">
+<h3>Hormonal release sites</h3>
+<p><img src="img/glands.jpg" width="800px" style="display: block; margin: auto;" /></p>
+<ul>
+<li>CNS
+<ul>
+<li>Hypothalamus</li>
+<li><em>Pituitary</em>
+<ul>
+<li><em>Anterior</em></li>
+<li><em>Posterior</em></li>
+</ul></li>
+<li>Pineal gland</li>
+</ul></li>
+<li>Rest of body
+<ul>
+<li><em>Thyroid</em></li>
+<li><em>Adrenal (ad=adjacent, renal=kidney) gland</em>
+<ul>
+<li><em>Adrenal cortex</em></li>
+<li><em>Adrenal medulla</em></li>
+</ul></li>
+<li><em>Gonads</em> (testes/ovaries)</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="two-release-systems-from-hypothalamus" class="section level2">
+<h2>Two release systems from hypothalamus</h2>
+<div id="direct-release" class="section level3">
+<h3>Direct release</h3>
+<ul>
+<li>Hypothalamus (paraventricular, supraoptic nucleus) to</li>
+<li>Posterior pituitary
+<ul>
+<li><em>Oxytocin</em></li>
+<li><em>Arginine Vasopressin (AVP, vasopressin)</em></li>
+</ul></li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/1807_The_Posterior_Pituitary_Complex.jpg/594px-1807_The_Posterior_Pituitary_Complex.jpg" alt="Source: https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/1807_The_Posterior_Pituitary_Complex.jpg/594px-1807_The_Posterior_Pituitary_Complex.jpg" width="800px" />
+<p class="caption">
+Source: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/1807_The_Posterior_Pituitary_Complex.jpg/594px-1807_The_Posterior_Pituitary_Complex.jpg" class="uri">https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/1807_The_Posterior_Pituitary_Complex.jpg/594px-1807_The_Posterior_Pituitary_Complex.jpg</a>
+</p>
+</div>
+</div>
+<div id="indirect-release" class="section level3">
+<h3>Indirect release</h3>
+<ul>
+<li>Hypothalamus -&gt; <em>releasing hormones</em></li>
+<li>Anterior pituitary -&gt; <em>tropic hormones</em></li>
+<li>End organs</li>
+</ul>
+<p><img src="img/indirect-release.jpg" width="800px" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="case-studies" class="section level2">
+<h2>Case studies</h2>
+<div id="responses-to-threat-or-challenge" class="section level3">
+<h3>Responses to threat or challenge</h3>
+<ul>
+<li>Neural response
+<ul>
+<li><em>Sympathetic Adrenal Medulla (SAM) response</em></li>
+<li>Sympathetic NS activation of adrenal medulla, other organs</li>
+<li>Releases NE and Epi into bloodstream</li>
+</ul></li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="http://www.nature.com/nrn/journal/v10/n6/images/nrn2647-i1.jpg" alt="[[@ulrich-lai_neural_2009]](http://doi.org/10.1038/nrn2647)" width="800px" />
+<p class="caption">
+<a href="http://doi.org/10.1038/nrn2647"><span class="citation">(Ulrich-Lai &amp; Herman, 2009)</span></a>
+</p>
+</div>
+<ul>
+<li>Endocrine response
+<ul>
+<li><em>Hypothalamic Pituitary Adrenal (HPA) axis</em></li>
+<li>Adrenal hormones released</li>
+</ul></li>
+<li>Hypothalamus
+<ul>
+<li><em>Corticotropin Releasing Hormone (CRH)</em></li>
+</ul></li>
+<li>Anterior pituitary
+<ul>
+<li><em>Adrenocorticotropic hormone (ACTH)</em></li>
+</ul></li>
+<li>Adrenal cortex
+<ul>
+<li><em>Glucocorticoids (e.g., cortisol)</em></li>
+<li><em>Mineralocorticoids (e.g. aldosterone)</em></li>
+</ul></li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="http://www.nature.com/nrn/journal/v10/n6/images/nrn2647-i1.jpg" alt="[[@ulrich-lai_neural_2009]](http://doi.org/10.1038/nrn2647)" width="800px" />
+<p class="caption">
+<a href="http://doi.org/10.1038/nrn2647"><span class="citation">(Ulrich-Lai &amp; Herman, 2009)</span></a>
+</p>
+</div>
+<div id="adrenal-hormones" class="section level4">
+<h4>Adrenal hormones</h4>
+<ul>
+<li><em>Steroids</em>
+<ul>
+<li>Derived from cholesterol</li>
+</ul></li>
+<li><em>Cortisol</em>
+<ul>
+<li>increases blood glucose, anti-inflammatory effects</li>
+<li>negative consequences of prolonged exposure</li>
+</ul></li>
+<li><em>Aldosterone</em>
+<ul>
+<li>Regulates Na (and water)</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="reproductive-behavior-the-milk-letdown-reflex" class="section level3">
+<h3>Reproductive behavior – the milk letdown reflex</h3>
+<ul>
+<li>Supraoptic &amp; Paraventricular nucleus (PVN) of hypothalamus releases oxytocin
+<ul>
+<li>Into bloodstream via posterior pituitary (endocrine)</li>
+<li>Onto neurons in nucleus accumbens (neurocrine), amygdala, brainstem</li>
+</ul></li>
+<li>Oxytocin stimulates milk ducts to secrete</li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="https://64.media.tumblr.com/29ad3be13cc42500c5c0eb496b465745/tumblr_nr55r27dOB1tqg84mo1_640.png" alt="https://64.media.tumblr.com/29ad3be13cc42500c5c0eb496b465745/tumblr_nr55r27dOB1tqg84mo1_640.png" width="800px" />
+<p class="caption">
+<a href="https://64.media.tumblr.com/29ad3be13cc42500c5c0eb496b465745/tumblr_nr55r27dOB1tqg84mo1_640.png" class="uri">https://64.media.tumblr.com/29ad3be13cc42500c5c0eb496b465745/tumblr_nr55r27dOB1tqg84mo1_640.png</a>
+</p>
+</div>
+<p><strong>Oxytocin’s role…</strong></p>
+<ul>
+<li>Sexual arousal</li>
+<li>Released in bursts during orgasm</li>
+<li>Stimulates uterine, vaginal contraction during labor
+<ul>
+<li>But mouse OXY knock-out model still engages in reproductive behavior and gives birth without incident.</li>
+</ul></li>
+<li>Oxytocin cells in ovarian corpus luteum, testicles, retina, adrenal medulla, pancreas</li>
+<li>Links to social interaction, bonding <a href="http://dx.doi.org/10.1016/j.biopsych.2013.05.026"><span class="citation">(Weisman &amp; Feldman, 2013)</span></a></li>
+<li>Alters face processing in autism <a href="http://dx.doi.org/10.1016/j.biopsych.2013.02.007"><span class="citation">(Domes et al., 2013)</span></a></li>
+<li>May inhibit fear/anxiety-related behaviors by gating amygdala <a href="http://doi.org/10.1126/science.1201043"><span class="citation">(Viviani et al., 2011)</span></a></li>
+</ul>
+<div class="centered">
+<p><a href="http://columbusfreepress.com/sites/default/files/keep-calm-and-release-oxytocin-2(1).png"> <img src="http://columbusfreepress.com/sites/default/files/keep-calm-and-release-oxytocin-2(1).png" height=500px> </a></p>
+</div>
+</div>
+<div id="circadian-rhythms" class="section level3">
+<h3>Circadian rhythms</h3>
+<div id="melatonin-1" class="section level4">
+<h4>Melatonin</h4>
+<ul>
+<li>Diurnal rhythm</li>
+<li>Night time peak, early morning low</li>
+<li>Secretion suppressed by short wavelength or “blue” light (&lt; 460-480 nm)</li>
+<li>Rhythm irregular until ~3 mos post-natal <a href="http://dx.doi.org/68571"><span class="citation">(Ardura, Gutierrez, Andres, &amp; Agapito, 2003)</span></a></li>
+<li>Peak weakens, broadens with age</li>
+</ul>
+<p><img src="http://thebrain.mcgill.ca/flash/a/a_11/a_11_cr/a_11_cr_hor/a_11_cr_hor_1a.jpg" width="800px" style="display: block; margin: auto;" /></p>
+<ul>
+<li>Suprachiasmatic nucleus (SCN) of the hypothalamus</li>
+<li>Paraventricular nucleus of the hypothalamus</li>
+<li>Spinal cord</li>
+<li>Superior cervical ganglion</li>
+<li>Pineal gland</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fgJPnQCJ9eE" frameborder="0" allowfullscreen>
+</iframe>
+</div>
+</div>
+</div>
+<div id="thinking-about-neurochemical-influences" class="section level2">
+<h2>Thinking about neurochemical influences</h2>
+<ul>
+<li>Measure hormones in blood, saliva; can’t effectively measure NTs</li>
+<li>Multivariate, nonlinear, mutually interacting</li>
+<li>Varied time scales
+<ul>
+<li>Phasic (e.g., cortisol in response to challenge)</li>
+<li>Periodic (e.g., melatonin; diurnal cortisol)</li>
+</ul></li>
+<li>Peripheral effects + neural feedback</li>
+<li>State variables and behavior
+<ul>
+<li>Are your participants sleepy, hungry, horny, distressed…</li>
+<li>Endogenous &amp; exogenous influences</li>
+<li>Systems interact; need better, broader, and denser measurement</li>
+</ul></li>
+</ul>
+<div id="gutbrain-connection" class="section level3">
+<h3>Gut/brain connection</h3>
+<div class="figure" style="text-align: center">
+<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0166223616301138-gr1.jpg" alt="[[@Sarkar2016-qf]](https://doi.org/10.1016/j.tins.2016.09.002)" width="800px" />
+<p class="caption">
+<a href="https://doi.org/10.1016/j.tins.2016.09.002"><span class="citation">(Sarkar et al., 2016)</span></a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1 class="unnumbered">References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
+<div id="ref-GLIA:GLIA10" class="csl-entry">
+Anderson, C. M., &amp; Swanson, R. A. (2000). Astrocyte glutamate transport: Review of properties, regulation, and physiological functions. <em>Glia</em>, <em>32</em>(1), 1–14. <a href="https://doi.org/10.1002/1098-1136(200010)32:1&lt;1::AID-GLIA10&gt;3.0.CO;2-W">https://doi.org/10.1002/1098-1136(200010)32:1&lt;1::AID-GLIA10&gt;3.0.CO;2-W</a>
+</div>
+<div id="ref-Ardura2003-tw" class="csl-entry">
+Ardura, J., Gutierrez, R., Andres, J., &amp; Agapito, T. (2003). Emergence and evolution of the circadian rhythm of melatonin in children. <em>Horm. Res.</em>, <em>59</em>(2), 66–72. <a href="https://doi.org/68571">https://doi.org/68571</a>
+</div>
+<div id="ref-Carhart-Harris2017-aq" class="csl-entry">
+Carhart-Harris, R. L., &amp; Nutt, D. J. (2017). Serotonin and brain function: A tale of two receptors. <em>Journal of Psychopharmacology</em>, <em>31</em>(9), 1091–1120. <a href="https://doi.org/10.1177/0269881117725915">https://doi.org/10.1177/0269881117725915</a>
+</div>
+<div id="ref-De_Ponti2004-lo" class="csl-entry">
+De Ponti, F. (2004). Pharmacology of serotonin: What a clinician should know. <em>Gut</em>, <em>53</em>(10), 1520–1535. <a href="https://doi.org/10.1136/gut.2003.035568">https://doi.org/10.1136/gut.2003.035568</a>
+</div>
+<div id="ref-Domes2013164" class="csl-entry">
+Domes, G., Heinrichs, M., Kumbier, E., Grossmann, A., Hauenstein, K., &amp; Herpertz, S. C. (2013). Effects of intranasal oxytocin on the neural basis of face processing in autism spectrum disorder. <em>Biological Psychiatry</em>, <em>74</em>(3), 164–171. https://doi.org/<a href="http://dx.doi.org/10.1016/j.biopsych.2013.02.007">http://dx.doi.org/10.1016/j.biopsych.2013.02.007</a>
+</div>
+<div id="ref-noauthor_undated-on" class="csl-entry">
+Dopamine transporter. (n.d.). <a href="https://www.sciencedirect.com/topics/neuroscience/dopamine-transporter">https://www.sciencedirect.com/topics/neuroscience/dopamine-transporter</a>. Retrieved from <a href="https://www.sciencedirect.com/topics/neuroscience/dopamine-transporter">https://www.sciencedirect.com/topics/neuroscience/dopamine-transporter</a>
+</div>
+<div id="ref-Hastoy2017-it" class="csl-entry">
+Hastoy, B., Clark, A., Rorsman, P., &amp; Lang, J. (2017). Fusion pore in exocytosis: More than an exit gate? A <span class="math inline">\(\beta\)</span>-cell perspective. <em>Cell Calcium</em>, <em>68</em>, 45–61. <a href="https://doi.org/10.1016/j.ceca.2017.10.005">https://doi.org/10.1016/j.ceca.2017.10.005</a>
+</div>
+<div id="ref-Haucke2011-ub" class="csl-entry">
+Haucke, V., Neher, E., &amp; Sigrist, S. J. (2011). Protein scaffolds in the coupling of synaptic exocytosis and endocytosis. <em>Nature Reviews. Neuroscience</em>, <em>12</em>(3), 127–138. <a href="https://doi.org/10.1038/nrn2948">https://doi.org/10.1038/nrn2948</a>
+</div>
+<div id="ref-Malgorzata2020-nz" class="csl-entry">
+Małgorzata, P., Paweł, K., Iwona, M. L., Brzostek, T., &amp; Andrzej, P. (2020). Glutamatergic dysregulation in mood disorders: Opportunities for the discovery of novel drug targets. <em>Expert Opinion on Therapeutic Targets</em>, <em>24</em>(12), 1187–1209. <a href="https://doi.org/10.1080/14728222.2020.1836160">https://doi.org/10.1080/14728222.2020.1836160</a>
+</div>
+<div id="ref-McCutcheon2020-ez" class="csl-entry">
+McCutcheon, R. A., Krystal, J. H., &amp; Howes, O. D. (2020). Dopamine and glutamate in schizophrenia: Biology, symptoms and treatment. <em>World Psychiatry: Official Journal of the World Psychiatric Association</em>, <em>19</em>(1), 15–33. <a href="https://doi.org/10.1002/wps.20693">https://doi.org/10.1002/wps.20693</a>
+</div>
+<div id="ref-Ren2018-zl" class="csl-entry">
+Ren, J., Friedmann, D., Xiong, J., Liu, C. D., Ferguson, B. R., Weerakkody, T., … Luo, L. (2018). Anatomically defined and functionally distinct dorsal raphe serotonin sub-systems. <em>Cell</em>. <a href="https://doi.org/10.1016/j.cell.2018.07.043">https://doi.org/10.1016/j.cell.2018.07.043</a>
+</div>
+<div id="ref-Sarkar2016-qf" class="csl-entry">
+Sarkar, A., Lehto, S. M., Harty, S., Dinan, T. G., Cryan, J. F., &amp; Burnet, P. W. J. (2016). Psychobiotics and the manipulation of <span>Bacteria–Gut–Brain</span> signals. <em>Trends in Neurosciences</em>, <em>39</em>(11), 763–781. <a href="https://doi.org/10.1016/j.tins.2016.09.002">https://doi.org/10.1016/j.tins.2016.09.002</a>
+</div>
+<div id="ref-ulrich-lai_neural_2009" class="csl-entry">
+Ulrich-Lai, Y. M., &amp; Herman, J. P. (2009). Neural regulation of endocrine and autonomic stress responses. <em>Nature Reviews Neuroscience</em>, <em>10</em>(6), 397–409. <a href="https://doi.org/10.1038/nrn2647">https://doi.org/10.1038/nrn2647</a>
+</div>
+<div id="ref-viviani2011oxytocin" class="csl-entry">
+Viviani, D., Charlet, A., Burg, E. van den, Robinet, C., Hurni, N., Abatis, M., … Stoop, R. (2011). Oxytocin selectively gates fear responses through distinct outputs from the central amygdala. <em>Science</em>, <em>333</em>(6038), 104–107. <a href="https://doi.org/10.1126/science.1201043">https://doi.org/10.1126/science.1201043</a>
+</div>
+<div id="ref-Weisman2013158" class="csl-entry">
+Weisman, O., &amp; Feldman, R. (2013). Oxytocin effects on the human brain: Findings, questions, and future directions. <em>Biological Psychiatry</em>, <em>74</em>(3), 158–159. https://doi.org/<a href="http://dx.doi.org/10.1016/j.biopsych.2013.05.026">http://dx.doi.org/10.1016/j.biopsych.2013.05.026</a>
+</div>
+<div id="ref-Youdim2006-wk" class="csl-entry">
+Youdim, M. B. H., Edmondson, D., &amp; Tipton, K. F. (2006). The therapeutic potential of monoamine oxidase inhibitors. <em>Nature Reviews. Neuroscience</em>, <em>7</em>(4), 295–309. <a href="https://doi.org/10.1038/nrn1883">https://doi.org/10.1038/nrn1883</a>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+<script>
+$(document).ready(function () {
+  window.initializeCodeFolding("hide" === "show");
+});
+</script>
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

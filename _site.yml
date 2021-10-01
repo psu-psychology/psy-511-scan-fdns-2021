@@ -42,10 +42,8 @@ navbar:
             href: "lectures/511-anatomy.html#brodmann-areas"
       - text: "Week 6"
         menu:
-          - text: "2021-09-29"
-            href:
           - text: "2021-10-01"
-            href:
+            href: "lectures/511-chemical-communication.html"
       - text: "Week 7"
         menu:
           - text: "2021-10-06"

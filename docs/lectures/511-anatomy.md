@@ -2,7 +2,7 @@
 title: "[PSY 511](https://psu-psychology.github.io/psy-511-scan-fdns-2021)"
 subtitle: "Neuroanatomy"
 author: "Rick Gilmore"
-date: "2021-09-23 08:39:26"
+date: "2021-09-24 08:53:02"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -128,6 +128,8 @@ output:
 <img src="https://teachmeanatomy.info/wp-content/uploads/Regional-Blood-Supply-to-the-Cerebrum-1024x380.jpg" alt="https://teachmeanatomy.info/wp-content/uploads/Regional-Blood-Supply-to-the-Cerebrum-1024x380.jpg"  />
 <p class="caption">https://teachmeanatomy.info/wp-content/uploads/Regional-Blood-Supply-to-the-Cerebrum-1024x380.jpg</p>
 </div>
+
+<p><a href="https://commons.wikimedia.org/wiki/File:Cerebrovascular_System.png#/media/File:Cerebrovascular_System.png"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Cerebrovascular_System.png" alt="Cerebrovascular System.png"></a><br>By &lt;a href="//commons.wikimedia.org/wiki/User:BruceBlaus" title="User:BruceBlaus"&gt;BruceBlaus&lt;/a&gt; - &lt;span class="int-own-work" lang="en"&gt;Own work&lt;/span&gt;, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=51638412">Link</a></p>
 
 ### Blood/brain barrier
 
@@ -491,11 +493,13 @@ output:
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Gray726_inferior_frontal_gyrus.png" style="display: block; margin: auto;" />
 
-- Broca's Area
+- Home to Broca's Area
 
 **Middle Frontal Gyrus (MFG)**
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Gray726_middle_frontal_gyrus.png" style="display: block; margin: auto;" />
+
+- Home to Dorsolateral Prefrontal Cortex ([DLPFC](https://en.wikipedia.org/wiki/Dorsolateral_prefrontal_cortex))
 
 **Superior Frontal Gyrus (SFG)**
 
@@ -532,6 +536,13 @@ output:
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Gray726_inferior_temporal_gyrus.png" style="display: block; margin: auto;" />
 
+- Continuation of ventral visual processing stream
+
+<div class="figure" style="text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Inferior_temporal_gyrus_coronal_sections.gif" alt="https://en.wikipedia.org/wiki/Inferior_temporal_gyrus"  />
+<p class="caption">https://en.wikipedia.org/wiki/Inferior_temporal_gyrus</p>
+</div>
+
 **Entorhinal Cortex (ER)**
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Medial_surface_of_cerebral_cortex_-_entorhinal_cortex.png" style="display: block; margin: auto;" />
@@ -562,9 +573,18 @@ output:
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Gray726_inferior_parietal_lobule.png" style="display: block; margin: auto;" />
 
+- e.g., language, mathematical operations, body image, etc.
+
 **Superior Parietal Lobule**
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Gray726_superior_parietal_lobule.png" style="display: block; margin: auto;" />
+
+- damage to can cause spatial hemi-neglect
+
+<div class="figure" style="text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Superior_parietal_lobule_sagittal_sections.gif" alt="https://en.wikipedia.org/wiki/Superior_parietal_lobule"  />
+<p class="caption">https://en.wikipedia.org/wiki/Superior_parietal_lobule</p>
+</div>
 
 ##### Occipital lobe
 
