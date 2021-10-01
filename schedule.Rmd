@@ -137,6 +137,8 @@ title: "Schedule"
 - Read/Watch
     + BW: 4:95-100.
     + BW 4:101-130.
+- Materials
+    - [Notes](lectures/511-chemical-communication.html). [PDF](511-chemical-communication.pdf)
 
 ---
 
