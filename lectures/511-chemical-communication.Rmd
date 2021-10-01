@@ -36,13 +36,13 @@ knitr::opts_chunk$set(echo = FALSE,
 
 - Soma receives input from dendrites (and on soma directly)
 - Axon hillock sums/integrates
-- If sum > threshold, action potential "fires"
-- Action potential propagates along the axon
 
 ```{r, fig.cap="Source: https://commons.wikimedia.org/wiki/File%3A1224_Post_Synaptic_Potential_Summation.jpg"}
 knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/1224_Post_Synaptic_Potential_Summation.jpg/512px-1224_Post_Synaptic_Potential_Summation.jpg")
 ```
 
+- If sum > threshold, action potential "fires"
+- Action potential propagates along the axon
 - Action potential's rapid change in voltage triggers neurotransmitter (NT) release
 
 ## Synaptic transmission

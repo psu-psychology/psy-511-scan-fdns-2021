@@ -2,7 +2,7 @@
 title: "PSY 511"
 subtitle: "Chemical communication"
 author: "Rick Gilmore"
-date: "2021-10-01 14:21:53"
+date: "2021-10-01 14:27:43"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -26,24 +26,20 @@ output:
 
 
 
-# Fun
-
-<iframe width="420" height="315" src="https://www.youtube.com/embed/gsjcb7w1Y-w" frameborder="0" allowfullscreen></iframe>
-
 # Neural communication
 
 ## What triggers the action potential?
 
 - Soma receives input from dendrites (and on soma directly)
 - Axon hillock sums/integrates
-- If sum > threshold, action potential "fires"
-- Action potential propagates along the axon
 
 <div class="figure" style="text-align: center">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/1224_Post_Synaptic_Potential_Summation.jpg/512px-1224_Post_Synaptic_Potential_Summation.jpg" alt="Source: https://commons.wikimedia.org/wiki/File%3A1224_Post_Synaptic_Potential_Summation.jpg"  />
 <p class="caption">Source: https://commons.wikimedia.org/wiki/File%3A1224_Post_Synaptic_Potential_Summation.jpg</p>
 </div>
 
+- If sum > threshold, action potential "fires"
+- Action potential propagates along the axon
 - Action potential's rapid change in voltage triggers neurotransmitter (NT) release
 
 ## Synaptic transmission
