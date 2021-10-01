@@ -2,7 +2,7 @@
 title: "PSY 511"
 subtitle: "Chemical communication"
 author: "Rick Gilmore"
-date: "2021-10-01 14:21:53"
+date: "2021-10-01 14:25:53"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -25,10 +25,6 @@ output:
 ---
 
 
-
-# Fun
-
-<iframe width="420" height="315" src="https://www.youtube.com/embed/gsjcb7w1Y-w" frameborder="0" allowfullscreen></iframe>
 
 # Neural communication
 
