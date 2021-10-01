@@ -1,5 +1,5 @@
 ---
-title: "[PSY 511](https://psu-psychology.github.io/psy-511-scan-fdns-2021)"
+title: "PSY 511"
 subtitle: "Neuroanatomy"
 author: "Rick Gilmore"
 date: "`r Sys.time()`"
@@ -24,7 +24,7 @@ output:
     fig_height: 6
 ---
 
-```{r set-up, echo=FALSE, error=FALSE, include=FALSE, warning=FALSE, message=FALSE}
+```{r set-up, include = FALSE}
 knitr::opts_chunk$set(echo = FALSE, 
                       cache=FALSE, 
                       fig.align = "center")

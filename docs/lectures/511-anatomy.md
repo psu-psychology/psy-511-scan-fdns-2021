@@ -1,8 +1,8 @@
 ---
-title: "[PSY 511](https://psu-psychology.github.io/psy-511-scan-fdns-2021)"
+title: "PSY 511"
 subtitle: "Neuroanatomy"
 author: "Rick Gilmore"
-date: "2021-09-24 08:53:02"
+date: "2021-10-01 14:22:01"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css

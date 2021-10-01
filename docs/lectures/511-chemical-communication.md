@@ -1,8 +1,8 @@
 ---
-title: "Chemical communication"
-subtitle: "PSY 511"
+title: "PSY 511"
+subtitle: "Chemical communication"
 author: "Rick Gilmore"
-date: "2021-10-01 08:50:11"
+date: "2021-10-01 14:21:53"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -40,7 +40,7 @@ output:
 - Action potential propagates along the axon
 
 <div class="figure" style="text-align: center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/1224_Post_Synaptic_Potential_Summation.jpg/512px-1224_Post_Synaptic_Potential_Summation.jpg" alt="Source: https://commons.wikimedia.org/wiki/File%3A1224_Post_Synaptic_Potential_Summation.jpg" width="800px" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/1224_Post_Synaptic_Potential_Summation.jpg/512px-1224_Post_Synaptic_Potential_Summation.jpg" alt="Source: https://commons.wikimedia.org/wiki/File%3A1224_Post_Synaptic_Potential_Summation.jpg"  />
 <p class="caption">Source: https://commons.wikimedia.org/wiki/File%3A1224_Post_Synaptic_Potential_Summation.jpg</p>
 </div>
 
@@ -69,7 +69,7 @@ output:
 - Ca++ influx causes *synaptic vesicles* to bind with presynaptic membrane, fuse with membrane, spill contents via *exocytosis*
 
 <div class="figure" style="text-align: center">
-<img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnrn2948/MediaObjects/41583_2011_Article_BFnrn2948_Fig1_HTML.jpg?as=webp" alt="[[@Haucke2011-ub]](http://dx.doi.org/10.1038/nrn2948)" width="800px" height="500px" />
+<img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnrn2948/MediaObjects/41583_2011_Article_BFnrn2948_Fig1_HTML.jpg?as=webp" alt="[[@Haucke2011-ub]](http://dx.doi.org/10.1038/nrn2948)" height="500px" />
 <p class="caption">[[@Haucke2011-ub]](http://dx.doi.org/10.1038/nrn2948)</p>
 </div>
 
@@ -79,11 +79,11 @@ output:
 </div>
 
 <div class="figure" style="text-align: center">
-<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0143416017301495-gr1_lrg.jpg" alt="[[@Hastoy2017-it]](https://doi.org/10.1016/j.ceca.2017.10.005)" width="800px" height="500px" />
+<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0143416017301495-gr1_lrg.jpg" alt="[[@Hastoy2017-it]](https://doi.org/10.1016/j.ceca.2017.10.005)" height="500px" />
 <p class="caption">[[@Hastoy2017-it]](https://doi.org/10.1016/j.ceca.2017.10.005)</p>
 </div>
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Junctional_complex_and_pinocytotic_vesicles_-_embryonic_brain-TEM.jpg/1502px-Junctional_complex_and_pinocytotic_vesicles_-_embryonic_brain-TEM.jpg" width="800px" height="500px" style="display: block; margin: auto;" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Junctional_complex_and_pinocytotic_vesicles_-_embryonic_brain-TEM.jpg/1502px-Junctional_complex_and_pinocytotic_vesicles_-_embryonic_brain-TEM.jpg" height="500px" style="display: block; margin: auto;" />
 
 - NTs diffuse across *synaptic cleft*
 - NTs bind with *receptors* on *postsynaptic membrane*
@@ -93,7 +93,7 @@ output:
 - NTs diffuse along concentration gradient
 
 <div class="figure" style="text-align: center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/SynapseSchematic_en.svg/512px-SynapseSchematic_en.svg.png" alt="Source: https://commons.wikimedia.org/wiki/File%3ASynapseSchematic_en.svg" width="800px" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/SynapseSchematic_en.svg/512px-SynapseSchematic_en.svg.png" alt="Source: https://commons.wikimedia.org/wiki/File%3ASynapseSchematic_en.svg"  />
 <p class="caption">Source: https://commons.wikimedia.org/wiki/File%3ASynapseSchematic_en.svg</p>
 </div>
 
@@ -130,7 +130,7 @@ output:
 - Trigger 2nd messengers
 - Open/close adjacent channels, change metabolism
 
-<img src="http://webvision.med.utah.edu/imageswv/GLU5.jpeg" width="800px" style="display: block; margin: auto;" />
+<img src="http://webvision.med.utah.edu/imageswv/GLU5.jpeg" style="display: block; margin: auto;" />
 
 ### Receptors generate *postsynaptic potentials (PSPs)*
 
@@ -161,7 +161,7 @@ output:
 ### Synapse location and function
 
 <div class="figure" style="text-align: center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Blausen_0843_SynapseTypes.png" alt="Source: Blausen.com staff https://commons.wikimedia.org/wiki/File%3ABlausen_0843_SynapseTypes.png" width="800px" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Blausen_0843_SynapseTypes.png" alt="Source: Blausen.com staff https://commons.wikimedia.org/wiki/File%3ABlausen_0843_SynapseTypes.png"  />
 <p class="caption">Source: Blausen.com staff https://commons.wikimedia.org/wiki/File%3ABlausen_0843_SynapseTypes.png</p>
 </div>
 
@@ -172,7 +172,7 @@ output:
 - on axons 
     + usually modulatory (change p(fire))
 
-<img src="https://classconnection.s3.amazonaws.com/94/flashcards/1500094/jpg/chemical_synapse1355159626230.jpg" width="800px" style="display: block; margin: auto;" />
+<img src="https://classconnection.s3.amazonaws.com/94/flashcards/1500094/jpg/chemical_synapse1355159626230.jpg" style="display: block; margin: auto;" />
 
 ## Neurotransmitters
 
@@ -228,7 +228,7 @@ output:
 | Metabotropic | GABA-B     | K+                 |
 
 <div class="figure" style="text-align: center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/GABAA-receptor-protein-example.png/1200px-GABAA-receptor-protein-example.png" alt="Source: https://commons.wikimedia.org/wiki/File:GABAA-receptor-protein-example.png#/media/File:GABAA-receptor-protein-example.pn" width="800px" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/GABAA-receptor-protein-example.png/1200px-GABAA-receptor-protein-example.png" alt="Source: https://commons.wikimedia.org/wiki/File:GABAA-receptor-protein-example.png#/media/File:GABAA-receptor-protein-example.pn"  />
 <p class="caption">Source: https://commons.wikimedia.org/wiki/File:GABAA-receptor-protein-example.png#/media/File:GABAA-receptor-protein-example.pn</p>
 </div>
 
@@ -248,7 +248,7 @@ output:
     + Parasympathetic branch: pre/postganglionic
     
 <div class="figure" style="text-align: center">
-<img src="http://myzone.hrvfitltd.netdna-cdn.com/wp-content/uploads/2014/09/Image-1.jpg" alt="Source: http://myzone.hrvfitltd.netdna-cdn.com/wp-content/uploads/2014/09/Image-1.jpg" width="800px" />
+<img src="http://myzone.hrvfitltd.netdna-cdn.com/wp-content/uploads/2014/09/Image-1.jpg" alt="Source: http://myzone.hrvfitltd.netdna-cdn.com/wp-content/uploads/2014/09/Image-1.jpg"  />
 <p class="caption">Source: http://myzone.hrvfitltd.netdna-cdn.com/wp-content/uploads/2014/09/Image-1.jpg</p>
 </div>
 
@@ -259,9 +259,9 @@ output:
 
 ### Curare
 
-<img src="https://www.nybg.org/blogs/science-talk/content/uploads/2015/01/Curare-1.jpeg" width="800px" style="display: block; margin: auto;" />
+<img src="https://www.nybg.org/blogs/science-talk/content/uploads/2015/01/Curare-1.jpeg" style="display: block; margin: auto;" />
 
-<img src="http://www.general-anaesthesia.com/images/indian-curare.jpg" width="800px" style="display: block; margin: auto;" />
+<img src="http://www.general-anaesthesia.com/images/indian-curare.jpg" style="display: block; margin: auto;" />
 
 ### Atropine
 
@@ -269,12 +269,12 @@ output:
 - inhibits (acts as an antagonist for) muscarinic ACh receptor
 
 <div class="figure" style="text-align: center">
-<img src="https://cdn.britannica.com/92/183192-050-1741C2F9/Belladonna-nightshade-leaves-berries-alkaloids-humans.jpg" alt="https://cdn.britannica.com/92/183192-050-1741C2F9/Belladonna-nightshade-leaves-berries-alkaloids-humans.jpg" width="800px" />
+<img src="https://cdn.britannica.com/92/183192-050-1741C2F9/Belladonna-nightshade-leaves-berries-alkaloids-humans.jpg" alt="https://cdn.britannica.com/92/183192-050-1741C2F9/Belladonna-nightshade-leaves-berries-alkaloids-humans.jpg"  />
 <p class="caption">https://cdn.britannica.com/92/183192-050-1741C2F9/Belladonna-nightshade-leaves-berries-alkaloids-humans.jpg</p>
 </div>
 
 <div class="figure" style="text-align: center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Eye_treated_with_dilating_eye_drops.jpg/800px-Eye_treated_with_dilating_eye_drops.jpg" alt="Source: https://commons.wikimedia.org/wiki/File:Eye_treated_with_dilating_eye_drops.jpg" width="800px" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Eye_treated_with_dilating_eye_drops.jpg/800px-Eye_treated_with_dilating_eye_drops.jpg" alt="Source: https://commons.wikimedia.org/wiki/File:Eye_treated_with_dilating_eye_drops.jpg"  />
 <p class="caption">Source: https://commons.wikimedia.org/wiki/File:Eye_treated_with_dilating_eye_drops.jpg</p>
 </div>
 
@@ -309,7 +309,7 @@ output:
     + Ventral tegmental area (VTA) -> nucleus accumbens, ventral striatum, hippocampus, amygdala, cortex; *meso-limbo-cortical projection*
 
 <div class="figure" style="text-align: center">
-<img src="http://thebrain.mcgill.ca/flash/a/a_03/a_03_cl/a_03_cl_que/a_03_cl_que_1a.gif" alt="Source: http://thebrain.mcgill.ca/flash/a/a_03/a_03_cl/a_03_cl_que/a_03_cl_que_1a.gif" width="800px" />
+<img src="http://thebrain.mcgill.ca/flash/a/a_03/a_03_cl/a_03_cl_que/a_03_cl_que_1a.gif" alt="Source: http://thebrain.mcgill.ca/flash/a/a_03/a_03_cl/a_03_cl_que/a_03_cl_que_1a.gif"  />
 <p class="caption">Source: http://thebrain.mcgill.ca/flash/a/a_03/a_03_cl/a_03_cl_que/a_03_cl_que_1a.gif</p>
 </div>
 
@@ -330,7 +330,7 @@ Inactivated via
   - DAT also transports norepinephrine (NE)
 
 <div class="figure" style="text-align: center">
-<img src="https://ars.els-cdn.com/content/image/3-s2.0-B9780123741059002379-gr1.jpg?_" alt="https://ars.els-cdn.com/content/image/3-s2.0-B9780123741059002379-gr1.jpg?_" width="800px" />
+<img src="https://ars.els-cdn.com/content/image/3-s2.0-B9780123741059002379-gr1.jpg?_" alt="https://ars.els-cdn.com/content/image/3-s2.0-B9780123741059002379-gr1.jpg?_"  />
 <p class="caption">https://ars.els-cdn.com/content/image/3-s2.0-B9780123741059002379-gr1.jpg?_</p>
 </div>
 
@@ -346,17 +346,17 @@ Inactivated via
     + postganglionic sympathetic neurons onto target tissues
     
     <div class="figure" style="text-align: center">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Locus_coeruleus_highlighted.jpg/300px-Locus_coeruleus_highlighted.jpg" alt="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Locus_coeruleus_highlighted.jpg/300px-Locus_coeruleus_highlighted.jpg" width="800px" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Locus_coeruleus_highlighted.jpg/300px-Locus_coeruleus_highlighted.jpg" alt="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Locus_coeruleus_highlighted.jpg/300px-Locus_coeruleus_highlighted.jpg"  />
     <p class="caption">https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Locus_coeruleus_highlighted.jpg/300px-Locus_coeruleus_highlighted.jpg</p>
     </div>
 
 <div class="figure" style="text-align: center">
-<img src="https://www.researchgate.net/publication/338194613/figure/fig1/AS:842586742857728@1577899742543/Locus-coeruleus-LC-efferent-pathways-and-relevant-functions-LC-projects-throughout-the.png" alt="https://www.researchgate.net/publication/338194613/figure/fig1/AS:842586742857728@1577899742543/Locus-coeruleus-LC-efferent-pathways-and-relevant-functions-LC-projects-throughout-the.png" width="800px" />
+<img src="https://www.researchgate.net/publication/338194613/figure/fig1/AS:842586742857728@1577899742543/Locus-coeruleus-LC-efferent-pathways-and-relevant-functions-LC-projects-throughout-the.png" alt="https://www.researchgate.net/publication/338194613/figure/fig1/AS:842586742857728@1577899742543/Locus-coeruleus-LC-efferent-pathways-and-relevant-functions-LC-projects-throughout-the.png"  />
 <p class="caption">https://www.researchgate.net/publication/338194613/figure/fig1/AS:842586742857728@1577899742543/Locus-coeruleus-LC-efferent-pathways-and-relevant-functions-LC-projects-throughout-the.png</p>
 </div>
 
 <div class="figure" style="text-align: center">
-<img src="http://myzone.hrvfitltd.netdna-cdn.com/wp-content/uploads/2014/09/Image-1.jpg" alt="Source: http://myzone.hrvfitltd.netdna-cdn.com/wp-content/uploads/2014/09/Image-1.jpg" width="800px" />
+<img src="http://myzone.hrvfitltd.netdna-cdn.com/wp-content/uploads/2014/09/Image-1.jpg" alt="Source: http://myzone.hrvfitltd.netdna-cdn.com/wp-content/uploads/2014/09/Image-1.jpg"  />
 <p class="caption">Source: http://myzone.hrvfitltd.netdna-cdn.com/wp-content/uploads/2014/09/Image-1.jpg</p>
 </div>
     
@@ -370,7 +370,7 @@ Inactivated via
     + Treatment for depression
 
 <div class="figure" style="text-align: center">
-<img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fnrn1883/MediaObjects/41583_2006_Article_BFnrn1883_Fig1_HTML.jpg?as=webp" alt="[[@Youdim2006-wk]](http://dx.doi.org/10.1038/nrn1883)" width="800px" />
+<img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fnrn1883/MediaObjects/41583_2006_Article_BFnrn1883_Fig1_HTML.jpg?as=webp" alt="[[@Youdim2006-wk]](http://dx.doi.org/10.1038/nrn1883)"  />
 <p class="caption">[[@Youdim2006-wk]](http://dx.doi.org/10.1038/nrn1883)</p>
 </div>
 <!-- MAOIs figure -->
@@ -399,7 +399,7 @@ Inactivated via
 - Separate cortical, subcortical 5-HT projection pathways?
 
 <div class="figure" style="text-align: center">
-<img src="https://3c1703fe8d.site.internapcdn.net/newman/csz/news/800/2018/anewmapofthe.jpg" alt="[[@Ren2018-zl]](http://dx.doi.org/10.1016/j.cell.2018.07.043)" width="800px" />
+<img src="https://3c1703fe8d.site.internapcdn.net/newman/csz/news/800/2018/anewmapofthe.jpg" alt="[[@Ren2018-zl]](http://dx.doi.org/10.1016/j.cell.2018.07.043)"  />
 <p class="caption">[[@Ren2018-zl]](http://dx.doi.org/10.1016/j.cell.2018.07.043)</p>
 </div>
 
@@ -424,7 +424,7 @@ Clinically significant because
 - Released by pineal gland (pine cone-like appearance)
 
 <div class="figure" style="text-align: center">
-<img src="http://www.vivo.colostate.edu/hbooks/pathphys/endocrine/otherendo/pinealgland.jpg" alt="http://www.vivo.colostate.edu/hbooks/pathphys/endocrine/otherendo/pinealgland.jpg" width="800px" />
+<img src="http://www.vivo.colostate.edu/hbooks/pathphys/endocrine/otherendo/pinealgland.jpg" alt="http://www.vivo.colostate.edu/hbooks/pathphys/endocrine/otherendo/pinealgland.jpg"  />
 <p class="caption">http://www.vivo.colostate.edu/hbooks/pathphys/endocrine/otherendo/pinealgland.jpg</p>
 </div>
 
@@ -438,7 +438,7 @@ Clinically significant because
 ## Targets of psychotropic drugs
 
 <div class="figure" style="text-align: center">
-<img src="img/psychotropic-drug-targets.jpg" alt="Source: https://stahlonline.cambridge.org/essential_4th_chapter.jsf?page=chapter2_summary.htm&amp;name=Chapter%202&amp;title=Summary" width="800px" />
+<img src="img/psychotropic-drug-targets.jpg" alt="Source: https://stahlonline.cambridge.org/essential_4th_chapter.jsf?page=chapter2_summary.htm&amp;name=Chapter%202&amp;title=Summary" width="1869" />
 <p class="caption">Source: https://stahlonline.cambridge.org/essential_4th_chapter.jsf?page=chapter2_summary.htm&name=Chapter%202&title=Summary</p>
 </div>
 
@@ -535,7 +535,7 @@ Clinically significant because
 
 ### Hormonal release sites
 
-<img src="img/glands.jpg" width="800px" style="display: block; margin: auto;" />
+<img src="img/glands.jpg" width="681" style="display: block; margin: auto;" />
 
 - CNS
     + Hypothalamus
@@ -560,7 +560,7 @@ Clinically significant because
     + *Arginine Vasopressin (AVP, vasopressin)*
         
 <div class="figure" style="text-align: center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/1807_The_Posterior_Pituitary_Complex.jpg/594px-1807_The_Posterior_Pituitary_Complex.jpg" alt="Source: https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/1807_The_Posterior_Pituitary_Complex.jpg/594px-1807_The_Posterior_Pituitary_Complex.jpg" width="800px" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/1807_The_Posterior_Pituitary_Complex.jpg/594px-1807_The_Posterior_Pituitary_Complex.jpg" alt="Source: https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/1807_The_Posterior_Pituitary_Complex.jpg/594px-1807_The_Posterior_Pituitary_Complex.jpg"  />
 <p class="caption">Source: https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/1807_The_Posterior_Pituitary_Complex.jpg/594px-1807_The_Posterior_Pituitary_Complex.jpg</p>
 </div>
 
@@ -570,7 +570,7 @@ Clinically significant because
 - Anterior pituitary -> *tropic hormones*
 - End organs
 
-<img src="img/indirect-release.jpg" width="800px" style="display: block; margin: auto;" />
+<img src="img/indirect-release.jpg" width="600" style="display: block; margin: auto;" />
 
 ## Case studies
 
@@ -582,7 +582,7 @@ Clinically significant because
     + Releases NE and Epi into bloodstream
   
 <div class="figure" style="text-align: center">
-<img src="http://www.nature.com/nrn/journal/v10/n6/images/nrn2647-i1.jpg" alt="[[@ulrich-lai_neural_2009]](http://doi.org/10.1038/nrn2647)" width="800px" />
+<img src="http://www.nature.com/nrn/journal/v10/n6/images/nrn2647-i1.jpg" alt="[[@ulrich-lai_neural_2009]](http://doi.org/10.1038/nrn2647)"  />
 <p class="caption">[[@ulrich-lai_neural_2009]](http://doi.org/10.1038/nrn2647)</p>
 </div>
 
@@ -598,7 +598,7 @@ Clinically significant because
     + *Mineralocorticoids (e.g. aldosterone)*
     
 <div class="figure" style="text-align: center">
-<img src="http://www.nature.com/nrn/journal/v10/n6/images/nrn2647-i1.jpg" alt="[[@ulrich-lai_neural_2009]](http://doi.org/10.1038/nrn2647)" width="800px" />
+<img src="http://www.nature.com/nrn/journal/v10/n6/images/nrn2647-i1.jpg" alt="[[@ulrich-lai_neural_2009]](http://doi.org/10.1038/nrn2647)"  />
 <p class="caption">[[@ulrich-lai_neural_2009]](http://doi.org/10.1038/nrn2647)</p>
 </div>
 
@@ -620,7 +620,7 @@ Clinically significant because
 - Oxytocin stimulates milk ducts to secrete
 
 <div class="figure" style="text-align: center">
-<img src="https://64.media.tumblr.com/29ad3be13cc42500c5c0eb496b465745/tumblr_nr55r27dOB1tqg84mo1_640.png" alt="https://64.media.tumblr.com/29ad3be13cc42500c5c0eb496b465745/tumblr_nr55r27dOB1tqg84mo1_640.png" width="800px" />
+<img src="https://64.media.tumblr.com/29ad3be13cc42500c5c0eb496b465745/tumblr_nr55r27dOB1tqg84mo1_640.png" alt="https://64.media.tumblr.com/29ad3be13cc42500c5c0eb496b465745/tumblr_nr55r27dOB1tqg84mo1_640.png"  />
 <p class="caption">https://64.media.tumblr.com/29ad3be13cc42500c5c0eb496b465745/tumblr_nr55r27dOB1tqg84mo1_640.png</p>
 </div>
 
@@ -651,7 +651,7 @@ Clinically significant because
 - Rhythm irregular until ~3 mos post-natal [[@Ardura2003-tw]](http://dx.doi.org/68571)
 - Peak weakens, broadens with age
 
-<img src="http://thebrain.mcgill.ca/flash/a/a_11/a_11_cr/a_11_cr_hor/a_11_cr_hor_1a.jpg" width="800px" style="display: block; margin: auto;" />
+<img src="http://thebrain.mcgill.ca/flash/a/a_11/a_11_cr/a_11_cr_hor/a_11_cr_hor_1a.jpg" style="display: block; margin: auto;" />
 
 - Suprachiasmatic nucleus (SCN) of the hypothalamus
 - Paraventricular nucleus of the hypothalamus
@@ -677,7 +677,7 @@ Clinically significant because
 ### Gut/brain connection
 
 <div class="figure" style="text-align: center">
-<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0166223616301138-gr1.jpg" alt="[[@Sarkar2016-qf]](https://doi.org/10.1016/j.tins.2016.09.002)" width="800px" />
+<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0166223616301138-gr1.jpg" alt="[[@Sarkar2016-qf]](https://doi.org/10.1016/j.tins.2016.09.002)"  />
 <p class="caption">[[@Sarkar2016-qf]](https://doi.org/10.1016/j.tins.2016.09.002)</p>
 </div>
 

@@ -2,7 +2,7 @@
 title: "PSY 511"
 subtitle: "Cells of the nervous system"
 author: "Rick O. Gilmore"
-date: "2021-09-22 16:01:14"
+date: "2021-10-01 14:22:56"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css

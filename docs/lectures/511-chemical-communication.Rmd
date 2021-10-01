@@ -1,6 +1,6 @@
 ---
-title: "Chemical communication"
-subtitle: "PSY 511"
+title: "PSY 511"
+subtitle: "Chemical communication"
 author: "Rick Gilmore"
 date: "`r Sys.time()`"
 bibliography: bib/bibliography.bib
@@ -24,13 +24,10 @@ output:
     fig_height: 6
 ---
 
-```{r set-up, echo=FALSE, error=FALSE, include=FALSE, warning=FALSE, message=FALSE}
-path2figs = 'img'
-knitr::opts_chunk$set(fig.path = path2figs,
-                      echo = FALSE, warning = FALSE, message = FALSE,
-                      fig.align = "center",
-                      out.width = "800px")
-library(tidyverse)
+```{r set-up, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, 
+                      cache = FALSE, 
+                      fig.align = "center")
 ```
 
 # Fun
