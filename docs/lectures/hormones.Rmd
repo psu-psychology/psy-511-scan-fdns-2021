@@ -217,9 +217,3 @@ knitr::include_graphics("http://thebrain.mcgill.ca/flash/a/a_11/a_11_cr/a_11_cr_
     - Are your participants sleepy, hungry, horny, distressed...
     - Endogenous & exogenous influences
     - Systems interact; need better, broader, and denser measurement
-
-### Gut/brain connection
-
-```{r, fig.cap="[[@Sarkar2016-qf]](https://doi.org/10.1016/j.tins.2016.09.002)"}
-knitr::include_graphics("https://ars.els-cdn.com/content/image/1-s2.0-S0166223616301138-gr1.jpg")
-```

@@ -2,7 +2,7 @@
 title: "PSY 511"
 subtitle: "Chemical communication"
 author: "Rick Gilmore"
-date: "2021-10-01 14:27:43"
+date: "2021-10-04 09:36:08"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -46,10 +46,6 @@ output:
 
 *Synapse* permits neuron to pass electrical or chemical messages to another neuron or target cell (muscle, gland, etc.)
 
-### Synapse locations
-
-
-
 ### Synapse Types & Locations
 
 - Chemical
@@ -62,7 +58,7 @@ output:
 ### Steps in chemical transmission
 
 - *Voltage-gated calcium Ca++ channels* open
-- Ca++ influx causes *synaptic vesicles* to bind with presynaptic membrane, fuse with membrane, spill contents via *exocytosis*
+- $Ca^{++}$ influx causes *synaptic vesicles* to bind with presynaptic membrane, fuse with membrane, spill contents via *exocytosis*
 
 <div class="figure" style="text-align: center">
 <img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnrn2948/MediaObjects/41583_2011_Article_BFnrn2948_Fig1_HTML.jpg?as=webp" alt="[[@Haucke2011-ub]](http://dx.doi.org/10.1038/nrn2948)" height="500px" />
@@ -150,9 +146,9 @@ output:
 
 - Why do NTs diffuse from pre- to post-synaptic membrane?
 - Why must NTs be inactivated?
-- What sort of PSP would *opening* a Na+ channel produce?
-- What sort of PSP would *opening* a Cl- channel produce?
-- What sort of PSP would *closing* a K+ produce?
+- What sort of PSP would *opening* a $Na^+$ channel produce?
+- What sort of PSP would *opening* a $Cl^-$ channel produce?
+- What sort of PSP would *closing* a $K^+$ produce?
 
 ### Synapse location and function
 
@@ -197,7 +193,8 @@ output:
 
 #### Glutamate
 
-- Primary excitatory NT in CNS (~ 1/2 all synapses)
+- Widespread in CNS (~ 1/2 all synapses)
+- Primary excitatory NT in CNS
 - Role in learning (via NMDA receptor)
 - Receptors on neurons and glia (astrocytes and oligodendrocytes)
 - Linked to umami (savory) taste sensation (think monosodium glutamate or MSG)
@@ -205,23 +202,23 @@ output:
 
 | Type         | Receptor   | Esp Permeable to |
 |--------------|------------|------------------|
-| Ionotropic   | AMPA       | Na+, K+          |
+| Ionotropic   | AMPA       | $Na^+$, $K^+$          |
 |              | Kainate    |                  |
-|              | NMDA       | Ca+              |
+|              | NMDA       | $Ca^{++}$              |
 | Metabotropic | mGlu       |                  |
 
 #### $\gamma$ aminobutyric acid (GABA)
 
 - Primary inhibitory NT in CNS
-- Excitatory in developing CNS, [Cl-] in >> [Cl-] out
+- Excitatory in developing CNS, [$Cl^-$] in >> [$Cl^-$] out
 - Binding sites for benzodiazepines (BZD; e.g., Valium), barbiturates, ethanol, etc.
     - BZD affect subset of GABA-A receptors
     - Increase total Cl- influx
 
 | Type         | Receptor   | Esp Permeable to |
 |--------------|------------|------------------|
-| Ionotropic   | GABA-A     | Cl-              |
-| Metabotropic | GABA-B     | K+                 |
+| Ionotropic   | GABA-A     | $Cl^-$              |
+| Metabotropic | GABA-B     | $K^+$                 |
 
 <div class="figure" style="text-align: center">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/GABAA-receptor-protein-example.png/1200px-GABAA-receptor-protein-example.png" alt="Source: https://commons.wikimedia.org/wiki/File:GABAA-receptor-protein-example.png#/media/File:GABAA-receptor-protein-example.pn"  />
@@ -250,8 +247,8 @@ output:
 
 | Type         | Receptor           | Esp Permeable to | Blocked by       |
 |--------------|--------------------|------------------|------------------|
-| Ionotropic   | Nicotinic (nAChR)  | Na+, K+          | e.g., Curare     |
-| Metabotropic | Muscarinic (mAChR) | K+               | e.g., Atropine   |
+| Ionotropic   | Nicotinic (nAChR)  | $Na^+$, $K^+$          | e.g., Curare     |
+| Metabotropic | Muscarinic (mAChR) | $K^+$               | e.g., Atropine   |
 
 ### Curare
 
@@ -270,22 +267,22 @@ output:
 </div>
 
 <div class="figure" style="text-align: center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Eye_treated_with_dilating_eye_drops.jpg/800px-Eye_treated_with_dilating_eye_drops.jpg" alt="Source: https://commons.wikimedia.org/wiki/File:Eye_treated_with_dilating_eye_drops.jpg"  />
-<p class="caption">Source: https://commons.wikimedia.org/wiki/File:Eye_treated_with_dilating_eye_drops.jpg</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Eye_treated_with_dilating_eye_drops.jpg/800px-Eye_treated_with_dilating_eye_drops.jpg" alt="https://commons.wikimedia.org/wiki/File:Eye_treated_with_dilating_eye_drops.jpg"  />
+<p class="caption">https://commons.wikimedia.org/wiki/File:Eye_treated_with_dilating_eye_drops.jpg</p>
 </div>
 
 ## Monoamine NTs
 
-| Family      | Neurotransmitter                        |
-|-------------|-----------------------------------------|
-| Monoamines  | Dopamine (DA)                           |
-|             | Norepinephrine (NE)/Noradrenaline (NAd) |
-|             | Epinephrine (Epi)/Adrenaline (Ad)       |
-|             | Serotonin (5-HT)                        |
-|             | Melatonin                               |
-|             | Histamine                               |
+| Family      | Neurotransmitter                        | Comment |
+|-------------|-----------------------------------------|---------|
+| Monoamines  | Dopamine (DA)                           | Catecholamine |
+|             | Norepinephrine (NE)/Noradrenaline (NAd) | Catecholamine |
+|             | Epinephrine (Epi)/Adrenaline (Ad)       | Catecholamine |
+|             | Serotonin (5-HT)                        | Indolamine |
+|             | Melatonin                               | Indolamine |
+|             | Histamine                               | |
 
-- DA -> NE/NAd -> Epi/Ad
+- Synthesis pathway: DA -> NE/NAd -> Epi/Ad
 
 ### Information processing
 
@@ -305,11 +302,11 @@ output:
     + Ventral tegmental area (VTA) -> nucleus accumbens, ventral striatum, hippocampus, amygdala, cortex; *meso-limbo-cortical projection*
 
 <div class="figure" style="text-align: center">
-<img src="http://thebrain.mcgill.ca/flash/a/a_03/a_03_cl/a_03_cl_que/a_03_cl_que_1a.gif" alt="Source: http://thebrain.mcgill.ca/flash/a/a_03/a_03_cl/a_03_cl_que/a_03_cl_que_1a.gif"  />
-<p class="caption">Source: http://thebrain.mcgill.ca/flash/a/a_03/a_03_cl/a_03_cl_que/a_03_cl_que_1a.gif</p>
+<img src="http://thebrain.mcgill.ca/flash/a/a_03/a_03_cl/a_03_cl_que/a_03_cl_que_1a.gif" alt="http://thebrain.mcgill.ca/flash/a/a_03/a_03_cl/a_03_cl_que/a_03_cl_que_1a.gif" width="650px" />
+<p class="caption">http://thebrain.mcgill.ca/flash/a/a_03/a_03_cl/a_03_cl_que/a_03_cl_que_1a.gif</p>
 </div>
 
-Clinical relevance for
+#### Clinical relevance
 
 - Parkinson's Disease (mesostriatal)
     + DA agonists treat (agonists facilitate/increase transmission)
@@ -318,7 +315,7 @@ Clinical relevance for
     + DA antagonists treat
 - Addiction (mesolimbocortical)
 
-Inactivated via
+#### Inactivated via
 
 - Chemical breakdown (e.g., via monoamine oxidase), <http://www.scholarpedia.org/article/Dopamine_anatomy#Dopamine_receptors>
 - Dopamine transporter (DAT)
@@ -357,8 +354,14 @@ Inactivated via
 </div>
     
 - Role in arousal, mood, eating, sexual behavior
-- Clinical relevance for ADHD, Alzheimer's, Parkinson's, depression
-- Inactivated by norepinephrine transporter (NET), aka noradrenaline transporter (NAT)
+
+#### Clinical relevance 
+
+- ADHD, Alzheimer's Disease, Parkinson's Disease, depression
+
+#### Inactivated by 
+
+- Norepinephrine transporter (NET), aka noradrenaline transporter (NAT)
     - Contributes to DA uptake, too.
 - Also monoamine oxidase inhibitors (MAOIs)
     + inactivate monoamines in neurons, astrocytes
@@ -379,8 +382,9 @@ Inactivated via
 ### Adrenaline/Epinephrine
 
 - Synthesized from norepinephrine
-- As NT: Released in small amounts by medulla oblongata
-- As hormone: Released by adrenal medulla
+- Both NT and hormone
+    - As NT: Released in small amounts by medulla oblongata
+    - As hormone: Released by adrenal medulla
 - Binds to ($\alpha_{1,2}$, $\beta_{1,2,3}$ receptors in blood vessels, cardiac muscle, lungs, eye muscles controlling pupil dilation, liver, pancreas, etc.
 - Release enhanced by cortisol from adrenal cortex
 - Unusual in NOT being part of negative feedback system controlling its own release
@@ -402,7 +406,7 @@ Inactivated via
 - Seven receptor families (5-HT 1-7) with 14 types
 - All but one metabotropic
 
-Clinically significant because
+#### Clinically significance
 
 - Ecstasy (MDMA) disturbs serotonin
 - So does LSD
@@ -670,11 +674,35 @@ Clinically significant because
     - Endogenous & exogenous influences
     - Systems interact; need better, broader, and denser measurement
 
-### Gut/brain connection
+
+
+
+
+
+
+
+
+# Enteric nervous system
+
+## Anatomy
+
+<div class="figure" style="text-align: center">
+<img src="img/enteric-nervous-system.png" alt="[[@Furness2012-dy]](http://dx.doi.org/10.1038/nrgastro.2012.32)" width="498" />
+<p class="caption">[[@Furness2012-dy]](http://dx.doi.org/10.1038/nrgastro.2012.32)</p>
+</div>
+
+## Gut/brain connection
 
 <div class="figure" style="text-align: center">
 <img src="https://ars.els-cdn.com/content/image/1-s2.0-S0166223616301138-gr1.jpg" alt="[[@Sarkar2016-qf]](https://doi.org/10.1016/j.tins.2016.09.002)"  />
 <p class="caption">[[@Sarkar2016-qf]](https://doi.org/10.1016/j.tins.2016.09.002)</p>
+</div>
+
+## Role of glial cells
+
+<div class="figure" style="text-align: center">
+<img src="https://www.pnas.org/content/pnas/118/40/e2025938118/F1.large.jpg" alt="[[@Ahmadzai2021-ur]](http://dx.doi.org/10.1073/pnas.2025938118)"  />
+<p class="caption">[[@Ahmadzai2021-ur]](http://dx.doi.org/10.1073/pnas.2025938118)</p>
 </div>
 
 # References
