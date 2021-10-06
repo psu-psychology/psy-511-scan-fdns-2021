@@ -185,7 +185,7 @@ knitr::include_graphics("https://classconnection.s3.amazonaws.com/94/flashcards/
 - Where released from/to
 - What receptor(s) bind it
 
-### Types
+### Amino acids
 
 | Family      | Neurotansmitter                     |
 |-------------|-------------------------------------|
@@ -274,7 +274,7 @@ knitr::include_graphics("https://cdn.britannica.com/92/183192-050-1741C2F9/Bella
 knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Eye_treated_with_dilating_eye_drops.jpg/800px-Eye_treated_with_dilating_eye_drops.jpg")
 ```
 
-## Monoamine NTs
+### Monoamine NTs
 
 | Family      | Neurotransmitter                        | Comment |
 |-------------|-----------------------------------------|---------|
@@ -298,7 +298,7 @@ knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/7/
 - Need to know
     + NT, where projecting, type of receptor to predict function
 
-### Dopamine
+#### Dopamine
 
 - Released by
     + Substantia nigra -> striatum, *meso-striatal projection*
@@ -308,7 +308,7 @@ knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/7/
 knitr::include_graphics("http://thebrain.mcgill.ca/flash/a/a_03/a_03_cl/a_03_cl_que/a_03_cl_que_1a.gif")
 ```
 
-#### Clinical relevance
+##### Clinical relevance
 
 - Parkinson's Disease (mesostriatal)
     + DA agonists treat (agonists facilitate/increase transmission)
@@ -317,7 +317,7 @@ knitr::include_graphics("http://thebrain.mcgill.ca/flash/a/a_03/a_03_cl/a_03_cl_
     + DA antagonists treat
 - Addiction (mesolimbocortical)
 
-#### Inactivated via
+##### Inactivated via
 
 - Chemical breakdown (e.g., via monoamine oxidase), <http://www.scholarpedia.org/article/Dopamine_anatomy#Dopamine_receptors>
 - Dopamine transporter (DAT)
@@ -333,7 +333,7 @@ knitr::include_graphics("https://ars.els-cdn.com/content/image/3-s2.0-B978012374
 | Metabotropic | D1-like (D1 and D5)  | more prevalent                |
 |              | D2-like (D2, D3, D4) | target of many antipsychotics |
 
-### Norepinephrine
+#### Norepinephrine
 
 - Released by
     + *[locus coeruleus](http://www.scholarpedia.org/article/Locus_coeruleus)* in pons/caudal tegmentum
@@ -353,11 +353,11 @@ knitr::include_graphics("http://myzone.hrvfitltd.netdna-cdn.com/wp-content/uploa
     
 - Role in arousal, mood, eating, sexual behavior
 
-#### Clinical relevance 
+##### Clinical relevance 
 
 - ADHD, Alzheimer's Disease, Parkinson's Disease, depression
 
-#### Inactivated by 
+##### Inactivated by 
 
 - Norepinephrine transporter (NET), aka noradrenaline transporter (NAT)
     - Contributes to DA uptake, too.
@@ -376,7 +376,7 @@ knitr::include_graphics("https://media.springernature.com/lw685/springer-static/
 | Metabotropic | $\alpha$ (1,2)         | antagonists treat anxiety, panic   |
 |              | $\beta$ (1,2,3)        | 'beta blockers' in cardiac disease |
 
-### Adrenaline/Epinephrine
+#### Adrenaline/Epinephrine
 
 - Synthesized from norepinephrine
 - Both NT and hormone
@@ -386,7 +386,7 @@ knitr::include_graphics("https://media.springernature.com/lw685/springer-static/
 - Release enhanced by cortisol from adrenal cortex
 - Unusual in NOT being part of negative feedback system controlling its own release
 
-### Serotonin (5-HT)
+#### Serotonin (5-HT)
 
 - Released by *raphe nuclei* in brainstem
 - Role in mood, sleep, eating, pain, nausea, cognition, memory
@@ -402,7 +402,7 @@ knitr::include_graphics("https://3c1703fe8d.site.internapcdn.net/newman/csz/news
 - Seven receptor families (5-HT 1-7) with 14 types
 - All but one metabotropic
 
-#### Clinical relevance
+##### Clinical relevance
 
 - Ecstasy (MDMA) disturbs serotonin
 - So does LSD
@@ -415,7 +415,7 @@ knitr::include_graphics("https://3c1703fe8d.site.internapcdn.net/newman/csz/news
 
 - Different psychological roles (passive vs. active coping) associated with different 5-HT receptor subtypes? [[@Carhart-Harris2017-aq]](http://dx.doi.org/10.1177/0269881117725915)
 
-### Melatonin
+#### Melatonin
 
 - Released by pineal gland (pine cone-like appearance)
 
@@ -423,20 +423,20 @@ knitr::include_graphics("https://3c1703fe8d.site.internapcdn.net/newman/csz/news
 knitr::include_graphics("http://www.vivo.colostate.edu/hbooks/pathphys/endocrine/otherendo/pinealgland.jpg")
 ```
 
-### Histamine
+#### Histamine
 
 - Released by hypothalamus, projects to whole brain
 - $H_1$-$H_4$ Metabotropic receptors, one ionotropic type in thalamus/hypothalamus
 - Role in arousal/sleep regulation
 - In body, part of immune/inflammatory response
 
-## Targets of psychotropic drugs
+### Targets of psychotropic drugs
 
 ```{r, fig.cap="Source: https://stahlonline.cambridge.org/essential_4th_chapter.jsf?page=chapter2_summary.htm&name=Chapter%202&title=Summary"}
 knitr::include_graphics("img/psychotropic-drug-targets.jpg")
 ```
 
-## Other NTs
+### Other NTs
 
 - Gases
     + *Nitric Oxide (NO)*, *carbon monoxide (CO)*

@@ -63,10 +63,6 @@ output: html_document
 - Influence only cells with receptors
 - Point to point vs.“broadcast”
     + Wider broadcast than neuromodulators
-- Fast vs. slow-acting
-- Short-acting vs. long-acting
-- Digital (yes-no) vs. analog (graded) 
-- Voluntary control vs. involuntary
 
 ### Similarities between neural and hormonal communication
 

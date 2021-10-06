@@ -2,7 +2,7 @@
 title: "PSY 511"
 subtitle: "Chemical communication"
 author: "Rick Gilmore"
-date: "2021-10-06 14:28:17"
+date: "2021-10-06 15:51:01"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -181,7 +181,7 @@ output:
 - Where released from/to
 - What receptor(s) bind it
 
-### Types
+### Amino acids
 
 | Family      | Neurotansmitter                     |
 |-------------|-------------------------------------|
@@ -270,7 +270,7 @@ output:
 <p class="caption">https://commons.wikimedia.org/wiki/File:Eye_treated_with_dilating_eye_drops.jpg</p>
 </div>
 
-## Monoamine NTs
+### Monoamine NTs
 
 | Family      | Neurotransmitter                        | Comment |
 |-------------|-----------------------------------------|---------|
@@ -294,7 +294,7 @@ output:
 - Need to know
     + NT, where projecting, type of receptor to predict function
 
-### Dopamine
+#### Dopamine
 
 - Released by
     + Substantia nigra -> striatum, *meso-striatal projection*
@@ -305,7 +305,7 @@ output:
 <p class="caption">http://thebrain.mcgill.ca/flash/a/a_03/a_03_cl/a_03_cl_que/a_03_cl_que_1a.gif</p>
 </div>
 
-#### Clinical relevance
+##### Clinical relevance
 
 - Parkinson's Disease (mesostriatal)
     + DA agonists treat (agonists facilitate/increase transmission)
@@ -314,7 +314,7 @@ output:
     + DA antagonists treat
 - Addiction (mesolimbocortical)
 
-#### Inactivated via
+##### Inactivated via
 
 - Chemical breakdown (e.g., via monoamine oxidase), <http://www.scholarpedia.org/article/Dopamine_anatomy#Dopamine_receptors>
 - Dopamine transporter (DAT)
@@ -331,7 +331,7 @@ output:
 | Metabotropic | D1-like (D1 and D5)  | more prevalent                |
 |              | D2-like (D2, D3, D4) | target of many antipsychotics |
 
-### Norepinephrine
+#### Norepinephrine
 
 - Released by
     + *[locus coeruleus](http://www.scholarpedia.org/article/Locus_coeruleus)* in pons/caudal tegmentum
@@ -354,11 +354,11 @@ output:
     
 - Role in arousal, mood, eating, sexual behavior
 
-#### Clinical relevance 
+##### Clinical relevance 
 
 - ADHD, Alzheimer's Disease, Parkinson's Disease, depression
 
-#### Inactivated by 
+##### Inactivated by 
 
 - Norepinephrine transporter (NET), aka noradrenaline transporter (NAT)
     - Contributes to DA uptake, too.
@@ -378,7 +378,7 @@ output:
 | Metabotropic | $\alpha$ (1,2)         | antagonists treat anxiety, panic   |
 |              | $\beta$ (1,2,3)        | 'beta blockers' in cardiac disease |
 
-### Adrenaline/Epinephrine
+#### Adrenaline/Epinephrine
 
 - Synthesized from norepinephrine
 - Both NT and hormone
@@ -388,7 +388,7 @@ output:
 - Release enhanced by cortisol from adrenal cortex
 - Unusual in NOT being part of negative feedback system controlling its own release
 
-### Serotonin (5-HT)
+#### Serotonin (5-HT)
 
 - Released by *raphe nuclei* in brainstem
 - Role in mood, sleep, eating, pain, nausea, cognition, memory
@@ -405,7 +405,7 @@ output:
 - Seven receptor families (5-HT 1-7) with 14 types
 - All but one metabotropic
 
-#### Clinical relevance
+##### Clinical relevance
 
 - Ecstasy (MDMA) disturbs serotonin
 - So does LSD
@@ -418,7 +418,7 @@ output:
 
 - Different psychological roles (passive vs. active coping) associated with different 5-HT receptor subtypes? [[@Carhart-Harris2017-aq]](http://dx.doi.org/10.1177/0269881117725915)
 
-### Melatonin
+#### Melatonin
 
 - Released by pineal gland (pine cone-like appearance)
 
@@ -427,21 +427,21 @@ output:
 <p class="caption">http://www.vivo.colostate.edu/hbooks/pathphys/endocrine/otherendo/pinealgland.jpg</p>
 </div>
 
-### Histamine
+#### Histamine
 
 - Released by hypothalamus, projects to whole brain
 - $H_1$-$H_4$ Metabotropic receptors, one ionotropic type in thalamus/hypothalamus
 - Role in arousal/sleep regulation
 - In body, part of immune/inflammatory response
 
-## Targets of psychotropic drugs
+### Targets of psychotropic drugs
 
 <div class="figure" style="text-align: center">
 <img src="img/psychotropic-drug-targets.jpg" alt="Source: https://stahlonline.cambridge.org/essential_4th_chapter.jsf?page=chapter2_summary.htm&amp;name=Chapter%202&amp;title=Summary" width="1869" />
 <p class="caption">Source: https://stahlonline.cambridge.org/essential_4th_chapter.jsf?page=chapter2_summary.htm&name=Chapter%202&title=Summary</p>
 </div>
 
-## Other NTs
+### Other NTs
 
 - Gases
     + *Nitric Oxide (NO)*, *carbon monoxide (CO)*
@@ -520,10 +520,6 @@ output:
 - Influence only cells with receptors
 - Point to point vs.“broadcast”
     + Wider broadcast than neuromodulators
-- Fast vs. slow-acting
-- Short-acting vs. long-acting
-- Digital (yes-no) vs. analog (graded) 
-- Voluntary control vs. involuntary
 
 ### Similarities between neural and hormonal communication
 
@@ -701,12 +697,10 @@ output:
 
 # Enteric nervous system
 
-
-
 ## Anatomy
 
 - A component of the Autonomic Nervous System (ANS), along with the Sympathetic (SNS) and Parasympathetic Nervous Systems (PNS).
-- # of neurons comparable to entire spinal cord (Alloway & Pritchard)
+- number of neurons comparable to entire spinal cord (Alloway & Pritchard)
 
 <div class="figure" style="text-align: center">
 <img src="img/enteric-nervous-system.png" alt="[[@Furness2012-dy]](http://dx.doi.org/10.1038/nrgastro.2012.32)" width="498" />
