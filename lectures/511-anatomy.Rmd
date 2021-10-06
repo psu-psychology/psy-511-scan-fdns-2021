@@ -825,9 +825,10 @@ knitr::include_graphics("https://www.pastmedicalhistory.co.uk/wp-content/uploads
 - CNS & PNS components
 - Controls “vegetative functions”
     + Limited voluntary control
-- Two divisions
+- Three divisions
     + Sympathetic
     + Parasympathetic
+    + Enteric (gut, intestinal tract)
 
 ```{r}
 knitr::include_graphics("https://4.bp.blogspot.com/_FBNLGBBprSE/TB5b9zkM11I/AAAAAAAAAHA/LBCT2HkOzvI/s400/PNS.GIF")
@@ -857,7 +858,7 @@ knitr::include_graphics("https://www.researchgate.net/profile/John_Cacioppo/publ
 - Spinal cord (or Vagus n. from Xth cranial n.) -> ganglia near end organs -> end organ
     + NT: ACh
     
-### Measures of ANS function
+### Illustrative measures of ANS function
 
 - Heart rate variability
 
@@ -871,5 +872,15 @@ knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/4/
 ```{r, fig.cap='https://upload.wikimedia.org/wikipedia/commons/a/a5/Gray840.png'}
 knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/a/a5/Gray840.png")
 ```
+
+- electrogastrogram (EGG) for ENS [[@Al_Taee2020-no]](http://dx.doi.org/10.1007/978-3-030-14347-3_50)
+
+```{r}
+knitr::include_graphics("https://media.springernature.com/lw785/springer-static/image/chp%3A10.1007%2F978-3-030-14347-3_50/MediaObjects/478658_1_En_50_Fig1_HTML.png")
+```
+
+> Fig. 1. Gastric pacesetter potentials or slow waves originate from the pacemaker area on the greater curve. Pacesetter potentials travel in a circumferential and aboral direction at a rate of approximately 3 cycles per minute (cpm). The cutaneously recorded electrogastrogram shows 3-cpm wave pattern. The fundus has no rhythmic electrical activity.
+>
+>  [[@Al_Taee2020-no]](http://dx.doi.org/10.1007/978-3-030-14347-3_50)
 
 ## References {.smaller}

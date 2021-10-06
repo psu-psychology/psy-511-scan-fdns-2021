@@ -16,7 +16,7 @@ output: html_document
 - Melatonin
 - Epinephrine/adrenaline
 - Oxytocin
-- Vasopressin
+- Arginine Vasopressin (AVP) or Anti-Diuretic Hormone (ADH)
     
 ## Behaviors under hormonal influence
 

@@ -2,7 +2,7 @@
 title: "PSY 511"
 subtitle: "Chemical communication"
 author: "Rick Gilmore"
-date: "2021-10-06 10:36:32"
+date: "2021-10-06 14:02:29"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -474,7 +474,7 @@ output:
 - Melatonin
 - Epinephrine/adrenaline
 - Oxytocin
-- Vasopressin
+- Arginine Vasopressin (AVP) or Anti-Diuretic Hormone (ADH)
     
 ## Behaviors under hormonal influence
 
@@ -702,7 +702,12 @@ output:
 
 # Enteric nervous system
 
+
+
 ## Anatomy
+
+- A component of the Autonomic Nervous System (ANS), along with the Sympathetic (SNS) and Parasympathetic Nervous Systems (PNS).
+- # of neurons comparable to entire spinal cord (Alloway & Pritchard)
 
 <div class="figure" style="text-align: center">
 <img src="img/enteric-nervous-system.png" alt="[[@Furness2012-dy]](http://dx.doi.org/10.1038/nrgastro.2012.32)" width="498" />
@@ -724,7 +729,17 @@ output:
 - 2015 systematic review (with only $n=10$ trials) shows "very limited evidence for the efficacy of probiotic interventions in psychological outcomes." [[@Romijn2015-bu]](http://dx.doi.org/10.1093/nutrit/nuv025).
 - ROG: But do we have good data about what people actually consume?
 
-## Role of glial cells
+## Physiology
+
+- electrogastrogram (EGG) from ENS [[@Al_Taee2020-no]](http://dx.doi.org/10.1007/978-3-030-14347-3_50) measures gastric motility
+
+<img src="https://media.springernature.com/lw785/springer-static/image/chp%3A10.1007%2F978-3-030-14347-3_50/MediaObjects/478658_1_En_50_Fig1_HTML.png" style="display: block; margin: auto;" />
+
+> Fig. 1. Gastric pacesetter potentials or slow waves originate from the pacemaker area on the greater curve. Pacesetter potentials travel in a circumferential and aboral direction at a rate of approximately 3 cycles per minute (cpm). The cutaneously recorded electrogastrogram shows 3-cpm wave pattern. The fundus has no rhythmic electrical activity.
+>
+>  [[@Al_Taee2020-no]](http://dx.doi.org/10.1007/978-3-030-14347-3_50)
+
+- glial cells and neurons work together [[@Ahmadzai2021-ur]](http://dx.doi.org/10.1073/pnas.2025938118)
 
 <div class="figure" style="text-align: center">
 <img src="https://www.pnas.org/content/pnas/118/40/e2025938118/F1.large.jpg" alt="[[@Ahmadzai2021-ur]](http://dx.doi.org/10.1073/pnas.2025938118)"  />
