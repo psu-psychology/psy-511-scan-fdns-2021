@@ -2,7 +2,7 @@
 title: "PSY 511"
 subtitle: "Chemical communication"
 author: "Rick Gilmore"
-date: "2021-10-06 14:25:34"
+date: "2021-10-06 14:28:17"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -249,13 +249,13 @@ output:
 | Ionotropic   | Nicotinic (nAChR)  | $Na^+$, $K^+$          | e.g., Curare     |
 | Metabotropic | Muscarinic (mAChR) | $K^+$               | e.g., Atropine   |
 
-### Curare
+#### Curare
 
 <img src="https://www.nybg.org/blogs/science-talk/content/uploads/2015/01/Curare-1.jpeg" style="display: block; margin: auto;" />
 
 <img src="http://www.general-anaesthesia.com/images/indian-curare.jpg" style="display: block; margin: auto;" />
 
-### Atropine
+#### Atropine
 
 - aka, nightshade or belladonna
 - inhibits (acts as an antagonist for) muscarinic ACh receptor
@@ -405,7 +405,7 @@ output:
 - Seven receptor families (5-HT 1-7) with 14 types
 - All but one metabotropic
 
-#### Clinically significance
+#### Clinical relevance
 
 - Ecstasy (MDMA) disturbs serotonin
 - So does LSD
