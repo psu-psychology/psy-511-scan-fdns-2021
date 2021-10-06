@@ -121,14 +121,26 @@ knitr::include_graphics("img/indirect-release.jpg")
 
 ### Responses to threat or challenge
 
+```{r, fig.cap="[[@ulrich-lai_neural_2009]](http://doi.org/10.1038/nrn2647)"}
+knitr::include_graphics("https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnrn2647/MediaObjects/41583_2009_Article_BFnrn2647_Fig1_HTML.jpg?as=webp")
+```
+
+> Figure 1: General scheme of brain acute-stress regulatory pathways. Stressors activate brainstem and/or forebrain limbic structures. The brainstem can generate rapid hypothalamic-pituitary-adrenal (HPA) axis and autonomic nervous system (ANS) responses through direct projections to hypophysiotrophic neurons in the paraventricular nucleus of the hypothalamus (PVN) or to preganglionic autonomic neurons (stress response triggers). By contrast, forebrain limbic regions have no direct connections with the HPA axis or the ANS and thus require intervening synapses before they can access autonomic or neuroendocrine neurons (top-down regulation). A high proportion of these intervening neurons are located in hypothalamic nuclei that are also responsive to homeostatic status, providing a mechanism by which the descending limbic information can be modulated according to the physiological status of the animal ('middle management'). BST, bed nucleus of the stria terminalis; CVO, circumventricular organ; SAM, sympathoadrenomedullary system.
+>
+> [[@ulrich-lai_neural_2009]](http://doi.org/10.1038/nrn2647)
+
 - Neural response
     + *Sympathetic Adrenal Medulla (SAM) response*
     + Sympathetic NS activation of adrenal medulla, other organs
     + Releases NE and Epi into bloodstream
   
 ```{r, fig.cap="[[@ulrich-lai_neural_2009]](http://doi.org/10.1038/nrn2647)"}
-knitr::include_graphics("http://www.nature.com/nrn/journal/v10/n6/images/nrn2647-i1.jpg")
+knitr::include_graphics("https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnrn2647/MediaObjects/41583_2009_Article_BFnrn2647_Fig2_HTML.jpg?as=webp")
 ```
+
+> Figure 2: The brain circuitry that regulates autonomic stress responses. Stress-induced pre-autonomic outflow originates in multiple brain areas. The colours denote brain regions that are implicated in sympathetic activation (blue), parasympathetic activation (red) or both (bicoloured). The paraventricular nucleus of the hypothalamus (PVN) has substantial projections to both sympathetic and parasympathetic nuclei, including the nucleus of the solitary tract (NTS), the dorsal motor nucleus of the vagus nerve (DMX), the intermediolateral cell column (IML), the locus coeruleus (LC) and the ventrolateral medulla (VLM) (the latter two sets of projections are not shown for clarity). The rostral VLM, LC and PVN directly innervate the IML and are thought to initiate sympathetic responses. The NTS in turn receives direct input from neurons in the infralimbic cortex (IL), the central amygdala (CeA) and the PVN. Other hypothalamic regions, most notably the dorsomedial hypothalamus (DMH), modulate autonomic nervous system activation through connections with the PVN (and possibly other descending pathways) (see main text). Parasympathetic outflow is mediated largely by descending outputs from the DMX and the nucleus ambiguus (NA) and is under the direct influence of the prelimbic cortex (PL), the PVN and possibly other descending relays (see main text). Parasympathetic effects of the anterior bed nucleus of the stria terminalis (aBST) are probably mediated by relays in the PVN or the NTS. The anatomical complexity of autonomic nervous system integration is underscored by the mixing of sympathetic and parasympathetic projection neurons in individual nuclei.
+>
+> [[@ulrich-lai_neural_2009]](http://doi.org/10.1038/nrn2647)
 
 - Endocrine response
     + *Hypothalamic Pituitary Adrenal (HPA) axis*
@@ -142,8 +154,12 @@ knitr::include_graphics("http://www.nature.com/nrn/journal/v10/n6/images/nrn2647
     + *Mineralocorticoids (e.g. aldosterone)*
     
 ```{r, fig.cap="[[@ulrich-lai_neural_2009]](http://doi.org/10.1038/nrn2647)"}
-knitr::include_graphics("http://www.nature.com/nrn/journal/v10/n6/images/nrn2647-i1.jpg")
+knitr::include_graphics("https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnrn2647/MediaObjects/41583_2009_Article_BFnrn2647_Fig3_HTML.jpg?as=webp")
 ```
+
+> Figure 3: The brain circuitry that regulates HPA axis stress responses. Stress-induced activation of the dorsal part of the medial parvocellular paraventricular nucleus of the hypothalamus (PVNmpd) originates in several brain regions (excitatory inputs are coloured blue with solid lines and inhibitory (GABA (γ-aminobutyric acid)-ergic) inputs are coloured red with dashed lines). The paraventricular nucleus of the hypothalamus (PVN) receives direct noradrenergic, adrenergic and peptidergic innervation from the nucleus of the solitary tract (NTS). The dorsomedial components of the dorsomedial hypothalamus (dmDMH) and the arcuate nucleus (Arc) provide intrahypothalamic stress excitation. The anterior part of the bed nucleus of the stria terminalis (BST), particularly the anteroventral nucleus of the BST (avBST), activates hypothalamic-pituitary-adrenocortical (HPA) axis stress responses. The PVN also receives a stress-excitatory drive from the dorsal raphe, the tuberomammillary nucleus, the supramammillary nucleus and the spinal cord, among others (omitted in the interest of space). Activation of the PVNmpd is inhibited by numerous hypothalamic circuits, including the medial preoptic area (mPOA), the ventrolateral component of the dorsomedial hypothalamus (vlDMH) and local neurons in the peri-PVN region (pPVN), encompassing the PVN surround and the subparaventricular zone. The posterior subregions of the bed nucleus of the stria terminalis (pBST) provide a prominent forebrain inhibition of HPA axis responses; most of these inputs are GABAergic. Brain sections are modified, with permission, from Ref. 154 © (1998) Academic Press.
+>
+> [[@ulrich-lai_neural_2009]](http://doi.org/10.1038/nrn2647)
 
 #### Adrenal hormones
 
@@ -197,13 +213,14 @@ knitr::include_graphics("https://64.media.tumblr.com/29ad3be13cc42500c5c0eb496b4
 knitr::include_graphics("http://thebrain.mcgill.ca/flash/a/a_11/a_11_cr/a_11_cr_hor/a_11_cr_hor_1a.jpg")
 ```
 
-- Suprachiasmatic nucleus (SCN) of the hypothalamus
-- Paraventricular nucleus of the hypothalamus
-- Spinal cord
-- Superior cervical ganglion
-- Pineal gland
+- Pathway
+    - Suprachiasmatic nucleus (SCN) of the hypothalamus
+    - Paraventricular nucleus of the hypothalamus
+    - Spinal cord
+    - Superior cervical ganglion
+    - Pineal gland
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fgJPnQCJ9eE" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fgJPnQCJ9eE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Thinking about neurochemical influences
 

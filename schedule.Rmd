@@ -154,7 +154,7 @@ title: "Schedule"
     + BW 5:131-159.
     - (Optional) Sarkar, A., Lehto, S. M., Harty, S., Dinan, T. G., Cryan, J. F., & Burnet, P. W. J. (2016). Psychobiotics and the manipulation of bacteria-gut-brain signals. *Trends in Neurosciences*, *39*(11), 763–781. Retrieved from <https://dx.doi.org/10.1016/j.tins.2016.09.002>.
 - Materials
-    - [Notes](lectures/511-chemical-communication.html). [PDF](lectures/511-chemical-communication.pdf)
+    - [Notes](lectures/511-chemical-communication.html). [PDF](lectures/511-chemical-communication.pdf).
     
 ### Friday, October 8
 
