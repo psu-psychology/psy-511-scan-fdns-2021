@@ -47,7 +47,7 @@ navbar:
       - text: "Week 7"
         menu:
           - text: "2021-10-06"
-            href:
+            href: "lectures/511-chemical-communication.html"
           - text: "2021-10-08"
             href:            
       - text: "Week 8"

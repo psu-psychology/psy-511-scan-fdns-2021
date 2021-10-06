@@ -2,7 +2,7 @@
 title: "PSY 511"
 subtitle: "Chemical communication"
 author: "Rick Gilmore"
-date: "2021-10-06 14:02:29"
+date: "2021-10-06 14:23:16"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -13,7 +13,6 @@ output:
     toc: yes
     toc_depth: 5
     toc_float: no
-    code_folding: hide
     self_contained: false
   pdf_document:
     toc: true
