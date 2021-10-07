@@ -2,7 +2,7 @@
 title: "PSY 511"
 subtitle: "Chemical communication"
 author: "Rick Gilmore"
-date: "2021-10-06 15:51:01"
+date: "2021-10-07 11:15:35"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -300,9 +300,13 @@ output:
     + Substantia nigra -> striatum, *meso-striatal projection*
     + Ventral tegmental area (VTA) -> nucleus accumbens, ventral striatum, hippocampus, amygdala, cortex; *meso-limbo-cortical projection*
 
+# ```{r, fig.cap="http://thebrain.mcgill.ca/flash/a/a_03/a_03_cl/a_03_cl_que/a_03_cl_que_1a.gif", out.width="650px"}
+# knitr::include_graphics("http://thebrain.mcgill.ca/flash/a/a_03/a_03_cl/a_03_cl_que/a_03_cl_que_1a.gif")
+# ```
+
 <div class="figure" style="text-align: center">
-<img src="http://thebrain.mcgill.ca/flash/a/a_03/a_03_cl/a_03_cl_que/a_03_cl_que_1a.gif" alt="http://thebrain.mcgill.ca/flash/a/a_03/a_03_cl/a_03_cl_que/a_03_cl_que_1a.gif" width="650px" />
-<p class="caption">http://thebrain.mcgill.ca/flash/a/a_03/a_03_cl/a_03_cl_que/a_03_cl_que_1a.gif</p>
+<img src="https://commons.wikimedia.org/wiki/File:Dopaminergic_pathways.svg#/media/File:Dopaminergic_pathways.svg" alt="https://en.wikipedia.org/wiki/Dopaminergic_pathways"  />
+<p class="caption">https://en.wikipedia.org/wiki/Dopaminergic_pathways</p>
 </div>
 
 ##### Clinical relevance
@@ -388,13 +392,18 @@ output:
 - Release enhanced by cortisol from adrenal cortex
 - Unusual in NOT being part of negative feedback system controlling its own release
 
-#### Serotonin (5-HT)
+#### Serotonin (5-hydroxytryptamine or 5-HT)
 
 - Released by *raphe nuclei* in brainstem
+
+<div class="figure" style="text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Serotonergic_neurons.svg/1280px-Serotonergic_neurons.svg.png" alt="https://en.wikipedia.org/wiki/Serotonin_pathway" height="500px" />
+<p class="caption">https://en.wikipedia.org/wiki/Serotonin_pathway</p>
+</div>
+
 - Role in mood, sleep, eating, pain, nausea, cognition, memory
 - Modulates release of other NTs
 - Most (90%; [[@De_Ponti2004-lo]](http://dx.doi.org/10.1136/gut.2003.035568)) of body's 5-HT regulates digestion
-
 - Separate cortical, subcortical 5-HT projection pathways?
 
 <div class="figure" style="text-align: center">
@@ -430,6 +439,12 @@ output:
 #### Histamine
 
 - Released by hypothalamus, projects to whole brain
+
+<div class="figure" style="text-align: center">
+<img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnrn1034/MediaObjects/41583_2003_Article_BFnrn1034_Fig1_HTML.jpg?as=webp" alt="https://www.nature.com/articles/nrn1034" width="800px" />
+<p class="caption">https://www.nature.com/articles/nrn1034</p>
+</div>
+
 - $H_1$-$H_4$ Metabotropic receptors, one ionotropic type in thalamus/hypothalamus
 - Role in arousal/sleep regulation
 - In body, part of immune/inflammatory response
