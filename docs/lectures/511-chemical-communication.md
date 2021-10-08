@@ -2,7 +2,7 @@
 title: "PSY 511"
 subtitle: "Chemical communication"
 author: "Rick Gilmore"
-date: "2021-10-08 07:52:22"
+date: "2021-10-08 14:21:57"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -640,7 +640,7 @@ output:
 - CRF receptors found throughout the brain
 
 <div class="figure" style="text-align: center">
-<img src="https://journals.physiology.org/cms/10.1152/physrev.00042.2017/asset/images/medium/z9j0041828650004.gif" alt="[[@Deussing2018-ub]](http://dx.doi.org/10.1152/physrev.00042.2017)"  />
+<img src="https://journals.physiology.org/cms/10.1152/physrev.00042.2017/asset/images/medium/z9j0041828650004.gif" alt="[[@Deussing2018-ub]](http://dx.doi.org/10.1152/physrev.00042.2017)" width="800px" />
 <p class="caption">[[@Deussing2018-ub]](http://dx.doi.org/10.1152/physrev.00042.2017)</p>
 </div>
 
@@ -655,23 +655,22 @@ output:
 - *Cortisol* (CORT)
     + increases blood glucose, aids in fat, protein, & carbohydrate metabolism
     + suppressess immune response, e.g., anti-inflammatory
-    + in presences of Epi/Ad, role in memory formation
-    + Circadian rhythmicity: high in am, low in pm
+    + in presence of Epi/Ad, role in memory formation
+    - Receptors found in cytosol of most cells; some on cell membranes
+    - Regulates gene transcription
+    + circadian rhythmicity: high in am, low in pm
     
 <div class="figure" style="text-align: center">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Change_in_plasma_cortisol_cycle_over_24_hours.jpg/440px-Change_in_plasma_cortisol_cycle_over_24_hours.jpg" alt="https://en.wikipedia.org/wiki/Cortisol"  />
 <p class="caption">https://en.wikipedia.org/wiki/Cortisol</p>
 </div>
     
-    + Receptors found in cytosol of most cells; some on cell membranes
-    + Regulates gene transcription
-
 - *Aldosterone*
     + Regulates Na (and water)
     
 ### Reproductive behavior -- the milk letdown reflex
 
-- Supraoptic & Paraventricular nucleus (PVN) of hypothalamus releases oxytocin 
+- Supraoptic nucleus & Paraventricular nucleus (PVN) of hypothalamus release oxytocin 
     - Into bloodstream via posterior pituitary (endocrine)
     - Onto neurons in nucleus accumbens (neurocrine), amygdala, brainstem
 - Oxytocin stimulates milk ducts to secrete
