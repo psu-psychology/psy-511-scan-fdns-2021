@@ -1,7 +1,8 @@
 ---
-title: "511-evo-devo"
+title: "PSY 511"
+subtitle: "Evolution and development of the human brain"
 author: "Rick Gilmore"
-date: "2021-10-08 08:12:52"
+date: "2021-10-08 14:12:17"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css

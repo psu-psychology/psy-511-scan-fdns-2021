@@ -1,5 +1,6 @@
 ---
-title: "511-evo-devo"
+title: "PSY 511"
+subtitle: "Evolution and development of the human brain"
 author: "Rick Gilmore"
 date: "`r Sys.time()`"
 bibliography: bib/bibliography.bib
