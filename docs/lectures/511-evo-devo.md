@@ -1,7 +1,7 @@
 ---
 title: "511-evo-devo"
 author: "Rick Gilmore"
-date: "2021-09-02 13:08:06"
+date: "2021-10-08 08:12:52"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -12,13 +12,7 @@ output:
     toc: yes
     toc_depth: 5
     toc_float: no
-    code_folding: hide
-  ioslides_presentation:
     self_contained: false
-    lib_dir: libs
-    widescreen: true
-    incremental: false
-    transition: default
   pdf_document:
     toc: true
     toc_depth: 1
@@ -37,11 +31,20 @@ output:
 <iframe width="420" height="315" src="https://www.youtube.com/embed/QMshTTIp7SA" frameborder="0" allowfullscreen></iframe>
 
 # Evolution
+
 ## Public acceptance of evolution
 
 <div class="figure" style="text-align: center">
-<img src="https://www.sciencemag.org/content/313/5788/765/F1.medium.gif" alt="[[@miller2006public]](http://dx.doi.org/10.1126/science.1126746)" width="800px" />
+<img src="https://www.science.org/cms/10.1126/science.1126746/asset/04dcf902-b601-44d0-8a9c-fd7f717b57a3/assets/graphic/765-1.gif" alt="[[@miller2006public]](http://dx.doi.org/10.1126/science.1126746)"  />
 <p class="caption">[[@miller2006public]](http://dx.doi.org/10.1126/science.1126746)</p>
+</div>
+
+- In U.S., majority now "accept"
+- Increase over last decade
+
+<div class="figure" style="text-align: center">
+<img src="https://journals-sagepub-com.ezaccess.libraries.psu.edu/na101/home/literatum/publisher/sage/journals/content/pusa/0/pusa.ahead-of-print/09636625211035919/20210815/images/medium/10.1177_09636625211035919-fig1.gif" alt="[[@Miller2021-lb]](http://dx.doi.org/10.1177/09636625211035919)"  />
+<p class="caption">[[@Miller2021-lb]](http://dx.doi.org/10.1177/09636625211035919)</p>
 </div>
 
 ### Types of evidence
@@ -56,6 +59,8 @@ output:
 - Anatomical
     + Homologous structures across species
 
+> **Nothing in Biology Makes Sense except in the Light of Evolution**
+>
 > *"Seen in the light of evolution, biology is, perhaps, intellectually the most satisfying and inspiring science. Without that light, it becomes a pile of sundry facts some of them interesting or curious, but making no meaningful picture as a whole."*
 
 [[@Dobzhansky1973]](http://dx.doi.org/10.2307/4444260)
@@ -74,6 +79,10 @@ output:
 - A minority of citizens support teaching [evolution-only](http://www.pbs.org/wgbh/nova/blogs/education/2015/12/evolutionschools/) 
 - Majority of classroom teachers aren't [strong advocates](https://www.sciencedaily.com/releases/2011/01/110127141657.htm)
 
+> A structural equation model indicates that increasing enrollment in baccalaureate-level programs, exposure to college-level science courses, a declining level of religious fundamentalism, and a rising level of civic scientific literacy are responsible for the increased level of public acceptance.
+>
+> [[@Miller2021-lb]](http://dx.doi.org/10.1177/09636625211035919)
+
 ## Evolution and development
 
 ### Ontogenesis and phylogenesis
@@ -86,7 +95,7 @@ output:
 #### Ontogeny does not recapitulate phylogeny ([Haeckel](https://en.wikipedia.org/wiki/Ernst_Haeckel)), but...
 
 <div class="figure" style="text-align: center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Haeckel_drawings.jpg/350px-Haeckel_drawings.jpg" alt="Source: Wikipedia" width="800px" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Haeckel_drawings.jpg/350px-Haeckel_drawings.jpg" alt="Source: Wikipedia"  />
 <p class="caption">Source: Wikipedia</p>
 </div>
 
@@ -94,18 +103,13 @@ output:
 
 <!-- History of life on Earth -->
 <div class="figure" style="text-align: center">
-<img src="http://anthony.liekens.net/pub/timeline.png" alt="http://anthony.liekens.net/pub/timeline.png" width="800px" />
+<img src="http://anthony.liekens.net/pub/timeline.png" alt="http://anthony.liekens.net/pub/timeline.png"  />
 <p class="caption">http://anthony.liekens.net/pub/timeline.png</p>
 </div>
 
 <div class="figure" style="text-align: center">
-<img src="http://www.zo.utexas.edu/faculty/sjasper/images/26.2.gif" alt="Source: http://www.zo.utexas.edu/faculty/sjasper/images/26.2.gif" width="800px" />
+<img src="http://www.zo.utexas.edu/faculty/sjasper/images/26.2.gif" alt="Source: http://www.zo.utexas.edu/faculty/sjasper/images/26.2.gif"  />
 <p class="caption">Source: http://www.zo.utexas.edu/faculty/sjasper/images/26.2.gif</p>
-</div>
-
-<div class="figure" style="text-align: center">
-<img src="http://www.indiana.edu/~geol105b/images/gaia_chapter_6/time_scale.gif" alt="http://www.indiana.edu/~geol105b/images/gaia_chapter_6/time_scale.gif" width="800px" />
-<p class="caption">http://www.indiana.edu/~geol105b/images/gaia_chapter_6/time_scale.gif</p>
 </div>
 
 ### Nervous system architectures
@@ -117,7 +121,7 @@ output:
     + bilateral
 
 <div class="figure" style="text-align: center">
-<img src="https://media.nature.com/lw926/nature-assets/nrn/journal/v17/n1/images/nrn.2015.15-f1.jpg" alt="Source: [[@arendt_nerve_2016]](https://doi.org/10.1038/nrn.2015.15)" width="800px" />
+<img src="https://media.nature.com/lw926/nature-assets/nrn/journal/v17/n1/images/nrn.2015.15-f1.jpg" alt="Source: [[@arendt_nerve_2016]](https://doi.org/10.1038/nrn.2015.15)"  />
 <p class="caption">Source: [[@arendt_nerve_2016]](https://doi.org/10.1038/nrn.2015.15)</p>
 </div>
 
@@ -140,7 +144,7 @@ output:
 - Defense
 - Reproduction
 
-<img src="img/swanson-fig-7.5.jpg" width="800px" style="display: block; margin: auto;" />
+<img src="img/swanson-fig-7.5.jpg" width="405" style="display: block; margin: auto;" />
 
 #### Information processing universals
 
@@ -167,12 +171,12 @@ output:
 [[@arendt_nerve_2016]](http://doi.org/10.1038/nrn.2015.15)
 
 <div class="figure" style="text-align: center">
-<img src="img/nrn.2015.15-f1.jpg" alt="[[@arendt_nerve_2016]](http://doi.org/10.1038/nrn.2015.15)" width="800px" />
+<img src="img/nrn.2015.15-f1.jpg" alt="[[@arendt_nerve_2016]](http://doi.org/10.1038/nrn.2015.15)" width="600" />
 <p class="caption">[[@arendt_nerve_2016]](http://doi.org/10.1038/nrn.2015.15)</p>
 </div>
 
 <div class="figure" style="text-align: center">
-<img src="img/nrn.2015.15-f2.jpg" alt="[[@arendt_nerve_2016]](http://doi.org/10.1038/nrn.2015.15)" width="800px" />
+<img src="img/nrn.2015.15-f2.jpg" alt="[[@arendt_nerve_2016]](http://doi.org/10.1038/nrn.2015.15)" width="946" />
 <p class="caption">[[@arendt_nerve_2016]](http://doi.org/10.1038/nrn.2015.15)</p>
 </div>
 
@@ -182,29 +186,29 @@ output:
 ### Vertebrate CNS organization
 
 <div class="figure" style="text-align: center">
-<img src="img/northcutt-2002-f1.gif" alt="[[@Northcutt2002-jg]](http://doi.org/10.1093/icb/42.4.743)" width="800px" />
+<img src="img/northcutt-2002-f1.gif" alt="[[@Northcutt2002-jg]](http://doi.org/10.1093/icb/42.4.743)"  />
 <p class="caption">[[@Northcutt2002-jg]](http://doi.org/10.1093/icb/42.4.743)</p>
 </div>
 
 <div class="figure" style="text-align: center">
-<img src="http://www.bio.miami.edu/dana/pix/vertebrate_brains.jpg" alt="http://www.bio.miami.edu/dana/pix/vertebrate_brains.jpg" width="800px" />
+<img src="http://www.bio.miami.edu/dana/pix/vertebrate_brains.jpg" alt="http://www.bio.miami.edu/dana/pix/vertebrate_brains.jpg"  />
 <p class="caption">http://www.bio.miami.edu/dana/pix/vertebrate_brains.jpg</p>
 </div>
 
 <div class="figure" style="text-align: center">
-<img src="http://neurosciencelibrary.org/evolution/paleo/images/BrnBodwt6.jpg" alt="http://neurosciencelibrary.org/evolution/paleo/images/BrnBodwt6.jpg" width="800px" />
+<img src="http://neurosciencelibrary.org/evolution/paleo/images/BrnBodwt6.jpg" alt="http://neurosciencelibrary.org/evolution/paleo/images/BrnBodwt6.jpg"  />
 <p class="caption">http://neurosciencelibrary.org/evolution/paleo/images/BrnBodwt6.jpg</p>
 </div>
 
 <div class="figure" style="text-align: center">
-<img src="img/northcutt-2002-f2.gif" alt="[[@Northcutt2002-jg]](http://doi.org/10.1093/icb/42.4.743)" width="800px" />
+<img src="img/northcutt-2002-f2.gif" alt="[[@Northcutt2002-jg]](http://doi.org/10.1093/icb/42.4.743)"  />
 <p class="caption">[[@Northcutt2002-jg]](http://doi.org/10.1093/icb/42.4.743)</p>
 </div>
 
 - Differences in size of the cerebral cortex
 
 <div class="figure" style="text-align: center">
-<img src="http://www.frontiersin.org/files/Articles/78485/fnana-08-00015-HTML/image_m/fnana-08-00015-g001.jpg" alt="[[@hofman_evolution_2014]](https://doi.org/10.3389/fnana.2014.00015)" width="800px" />
+<img src="http://www.frontiersin.org/files/Articles/78485/fnana-08-00015-HTML/image_m/fnana-08-00015-g001.jpg" alt="[[@hofman_evolution_2014]](https://doi.org/10.3389/fnana.2014.00015)"  />
 <p class="caption">[[@hofman_evolution_2014]](https://doi.org/10.3389/fnana.2014.00015)</p>
 </div>
 
@@ -219,12 +223,12 @@ output:
 - Evidence for greater gray and white matter (relative to total brain volume) in human cerebral cortex
 
 <div class="figure" style="text-align: center">
-<img src="http://www.nature.com/nrn/journal/v10/n10/images/nrn2719-f1.jpg" alt="[[@rakic2009evolution]](http://dx.doi.org/10.1038/nrn2719)" width="800px" />
+<img src="http://www.nature.com/nrn/journal/v10/n10/images/nrn2719-f1.jpg" alt="[[@rakic2009evolution]](http://dx.doi.org/10.1038/nrn2719)"  />
 <p class="caption">[[@rakic2009evolution]](http://dx.doi.org/10.1038/nrn2719)</p>
 </div>
 
 <div class="figure" style="text-align: center">
-<img src="http://www.frontiersin.org/files/Articles/78485/fnana-08-00015-HTML/image_m/fnana-08-00015-g002.jpg" alt="[[@hofman_evolution_2014]](https://doi.org/10.3389/fnana.2014.00015)" width="800px" />
+<img src="http://www.frontiersin.org/files/Articles/78485/fnana-08-00015-HTML/image_m/fnana-08-00015-g002.jpg" alt="[[@hofman_evolution_2014]](https://doi.org/10.3389/fnana.2014.00015)"  />
 <p class="caption">[[@hofman_evolution_2014]](https://doi.org/10.3389/fnana.2014.00015)</p>
 </div>
 
@@ -239,7 +243,7 @@ output:
     - Higher *encephalization quotient* -- deviation from species-typical norm
     
 <div class="figure" style="text-align: center">
-<img src="img/northcutt-2002-f2.gif" alt="[[@Northcutt2002-jg]](http://doi.org/10.1093/icb/42.4.743)" width="800px" />
+<img src="img/northcutt-2002-f2.gif" alt="[[@Northcutt2002-jg]](http://doi.org/10.1093/icb/42.4.743)"  />
 <p class="caption">[[@Northcutt2002-jg]](http://doi.org/10.1093/icb/42.4.743)</p>
 </div>
 
@@ -252,7 +256,7 @@ output:
 - Big (large mass) brains arise in multiple mammalian lineages
 
 <div class="figure" style="text-align: center">
-<img src="http://www.pnas.org/content/109/Supplement_1/10661/F1.large.jpg" alt="[[@Herculano-Houzel2012-up]](http://doi.org/10.1073/pnas.1201895109)" width="800px" />
+<img src="http://www.pnas.org/content/109/Supplement_1/10661/F1.large.jpg" alt="[[@Herculano-Houzel2012-up]](http://doi.org/10.1073/pnas.1201895109)"  />
 <p class="caption">[[@Herculano-Houzel2012-up]](http://doi.org/10.1073/pnas.1201895109)</p>
 </div>
 
@@ -261,14 +265,14 @@ output:
 - Human brain just scaled up (non-ape) primate brain
 
 <div class="figure" style="text-align: center">
-<img src="http://www.pnas.org/content/109/Supplement_1/10661/F3.large.jpg" alt="[[@Herculano-Houzel2012-up]](http://doi.org/10.1073/pnas.1201895109)" width="800px" />
+<img src="http://www.pnas.org/content/109/Supplement_1/10661/F3.large.jpg" alt="[[@Herculano-Houzel2012-up]](http://doi.org/10.1073/pnas.1201895109)"  />
 <p class="caption">[[@Herculano-Houzel2012-up]](http://doi.org/10.1073/pnas.1201895109)</p>
 </div>
 
 **# of cortical (or in birds, pallidum) neurons predicts "cognition"?**
 
 <div class="figure" style="text-align: center">
-<img src="https://ars.els-cdn.com/content/image/1-s2.0-S2352154616302637-gr3_lrg.jpg" alt="[[@Herculano-Houzel2017-gf]](http://doi.org/10.1016/j.cobeha.2017.02.004)" width="800px" />
+<img src="https://ars.els-cdn.com/content/image/1-s2.0-S2352154616302637-gr3_lrg.jpg" alt="[[@Herculano-Houzel2017-gf]](http://doi.org/10.1016/j.cobeha.2017.02.004)"  />
 <p class="caption">[[@Herculano-Houzel2017-gf]](http://doi.org/10.1016/j.cobeha.2017.02.004)</p>
 </div>
 
@@ -284,7 +288,7 @@ output:
     
 **A further human advantage**
 
-<img src="http://www.melvinkonner.com/wp-content/uploads/2009/02/eofccover-195x293.jpg" width="800px" style="display: block; margin: auto;" />
+<img src="http://www.melvinkonner.com/wp-content/uploads/2009/02/eofccover-195x293.jpg" style="display: block; margin: auto;" />
 
 # Human brain development
 
@@ -309,7 +313,7 @@ output:
 
 ### Formation of *neural tube* (neurulation)
 
-<img src="https://as1.ftcdn.net/jpg/02/52/77/94/500_F_252779434_4Hr3vF8H3wDOH0RslaVw5nLnYoKACiP6.jpg" width="800px" style="display: block; margin: auto;" />
+<img src="https://as1.ftcdn.net/jpg/02/52/77/94/500_F_252779434_4Hr3vF8H3wDOH0RslaVw5nLnYoKACiP6.jpg" style="display: block; margin: auto;" />
 
 - Embryonic layers: ectoderm, mesoderm, endoderm
 - ~18-26 days
@@ -318,7 +322,7 @@ output:
     + Spina bifida (caudal neuraxis)
     
 <div class="figure" style="text-align: center">
-<img src="https://www.mayoclinic.org/-/media/kcms/gbs/patient-consumer/images/2013/08/26/11/10/ds00417_im03493_r7_spinabifidababythu_jpg-popup.jpg" alt="https://www.mayoclinic.org/diseases-conditions/spina-bifida/symptoms-causes/syc-20377860" width="800px" />
+<img src="https://www.mayoclinic.org/-/media/kcms/gbs/patient-consumer/images/2013/08/26/11/10/ds00417_im03493_r7_spinabifidababythu_jpg-popup.jpg" alt="https://www.mayoclinic.org/diseases-conditions/spina-bifida/symptoms-causes/syc-20377860"  />
 <p class="caption">https://www.mayoclinic.org/diseases-conditions/spina-bifida/symptoms-causes/syc-20377860</p>
 </div>
 
@@ -326,7 +330,7 @@ output:
     + Ventricles & cerebral aqueduct
     + Central canal of spinal cord
     
-<img src="https://www.mussenhealth.us/growth-cones/images/2009_48_104-neural-tube-tion.jpg" width="800px" style="display: block; margin: auto;" />
+<img src="https://www.mussenhealth.us/growth-cones/images/2009_48_104-neural-tube-tion.jpg" style="display: block; margin: auto;" />
 
 ### Neurogenesis and gliogenesis
 
@@ -334,9 +338,13 @@ output:
     - Peri-ventricular regions remain home to cells that can produce new cells
 
 <div class="figure" style="text-align: center">
-<img src="https://www.nature.com/nrm/journal/v6/n10/images/nrm1739-f1.jpg" alt="[[@Gotz2005-yj]](https://doi.org/10.1038/nrm1739)" width="800px" />
+<img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnrm1739/MediaObjects/41580_2005_Article_BFnrm1739_Fig1_HTML.jpg?as=webp" alt="[[@Gotz2005-yj]](https://doi.org/10.1038/nrm1739)"  />
 <p class="caption">[[@Gotz2005-yj]](https://doi.org/10.1038/nrm1739)</p>
 </div>
+
+> The lineage trees shown provide a simplified view of the relationship between neuroepithelial cells (NE), radial glial cells (RG) and neurons (N), without (a) and with (b) basal progenitors (BP) as cellular intermediates in the generation of neurons. They also show the types of cell division involved.
+>
+> [[@Gotz2005-yj]](https://doi.org/10.1038/nrm1739)
 
 - Areas in adult human brain that generate new neurons
     - hippocampus
@@ -345,7 +353,7 @@ output:
     - weak evidence for neurogenesis in adult cerebral cortex
 
 <div class="figure" style="text-align: center">
-<img src="https://journals.plos.org/plosbiology/article/figure/image?size=large&id=10.1371/journal.pbio.1002045.g001" alt="[Ernst &amp; Frisen 2015](https://doi.org/10.1371/journal.pbio.1002045)" width="800px" />
+<img src="https://journals.plos.org/plosbiology/article/figure/image?size=large&id=10.1371/journal.pbio.1002045.g001" alt="[Ernst &amp; Frisen 2015](https://doi.org/10.1371/journal.pbio.1002045)"  />
 <p class="caption">[Ernst & Frisen 2015](https://doi.org/10.1371/journal.pbio.1002045)</p>
 </div>
 
@@ -355,14 +363,14 @@ output:
 
 ### Radial glia and cell migration
 
-<img src="img/radial-glia.jpg" width="800px" style="display: block; margin: auto;" />
+<img src="img/radial-glia.jpg" width="348" style="display: block; margin: auto;" />
 
-<img src="img/neural-tube.jpg" width="800px" style="display: block; margin: auto;" />
+<img src="img/neural-tube.jpg" width="282" style="display: block; margin: auto;" />
 
 **Radial unit hypothesis**
 
 <div class="figure" style="text-align: center">
-<img src="http://www.nature.com/nrn/journal/v10/n10/images/nrn2719-f2.jpg" alt="[[@rakic2009evolution]](http://dx.doi.org/10.1038/nrn2719)" width="800px" />
+<img src="http://www.nature.com/nrn/journal/v10/n10/images/nrn2719-f2.jpg" alt="[[@rakic2009evolution]](http://dx.doi.org/10.1038/nrn2719)"  />
 <p class="caption">[[@rakic2009evolution]](http://dx.doi.org/10.1038/nrn2719)</p>
 </div>
 
@@ -384,7 +392,7 @@ output:
 **Glia migrate, too**
 
 <div class="figure" style="text-align: center">
-<img src="https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/physrev/2001/physrev.2001.81.issue-2/physrev.2001.81.2.871/production/images/medium/9j0210133004.jpeg" alt="[[@Baumann2001-nw]](http://dx.doi.org/10.1152/physrev.2001.81.2.871)" width="800px" />
+<img src="https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/physrev/2001/physrev.2001.81.issue-2/physrev.2001.81.2.871/production/images/medium/9j0210133004.jpeg" alt="[[@Baumann2001-nw]](http://dx.doi.org/10.1152/physrev.2001.81.2.871)"  />
 <p class="caption">[[@Baumann2001-nw]](http://dx.doi.org/10.1152/physrev.2001.81.2.871)</p>
 </div>
 
@@ -409,7 +417,7 @@ output:
 
 ### Synaptogenesis
 
-<img src="img/synaptic-density-infant.jpg" width="800px" style="display: block; margin: auto;" />
+<img src="img/synaptic-density-infant.jpg" width="479" style="display: block; margin: auto;" />
 
 ### Proliferation, pruning
 
@@ -428,13 +436,13 @@ output:
 - Quantity of nerve growth factors (NGF) influences
 
 <div class="figure" style="text-align: center">
-<img src="http://www.nature.com/nrn/journal/v10/n10/images/nrn2719-f3.jpg" alt="[[@rakic2009evolution]](http://dx.doi.org/10.1038/nrn2719)" width="800px" />
+<img src="http://www.nature.com/nrn/journal/v10/n10/images/nrn2719-f3.jpg" alt="[[@rakic2009evolution]](http://dx.doi.org/10.1038/nrn2719)"  />
 <p class="caption">[[@rakic2009evolution]](http://dx.doi.org/10.1038/nrn2719)</p>
 </div>
 
 ### Synaptic rearrangement
 
-<img src="img/huttenlocher.jpg" width="800px" style="display: block; margin: auto;" />
+<img src="img/huttenlocher.jpg" width="372" style="display: block; margin: auto;" />
 
 - Progressive phase: growth rate >> loss rate
 - Regressive phase: growth rate << loss rate
@@ -442,7 +450,7 @@ output:
 ### Myelination
 
 <div class="figure" style="text-align: center">
-<img src="https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/physrev/2001/physrev.2001.81.issue-2/physrev.2001.81.2.871/production/images/medium/9j0210133006.jpeg" alt="[[@Baumann2001-nw]](http://dx.doi.org/10.1152/physrev.2001.81.2.871)" width="800px" />
+<img src="https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/physrev/2001/physrev.2001.81.issue-2/physrev.2001.81.2.871/production/images/medium/9j0210133006.jpeg" alt="[[@Baumann2001-nw]](http://dx.doi.org/10.1152/physrev.2001.81.2.871)"  />
 <p class="caption">[[@Baumann2001-nw]](http://dx.doi.org/10.1152/physrev.2001.81.2.871)</p>
 </div>
 
@@ -455,22 +463,22 @@ output:
 ### Gyral development
 
 <div class="figure" style="text-align: center">
-<img src="img/chi-77-1.jpg" alt="[[@Chi1977-hm]](http://doi.org/10.1002/ana.410010109)" width="800px" />
+<img src="img/chi-77-1.jpg" alt="[[@Chi1977-hm]](http://doi.org/10.1002/ana.410010109)" width="907" />
 <p class="caption">[[@Chi1977-hm]](http://doi.org/10.1002/ana.410010109)</p>
 </div>
 
 <div class="figure" style="text-align: center">
-<img src="img/chi-77-2.jpg" alt="[[@Chi1977-hm]](http://doi.org/10.1002/ana.410010109)" width="800px" />
+<img src="img/chi-77-2.jpg" alt="[[@Chi1977-hm]](http://doi.org/10.1002/ana.410010109)" width="932" />
 <p class="caption">[[@Chi1977-hm]](http://doi.org/10.1002/ana.410010109)</p>
 </div>
 
 <div class="figure" style="text-align: center">
-<img src="img/chi-77-3.jpg" alt="[[@Chi1977-hm]](http://doi.org/10.1002/ana.410010109)" width="800px" />
+<img src="img/chi-77-3.jpg" alt="[[@Chi1977-hm]](http://doi.org/10.1002/ana.410010109)" width="967" />
 <p class="caption">[[@Chi1977-hm]](http://doi.org/10.1002/ana.410010109)</p>
 </div>
 
 <div class="figure" style="text-align: center">
-<img src="img/chi-77-4.jpg" alt="[[@Chi1977-hm]](http://doi.org/10.1002/ana.410010109)" width="800px" />
+<img src="img/chi-77-4.jpg" alt="[[@Chi1977-hm]](http://doi.org/10.1002/ana.410010109)" width="989" />
 <p class="caption">[[@Chi1977-hm]](http://doi.org/10.1002/ana.410010109)</p>
 </div>
 
@@ -484,19 +492,19 @@ output:
 
 #### Synaptogenesis
 
-<img src="img/huttenlocher.jpg" width="800px" style="display: block; margin: auto;" />
+<img src="img/huttenlocher.jpg" width="372" style="display: block; margin: auto;" />
 
 #### Myelination across human development
 
 <div class="figure" style="text-align: center">
-<img src="http://www.pnas.org/content/107/44/19067/F1.medium.gif" alt="[[@Hagmann02112010]](http://doi.org/10.1073/pnas.1009073107)" width="800px" />
+<img src="http://www.pnas.org/content/107/44/19067/F1.medium.gif" alt="[[@Hagmann02112010]](http://doi.org/10.1073/pnas.1009073107)"  />
 <p class="caption">[[@Hagmann02112010]](http://doi.org/10.1073/pnas.1009073107)</p>
 </div>
 
 ### Networks in the brain
 
 <div class="figure" style="text-align: center">
-<img src="https://pressroom.usc.edu/files/2014/02/brain-networks.jpg" alt="[[@irimia_2014]](http://doi.org/10.3389/fnhum.2014.00051)" width="800px" />
+<img src="https://pressroom.usc.edu/files/2014/02/brain-networks.jpg" alt="[[@irimia_2014]](http://doi.org/10.3389/fnhum.2014.00051)"  />
 <p class="caption">[[@irimia_2014]](http://doi.org/10.3389/fnhum.2014.00051)</p>
 </div>
 
@@ -504,35 +512,35 @@ output:
 
 
 <div class="figure" style="text-align: center">
-<img src="https://ars.els-cdn.com/content/image/1-s2.0-S1053811917307735-gr2a_lrg.jpg" alt="[[@Petrican2017-re]](http://doi.org/10.1016/j.neuroimage.2017.09.025)" width="800px" />
+<img src="https://ars.els-cdn.com/content/image/1-s2.0-S1053811917307735-gr2a_lrg.jpg" alt="[[@Petrican2017-re]](http://doi.org/10.1016/j.neuroimage.2017.09.025)"  />
 <p class="caption">[[@Petrican2017-re]](http://doi.org/10.1016/j.neuroimage.2017.09.025)</p>
 </div>
 
 **"Control" networks**
 
 <div class="figure" style="text-align: center">
-<img src="https://ars.els-cdn.com/content/image/1-s2.0-S1053811917307735-gr2a_lrg.jpg" alt="[[@Petrican2017-re]](http://doi.org/10.1016/j.neuroimage.2017.09.025)" width="800px" />
+<img src="https://ars.els-cdn.com/content/image/1-s2.0-S1053811917307735-gr2a_lrg.jpg" alt="[[@Petrican2017-re]](http://doi.org/10.1016/j.neuroimage.2017.09.025)"  />
 <p class="caption">[[@Petrican2017-re]](http://doi.org/10.1016/j.neuroimage.2017.09.025)</p>
 </div>
 
 **non-"control" networks**
 
 <div class="figure" style="text-align: center">
-<img src="https://ars.els-cdn.com/content/image/1-s2.0-S1053811917307735-gr2c_lrg.jpg" alt="[[@Petrican2017-re]](http://doi.org/10.1016/j.neuroimage.2017.09.025)" width="800px" />
+<img src="https://ars.els-cdn.com/content/image/1-s2.0-S1053811917307735-gr2c_lrg.jpg" alt="[[@Petrican2017-re]](http://doi.org/10.1016/j.neuroimage.2017.09.025)"  />
 <p class="caption">[[@Petrican2017-re]](http://doi.org/10.1016/j.neuroimage.2017.09.025)</p>
 </div>
 
 **The "development" of developmental connectomics**
 
 <div class="figure" style="text-align: center">
-<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0166223617301157-gr2_lrg.jpg" alt="[[@Cao2017-bl]](http://doi.org/10.1016/j.tins.2017.06.003)" width="800px" />
+<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0166223617301157-gr2_lrg.jpg" alt="[[@Cao2017-bl]](http://doi.org/10.1016/j.tins.2017.06.003)"  />
 <p class="caption">[[@Cao2017-bl]](http://doi.org/10.1016/j.tins.2017.06.003)</p>
 </div>
 
 **Myelination changes "network" properties**
 
 <div class="figure" style="text-align: center">
-<img src="http://www.pnas.org/content/107/44/19067/F2.medium.gif" alt="[[@Hagmann02112010]](http://doi.org/10.1073/pnas.1009073107)" width="800px" />
+<img src="http://www.pnas.org/content/107/44/19067/F2.medium.gif" alt="[[@Hagmann02112010]](http://doi.org/10.1073/pnas.1009073107)"  />
 <p class="caption">[[@Hagmann02112010]](http://doi.org/10.1073/pnas.1009073107)</p>
 </div>
 
@@ -541,22 +549,22 @@ output:
 - Cortical thickness changes [[@Gogtay2004-bq]](http://doi.org/10.1073/pnas.0402680101)
 
 <div class="figure" style="text-align: center">
-<img src="http://www.jneurosci.org/content/jneuro/28/14/3586/F1.large.jpg" alt="[[@Shaw2008-dq]](https://doi.org/10.1523/JNEUROSCI.5309-07.2008)" width="800px" />
+<img src="http://www.jneurosci.org/content/jneuro/28/14/3586/F1.large.jpg" alt="[[@Shaw2008-dq]](https://doi.org/10.1523/JNEUROSCI.5309-07.2008)"  />
 <p class="caption">[[@Shaw2008-dq]](https://doi.org/10.1523/JNEUROSCI.5309-07.2008)</p>
 </div>
 
 <div class="figure" style="text-align: center">
-<img src="http://www.jneurosci.org/content/jneuro/28/14/3586/F2.large.jpg" alt="[[@Shaw2008-dq]](https://doi.org/10.1523/JNEUROSCI.5309-07.2008)" width="800px" />
+<img src="http://www.jneurosci.org/content/jneuro/28/14/3586/F2.large.jpg" alt="[[@Shaw2008-dq]](https://doi.org/10.1523/JNEUROSCI.5309-07.2008)"  />
 <p class="caption">[[@Shaw2008-dq]](https://doi.org/10.1523/JNEUROSCI.5309-07.2008)</p>
 </div>
 
 <div class="figure" style="text-align: center">
-<img src="http://www.jneurosci.org/content/jneuro/28/14/3586/F3.large.jpg" alt="[[@Shaw2008-dq]](https://doi.org/10.1523/JNEUROSCI.5309-07.2008)" width="800px" />
+<img src="http://www.jneurosci.org/content/jneuro/28/14/3586/F3.large.jpg" alt="[[@Shaw2008-dq]](https://doi.org/10.1523/JNEUROSCI.5309-07.2008)"  />
 <p class="caption">[[@Shaw2008-dq]](https://doi.org/10.1523/JNEUROSCI.5309-07.2008)</p>
 </div>
 
 <div class="figure" style="text-align: center">
-<img src="http://www.jneurosci.org/content/jneuro/28/14/3586/F4.large.jpg" alt="[[@Shaw2008-dq]](https://doi.org/10.1523/JNEUROSCI.5309-07.2008)" width="800px" />
+<img src="http://www.jneurosci.org/content/jneuro/28/14/3586/F4.large.jpg" alt="[[@Shaw2008-dq]](https://doi.org/10.1523/JNEUROSCI.5309-07.2008)"  />
 <p class="caption">[[@Shaw2008-dq]](https://doi.org/10.1523/JNEUROSCI.5309-07.2008)</p>
 </div>
 
@@ -594,14 +602,14 @@ Your browser does not support the video tag.
 ### Changes in brain energetics (glucose utilization)
 
 <div class="figure" style="text-align: center">
-<img src="http://www.pnas.org/content/111/36/13010/F1.medium.gif" alt="[[@Kuzawa2014-qd]](http://doi.org/10.1073/pnas.1323099111)" width="800px" />
+<img src="http://www.pnas.org/content/111/36/13010/F1.medium.gif" alt="[[@Kuzawa2014-qd]](http://doi.org/10.1073/pnas.1323099111)"  />
 <p class="caption">[[@Kuzawa2014-qd]](http://doi.org/10.1073/pnas.1323099111)</p>
 </div>
 
 ### Gene expression across development
 
 <div class="figure" style="text-align: center">
-<img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnature10523/MediaObjects/41586_2011_Article_BFnature10523_Fig5_HTML.jpg?as=webp" alt="[[@Kang2011-ex]](http://doi.org/10.1038/nature10523)" width="800px" />
+<img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnature10523/MediaObjects/41586_2011_Article_BFnature10523_Fig5_HTML.jpg?as=webp" alt="[[@Kang2011-ex]](http://doi.org/10.1038/nature10523)"  />
 <p class="caption">[[@Kang2011-ex]](http://doi.org/10.1038/nature10523)</p>
 </div>
 
@@ -635,30 +643,30 @@ Your browser does not support the video tag.
 
 
 <div class="figure" style="text-align: center">
-<img src="img/swanson-1.jpg" alt="Source: Swanson" width="800px" />
+<img src="img/swanson-1.jpg" alt="Source: Swanson" width="335" />
 <p class="caption">Source: Swanson</p>
 </div>
 
 ### 4 weeks
 
 <div class="figure" style="text-align: center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/4_week_embryo_brain.jpg" alt="https://upload.wikimedia.org/wikipedia/commons/4/4c/4_week_embryo_brain.jpg" width="800px" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/4_week_embryo_brain.jpg" alt="https://upload.wikimedia.org/wikipedia/commons/4/4c/4_week_embryo_brain.jpg"  />
 <p class="caption">https://upload.wikimedia.org/wikipedia/commons/4/4c/4_week_embryo_brain.jpg</p>
 </div>
 
 ### ~4 weeks
 
-<img src="img/swanson-2.jpg" width="800px" style="display: block; margin: auto;" />
+<img src="img/swanson-2.jpg" width="348" style="display: block; margin: auto;" />
 
 ### 6 weeks
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/6_week_human_embryo_nervous_system.svg/500px-6_week_human_embryo_nervous_system.svg.png" width="800px" style="display: block; margin: auto;" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/6_week_human_embryo_nervous_system.svg/500px-6_week_human_embryo_nervous_system.svg.png" style="display: block; margin: auto;" />
 
-<img src="img/swanson-3.jpg" width="800px" style="display: block; margin: auto;" />
+<img src="img/swanson-3.jpg" width="322" style="display: block; margin: auto;" />
 
 ### Beyond 6+ weeks
 
-<img src="img/swanson-4.jpg" width="800px" style="display: block; margin: auto;" />
+<img src="img/swanson-4.jpg" width="221" style="display: block; margin: auto;" />
 
 ### Organization of the brain
 
@@ -676,8 +684,12 @@ Your browser does not support the video tag.
 ### From structural development to functional development
 
 <div class="figure" style="text-align: center">
-<img src="https://www.nature.com/nrn/journal/v2/n7/images/nrn0701_475a_f3.gif" alt="[[@Johnson2001-yy]](http://doi.org/10.1038/35081509)" width="800px" />
+<img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2F35081509/MediaObjects/41583_2001_Article_BF35081509_Fig3_HTML.gif?as=webp" alt="[[@Johnson2001-yy]](http://doi.org/10.1038/35081509)"  />
 <p class="caption">[[@Johnson2001-yy]](http://doi.org/10.1038/35081509)</p>
 </div>
+
+> Figure 3: Three accounts of the neural basis of an advance in behavioural abilities in infants.
+> a | A maturational view in which the neuroanatomical maturation of one region, in this case the dorsolateral prefrontal cortex (DLPC), allows new behavioural abilities to emerge. Specifically, maturation of DLPC has been associated with successful performance in the object retrieval task (Fig. 1a)50. Note that although the task itself involves activity in several regions, it is thought to be maturation of only one of these, the DLPC, that results in changed behaviour. b | An interactive specialization view in which the onset of a new behavioural ability is due to changes in the interactions between several regions that were already partially active. In this hypothetical illustration, it is suggested that changes in the interactions between DLPC, parietal cortex and cerebellum might give rise to successful performance in the object retrieval paradigm. In contrast to the maturational view, it is refinement of the connectivity between regions, rather than within a single region, that is important. According to this view, regions adjust their functionality together to allow new computations. c | A skill-learning model, in which the pattern of activation of cortical regions changes during the acquisition of new skills throughout the lifespan. In the example illustrated there is decreasing activation of DLPC and medial frontal cortex (pre-supplementary motor area), accompanied by increasing activation of more posterior regions (such as intraparietal sulcus), as human adults perform a visuomotor sequence learning task77. It is suggested that similar changes might occur during the acquisition of new skills by infants. These three accounts are not necessarily mutually exclusive.
+> [[@Johnson2001-yy]](http://doi.org/10.1038/35081509)
 
 # References

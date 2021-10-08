@@ -163,6 +163,8 @@ title: "Schedule"
 - Reading
     + BW 6 & 7. 
     + Optional [Hofman 2014](https://www.frontiersin.org/Journal/Abstract.aspx?s=742&name=neuroanatomy&ART_DOI=10.3389/fnana.2014.00015).
+- Materials
+    - [Notes](lectures/511-evo-devo.html). [PDF](lectures/511-evo-devo.pdf).
 
 ---
 

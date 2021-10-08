@@ -287,7 +287,7 @@ knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/7/
 
 - Synthesis pathway: DA -> NE/NAd -> Epi/Ad
 
-### Information processing
+#### Information processing
 
 - Point-to-point
     + One sender, small number of recipients
@@ -303,10 +303,6 @@ knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/7/
 - Released by
     + Substantia nigra -> striatum, *meso-striatal projection*
     + Ventral tegmental area (VTA) -> nucleus accumbens, ventral striatum, hippocampus, amygdala, cortex; *meso-limbo-cortical projection*
-
-# ```{r, fig.cap="http://thebrain.mcgill.ca/flash/a/a_03/a_03_cl/a_03_cl_que/a_03_cl_que_1a.gif", out.width="650px"}
-# knitr::include_graphics("http://thebrain.mcgill.ca/flash/a/a_03/a_03_cl/a_03_cl_que/a_03_cl_que_1a.gif")
-# ```
 
 ```{r, fig.cap="https://en.wikipedia.org/wiki/Dopaminergic_pathways"}
 knitr::include_graphics("https://commons.wikimedia.org/wiki/File:Dopaminergic_pathways.svg#/media/File:Dopaminergic_pathways.svg")
@@ -443,7 +439,7 @@ knitr::include_graphics("https://media.springernature.com/full/springer-static/i
 - Role in arousal/sleep regulation
 - In body, part of immune/inflammatory response
 
-### Targets of psychotropic drugs
+#### Targets of psychotropic drugs
 
 ```{r, fig.cap="Source: https://stahlonline.cambridge.org/essential_4th_chapter.jsf?page=chapter2_summary.htm&name=Chapter%202&title=Summary"}
 knitr::include_graphics("img/psychotropic-drug-targets.jpg")

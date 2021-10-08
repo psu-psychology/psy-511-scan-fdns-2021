@@ -49,7 +49,7 @@ navbar:
           - text: "2021-10-06"
             href: "lectures/511-chemical-communication.html"
           - text: "2021-10-08"
-            href:            
+            href: "lectures/511-evo-devo.html"           
       - text: "Week 8"
         menu:
           - text: "2021-10-13"

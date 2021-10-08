@@ -2,7 +2,7 @@
 title: "PSY 511"
 subtitle: "Chemical communication"
 author: "Rick Gilmore"
-date: "2021-10-07 11:15:35"
+date: "2021-10-08 07:52:22"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -283,7 +283,7 @@ output:
 
 - Synthesis pathway: DA -> NE/NAd -> Epi/Ad
 
-### Information processing
+#### Information processing
 
 - Point-to-point
     + One sender, small number of recipients
@@ -299,10 +299,6 @@ output:
 - Released by
     + Substantia nigra -> striatum, *meso-striatal projection*
     + Ventral tegmental area (VTA) -> nucleus accumbens, ventral striatum, hippocampus, amygdala, cortex; *meso-limbo-cortical projection*
-
-# ```{r, fig.cap="http://thebrain.mcgill.ca/flash/a/a_03/a_03_cl/a_03_cl_que/a_03_cl_que_1a.gif", out.width="650px"}
-# knitr::include_graphics("http://thebrain.mcgill.ca/flash/a/a_03/a_03_cl/a_03_cl_que/a_03_cl_que_1a.gif")
-# ```
 
 <div class="figure" style="text-align: center">
 <img src="https://commons.wikimedia.org/wiki/File:Dopaminergic_pathways.svg#/media/File:Dopaminergic_pathways.svg" alt="https://en.wikipedia.org/wiki/Dopaminergic_pathways"  />
@@ -449,7 +445,7 @@ output:
 - Role in arousal/sleep regulation
 - In body, part of immune/inflammatory response
 
-### Targets of psychotropic drugs
+#### Targets of psychotropic drugs
 
 <div class="figure" style="text-align: center">
 <img src="img/psychotropic-drug-targets.jpg" alt="Source: https://stahlonline.cambridge.org/essential_4th_chapter.jsf?page=chapter2_summary.htm&amp;name=Chapter%202&amp;title=Summary" width="1869" />
@@ -612,8 +608,20 @@ output:
 - Endocrine response
     + *Hypothalamic Pituitary Adrenal (HPA) axis*
     + Adrenal hormones released
+    
+<div class="figure" style="text-align: center">
+<img src="https://journals.physiology.org/cms/10.1152/physrev.00042.2017/asset/images/medium/z9j0041828650001.gif" alt="[[@Deussing2018-ub]](http://dx.doi.org/10.1152/physrev.00042.2017)"  />
+<p class="caption">[[@Deussing2018-ub]](http://dx.doi.org/10.1152/physrev.00042.2017)</p>
+</div>
+
+> FIGURE 1. Effector systems of the stress response. A stressor elicits rapid activation of the autonomic nervous system with its sympathoneuronal (SN) and sympatho-adrenomedullary (SAM) limbs releasing their main effectors, noradrenaline and adrenaline, respectively. Activation of the hypothalamic-pituitary-adrenocortical (HPA) axis results in synthesis and release of its main effector, cortisol or corticosterone, in rodents. ACTH, adrenocorticotropic hormone; CRF, corticotropin-releasing factor.
+>
+> [[@Deussing2018-ub]](http://dx.doi.org/10.1152/physrev.00042.2017)
+
+
 - Hypothalamus
-    + *Corticotropin Releasing Hormone (CRH)*
+    + *Corticotropin Releasing Hormone (CRH)* or *Corticotropin Releasing Factor (CRF)*
+    + Paraventricular nucleus (PVN)
 - Anterior pituitary
     + *Adrenocorticotropic hormone (ACTH)*
 - Adrenal cortex
@@ -629,13 +637,35 @@ output:
 >
 > [[@ulrich-lai_neural_2009]](http://doi.org/10.1038/nrn2647)
 
+- CRF receptors found throughout the brain
+
+<div class="figure" style="text-align: center">
+<img src="https://journals.physiology.org/cms/10.1152/physrev.00042.2017/asset/images/medium/z9j0041828650004.gif" alt="[[@Deussing2018-ub]](http://dx.doi.org/10.1152/physrev.00042.2017)"  />
+<p class="caption">[[@Deussing2018-ub]](http://dx.doi.org/10.1152/physrev.00042.2017)</p>
+</div>
+
+> FIGURE 4. Distribution of mRNA expression of corticotropin-releasing factor (CRF)-related peptides in the rodent brain. Three-dimensional expression patterns of CRF-related peptide were collapsed onto a single sagittal brain section. Depicted are well-documented sites of high to moderate expression. Sites of expression are indicated by colored dots: CRF (orange), urocortin (UCN) 1 (green), UCN2 (light blue), UCN3 (purple). 7, Facial nerve; 12, hypoglossal nerve; Amb, ambiguous nucleus; AP, area postrema; arc, arcuate nucleus; Bar, Barrington’s nucleus; BLA, basolateral amygdala; BNST, bed nucleus of the stria terminalis (d, dorsal aspect; v, ventral aspect); CA1, cornu ammonis subfield 1; CA3, cornu ammonis subfield 3; CC, corpus callosum; CeA, central amygdala; Cereb, cerebellum; CingCx, cingulate cortex; CPu, caudate putamen; DeepN, deep nucleus of cerebellum; DG, dentate gyrus; EW, Edinger Westphal nucleus; FrCx, frontal cortex; GPe, external globus pallidus; Hip, hippocampus; IC, inferior colliculus; IO, inferior olive; IPN, interpeduncular nucleus; LC, locus coeruleus; LH, lateral hypothalamus; LS, lateral septum; LSO, lateral superior olive; LTDg, laterodorsal tegmental nucleus; MeA, medial amygdala; MePO, median preoptic area; MGN, medial geniculate nucleus; MS, medial septum; MVN, medial vestibular nucleus; NAc, nucleus accumbens; NTS, nucleus of the solitary tract; OB, olfactory bulb; OccCx, occipital cortex; OT, olfactory tubercle; PAG, periaqueductal gray; ParCx, parietal cortex; PB, parabrachial nucleus; PFA, perifornical area; PG, pontine gray; Pir, piriform cortex; Pit, pituitary (p, lobe, anterior lobe, intermediate, posterior lobe); PM, premammillary nucleus; PPTg, pedunculopontine tegmental nucleus; PVN, paraventricular nucleus of the hypothalamus; R, red nucleus; RN, raphe nuclei; RTB, reticular thalamic nucleus; SC, superior colliculus; SN, substantia nigra; Sp5n, spinal trigeminal nucleus; SPO, superior paraolivary nucleus; VMH, ventromedial hypothalamus, VTA, ventral tegmental area.
+>
+> [[@Deussing2018-ub]](http://dx.doi.org/10.1152/physrev.00042.2017)
+
 #### Adrenal hormones
 
 - *Steroids*
     + Derived from cholesterol
-- *Cortisol*
-    + increases blood glucose, anti-inflammatory effects
-    + negative consequences of prolonged exposure 
+- *Cortisol* (CORT)
+    + increases blood glucose, aids in fat, protein, & carbohydrate metabolism
+    + suppressess immune response, e.g., anti-inflammatory
+    + in presences of Epi/Ad, role in memory formation
+    + Circadian rhythmicity: high in am, low in pm
+    
+<div class="figure" style="text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Change_in_plasma_cortisol_cycle_over_24_hours.jpg/440px-Change_in_plasma_cortisol_cycle_over_24_hours.jpg" alt="https://en.wikipedia.org/wiki/Cortisol"  />
+<p class="caption">https://en.wikipedia.org/wiki/Cortisol</p>
+</div>
+    
+    + Receptors found in cytosol of most cells; some on cell membranes
+    + Regulates gene transcription
+
 - *Aldosterone*
     + Regulates Na (and water)
     
@@ -654,10 +684,10 @@ output:
 **Oxytocin's role...**
 
 - Sexual arousal
-- Released in bursts during orgasm
+- Released during orgasm, causing rhythmic muscle contractions
 - Stimulates uterine, vaginal contraction during labor
     - But mouse OXY knock-out model still engages in reproductive behavior and gives birth without incident.
-- Oxytocin cells in ovarian corpus luteum, testicles, retina, adrenal medulla, pancreas
+- Oxytocin-producing cells in ovarian corpus luteum, testicles, retina, adrenal medulla, pancreas
 - Links to social interaction, bonding  [[@Weisman2013158]](http://dx.doi.org/10.1016/j.biopsych.2013.05.026)
 - Alters face processing in autism  [[@Domes2013164]](http://dx.doi.org/10.1016/j.biopsych.2013.02.007)
 - May inhibit fear/anxiety-related behaviors by gating amygdala [[@viviani2011oxytocin]](http://doi.org/10.1126/science.1201043)

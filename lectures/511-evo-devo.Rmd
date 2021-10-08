@@ -12,13 +12,7 @@ output:
     toc: yes
     toc_depth: 5
     toc_float: no
-    code_folding: hide
-  ioslides_presentation:
     self_contained: false
-    lib_dir: libs
-    widescreen: true
-    incremental: false
-    transition: default
   pdf_document:
     toc: true
     toc_depth: 1
@@ -28,12 +22,11 @@ output:
     fig_height: 6
 ---
 
-```{r set-up, echo=FALSE, error=FALSE, include=FALSE, warning=FALSE, message=FALSE}
-path2figs = 'img'
-knitr::opts_chunk$set(fig.path = path2figs,
-                      echo = FALSE, warning = FALSE, message = FALSE,
-                      fig.align = "center",
-                      out.width = "800px")
+```{r set-up, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, 
+                      cache = FALSE, 
+                      fig.align = "center")
+
 library(tidyverse)
 ```
 
@@ -44,10 +37,18 @@ library(tidyverse)
 <iframe width="420" height="315" src="https://www.youtube.com/embed/QMshTTIp7SA" frameborder="0" allowfullscreen></iframe>
 
 # Evolution
+
 ## Public acceptance of evolution
 
 ```{r, fig.cap = "[[@miller2006public]](http://dx.doi.org/10.1126/science.1126746)"}
-knitr::include_graphics("https://www.sciencemag.org/content/313/5788/765/F1.medium.gif")
+knitr::include_graphics("https://www.science.org/cms/10.1126/science.1126746/asset/04dcf902-b601-44d0-8a9c-fd7f717b57a3/assets/graphic/765-1.gif")
+```
+
+- In U.S., majority now "accept"
+- Increase over last decade
+
+```{r, fig.cap="[[@Miller2021-lb]](http://dx.doi.org/10.1177/09636625211035919)"}
+knitr::include_graphics("https://journals-sagepub-com.ezaccess.libraries.psu.edu/na101/home/literatum/publisher/sage/journals/content/pusa/0/pusa.ahead-of-print/09636625211035919/20210815/images/medium/10.1177_09636625211035919-fig1.gif")
 ```
 
 ### Types of evidence
@@ -62,6 +63,8 @@ knitr::include_graphics("https://www.sciencemag.org/content/313/5788/765/F1.medi
 - Anatomical
     + Homologous structures across species
 
+> **Nothing in Biology Makes Sense except in the Light of Evolution**
+>
 > *"Seen in the light of evolution, biology is, perhaps, intellectually the most satisfying and inspiring science. Without that light, it becomes a pile of sundry facts some of them interesting or curious, but making no meaningful picture as a whole."*
 
 [[@Dobzhansky1973]](http://dx.doi.org/10.2307/4444260)
@@ -79,6 +82,10 @@ knitr::include_graphics("https://www.sciencemag.org/content/313/5788/765/F1.medi
 - [Politics](http://www.people-press.org/2009/07/09/section-4-scientists-politics-and-religion/)
 - A minority of citizens support teaching [evolution-only](http://www.pbs.org/wgbh/nova/blogs/education/2015/12/evolutionschools/) 
 - Majority of classroom teachers aren't [strong advocates](https://www.sciencedaily.com/releases/2011/01/110127141657.htm)
+
+> A structural equation model indicates that increasing enrollment in baccalaureate-level programs, exposure to college-level science courses, a declining level of religious fundamentalism, and a rising level of civic scientific literacy are responsible for the increased level of public acceptance.
+>
+> [[@Miller2021-lb]](http://dx.doi.org/10.1177/09636625211035919)
 
 ## Evolution and development
 
@@ -104,10 +111,6 @@ knitr::include_graphics("http://anthony.liekens.net/pub/timeline.png")
 
 ```{r, fig.cap="Source: http://www.zo.utexas.edu/faculty/sjasper/images/26.2.gif"}
 knitr::include_graphics("http://www.zo.utexas.edu/faculty/sjasper/images/26.2.gif")
-```
-
-```{r, fig.cap="http://www.indiana.edu/~geol105b/images/gaia_chapter_6/time_scale.gif"}
-knitr::include_graphics("http://www.indiana.edu/~geol105b/images/gaia_chapter_6/time_scale.gif")
 ```
 
 ### Nervous system architectures
@@ -329,8 +332,12 @@ knitr::include_graphics("https://www.mussenhealth.us/growth-cones/images/2009_48
     - Peri-ventricular regions remain home to cells that can produce new cells
 
 ```{r, fig.cap="[[@Gotz2005-yj]](https://doi.org/10.1038/nrm1739)"}
-knitr::include_graphics("https://www.nature.com/nrm/journal/v6/n10/images/nrm1739-f1.jpg")
+knitr::include_graphics("https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnrm1739/MediaObjects/41580_2005_Article_BFnrm1739_Fig1_HTML.jpg?as=webp")
 ```
+
+> The lineage trees shown provide a simplified view of the relationship between neuroepithelial cells (NE), radial glial cells (RG) and neurons (N), without (a) and with (b) basal progenitors (BP) as cellular intermediates in the generation of neurons. They also show the types of cell division involved.
+>
+> [[@Gotz2005-yj]](https://doi.org/10.1038/nrm1739)
 
 - Areas in adult human brain that generate new neurons
     - hippocampus
@@ -664,7 +671,11 @@ knitr::include_graphics("img/swanson-4.jpg")
 ### From structural development to functional development
 
 ```{r, fig.cap="[[@Johnson2001-yy]](http://doi.org/10.1038/35081509)"}
-knitr::include_graphics("https://www.nature.com/nrn/journal/v2/n7/images/nrn0701_475a_f3.gif")
+knitr::include_graphics("https://media.springernature.com/full/springer-static/image/art%3A10.1038%2F35081509/MediaObjects/41583_2001_Article_BF35081509_Fig3_HTML.gif?as=webp")
 ```
+
+> Figure 3: Three accounts of the neural basis of an advance in behavioural abilities in infants.
+> a | A maturational view in which the neuroanatomical maturation of one region, in this case the dorsolateral prefrontal cortex (DLPC), allows new behavioural abilities to emerge. Specifically, maturation of DLPC has been associated with successful performance in the object retrieval task (Fig. 1a)50. Note that although the task itself involves activity in several regions, it is thought to be maturation of only one of these, the DLPC, that results in changed behaviour. b | An interactive specialization view in which the onset of a new behavioural ability is due to changes in the interactions between several regions that were already partially active. In this hypothetical illustration, it is suggested that changes in the interactions between DLPC, parietal cortex and cerebellum might give rise to successful performance in the object retrieval paradigm. In contrast to the maturational view, it is refinement of the connectivity between regions, rather than within a single region, that is important. According to this view, regions adjust their functionality together to allow new computations. c | A skill-learning model, in which the pattern of activation of cortical regions changes during the acquisition of new skills throughout the lifespan. In the example illustrated there is decreasing activation of DLPC and medial frontal cortex (pre-supplementary motor area), accompanied by increasing activation of more posterior regions (such as intraparietal sulcus), as human adults perform a visuomotor sequence learning task77. It is suggested that similar changes might occur during the acquisition of new skills by infants. These three accounts are not necessarily mutually exclusive.
+> [[@Johnson2001-yy]](http://doi.org/10.1038/35081509)
 
 # References
