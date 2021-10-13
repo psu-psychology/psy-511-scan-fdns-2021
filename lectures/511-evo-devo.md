@@ -2,7 +2,7 @@
 title: "PSY 511"
 subtitle: "Evolution and development of the human brain"
 author: "Rick Gilmore"
-date: "2021-10-08 14:17:08"
+date: "2021-10-13 09:52:18"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -351,7 +351,7 @@ output:
     - hippocampus
     - striatum
     - olfactory bulb (minimally)
-    - weak evidence for neurogenesis in adult cerebral cortex
+    - weak evidence for substantial neurogenesis in adult cerebral cortex
 
 <div class="figure" style="text-align: center">
 <img src="https://journals.plos.org/plosbiology/article/figure/image?size=large&id=10.1371/journal.pbio.1002045.g001" alt="[Ernst &amp; Frisen 2015](https://doi.org/10.1371/journal.pbio.1002045)"  />
@@ -598,7 +598,6 @@ Your browser does not support the video tag.
   <source src="mov/02680Movie4.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
-```
 
 ### Changes in brain energetics (glucose utilization)
 
@@ -614,8 +613,7 @@ Your browser does not support the video tag.
 <p class="caption">[[@Kang2011-ex]](http://doi.org/10.1038/nature10523)</p>
 </div>
 
->a, Comparison between DCX expression in HIP and the density of DCX-immunopositive cells in the human dentate gyrus36. b, Comparison between transcriptome-based dendrite development trajectory in DFC and Golgi-method-based growth of basal dendrites of layer 3 (L3) and 5 (L5) pyramidal neurons in the human DFC41. c, Comparison between transcriptome-based synapse development trajectory in DFC and density of DFC synapses calculated using electron microscopy42. For b and c, PC1 for gene expression was plotted against age to represent the developmental trajectory of genes associated with dendrite (b) or synapse (c) development. Independent data sets were centred, scaled and plotted on a logarithmic scale. d, PC1 value for the indicated sets of genes (expressed as percentage of maximum) plotted against age to represent general trends and regional differences in several neurodevelopmental processes in NCX, HIP and CBC.
-
+> a, Comparison between DCX expression in HIP and the density of DCX-immunopositive cells in the human dentate gyrus36. b, Comparison between transcriptome-based dendrite development trajectory in DFC and Golgi-method-based growth of basal dendrites of layer 3 (L3) and 5 (L5) pyramidal neurons in the human DFC41. c, Comparison between transcriptome-based synapse development trajectory in DFC and density of DFC synapses calculated using electron microscopy42. For b and c, PC1 for gene expression was plotted against age to represent the developmental trajectory of genes associated with dendrite (b) or synapse (c) development. Independent data sets were centred, scaled and plotted on a logarithmic scale. d, PC1 value for the indicated sets of genes (expressed as percentage of maximum) plotted against age to represent general trends and regional differences in several neurodevelopmental processes in NCX, HIP and CBC.
 
 ## Summary of developmental milestones
 
@@ -641,7 +639,6 @@ Your browser does not support the video tag.
 ## How brain development clarifies anatomical structure
 
 ### 3-4 weeks
-
 
 <div class="figure" style="text-align: center">
 <img src="img/swanson-1.jpg" alt="Source: Swanson" width="335" />

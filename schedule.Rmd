@@ -177,6 +177,9 @@ title: "Schedule"
 - Read/Watch
     + Rakic, P. (2009). Evolution of the neocortex: a perspective from developmental biology. Nature Reviews Neuroscience, 10(10), 724–735. Retrieved October 5, 2015, from <https://www.nature.com/nrn/journal/v10/n10/abs/nrn2719.html>.
     + Cao, M., Huang, H., & He, Y. (2017). Developmental connectomics from infancy through early childhood. *Trends in Neurosciences*, *40*(8), 494–506. Retrieved from <https://dx.doi.org/10.1016/j.tins.2017.06.003>.
+- Materials
+    - [Notes](lectures/511-evo-devo.html). [PDF](lectures/511-evo-devo.pdf).
+
     
 ### Friday, October 15
 
@@ -185,6 +188,8 @@ title: "Schedule"
 - Read/Watch
     + Rakic, P. (2009). Evolution of the neocortex: a perspective from developmental biology. Nature Reviews Neuroscience, 10(10), 724–735. Retrieved October 5, 2015, from <https://www.nature.com/nrn/journal/v10/n10/abs/nrn2719.html>.
     + Cao, M., Huang, H., & He, Y. (2017). Developmental connectomics from infancy through early childhood. *Trends in Neurosciences*, *40*(8), 494–506. Retrieved from <https://dx.doi.org/10.1016/j.tins.2017.06.003>.
+- Materials
+    - [Notes](lectures/511-evo-devo.html). [PDF](lectures/511-evo-devo.pdf).
 
 ---
 
