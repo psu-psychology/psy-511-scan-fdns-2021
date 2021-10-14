@@ -2,7 +2,7 @@
 title: "PSY 511"
 subtitle: "Evolution and development of the human brain"
 author: "Rick Gilmore"
-date: "2021-10-13 09:52:18"
+date: "2021-10-14 08:18:35"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -96,7 +96,7 @@ output:
 #### Ontogeny does not recapitulate phylogeny ([Haeckel](https://en.wikipedia.org/wiki/Ernst_Haeckel)), but...
 
 <div class="figure" style="text-align: center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Haeckel_drawings.jpg/350px-Haeckel_drawings.jpg" alt="Source: Wikipedia"  />
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Haeckel_drawings.jpg/350px-Haeckel_drawings.jpg" alt="Source: Wikipedia" width="800px" />
 <p class="caption">Source: Wikipedia</p>
 </div>
 
@@ -120,11 +120,6 @@ output:
 - Body symmetry
     + radial
     + bilateral
-
-<div class="figure" style="text-align: center">
-<img src="https://media.nature.com/lw926/nature-assets/nrn/journal/v17/n1/images/nrn.2015.15-f1.jpg" alt="Source: [[@arendt_nerve_2016]](https://doi.org/10.1038/nrn.2015.15)"  />
-<p class="caption">Source: [[@arendt_nerve_2016]](https://doi.org/10.1038/nrn.2015.15)</p>
-</div>
 
 **An animal with a nerve "net"**
 
@@ -176,10 +171,18 @@ output:
 <p class="caption">[[@arendt_nerve_2016]](http://doi.org/10.1038/nrn.2015.15)</p>
 </div>
 
+> Figure 1: Animal phylogeny. A simplified animal phylogenetic tree (showing the evolutionary history of animals), in which lines represent evolutionary diversification. The lengths of the lines are arbitrary, as they do not indicate evolutionary distance. For a brief characterization of the Anthozoa, Bilateria, Ceriantharia, Cnidaria, Ctenophora, Medusozoa and Neuralia, see the glossary. The phylogenetic position of the Ctenophora is not settled, as indicated by a question mark. The Ctenophora image is adapted with permission from Ref. 43, Wiley. The Porifera and Placozoa images are reprinted with permission from Ref. 139 (Nielsen, C. Animal Evolution: Interrelationships of the Living Phyla p31 and p39 (2012)) by the permission of Oxford University Press. The Annelida image is adapted with permission from Ref. 140, Schweizerbart Science Publishers (www.schweizerbart.de).
+>
+> [[@arendt_nerve_2016]](https://doi.org/10.1038/nrn.2015.15)
+
 <div class="figure" style="text-align: center">
 <img src="img/nrn.2015.15-f2.jpg" alt="[[@arendt_nerve_2016]](http://doi.org/10.1038/nrn.2015.15)" width="946" />
 <p class="caption">[[@arendt_nerve_2016]](http://doi.org/10.1038/nrn.2015.15)</p>
 </div>
+
+> Figure 2: Comparison of neurodevelopment in the frog, annelid and sea anemone. The frog Xenopus laevis (part a), the annelid Platynereis dumerilii (part b) and the cnidarian Nematostella vectensis (part c) are depicted in their gastrula-like stages (gastrula, trochophora and planula, respectively; upper panels), intermediate developmental (neurula, metatrochophora and late planula, respectively; middle panels) and juvenile stages (tadpole, nectochaete and polyp, respectively; lower panels). Colours demarcate developmental neurogenic regions, and double-headed arrows show the apical (AP)–blastoporal (BL) axis. All views in parts a–c are lateral. At gastrula stages (upper panels), blastoporal ectodermal tissue (around the closing blastopore; red) and apical pole ectodermal tissue (violet) can be distinguished. At subsequent stages, a large part of the ectoderm — incluing the former apical and blastoporal regions — gives rise to neurogenic tissue. The neurogenic tissue comprises regions of distinct molecular identity (indicated by different colours), which will give rise to different parts of the nervous system. In the frog (part a), the neural plate (violet, red and yellow) comprises future forebrain tissue, as well as medial and lateral neural tube tissue; it is laterally bounded by developing peripheral nervous system components (blue). Similar regions are apparent in the annelid (part b), and these give rise to the brain, medial and lateral nerve cord and peripheral nervous system. As reasoned in this article, these regions also exist in the cnidarian (part c). In the frog and annelid worm, these regions are further subdivided into specific subregions by the activity of molecular organizing signals15.
+>
+> [[@arendt_nerve_2016]](http://doi.org/10.1038/nrn.2015.15)
 
 - Neurons and nervous systems 520-570 M years old
 - Diverse nervous systems show developmental similarities at molecular level 
@@ -224,8 +227,11 @@ output:
 - Evidence for greater gray and white matter (relative to total brain volume) in human cerebral cortex
 
 <div class="figure" style="text-align: center">
-<img src="http://www.nature.com/nrn/journal/v10/n10/images/nrn2719-f1.jpg" alt="[[@rakic2009evolution]](http://dx.doi.org/10.1038/nrn2719)"  />
+<img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnrn2719/MediaObjects/41583_2009_Article_BFnrn2719_Fig1_HTML.jpg?as=webp" alt="[[@rakic2009evolution]](http://dx.doi.org/10.1038/nrn2719)"  />
 <p class="caption">[[@rakic2009evolution]](http://dx.doi.org/10.1038/nrn2719)</p>
+</div>
+
+[[@rakic2009evolution]](http://dx.doi.org/10.1038/nrn2719)
 </div>
 
 <div class="figure" style="text-align: center">
@@ -293,11 +299,39 @@ output:
 
 # Human brain development
 
+## Timeline of milestones
+
+<div class="figure" style="text-align: center">
+<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0896627315010806-gr1_lrg.jpg" alt="[[@Silbereis2016-la]](http://dx.doi.org/10.1016/j.neuron.2015.12.008)"  />
+<p class="caption">[[@Silbereis2016-la]](http://dx.doi.org/10.1016/j.neuron.2015.12.008)</p>
+</div>
+
+> Figure 1. Timeline of Key Human Neurodevelopmental Processes and Functional Milestones
+>
+> [[@Silbereis2016-la]](http://dx.doi.org/10.1016/j.neuron.2015.12.008)
+
+- CNS among earliest-developing, last to finish organ systems
+- ~ 86 billion neurons in adult CNS
+    - similar # of glia
+    - about 16 (14-32) billion neurons, 80/20% Glu/GABA
+    - 7-80K synapses/cortical neuron
+    - 164 trillion synapses in cerebral cortex, [[@DeFelipe2002-xz]](http://dx.doi.org/10.1023/a:1024130211265)
+    - $10^{15}$ (quadrillion) synapses in CNS
+    - 145-175 km (90-109 mi) of myelinated axons, [[@Marner2003-qu]](http://dx.doi.org/10.1002/cne.10714)
+    - brain ~ 2.5% of body mass, but consumes 18% of $O_2$ at rest, [[@Kety1948-ty]](http://dx.doi.org/10.1172/JCI101994), and has been estimated to consume about 20 W.
+    - millions of neurons generated per hour
+    
 ## Prenatal period
+
+### Summary
+
+- 38 weeks from conception/fertilization on average
+- Embryonic period (weeks 1-8), fetal period (weeks 9-)
+- 3 12-13 week trimesters
 
 ### Insemination
 
-- 3-4 days before or up to 1-2 days after...
+- Can occur 3-4 days before or up to 1-2 days after...
     + Ovulation
 
 ### Fertilization
@@ -317,7 +351,8 @@ output:
 <img src="https://as1.ftcdn.net/jpg/02/52/77/94/500_F_252779434_4Hr3vF8H3wDOH0RslaVw5nLnYoKACiP6.jpg" style="display: block; margin: auto;" />
 
 - Embryonic layers: ectoderm, mesoderm, endoderm
-- ~18-26 days
+    - Neural tube forms ~ 23 pcd (postconceptual days)
+- Neural tube closes in middle, moves toward rostral & caudal ends, closing by 29 - 30 pcd.
 - Failures of neural tube closure
     + Anencephaly (rostral neuraxis)
     + Spina bifida (caudal neuraxis)
@@ -333,10 +368,19 @@ output:
     
 <img src="https://www.mussenhealth.us/growth-cones/images/2009_48_104-neural-tube-tion.jpg" style="display: block; margin: auto;" />
 
+- Rostro-caudal patterning via differential growth into vesicles
+    - Forebrain (prosencephalon)
+    - Midbrain (mesencephalone)
+    - Hindbrain (rhomencephalon)
+
 ### Neurogenesis and gliogenesis
 
-- Neuroepithelium cell layer lines neural tube
-    - Peri-ventricular regions remain home to cells that can produce new cells
+- Neuroepithelium cell layer lines neural tube creating ventricular zone (VZ) and subventricular zone (SVZ)
+    - Peri-ventricular regions home to pluripotent stem and progenitor cells that produce new neurons & glia
+- Neurogenesis (of excitatory Glu neurons) observed by 27 pcd (7 pcw; post-conceptual week)
+    - complete by 191 pcd (27 pcw), [[@Silbereis2016-la]](http://dx.doi.org/10.1016/j.neuron.2015.12.008)
+- Most cortical and striatal neurons generated prenatally, but
+    - Cerebellum continues to ~ 18 mos 
 
 <div class="figure" style="text-align: center">
 <img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnrm1739/MediaObjects/41580_2005_Article_BFnrm1739_Fig1_HTML.jpg?as=webp" alt="[[@Gotz2005-yj]](https://doi.org/10.1038/nrm1739)"  />
@@ -375,11 +419,9 @@ output:
 <p class="caption">[[@rakic2009evolution]](http://dx.doi.org/10.1038/nrn2719)</p>
 </div>
 
-
 <iframe width="420" height="315" src="https://www.youtube.com/embed/ZRF-gKZHINk" frameborder="0" allowfullscreen></iframe>
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/t-8bxeWqSV4" frameborder="0" allowfullscreen></iframe>
-
 
 **Axon growth cone**
 
@@ -417,6 +459,11 @@ output:
 ## Infancy & Early Childhood
 
 ### Synaptogenesis
+
+- Begins prenatally (~ 18 pcw)
+- Peak density ~ 15 mos postnatal
+- Spine density in DLPFC ~ 7 yrs postnatal
+- 700K synapses/s on average
 
 <img src="img/synaptic-density-infant.jpg" width="479" style="display: block; margin: auto;" />
 
