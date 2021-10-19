@@ -53,7 +53,7 @@ navbar:
       - text: "Week 8"
         menu:
           - text: "2021-10-13"
-            href:
+            href: "lectures/511-perception.html"
           - text: "2021-10-15"
             href:
       - text: "Week 9"

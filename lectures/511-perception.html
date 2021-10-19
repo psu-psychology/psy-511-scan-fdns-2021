@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Rick Gilmore" />
+
+
+<title>511-perception</title>
+
+<script src="511-perception_files/header-attrs-2.9/header-attrs.js"></script>
+<script src="511-perception_files/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="511-perception_files/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
+<script src="511-perception_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="511-perception_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="511-perception_files/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="511-perception_files/navigation-1.1/tabsets.js"></script>
+<script src="511-perception_files/navigation-1.1/codefolding.js"></script>
+<link href="511-perception_files/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="511-perception_files/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+<style type="text/css">
+/* for pandoc --citeproc since 2.11 */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="css/outline.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div id="header">
+
+<div class="btn-group pull-right float-right">
+<button type="button" class="btn btn-default btn-xs btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu dropdown-menu-right" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+</ul>
+</div>
+
+
+
+<h1 class="title toc-ignore">511-perception</h1>
+<h4 class="author">Rick Gilmore</h4>
+<h4 class="date">2021-10-19 08:06:37</h4>
+
+</div>
+
+<div id="TOC">
+<ul>
+<li><a href="#fun">Fun</a></li>
+<li><a href="#principles-of-sensation-perception">Principles of sensation &amp; perception</a>
+<ul>
+<li><a href="#senses-as-perceptionaction-systems">Senses as (perception/action) systems</a>
+<ul>
+<li><a href="#smartphone-as-metaphor">Smartphone as metaphor</a></li>
+</ul></li>
+<li><a href="#perceptionaction-system-dimensions">Perception/action system dimensions</a>
+<ul>
+<li><a href="#questions-for-interoception">Questions for interoception</a></li>
+<li><a href="#questions-for-exteroception">Questions for exteroception</a></li>
+<li><a href="#questions-for-action">Questions for action</a></li>
+</ul></li>
+<li><a href="#from-world-to-brain">From world to brain</a>
+<ul>
+<li><a href="#properties-of-the-world">Properties of the world</a></li>
+<li><a href="#more-than-5-sensory-channels">More than 5 sensory channels</a></li>
+<li><a href="#vision">Vision</a></li>
+<li><a href="#audition">Audition</a></li>
+<li><a href="#chemosensation">Chemosensation</a></li>
+<li><a href="#somatosensation">Somatosensation</a></li>
+<li><a href="#interoception">Interoception</a></li>
+</ul></li>
+<li><a href="#features-of-sensory-signals">Features of sensory signals</a>
+<ul>
+<li><a href="#change-across-time">Change across time</a></li>
+<li><a href="#detect-repeating-signals">Detect repeating signals</a>
+<ul>
+<li><a href="#vision-spatial-frequencycontrast-sensitivity">Vision: Spatial frequency/contrast sensitivity</a></li>
+<li><a href="#audition-frequencies-in-sound">Audition: Frequencies in sound</a></li>
+</ul></li>
+<li><a href="#compare-1-sensors-located-in-different-parts-of-the-body">Compare (&gt;1) sensors located in different parts of the body</a></li>
+<li><a href="#receptive-fields"><span>“Receptive fields”</span></a>
+<ul>
+<li><a href="#tactile">Tactile</a></li>
+<li><a href="#visual">Visual</a></li>
+</ul></li>
+<li><a href="#topographic-maps">Topographic maps</a>
+<ul>
+<li><a href="#auditory-tonotopic-maps">Auditory: Tonotopic maps</a></li>
+<li><a href="#visual-retinotopic-maps">Visual: Retinotopic maps</a></li>
+<li><a href="#somatosensory-somatotopic-maps-in-s1-m1">Somatosensory: Somatotopic maps in S1 &amp; M1</a></li>
+</ul></li>
+<li><a href="#sensivity-non-uniform">Sensivity non-uniform</a>
+<ul>
+<li><a href="#two-point-touch-thresholds">Two-point touch thresholds</a></li>
+<li><a href="#somatosensory-homunculus">Somatosensory homunculus</a></li>
+<li><a href="#visual-acuity-non-uniform">Visual acuity non-uniform</a></li>
+<li><a href="#hearing-thresholds-non-uniform">Hearing thresholds non-uniform</a></li>
+</ul></li>
+<li><a href="#processing-hierarchicalsequential-and-parallel">Processing hierarchical/sequential AND parallel</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#case-study-vision">Case study: Vision</a>
+<ul>
+<li><a href="#properties-of-electromagnetic-em-radiation">Properties of Electromagnetic (EM) radiation</a>
+<ul>
+<li><a href="#reflectance-spectra-differ-by-surface">Reflectance spectra differ by surface</a></li>
+<li><a href="#optic-array-specifies-geometry-of-environment"><span>Optic array</span> specifies geometry of environment</a></li>
+<li><a href="#categories-of-wavelength-specify-perception-of-color">Categories of wavelength specify perception of color</a></li>
+</ul></li>
+<li><a href="#the-biological-camera">The biological camera</a>
+<ul>
+<li><a href="#parts-of-the-eye">Parts of the eye</a></li>
+<li><a href="#geometry-of-retinal-image">Geometry of retinal image</a></li>
+<li><a href="#the-fovea">The <em>fovea</em></a>
+<ul>
+<li><a href="#what-part-of-the-skin-is-like-the-fovea">What part of the skin is like the fovea?</a></li>
+</ul></li>
+<li><a href="#photoreceptors-in-retina-detect-light"><em>Photoreceptors</em> in retina detect light</a>
+<ul>
+<li><a href="#photoreceptor-physiology">Photoreceptor physiology</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#retina">Retina</a>
+<ul>
+<li><a href="#retina-1">Retina</a>
+<ul>
+<li><a href="#center-surround-receptive-fields"><em>Center-surround receptive fields</em></a></li>
+</ul></li>
+<li><a href="#opponent-processing"><em>Opponent processing</em></a></li>
+</ul></li>
+<li><a href="#from-eye-to-brain">From eye to brain</a>
+<ul>
+<li><a href="#lgn">LGN</a></li>
+<li><a href="#from-lgn-to-v1">From LGN to V1</a></li>
+<li><a href="#human-v1">Human V1</a>
+<ul>
+<li><a href="#laminar-columnar-organization">Laminar, columnar organization</a></li>
+<li><a href="#from-center-surround-receptive-fields-to-line-detection">From center-surround receptive fields to line detection</a></li>
+</ul></li>
+<li><a href="#ocular-dominance-columns">Ocular dominance columns</a></li>
+<li><a href="#beyond-v1">Beyond V1</a></li>
+</ul></li>
+<li><a href="#what-is-vision-for">What is vision for?</a></li>
+</ul></li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+
+<div id="fun" class="section level1">
+<h1>Fun</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MrHxhQPOO2c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<!-- See me, feel me, touch me, hear me from Tommy -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VpGHXPoJXk8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</div>
+<div id="principles-of-sensation-perception" class="section level1">
+<h1>Principles of sensation &amp; perception</h1>
+<div id="senses-as-perceptionaction-systems" class="section level2">
+<h2>Senses as (perception/action) systems</h2>
+<p><img src="511-perception_files/figure-html/unnamed-chunk-1-1.png" width="600px" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="https://images-na.ssl-images-amazon.com/images/I/31fzXc46omL._SX312_BO1,204,203,200_.jpg" alt="Source: Amazon" width="600px" />
+<p class="caption">
+Source: Amazon
+</p>
+</div>
+<p><img src="img/perception-action-cycle.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="img/swanson-book-fig-10.12.jpg" alt="Source: Swanson" width="600px" />
+<p class="caption">
+Source: Swanson
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="img/swanson-2005-fig-1.jpg" alt="Source: Swanson, 2005" width="600px" />
+<p class="caption">
+Source: Swanson, 2005
+</p>
+</div>
+<div id="smartphone-as-metaphor" class="section level3">
+<h3>Smartphone as metaphor</h3>
+<ul>
+<li>Accelerometer</li>
+<li>Gyroscope</li>
+<li>Magnetometer</li>
+<li>Proximity sensor</li>
+<li>Ambient light sensor</li>
+<li>Barometer</li>
+<li>Thermometer</li>
+<li>Mic</li>
+<li>Camera</li>
+<li>Radios (Bluetooth, wifi, cellular, GPS)</li>
+</ul>
+<p><a href="http://www.phonearena.com/news/Did-you-know-how-many-different-kinds-of-sensors-go-inside-a-smartphone_id57885" class="uri">http://www.phonearena.com/news/Did-you-know-how-many-different-kinds-of-sensors-go-inside-a-smartphone_id57885</a></p>
+</div>
+</div>
+<div id="perceptionaction-system-dimensions" class="section level2">
+<h2>Perception/action system dimensions</h2>
+<ul>
+<li>Interoceptive
+<ul>
+<li>Body position, movement, posture</li>
+<li>Internal status: hunger, thirst, arousal, discomfort/pain, etc.</li>
+</ul></li>
+<li>Exteroceptive
+<ul>
+<li>Layout of environment, contents</li>
+</ul></li>
+</ul>
+<div id="questions-for-interoception" class="section level3">
+<h3>Questions for interoception</h3>
+<ul>
+<li>Tired or rested?</li>
+<li>Well or ill?</li>
+<li>Hungry or thirsty or sated?</li>
+<li>Stressed vs. coping?</li>
+<li>Emotional state?</li>
+</ul>
+</div>
+<div id="questions-for-exteroception" class="section level3">
+<h3>Questions for exteroception</h3>
+<ul>
+<li>Who/What is out there?</li>
+<li>Animate/inanimate?
+<ul>
+<li>Conspecific (same species)/non?</li>
+<li>Threat/non?</li>
+<li>Familiar/un?</li>
+<li>Mate/non? or Friend/not?</li>
+<li>Food source/non</li>
+</ul></li>
+<li>Where is it?
+<ul>
+<li>Distance
+<ul>
+<li>Proximal</li>
+<li>Distal</li>
+</ul></li>
+<li>Elevation, azimuth</li>
+<li>Coordinate frames
+<ul>
+<li>Self/ego (left of me)</li>
+<li>Object (top of object)</li>
+<li>Allo/world (North of College)</li>
+</ul></li>
+</ul></li>
+<li>Where moving?</li>
+</ul>
+</div>
+<div id="questions-for-action" class="section level3">
+<h3>Questions for action</h3>
+<ul>
+<li>What kind of response?
+<ul>
+<li>External
+<ul>
+<li>Move body
+<ul>
+<li>Approach/avoid/freeze</li>
+<li>Signal/remain silent</li>
+<li>Manipulate</li>
+</ul></li>
+</ul></li>
+<li>Internal
+<ul>
+<li>Change physiological state</li>
+</ul></li>
+</ul></li>
+<li>Speed, quality, direction of response</li>
+</ul>
+</div>
+</div>
+<div id="from-world-to-brain" class="section level2">
+<h2>From world to brain</h2>
+<p><img src="img/nested-causality.jpeg" width="600px" style="display: block; margin: auto;" /></p>
+<table>
+<thead>
+<tr class="header">
+<th>Realm</th>
+<th>Domain</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(W\)</span></td>
+<td>The world</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(B\)</span></td>
+<td>The body</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(N\)</span></td>
+<td>The nervous system</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(M\)</span></td>
+<td>The mind</td>
+</tr>
+</tbody>
+</table>
+<div id="properties-of-the-world" class="section level3">
+<h3>Properties of the world</h3>
+<ul>
+<li>Behaviorally relevant conditions, events, and entities…</li>
+<li>Generate patterns…
+<ul>
+<li>Chemical</li>
+<li>Photic/electromagnetic</li>
+<li>Mechanical/acoustic</li>
+</ul></li>
+<li>That specialized sensors detect</li>
+<li>Neural circuitry processes</li>
+</ul>
+</div>
+<div id="more-than-5-sensory-channels" class="section level3">
+<h3>More than 5 sensory channels</h3>
+<p><img src="img/biopsych-table-8.1.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<ul>
+<li>What is the energy/chemical channel?</li>
+<li>Different energy/chemical channels carry different types of information
+<ul>
+<li>What is out there</li>
+<li>Where it’s located</li>
+</ul></li>
+<li>Different energy/chemical channels convey information at different rates</li>
+<li>Information about behaviorally relevant dimensions often signaled by multiple sources</li>
+</ul>
+</div>
+<div id="vision" class="section level3">
+<h3>Vision</h3>
+<ul>
+<li>Source: Electromagnetic radiation
+<ul>
+<li>Reflected from surfaces</li>
+</ul></li>
+<li>What is it?
+<ul>
+<li>Shape, size, surface properties (color, texture, reflectance, etc.)</li>
+<li>Wavelength/frequency, intensity</li>
+</ul></li>
+<li>Where is it?
+<ul>
+<li>Position: Left/right; up/down on retina</li>
+<li>Near/far: retinal disparity, interposition, height above horizon…</li>
+<li>Orientation, motion</li>
+</ul></li>
+</ul>
+</div>
+<div id="audition" class="section level3">
+<h3>Audition</h3>
+<ul>
+<li>Source: Mechanical vibrations in air or water</li>
+<li>What is it?
+<ul>
+<li>Pattern of frequencies, amplitudes, durations</li>
+</ul></li>
+<li>Where is it?
+<ul>
+<li>Left/right or up/down: Interaural time/phase, intensity differences, pinnae filtering</li>
+<li>Motion: Frequency shifts via Doppler effect</li>
+</ul></li>
+</ul>
+</div>
+<div id="chemosensation" class="section level3">
+<h3>Chemosensation</h3>
+<ul>
+<li>Source: Chemicals in mouth, nasal cavity</li>
+<li>What is it?
+<ul>
+<li>Mixtures of chemicals</li>
+</ul></li>
+<li>Where is it?
+<ul>
+<li>Left/right; up/down; near/far via intensity gradients</li>
+</ul></li>
+</ul>
+</div>
+<div id="somatosensation" class="section level3">
+<h3>Somatosensation</h3>
+<ul>
+<li>Source: Thermal or mechanical stimulation (vibration/pressure) of skin</li>
+<li>What is it?
+<ul>
+<li>Shape, size, smoothness, mass, temperature, deformability: Pattern of stimulation</li>
+</ul></li>
+<li>Where it it?
+<ul>
+<li>Pattern of cutaneous receptors on skin</li>
+</ul></li>
+</ul>
+</div>
+<div id="interoception" class="section level3">
+<h3>Interoception</h3>
+<ul>
+<li>Hunger/thirst
+<ul>
+<li>Receptors for nutrient, fluid levels</li>
+</ul></li>
+<li>Energy levels
+<ul>
+<li>Receptors for hormones, NTs</li>
+<li>ANS responses</li>
+</ul></li>
+<li>Temperature
+<ul>
+<li>Receptors in skin, viscera</li>
+</ul></li>
+<li>Mating interest
+<ul>
+<li>Receptors for hormones, NTs</li>
+<li>ANS responses</li>
+</ul></li>
+<li>Body position &amp; movement (proprioception)
+<ul>
+<li>Receptors in muscles, joints, skin</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="features-of-sensory-signals" class="section level2">
+<h2>Features of sensory signals</h2>
+<div id="change-across-time" class="section level3">
+<h3>Change across time</h3>
+<ul>
+<li>Tonic (sustained) vs. phasic (transient) responses</li>
+<li>Adaptation
+<ul>
+<li>Decline in sensitivity with sustained stimulation</li>
+<li>Most sensory systems attuned to change</li>
+</ul></li>
+</ul>
+<p><img src="http://droualb.faculty.mjc.edu/Course%20Materials/Physiology%20101/Chapter%20Notes/Fall%202007/figure_10_03_labeled.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<ul>
+<li>Information propagates at different speeds
+<ul>
+<li>Bigger diameter: Faster</li>
+<li>Denser myelin: Faster</li>
+</ul></li>
+</ul>
+<iframe width="800px" height="800px" src="https://en.wikipedia.org/wiki/Nerve_conduction_velocity">
+</iframe>
+</div>
+<div id="detect-repeating-signals" class="section level3">
+<h3>Detect repeating signals</h3>
+<ul>
+<li>In space (textures)</li>
+<li>In time</li>
+</ul>
+<div id="vision-spatial-frequencycontrast-sensitivity" class="section level4">
+<h4>Vision: Spatial frequency/contrast sensitivity</h4>
+<div class="figure" style="text-align: center">
+<img src="https://onlinelibrary.wiley.com/cms/asset/b8b78ab1-4a85-4add-86cb-d389fb0988b1/mnfr3528-fig-0001-m.jpg" alt="[[@Roark2019-fx]](http://dx.doi.org/10.1002/mnfr.201801053)" width="600px" />
+<p class="caption">
+<a href="http://dx.doi.org/10.1002/mnfr.201801053"><span class="citation">(Roark &amp; Stringham, 2019)</span></a>
+</p>
+</div>
+</div>
+<div id="audition-frequencies-in-sound" class="section level4">
+<h4>Audition: Frequencies in sound</h4>
+<p><img src="http://hearinghealthmatters.org/waynesworld/files/2012/06/Fourier-Analysis.gif" width="600px" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="compare-1-sensors-located-in-different-parts-of-the-body" class="section level3">
+<h3>Compare (&gt;1) sensors located in different parts of the body</h3>
+<ul>
+<li>Eyes</li>
+<li>Ears</li>
+<li>Skin surface</li>
+<li>Nostrils</li>
+<li>Tongue</li>
+</ul>
+<p><img src="https://images.unsplash.com/photo-1519699486208-1293e479cb98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" width="600px" style="display: block; margin: auto;" /></p>
+</div>
+<div id="receptive-fields" class="section level3">
+<h3><a href="https://en.wikipedia.org/wiki/Receptive_field">“Receptive fields”</a></h3>
+<ul>
+<li>Area on sensory surface (e.g., retina, skin) that when stimulated changes neuron’s firing</li>
+</ul>
+<div id="tactile" class="section level4">
+<h4>Tactile</h4>
+<p><img src="img/tactile-receptive-field.jpg" width="600px" style="display: block; margin: auto;" /></p>
+</div>
+<div id="visual" class="section level4">
+<h4>Visual</h4>
+<div class="figure" style="text-align: center">
+<img src="https://brainconnection.brainhq.com/wp-content/uploads/2004/03/photoreceptors-f1.png" alt="https://brainconnection.brainhq.com/2004/03/06/overview-of-receptive-fields/" width="600px" />
+<p class="caption">
+<a href="https://brainconnection.brainhq.com/2004/03/06/overview-of-receptive-fields/" class="uri">https://brainconnection.brainhq.com/2004/03/06/overview-of-receptive-fields/</a>
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="https://foundationsofvision.stanford.edu/wp-content/uploads/2012/02/orientedRF-1024x602.png" alt="https://foundationsofvision.stanford.edu/chapter-6-the-cortical-representation/" width="600px" />
+<p class="caption">
+<a href="https://foundationsofvision.stanford.edu/chapter-6-the-cortical-representation/" class="uri">https://foundationsofvision.stanford.edu/chapter-6-the-cortical-representation/</a>
+</p>
+</div>
+</div>
+</div>
+<div id="topographic-maps" class="section level3">
+<h3>Topographic maps</h3>
+<div id="auditory-tonotopic-maps" class="section level4">
+<h4>Auditory: Tonotopic maps</h4>
+<p><img src="http://www.d.umn.edu/~jfitzake/Lectures/UndergradPharmacy/SensoryPhysiology/Audition/Figures/ColoradoA1TonotopicMap.jpg" width="600px" style="display: block; margin: auto;" /></p>
+</div>
+<div id="visual-retinotopic-maps" class="section level4">
+<h4>Visual: Retinotopic maps</h4>
+<div class="figure" style="text-align: center">
+<img src="https://arvo.silverchair-cdn.com/arvo/content_public/journal/jov/933499/m_jov-3-10-1-fig001.jpeg?Expires=1637668920&Signature=LC96WRpdIBZ9bh6K~8YsUW6qc0Nccb7GXk6f8O~PV8u0cSqBZ84NNGZJSslPQSkMqjFaJTlyT9De3Ul-erzKVEFstsle3x24-J8wL4wChjSww-IJfzOkA8cbyQZc8sOTvvbt-AbbpTXWu95eHqksTRuqbIGSgKFyqxCW1koirm3sVYqKcmsh35sOgixKkvkYbRL7tMOIkV1Ng8sEasx-T1owZFNEL9DPGnHBzyllMUfvrPvgkv2y067wEbIyDVvM9Xsd15FLQOztcio7nMobeMYtq9sBRVE7qChM6PYOVbANGQKs8nsPRm60jW7VhMp8NVlDNoCttiRP09WEKYBz6w__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA" alt="[[@dougherty_visual_2003]](https://doi.org/10.1167/3.10.1)" width="600px" />
+<p class="caption">
+<a href="https://doi.org/10.1167/3.10.1"><span class="citation">(Dougherty et al., 2003)</span></a>
+</p>
+</div>
+</div>
+<div id="somatosensory-somatotopic-maps-in-s1-m1" class="section level4">
+<h4>Somatosensory: Somatotopic maps in S1 &amp; M1</h4>
+<p><img src="http://bio1152.nicerweb.com/Locked/media/ch49/49_16-MotorSensoryCorts-L.jpg" width="600px" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="sensivity-non-uniform" class="section level3">
+<h3>Sensivity non-uniform</h3>
+<div id="two-point-touch-thresholds" class="section level4">
+<h4>Two-point touch thresholds</h4>
+<p><img src="img/two-point-thresholds.jpg" width="600px" style="display: block; margin: auto;" /></p>
+</div>
+<div id="somatosensory-homunculus" class="section level4">
+<h4>Somatosensory homunculus</h4>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Front_of_Sensory_Homunculus.gif" width="600px" style="display: block; margin: auto;" /></p>
+</div>
+<div id="visual-acuity-non-uniform" class="section level4">
+<h4>Visual acuity non-uniform</h4>
+<div class="figure" style="text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/AcuityHumanEye.svg/270px-AcuityHumanEye.svg.png" alt="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/AcuityHumanEye.svg/270px-AcuityHumanEye.svg.png" width="600px" />
+<p class="caption">
+<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/AcuityHumanEye.svg/270px-AcuityHumanEye.svg.png" class="uri">https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/AcuityHumanEye.svg/270px-AcuityHumanEye.svg.png</a>
+</p>
+</div>
+</div>
+<div id="hearing-thresholds-non-uniform" class="section level4">
+<h4>Hearing thresholds non-uniform</h4>
+<div class="figure" style="text-align: center">
+<img src="http://auditoryneuroscience.com/sites/default/files/inline-images/HLdata_0.png" alt="http://auditoryneuroscience.com/" width="600px" />
+<p class="caption">
+<a href="http://auditoryneuroscience.com/" class="uri">http://auditoryneuroscience.com/</a>
+</p>
+</div>
+</div>
+</div>
+<div id="processing-hierarchicalsequential-and-parallel" class="section level3">
+<h3>Processing hierarchical/sequential AND parallel</h3>
+<p><img src="img/swanson-11.4.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<p><img src="img/biopsych-fig-5.5.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<p><img src="img/biospsych-labeled-lines.jpg" width="600px" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+</div>
+<div id="case-study-vision" class="section level1">
+<h1>Case study: Vision</h1>
+<div id="properties-of-electromagnetic-em-radiation" class="section level2">
+<h2>Properties of Electromagnetic (EM) radiation</h2>
+<div class="figure" style="text-align: center">
+<img src="img/em-spectrum.jpg" alt="http://en.wikipedia.org/wiki/File:EM_Spectrum_Properties_edit.svg" width="600px" />
+<p class="caption">
+<a href="http://en.wikipedia.org/wiki/File:EM_Spectrum_Properties_edit.svg" class="uri">http://en.wikipedia.org/wiki/File:EM_Spectrum_Properties_edit.svg</a>
+</p>
+</div>
+<ul>
+<li>Wavelength/frequency</li>
+<li>Intensity</li>
+<li>Location/position of source</li>
+<li>Reflects off some materials</li>
+<li>Refracted (bent) moving through other materials</li>
+<li>Information across space (and time)</li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="img/hud2014_1000c.jpg" alt="http://apod.nasa.gov/apod/ap140605.html" width="600px" />
+<p class="caption">
+<a href="http://apod.nasa.gov/apod/ap140605.html" class="uri">http://apod.nasa.gov/apod/ap140605.html</a>
+</p>
+</div>
+<div id="reflectance-spectra-differ-by-surface" class="section level3">
+<h3>Reflectance spectra differ by surface</h3>
+<p><img src="https://sites.google.com/site/obeluwa/_/rsrc/1372214890170/skin/introduction-to-diffuse-reflectance-spectroscopy/sample-spectra.png" width="600px" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="img/reflectance-spectrum.gif" alt="http://http://www.vgt.vito.be/userguide/book_1/4/42/ie42bd.gif" width="600px" />
+<p class="caption">
+<a href="http://http://www.vgt.vito.be/userguide/book_1/4/42/ie42bd.gif" class="uri">http://http://www.vgt.vito.be/userguide/book_1/4/42/ie42bd.gif</a>
+</p>
+</div>
+</div>
+<div id="optic-array-specifies-geometry-of-environment" class="section level3">
+<h3><a href="https://en.wikipedia.org/wiki/Ambient_optic_array">Optic array</a> specifies geometry of environment</h3>
+<p><img src="img/OpticArray.jpg" width="600px" style="display: block; margin: auto;" /></p>
+</div>
+<div id="categories-of-wavelength-specify-perception-of-color" class="section level3">
+<h3>Categories of wavelength specify perception of color</h3>
+<ul>
+<li>Eyes categorize wavelength into relative intensities within wavelength bands</li>
+<li>RGB ~ <span class="red"><strong>R</strong>ed</span>, <span class="green"><strong>G</strong>reen</span>, <span class="blue"><strong>B</strong>lue</span>
+<ul>
+<li>Long, medium, short wavelengths</li>
+</ul></li>
+<li><em>Color is a neural/psychological construct</em></li>
+</ul>
+<p><img src="img/rgb-monitor.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<!-- ## How a camera works -->
+<!-- <div class="centered"> -->
+<!-- <img src="img/how-camera-works.jpg" height=450px> -->
+<!-- </div> -->
+</div>
+</div>
+<div id="the-biological-camera" class="section level2">
+<h2>The biological camera</h2>
+<p><img src="img/how-camera-works.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<p><img src="img/the-eye-ksj.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<p><img src="img/the-eye.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<div id="parts-of-the-eye" class="section level3">
+<h3>Parts of the eye</h3>
+<ul>
+<li><em>Cornea</em> - refraction (2/3 of total)</li>
+<li><em>Pupil</em> - light intensity; diameter regulated by Iris.</li>
+<li><em>Lens</em> - refraction (remaining 1/3; focus)</li>
+<li><em>Retina</em> - light detection
+<ul>
+<li>~ skin or organ of Corti in inner ear</li>
+</ul></li>
+<li><em>Pigment epithelium</em> - regenerate photopigment</li>
+<li><em>Muscles</em> - move eye, reshape lens, change pupil diameter</li>
+</ul>
+</div>
+<div id="geometry-of-retinal-image" class="section level3">
+<h3>Geometry of retinal image</h3>
+<ul>
+<li>Image inverted (up/down)</li>
+<li>Image reversed (left/right)</li>
+<li>Point-to-point map (<em>retinotopic</em>)</li>
+<li>Binocular and monocular zones</li>
+</ul>
+<p><img src="img/retinal-image.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<p><img src="img/visual-fields.jpg" width="600px" style="display: block; margin: auto;" /></p>
+</div>
+<div id="the-fovea" class="section level3">
+<h3>The <em>fovea</em></h3>
+<div class="figure" style="text-align: center">
+<img src="img/fovea.jpg" alt="http://www.brainhq.com/sites/default/files/fovea.jpg" width="600px" />
+<p class="caption">
+<a href="http://www.brainhq.com/sites/default/files/fovea.jpg" class="uri">http://www.brainhq.com/sites/default/files/fovea.jpg</a>
+</p>
+</div>
+<ul>
+<li>Central 1-2 deg of visual field</li>
+<li>Aligned with visual axis</li>
+<li><em>Retinal ganglion cells</em> pushed aside</li>
+<li>Highest <em>acuity</em> vision == best for details</li>
+<li>Acuity varies from center to periphery</li>
+</ul>
+<p><img src="img/acuity-across-visual-field.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="img/acuity-across-visual-field-graph.jpg" alt="http://michaeldmann.net/pix_7/blndspot.gif" width="600px" />
+<p class="caption">
+<a href="http://michaeldmann.net/pix_7/blndspot.gif" class="uri">http://michaeldmann.net/pix_7/blndspot.gif</a>
+</p>
+</div>
+<div id="what-part-of-the-skin-is-like-the-fovea" class="section level4">
+<h4>What part of the skin is like the fovea?</h4>
+<p><img src="img/two-point-thresholds.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<div class="centered">
+
+</div>
+</div>
+<div id="photoreceptors-in-retina-detect-light" class="section level3">
+<h3><em>Photoreceptors</em> in retina detect light</h3>
+<p><img src="img/photoreceptors.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<ul>
+<li><em>Rods</em>
+<ul>
+<li>~120 M/eye</li>
+<li>Mostly in periphery</li>
+<li>Active in low light conditions</li>
+<li>One wavelength range</li>
+</ul></li>
+<li><em>Cones</em>
+<ul>
+<li>~5 M/eye</li>
+<li>Mostly in center</li>
+<li>3 wavelength ranges</li>
+</ul></li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="https://foundationsofvision.stanford.edu/wp-content/uploads/2012/02/rod.cone_.distribution2-1024x467.png" alt="https://foundationsofvision.stanford.edu/" width="600px" />
+<p class="caption">
+<a href="https://foundationsofvision.stanford.edu/" class="uri">https://foundationsofvision.stanford.edu/</a>
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="img/1416_Color_Sensitivity.jpg" alt="http://cnx.org/content/col11496/1.6/" width="600px" />
+<p class="caption">
+<a href="http://cnx.org/content/col11496/1.6/" class="uri">http://cnx.org/content/col11496/1.6/</a>
+</p>
+</div>
+<div id="photoreceptor-physiology" class="section level4">
+<h4>Photoreceptor physiology</h4>
+<ul>
+<li>Outer segment
+<ul>
+<li>Membrane disks</li>
+<li><em>Photopigments</em>
+<ul>
+<li>Sense light, trigger chemical cascade</li>
+</ul></li>
+</ul></li>
+<li>Inner segment
+<ul>
+<li>Synaptic terminal</li>
+</ul></li>
+<li>Light <em>hyperpolarizes</em> photoreceptor!
+<ul>
+<li>The <em>dark current</em></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="retina" class="section level2">
+<h2>Retina</h2>
+<ul>
+<li>Physiologically <em>backwards</em>
+<ul>
+<li>How?</li>
+</ul></li>
+<li>Anatomically <em>inside-out</em>
+<ul>
+<li>How?</li>
+</ul></li>
+</ul>
+<div id="retina-1" class="section level3">
+<h3>Retina</h3>
+<ul>
+<li>Physiologically <em>backwards</em>
+<ul>
+<li><span class="red">Dark current</span></li>
+</ul></li>
+<li>Anatomically <em>inside-out</em>
+<ul>
+<li><span class="red">Photoreceptors at back of eye</span></li>
+</ul></li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="img/retinal-layers.jpg" alt="http://www.retinareference.com/anatomy/" width="600px" />
+<p class="caption">
+<a href="http://www.retinareference.com/anatomy/" class="uri">http://www.retinareference.com/anatomy/</a>
+</p>
+</div>
+<ul>
+<li>Information flows…
+<ul>
+<li>From photoreceptors…</li>
+<li>To <em>Bipolar cells</em>
+<ul>
+<li>&lt;-&gt; and <em>Horizontal cells</em></li>
+</ul></li>
+<li>To <em>Retinal ganglion cells</em>
+<ul>
+<li>&lt;-&gt; and <em>Amacrine cells</em></li>
+</ul></li>
+<li>To cerebral cortex</li>
+</ul></li>
+</ul>
+<div id="center-surround-receptive-fields" class="section level4">
+<h4><em>Center-surround receptive fields</em></h4>
+<p><img src="img/on-center-off-center-receptive-fields.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<ul>
+<li>Center region
+<ul>
+<li>Excites (or inhibits)</li>
+</ul></li>
+<li>Surround region
+<ul>
+<li>Does the opposite</li>
+</ul></li>
+<li>Bipolar cells &amp; Retinal Ganglion cells -&gt;</li>
+<li>Most activated by “donuts” of light/dark
+<ul>
+<li>Local contrast (light/dark differences)</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="opponent-processing" class="section level3">
+<h3><em>Opponent processing</em></h3>
+<div class="figure" style="text-align: center">
+<img src="img/RGBOpponent.gif" alt="http://www.visualexpert.com/sbfaqimages/RGBOpponent.gif" width="600px" />
+<p class="caption">
+<a href="http://www.visualexpert.com/sbfaqimages/RGBOpponent.gif" class="uri">http://www.visualexpert.com/sbfaqimages/RGBOpponent.gif</a>
+</p>
+</div>
+<ul>
+<li>Black vs. white (achromatic)</li>
+<li>Long (red) vs. Medium (green) wavelength cones</li>
+<li>(Long + Medium) vs. Short cones</li>
+<li>Can’t really see reddish-green or bluish-yellow
+<ul>
+<li>“Oppose” one another at cellular/circuit level</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="from-eye-to-brain" class="section level2">
+<h2>From eye to brain</h2>
+<p><img src="img/eye-to-brain.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<ul>
+<li>Retinal ganglion cells</li>
+<li>2nd/II cranial (optic) nerve
+<ul>
+<li>Optic chiasm (<span class="math inline">\(\chi\)</span> - asm): Partial crossing of fibers</li>
+<li>Nasal hemiretina (lateral/peripheral visual field) cross</li>
+<li>Left visual field (from L &amp; R retinae) -&gt; right hemisphere &amp; vice versa</li>
+</ul></li>
+<li><em>Lateral Geniculate Nucleus (LGN)</em> of thalamus (receives 90% of retinal projections)</li>
+<li>Hypothalamus
+<ul>
+<li><em>Suprachiasmatic nucleus</em> (superior to the optic chiasm): Synchronizes day/night cycle with circadian rhythms</li>
+</ul></li>
+<li>Superior colliculus &amp; brainstem</li>
+</ul>
+<div id="lgn" class="section level3">
+<h3>LGN</h3>
+<p><img src="img/lgn.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<ul>
+<li>6 layers + intralaminar zone
+<ul>
+<li>Parvocellular (small cells): chromatic</li>
+<li>Magnocellular (big cells): achromatic</li>
+<li>Koniocellular (chromatic - <span color="blue">short</span> wavelength?)</li>
+</ul></li>
+<li>Retinotopic map of opposite visual field</li>
+</ul>
+</div>
+<div id="from-lgn-to-v1" class="section level3">
+<h3>From LGN to V1</h3>
+<p><img src="img/eye-to-brain.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<ul>
+<li>Via <em>optic radiations</em></li>
+<li><em><a href="http://www.scholarpedia.org/article/Area_V1">Primary visual cortex (V1)</a></em> in occipital lobe</li>
+<li>Create “stria of Gennari” (visible stripe in layer 4)</li>
+<li>Calcarine fissure (medial occiptal lobe) divides lower/upper visual field</li>
+</ul>
+</div>
+<div id="human-v1" class="section level3">
+<h3>Human V1</h3>
+<p><img src="http://www.scholarpedia.org/w/images/3/3a/03-Human-V1.png" width="600px" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="img/mri-v1-retinotopy.jpg" alt="[[@dougherty_visual_2003]](http://dx.doi.org/10.1167/3.10.1)" width="600px" />
+<p class="caption">
+<a href="http://dx.doi.org/10.1167/3.10.1"><span class="citation">(Dougherty et al., 2003)</span></a>
+</p>
+</div>
+<ul>
+<li>Fovea overrepresented
+<ul>
+<li>Analogous to somatosensation</li>
+<li>High acuity in fovea vs. lower outside it</li>
+</ul></li>
+<li>Upper visual field/lower (ventral) V1 and <em>vice versa</em></li>
+</ul>
+<div id="laminar-columnar-organization" class="section level4">
+<h4>Laminar, columnar organization</h4>
+<p><img src="img/cortical-hypercolumn.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<ul>
+<li>6 laminae (layers)
+<ul>
+<li>Input: Layer 4 (remember stria of Gennari?)</li>
+<li>Output: Layers 2-3 (to cortex), 5 (to brainstem), 6 (to LGN)</li>
+</ul></li>
+<li>Columns
+<ul>
+<li>Orientation/angle</li>
+<li>Spatial frequency</li>
+<li>Color/wavelength</li>
+<li>Eye of origin, <em>ocular dominance</em></li>
+</ul></li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IOHayh06LJ4" frameborder="0" allowfullscreen>
+</iframe>
+<div class="figure" style="text-align: center">
+<img src="img/dir.selective.png" alt="https://foundationsofvision.stanford.edu/wp-content/uploads/2012/02/dir.selective.png" width="600px" />
+<p class="caption">
+<a href="https://foundationsofvision.stanford.edu/wp-content/uploads/2012/02/dir.selective.png" class="uri">https://foundationsofvision.stanford.edu/wp-content/uploads/2012/02/dir.selective.png</a>
+</p>
+</div>
+</div>
+<div id="from-center-surround-receptive-fields-to-line-detection" class="section level4">
+<h4>From center-surround receptive fields to line detection</h4>
+<p><img src="http://www.scholarpedia.org/w/images/9/99/11-Hubel-Wiesel-model.png" width="600px" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="img/spatial-freq-fpsyg-03-00620-g003.jpg" alt="[[@panichello_predictive_2013]](http://dx.doi.org/10.3389/fpsyg.2012.00620)" width="600px" />
+<p class="caption">
+<a href="http://dx.doi.org/10.3389/fpsyg.2012.00620"><span class="citation">(Panichello, Cheung, &amp; Bar, 2013)</span></a>
+</p>
+</div>
+</div>
+</div>
+<div id="ocular-dominance-columns" class="section level3">
+<h3>Ocular dominance columns</h3>
+<div class="figure" style="text-align: center">
+<img src="img/cortical-hypercolumn.jpg" alt="http://www.scholarpedia.org/w/images/9/99/11-Hubel-Wiesel-model.png" width="600px" />
+<p class="caption">
+<a href="http://www.scholarpedia.org/w/images/9/99/11-Hubel-Wiesel-model.png" class="uri">http://www.scholarpedia.org/w/images/9/99/11-Hubel-Wiesel-model.png</a>
+</p>
+</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KjAQdc29vF8" frameborder="0" allowfullscreen>
+</iframe>
+</div>
+<div id="beyond-v1" class="section level3">
+<h3>Beyond V1</h3>
+<p><img src="img/beyond-v1.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<ul>
+<li>Larger, more complex receptive fields</li>
+<li><em>Dorsal stream</em> (where/how)
+<ul>
+<li>Toward parietal lobe</li>
+</ul></li>
+<li><em>Ventral stream</em> (what)</li>
+</ul>
+</div>
+</div>
+<div id="what-is-vision-for" class="section level2">
+<h2>What is vision for?</h2>
+<ul>
+<li>What is it? (form perception)</li>
+<li>Where is it? (space perception)</li>
+<li>How do I get from here to there (action control)</li>
+<li>What time (or time of year) is it?</li>
+</ul>
+</div>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1 class="unnumbered">References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
+<div id="ref-dougherty_visual_2003" class="csl-entry">
+Dougherty, R. F., Koch, V. M., Brewer, A. A., Fischer, B., Modersitzki, J., &amp; Wandell, B. A. (2003). Visual field representations and locations of visual areas <span>V</span>1/2/3 in human visual cortex. <em>Journal of Vision</em>, <em>3</em>(10), 1–1. <a href="https://doi.org/10.1167/3.10.1">https://doi.org/10.1167/3.10.1</a>
+</div>
+<div id="ref-panichello_predictive_2013" class="csl-entry">
+Panichello, M. F., Cheung, O. S., &amp; Bar, M. (2013). Predictive feedback and conscious visual experience. <em>Perception Science</em>, <em>3</em>, 620. <a href="https://doi.org/10.3389/fpsyg.2012.00620">https://doi.org/10.3389/fpsyg.2012.00620</a>
+</div>
+<div id="ref-Roark2019-fx" class="csl-entry">
+Roark, M. W., &amp; Stringham, J. M. (2019). Visual performance in the <span>“real world”</span>: Contrast sensitivity, visual acuity, and effects of macular carotenoids. <em>Molecular Nutrition &amp; Food Research</em>, <em>63</em>(15), e1801053. <a href="https://doi.org/10.1002/mnfr.201801053">https://doi.org/10.1002/mnfr.201801053</a>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+<script>
+$(document).ready(function () {
+  window.initializeCodeFolding("hide" === "show");
+});
+</script>
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
