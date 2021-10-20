@@ -2,7 +2,7 @@
 title: "PSY 511"
 subtitle: "Chemical communication"
 author: "Rick Gilmore"
-date: "2021-10-08 14:21:57"
+date: "2021-10-20 13:50:10"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -270,6 +270,27 @@ output:
 <p class="caption">https://commons.wikimedia.org/wiki/File:Eye_treated_with_dilating_eye_drops.jpg</p>
 </div>
 
+#### Basal forebrain
+
+<div class="figure" style="text-align: center">
+<img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41386-021-01070-x/MediaObjects/41386_2021_1070_Fig1_HTML.png?as=webp" alt="[[@Avram2021-vs]](http://dx.doi.org/10.1038/s41386-021-01070-x)"  />
+<p class="caption">[[@Avram2021-vs]](http://dx.doi.org/10.1038/s41386-021-01070-x)</p>
+</div>
+> Fig. 1: Map of the cholinergic basal forebrain. The region of interest depicts the cholinergic basal forebrain, based on a cytoarchitectonic map of cholinergic nuclei, overlaid on a human brain template in Montreal Neurological Institute space. The BFCN mask is based on combined histology and postmortem MRI [63], containing several cholinergic subdivisions within the basal forebrain, including the medial septal nucleus, diagonal band of Broca, nucleus subputaminalis, the basal magnocellular complex, and nucleus basalis of Meynert [57, 72].
+>
+> [[@Avram2021-vs]](http://dx.doi.org/10.1038/s41386-021-01070-x)
+
+
+<div class="figure" style="text-align: center">
+<img src="https://onlinelibrary.wiley.com/cms/asset/9d8f9564-5c0c-476e-a252-d9fc572eff66/cne23415-fig-0017-m.jpg" alt="[[@Mesulam2013-no]](http://dx.doi.org/10.1002/cne.23415)"  />
+<p class="caption">[[@Mesulam2013-no]](http://dx.doi.org/10.1002/cne.23415)</p>
+</div>
+
+<div class="figure" style="text-align: center">
+<img src="https://www.frontiersin.org/files/Articles/300066/fncir-11-00108-HTML/image_m/fncir-11-00108-g008.jpg" alt="[[@Avery2017-iv]](http://dx.doi.org/10.3389/fncir.2017.00108)"  />
+<p class="caption">[[@Avery2017-iv]](http://dx.doi.org/10.3389/fncir.2017.00108)</p>
+</div>
+
 ### Monoamine NTs
 
 | Family      | Neurotransmitter                        | Comment |
@@ -422,6 +443,18 @@ output:
 <p><a href="https://commons.wikimedia.org/wiki/File:Pubmed_equitativa_hormonal.png#/media/File:Pubmed_equitativa_hormonal.png"><img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Pubmed_equitativa_hormonal.png" alt="In this drawing of the brain, the serotonergic system is red and the mesolimbic dopamine pathway is blue. There is one collection of serotonergic neurons in the upper brainstem that sends axons upwards to the whole cerebrum, and one collection next to the cerebellum that sends axons downward to the spinal cord. Slightly forward the upper serotonergic neurons is the ventral tegmental area (VTA), which contains dopaminergic neurons. These neurons' axons then connect to the nucleus accumbens, hippocampus, and the frontal cortex. Over the VTA is another collection of dopaminergic cells, the substansia nigra, which send axons to the striatum."></a><br>Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=45159949">Link</a></p>
 
 - Different psychological roles (passive vs. active coping) associated with different 5-HT receptor subtypes? [[@Carhart-Harris2017-aq]](http://dx.doi.org/10.1177/0269881117725915)
+
+#### Comparisons among neuromodulators
+
+<div class="figure" style="text-align: center">
+<img src="https://www.frontiersin.org/files/Articles/300066/fncir-11-00108-HTML/image_m/fncir-11-00108-g001.jpg" alt="[[@Avery2017-iv]](http://dx.doi.org/10.3389/fncir.2017.00108)"  />
+<p class="caption">[[@Avery2017-iv]](http://dx.doi.org/10.3389/fncir.2017.00108)</p>
+</div>
+
+- Limited evidence for specific functions by neuromodulator
+- Same neuromodulators -> different effects on different target areas
+- Most neuromodulators relate to attention and novelty detection
+- Neuromodulators interact with one another
 
 #### Melatonin
 
