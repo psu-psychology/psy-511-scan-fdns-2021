@@ -302,6 +302,10 @@ knitr::include_graphics("http://www.d.umn.edu/~jfitzake/Lectures/UndergradPharma
 knitr::include_graphics("https://arvo.silverchair-cdn.com/arvo/content_public/journal/jov/933499/m_jov-3-10-1-fig001.jpeg?Expires=1637668920&Signature=LC96WRpdIBZ9bh6K~8YsUW6qc0Nccb7GXk6f8O~PV8u0cSqBZ84NNGZJSslPQSkMqjFaJTlyT9De3Ul-erzKVEFstsle3x24-J8wL4wChjSww-IJfzOkA8cbyQZc8sOTvvbt-AbbpTXWu95eHqksTRuqbIGSgKFyqxCW1koirm3sVYqKcmsh35sOgixKkvkYbRL7tMOIkV1Ng8sEasx-T1owZFNEL9DPGnHBzyllMUfvrPvgkv2y067wEbIyDVvM9Xsd15FLQOztcio7nMobeMYtq9sBRVE7qChM6PYOVbANGQKs8nsPRm60jW7VhMp8NVlDNoCttiRP09WEKYBz6w__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA")
 ```
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/f2JMbo4BZqY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rsykP-9-moA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 #### Somatosensory: Somatotopic maps in S1 & M1
 
 ```{r}
@@ -315,6 +319,8 @@ knitr::include_graphics("http://bio1152.nicerweb.com/Locked/media/ch49/49_16-Mot
 ```{r}
 knitr::include_graphics("img/two-point-thresholds.jpg")
 ```
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t97QiEiKjD8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### Somatosensory homunculus
 
@@ -349,6 +355,24 @@ knitr::include_graphics("img/biospsych-labeled-lines.jpg")
 ```
 
 # Case study: Vision
+
+## Animals respond to visual illusions, too
+
+```{r, fig.cap="https://www.illusionsindex.org/i/rotating-snakes"}
+knitr::include_graphics("https://www.illusionsindex.org/images/illusions/Rotating-Snakes/42_rotsnakes_main.jpg")
+```
+
+**A cat responds...**
+
+<https://www.reddit.com/r/youseeingthisshit/comments/p9y7v1/the_reaction_of_the_cat_on_the_optical_illusion/?ref=share&ref_source=embed&utm_content=title&utm_medium=post_embed&utm_name=85f1a01593f447e092c5b300e5561d6e&utm_source=embedly&utm_term=p9y7v1>
+
+```{r, fig.cap="[[@Smith2021-ho]](https://doi.org/10.1016/j.applanim.2021.105338)"}
+knitr::include_graphics("https://ars.els-cdn.com/content/image/1-s2.0-S0168159121001258-gr4.jpg")
+```
+
+```{r, , fig.cap="[[@Smith2021-ho]](https://doi.org/10.1016/j.applanim.2021.105338)"}
+knitr::include_graphics("https://ars.els-cdn.com/content/image/1-s2.0-S0168159121001258-gr5_lrg.jpg")
+```
 
 ## Properties of Electromagnetic (EM) radiation
 

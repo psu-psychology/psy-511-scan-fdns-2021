@@ -1,7 +1,7 @@
 ---
 title: "511-perception"
 author: "Rick Gilmore"
-date: "2021-10-20 14:28:09"
+date: "2021-10-22 11:40:48"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -282,6 +282,10 @@ output:
 <p class="caption">[[@dougherty_visual_2003]](https://doi.org/10.1167/3.10.1)</p>
 </div>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/f2JMbo4BZqY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rsykP-9-moA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 #### Somatosensory: Somatotopic maps in S1 & M1
 
 <img src="http://bio1152.nicerweb.com/Locked/media/ch49/49_16-MotorSensoryCorts-L.jpg" width="600px" style="display: block; margin: auto;" />
@@ -291,6 +295,8 @@ output:
 #### Two-point touch thresholds
 
 <img src="img/two-point-thresholds.jpg" width="600px" style="display: block; margin: auto;" />
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t97QiEiKjD8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### Somatosensory homunculus
 
@@ -319,6 +325,27 @@ output:
 <img src="img/biospsych-labeled-lines.jpg" width="600px" style="display: block; margin: auto;" />
 
 # Case study: Vision
+
+## Animals respond to visual illusions, too
+
+<div class="figure" style="text-align: center">
+<img src="https://www.illusionsindex.org/images/illusions/Rotating-Snakes/42_rotsnakes_main.jpg" alt="https://www.illusionsindex.org/i/rotating-snakes" width="600px" />
+<p class="caption">https://www.illusionsindex.org/i/rotating-snakes</p>
+</div>
+
+**A cat responds...**
+
+<https://www.reddit.com/r/youseeingthisshit/comments/p9y7v1/the_reaction_of_the_cat_on_the_optical_illusion/?ref=share&ref_source=embed&utm_content=title&utm_medium=post_embed&utm_name=85f1a01593f447e092c5b300e5561d6e&utm_source=embedly&utm_term=p9y7v1>
+
+<div class="figure" style="text-align: center">
+<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0168159121001258-gr4.jpg" alt="[[@Smith2021-ho]](https://doi.org/10.1016/j.applanim.2021.105338)" width="600px" />
+<p class="caption">[[@Smith2021-ho]](https://doi.org/10.1016/j.applanim.2021.105338)</p>
+</div>
+
+<div class="figure" style="text-align: center">
+<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0168159121001258-gr5_lrg.jpg" alt="[[@Smith2021-ho]](https://doi.org/10.1016/j.applanim.2021.105338)" width="600px" />
+<p class="caption">[[@Smith2021-ho]](https://doi.org/10.1016/j.applanim.2021.105338)</p>
+</div>
 
 ## Properties of Electromagnetic (EM) radiation
 
