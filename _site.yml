@@ -55,11 +55,11 @@ navbar:
           - text: "2021-10-13"
             href: "lectures/511-perception.html"
           - text: "2021-10-15"
-            href:
+            href: "lectures/511-perception.html#case-study-vision"
       - text: "Week 9"
         menu:
           - text: "2021-10-20"
-            href:
+            href: "lectures/511-action.html"
           - text: "2021-10-22"
             href:                  
       - text: "Week 10"

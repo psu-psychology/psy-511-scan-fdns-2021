@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Rick Gilmore" />
+
+
+<title>511-action</title>
+
+<script src="511-action_files/header-attrs-2.9/header-attrs.js"></script>
+<script src="511-action_files/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="511-action_files/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
+<script src="511-action_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="511-action_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="511-action_files/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="511-action_files/navigation-1.1/tabsets.js"></script>
+<script src="511-action_files/navigation-1.1/codefolding.js"></script>
+<link href="511-action_files/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="511-action_files/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+<style type="text/css">
+/* for pandoc --citeproc since 2.11 */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="css/outline.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div id="header">
+
+<div class="btn-group pull-right float-right">
+<button type="button" class="btn btn-default btn-xs btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu dropdown-menu-right" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+</ul>
+</div>
+
+
+
+<h1 class="title toc-ignore">511-action</h1>
+<h4 class="author">Rick Gilmore</h4>
+<h4 class="date">2021-10-22 07:39:47</h4>
+
+</div>
+
+<div id="TOC">
+<ul>
+<li><a href="#for-fun">For fun</a></li>
+<li><a href="#output-types">Output types</a>
+<ul>
+<li><a href="#types-of-movements">Types of movements</a></li>
+</ul></li>
+<li><a href="#motor-system-anatomy">Motor system anatomy</a>
+<ul>
+<li><a href="#key-nodes">Key ‘nodes’</a></li>
+<li><a href="#projection-pathways">Projection pathways</a></li>
+</ul></li>
+<li><a href="#muscles">Muscles</a>
+<ul>
+<li><a href="#functional-classes">Functional classes</a>
+<ul>
+<li><a href="#agonistantagonist-pairs">Agonist/antagonist pairs</a></li>
+</ul></li>
+<li><a href="#anatomical-types">Anatomical types</a></li>
+<li><a href="#how-skeletal-muscles-contract">How skeletal muscles contract</a>
+<ul>
+<li><a href="#skeletal-muscle-fiber-types">Skeletal muscle fiber types</a></li>
+</ul></li>
+<li><a href="#muscles-as-sensory-organs">Muscles as sensory organs</a>
+<ul>
+<li><a href="#two-fiber-types">Two fiber types</a></li>
+<li><a href="#monosynaptic-stretch-myotatic-reflex">Monosynaptic stretch (myotatic) reflex</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#disorders-of-movement">Disorders of movement</a>
+<ul>
+<li><a href="#the-faces-of-parkinsons">The Faces of Parkinson’s</a></li>
+<li><a href="#huntingtons">Huntington’s</a>
+<ul>
+<li><a href="#clinical-trial-focused-on-gene-therapy">Clinical trial focused on gene therapy</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#the-big-picture">The big picture</a>
+<ul>
+<li><a href="#the-real-reason-for-brains">The “real” reason for brains</a></li>
+<li><a href="#what-does-motor-cortex-activity-encode">What does motor cortex activity encode?</a></li>
+<li><a href="#what-does-the-cerebellum-do">What does the cerebellum do?</a></li>
+<li><a href="#systems-perspective">Systems perspective</a></li>
+</ul></li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+
+<div id="for-fun" class="section level1">
+<h1>For fun</h1>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/L0CVoFsUhC4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/XaI5IRuS2aE" frameborder="0" allowfullscreen>
+</iframe>
+</div>
+<div id="output-types" class="section level1">
+<h1>Output types</h1>
+<ul>
+<li>What types of outputs are there?</li>
+<li>How are they produced?
+<ul>
+<li>By the muscles</li>
+<li>By the nervous system</li>
+</ul></li>
+<li>Outputs include
+<ul>
+<li>Movements, vocalizations, facial expressions, gestures</li>
+<li>Autonomic responses</li>
+<li>Endocrine responses</li>
+</ul></li>
+</ul>
+<div id="types-of-movements" class="section level2">
+<h2>Types of movements</h2>
+<div class="figure" style="text-align: center">
+<img src="https://medlineplus.gov/ency/images/ency/fullsize/17234.jpg" alt="https://medlineplus.gov/ency/images/ency/fullsize/17234.jpg" width="600px" />
+<p class="caption">
+<a href="https://medlineplus.gov/ency/images/ency/fullsize/17234.jpg" class="uri">https://medlineplus.gov/ency/images/ency/fullsize/17234.jpg</a>
+</p>
+</div>
+<ul>
+<li>Reflexes
+<ul>
+<li>Simple, highly stereotyped, unlearned, rapid, acquired early</li>
+</ul></li>
+<li>vs. planned or voluntary actions
+<ul>
+<li>Complex, flexible, acquired, slower</li>
+</ul></li>
+<li>Discrete (reaching) vs. rhythmic (walking)</li>
+<li>Ballistic (no feedback) vs. controlled (feedback)</li>
+</ul>
+</div>
+</div>
+<div id="motor-system-anatomy" class="section level1">
+<h1>Motor system anatomy</h1>
+<div id="key-nodes" class="section level2">
+<h2>Key ‘nodes’</h2>
+<p><img src="img/motor-controllers-biopsych.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<ul>
+<li>Primary motor cortex (M-I)</li>
+<li>Non-primary motor cortex</li>
+<li>Basal ganglia</li>
+<li>Brain stem</li>
+<li>Cerebellum</li>
+<li>Spinal cord</li>
+</ul>
+</div>
+<div id="projection-pathways" class="section level2">
+<h2>Projection pathways</h2>
+<ul>
+<li>Pyramidal tracts
+<ul>
+<li>Pyramidal cells (Cerebral Cortex Layer 5) in primary motor cortex (M1)</li>
+<li>Corticobulbar (cortex -&gt; brainstem) tract</li>
+<li>Corticospinal (cortex -&gt; spinal cord) tract</li>
+</ul></li>
+<li>Crossover (decussate) in medulla
+<ul>
+<li>L side of brain ennervates R side of body</li>
+</ul></li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="img/gray-corticospinal-tract.png" alt="https://commons.wikimedia.org/wiki/File:Gray764.png#/media/File:Gray764.png" width="600px" />
+<p class="caption">
+<a href="https://commons.wikimedia.org/wiki/File:Gray764.png#/media/File:Gray764.png" class="uri">https://commons.wikimedia.org/wiki/File:Gray764.png#/media/File:Gray764.png</a>
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Gray672.png" alt="Source: Wikipedia" width="600px" />
+<p class="caption">
+Source: Wikipedia
+</p>
+</div>
+<ul>
+<li>Extrapyramidal system
+<ul>
+<li>Tectospinal tract</li>
+<li>Vestibulospinal tract</li>
+<li>Reticulospinal tract</li>
+</ul></li>
+<li>Involuntary movements
+<ul>
+<li>Posture, balance, arousal</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="muscles" class="section level1">
+<h1>Muscles</h1>
+<ul>
+<li>Generate forces</li>
+<li>In one direction</li>
+</ul>
+<div id="functional-classes" class="section level2">
+<h2>Functional classes</h2>
+<ul>
+<li>Axial
+<ul>
+<li>Trunk, neck, hips</li>
+</ul></li>
+<li>Proximal
+<ul>
+<li>Shoulder/elbow, pelvis/knee</li>
+</ul></li>
+<li>Distal
+<ul>
+<li>Hands/fingers, feet/toes</li>
+</ul></li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="https://www.frontiersin.org/files/Articles/476718/fneur-10-00951-HTML/image_m/fneur-10-00951-g001.jpg" alt="[[@Cantu2019-sz]](https://doi.org/10.3389/fneur.2019.00951)" width="600px" />
+<p class="caption">
+<a href="https://doi.org/10.3389/fneur.2019.00951"><span class="citation">(Cantú, Nantel, Millán, Paquette, &amp; Côté, 2019)</span></a>
+</p>
+</div>
+<div id="agonistantagonist-pairs" class="section level3">
+<h3>Agonist/antagonist pairs</h3>
+<p><img src="http://2.bp.blogspot.com/-TpOC4my_NBc/T0J-MhEv29I/AAAAAAAAF88/dYLv7QzFwmg/s1600/Hamstring-Quad4.jpg" width="600px" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="anatomical-types" class="section level2">
+<h2>Anatomical types</h2>
+<p><img src="http://graphics8.nytimes.com/images/2007/08/01/health/adam/19917.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<ul>
+<li>Cardiac</li>
+<li>Striated (striped)
+<ul>
+<li>Skeletal</li>
+<li>Voluntary control, mostly connected to tendons and bones</li>
+</ul></li>
+<li>Smooth
+<ul>
+<li>Arteries, hair follicles, uterus, intestines</li>
+<li>Regulated by ANS (involuntary)</li>
+</ul></li>
+</ul>
+</div>
+<div id="how-skeletal-muscles-contract" class="section level2">
+<h2>How skeletal muscles contract</h2>
+<ul>
+<li>Motoneuron (ventral horn of spinal cord)</li>
+<li>Projects to muscle fiber</li>
+<li>Neuromuscular junction
+<ul>
+<li>Synapse between motor neuron and muscle fiber</li>
+<li>Releases ACh</li>
+</ul></li>
+</ul>
+<p><img src="img/from-spinal-cord-to-muscle.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<ul>
+<li>Motor endplate
+<ul>
+<li>Contains nicotinic ACh receptors</li>
+</ul></li>
+<li>Activation produces excitatory endplate potential
+<ul>
+<li>Muscle fibers depolarize</li>
+<li>Depolarization spreads along fibers like an action potential</li>
+<li>Ca++ released from intramuscular stores</li>
+</ul></li>
+</ul>
+<p><img src="http://www.siumed.edu/~dking2/ssb/images/NM040b.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<ul>
+<li>Muscle fibers contain bundles of myofibrils called sarcomeres</li>
+<li>Myofibrils
+<ul>
+<li>Contain actin &amp; mysosin proteins</li>
+<li>“Molecular gears”</li>
+</ul></li>
+<li>Bind, move, unbind in presence of Ca++, adenosine triphosphate (ATP)</li>
+</ul>
+<p><img src="img/muscle-fibers-biopsych.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<p><img src="img/motor-endplate-nt-release.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cnAbzz3N0ak" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<div id="skeletal-muscle-fiber-types" class="section level3">
+<h3>Skeletal muscle fiber types</h3>
+<p><img src="img/turkey.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<ul>
+<li>Fast twitch/fatiguing
+<ul>
+<li>Type II</li>
+<li>White meat</li>
+</ul></li>
+<li>Slow twitch/fatiguing
+<ul>
+<li>Type I</li>
+<li>Red meat</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="muscles-as-sensory-organs" class="section level2">
+<h2>Muscles as sensory organs</h2>
+<!-- Server holding tray -->
+<p><img src="http://cdn.xl.thumbs.canstockphoto.com/canstock6466988.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<div id="two-fiber-types" class="section level3">
+<h3>Two fiber types</h3>
+<div class="centered">
+<p><img src="img/muscle-fiber-types.jpg" height=450px></p>
+</div>
+<ul>
+<li><em>Intrafusal</em> fibers
+<ul>
+<li>Sense muscle length and change in length, e.g. “stretch”</li>
+<li>Also called muscle spindles</li>
+<li>Provide muscle proprioception (perception about the self, a form of interoception)</li>
+<li>Ennervated by by primary Ia afferents (sensory output from muscle); also secondary Type II fibers</li>
+<li>Ennervated by gamma (<span class="math inline">\(\gamma\)</span>) motor neurons (motor input)</li>
+</ul></li>
+<li><em>Extrafusal</em> fibers
+<ul>
+<li>Generate force</li>
+<li>ennervated by alpha (<span class="math inline">\(\alpha\)</span>) motor neurons</li>
+</ul></li>
+</ul>
+</div>
+<div id="monosynaptic-stretch-myotatic-reflex" class="section level3">
+<h3>Monosynaptic stretch (myotatic) reflex</h3>
+<ul>
+<li>Muscle stretched (length increases)</li>
+<li>Muscle spindle in intrafusal fiber activates</li>
+<li>Ia afferent sends signal to spinal cord
+<ul>
+<li>Activates alpha (<span class="math inline">\(\alpha\)</span>) motor neuron</li>
+</ul></li>
+<li>Muscle contracts, shortens length</li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Fusimotor_action.jpg" alt="https://commons.wikimedia.org/wiki/File:Fusimotor_action.jpg#/media/File:Fusimotor_action.jpg" width="600px" />
+<p class="caption">
+<a href="https://commons.wikimedia.org/wiki/File:Fusimotor_action.jpg#/media/File:Fusimotor_action.jpg" class="uri">https://commons.wikimedia.org/wiki/File:Fusimotor_action.jpg#/media/File:Fusimotor_action.jpg</a>
+</p>
+</div>
+<ul>
+<li>Gamma (<span class="math inline">\(\gamma\)</span>) motor neuron fires to take up ‘slack’ in intrafusal fiber</li>
+</ul>
+<p><img src="img/intrafusal-extrafusal-fibers.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<!-- Belaying as metaphor -->
+<div class="centered">
+<p><img src="https://www.thoughtco.com/thmb/_EukGM8OC9Rexe4KxtQxDQ3CsGs=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/HowtoBelay_3-571117903df78c3fa293859d.jpg"></p>
+</div>
+<p><img src="img/stretch-reflex.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<p><strong>Why doesn’t antagonist muscle respond?</strong></p>
+<ul>
+<li>Polysynaptic inhibition of antagonist muscle</li>
+<li>Prevents/dampens tremor</li>
+</ul>
+<p><strong>Speed of sensory information propagation</strong></p>
+<ul>
+<li>Brain gets fast(est) propagating sensory info from spindles</li>
+</ul>
+<p><img src="img/axon-size-speed-tradeoff.jpg" width="600px" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+</div>
+<div id="disorders-of-movement" class="section level1">
+<h1>Disorders of movement</h1>
+<ul>
+<li>Parkinson’s</li>
+<li>Huntington’s</li>
+</ul>
+<div id="the-faces-of-parkinsons" class="section level2">
+<h2>The Faces of Parkinson’s</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CqEwPqUO1Bw" frameborder="0" allowfullscreen>
+</iframe>
+<ul>
+<li>Slow, absent movement, resting tremor</li>
+<li>Cognitive deficits, depression</li>
+<li>DA Neurons in substantia nigra degenerate</li>
+<li>Treatments
+<ul>
+<li>DA agonists</li>
+<li>DA agonists linked to impulse control disorders in ~1/7 patients <a href="http://doi.org/10.1586/14737175.2016.1158103"><span class="citation">(Ramirez-Zamora, Gee, Boyd, &amp; Biller, 2016)</span></a></li>
+<li>Levodopa (L-Dopa), DA precursor</li>
+</ul></li>
+</ul>
+<p><img src="https://upload.wikimedia.org/wikipedia/en/2/2b/Awakenings.jpg" width="600px" style="display: block; margin: auto;" /></p>
+</div>
+<div id="huntingtons" class="section level2">
+<h2>Huntington’s</h2>
+<!-- Woody Guthrie -->
+<p><img src="http://cp91279.biography.com/1000509261001/1000509261001_1733824754001_woody-guthrie-centennial-1.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<ul>
+<li>Formerly Huntington’s Chorea
+<ul>
+<li>“Chorea” from Greek for “dance”</li>
+<li>“Dance-like” pattern of involuntary movements</li>
+</ul></li>
+<li>Cognitive decline</li>
+<li>Genetic + environmental influences</li>
+<li>Disturbance in striatum</li>
+<li>No effective treatment</li>
+<li>But progress in an animal model targeting abnormal protein products <a href="https://doi.org/10.1038/s41586-019-1722-1"><span class="citation">(Li et al., 2019)</span></a></li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HBLrY_nXU_U" frameborder="0" allowfullscreen>
+</iframe>
+<div id="clinical-trial-focused-on-gene-therapy" class="section level3">
+<h3>Clinical trial focused on gene therapy</h3>
+<div class="figure" style="text-align: center">
+<img src="img/huntingtons-trial.png" alt="https://clinicaltrials.gov/ct2/show/study/NCT03761849" width="600px" />
+<p class="caption">
+<a href="https://clinicaltrials.gov/ct2/show/study/NCT03761849" class="uri">https://clinicaltrials.gov/ct2/show/study/NCT03761849</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="the-big-picture" class="section level1">
+<h1>The big picture</h1>
+<ul>
+<li>Control of movement determined by multiple sources</li>
+<li>Cerebral cortex + basal ganglia + cerebellum + spinal circuits</li>
+</ul>
+<div class="centered">
+<p><img src="img/motor-controllers-biopsych.jpg" height=450px></p>
+</div>
+<div id="the-real-reason-for-brains" class="section level2">
+<h2>The “real” reason for brains</h2>
+<iframe src="https://embed-ssl.ted.com/talks/daniel_wolpert_the_real_reason_for_brains.html" width="640" height="360" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
+</iframe>
+</div>
+<div id="what-does-motor-cortex-activity-encode" class="section level2">
+<h2>What does motor cortex activity encode?</h2>
+<div class="centered">
+<p>Muscle activity? Limb velocity? Or…?</p>
+<p><img src="http://www.annualreviews.org/na101/home/literatum/publisher/ar/journals/content/neuro/2013/neuro.2013.36.issue-1/annurev-neuro-062111-150509/20130626/images/large/ne360337.f1.jpeg" height=450px></p>
+<p><a href="http://dx.doi.org/10.1146/annurev-neuro-062111-150509">Shenoy et al., 2013</a></p>
+</div>
+<div class="centered">
+<p><img src="img/shenoy-et-al.jpg" width=800px></p>
+</div>
+</div>
+<div id="what-does-the-cerebellum-do" class="section level2">
+<h2>What does the cerebellum do?</h2>
+<ul>
+<li>Predict future sensory states? <a href="http://doi.org/10.1038/nrn2332"><span class="citation">(Ito, 2008)</span></a></li>
+</ul>
+<div class="centered">
+<p><img src="http://venturebeat.com/wp-content/uploads/2009/10/star-trek-holodeck.jpg" height=450px></p>
+</div>
+<div id="systems-perspective" class="section level2">
+<h2>Systems perspective</h2>
+<ul>
+<li>Cognitive/affective states</li>
+<li>Nervous system states</li>
+<li>Muscle states</li>
+<li>Actions</li>
+<li>Consequences of actions on world states</li>
+<li>Sensory states</li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="img/powers-5.2.png" alt="[[@Powers1973-zn]](http://www.pctresources.com/Other/Reviews/BCP_book.pdf)" width="600px" />
+<p class="caption">
+<a href="http://www.pctresources.com/Other/Reviews/BCP_book.pdf"><span class="citation">(Powers, 1973)</span></a>
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="img/powers-5.1.png" alt="[[@Powers1973-zn]](http://www.pctresources.com/Other/Reviews/BCP_book.pdf)" width="600px" />
+<p class="caption">
+<a href="http://www.pctresources.com/Other/Reviews/BCP_book.pdf"><span class="citation">(Powers, 1973)</span></a>
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="img/powers-6.1.png" alt="[[@Powers1973-zn]](http://www.pctresources.com/Other/Reviews/BCP_book.pdf)" width="600px" />
+<p class="caption">
+<a href="http://www.pctresources.com/Other/Reviews/BCP_book.pdf"><span class="citation">(Powers, 1973)</span></a>
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="img/something-in-the-way-we-move.jpg" alt="https://www.nytimes.com/2019/10/23/well/move/something-in-the-way-we-move.html" width="600px" />
+<p class="caption">
+<a href="https://www.nytimes.com/2019/10/23/well/move/something-in-the-way-we-move.html" class="uri">https://www.nytimes.com/2019/10/23/well/move/something-in-the-way-we-move.html</a>
+</p>
+</div>
+</div>
+</div>
+<div id="references" class="section level1 unnumbered smaller">
+<h1 class="unnumbered smaller">References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
+<div id="ref-Cantu2019-sz" class="csl-entry">
+Cantú, H., Nantel, J., Millán, M., Paquette, C., &amp; Côté, J. N. (2019). Abnormal muscle activity and variability before, during, and after the occurrence of freezing in parkinson’s disease. <em>Frontiers in Neurology</em>, <em>10</em>, 951. <a href="https://doi.org/10.3389/fneur.2019.00951">https://doi.org/10.3389/fneur.2019.00951</a>
+</div>
+<div id="ref-Ito2008-ai" class="csl-entry">
+Ito, M. (2008). Control of mental activities by internal models in the cerebellum. <em>Nat. Rev. Neurosci.</em>, <em>9</em>(4), 304–313. <a href="https://doi.org/10.1038/nrn2332">https://doi.org/10.1038/nrn2332</a>
+</div>
+<div id="ref-Li2019-to" class="csl-entry">
+Li, Z., Wang, C., Wang, Z., Zhu, C., Li, J., Sha, T., … Lu, B. (2019). Allele-selective lowering of mutant <span>HTT</span> protein by <span>HTT-LC3</span> linker compounds. <em>Nature</em>, <em>575</em>(7781), 203–209. <a href="https://doi.org/10.1038/s41586-019-1722-1">https://doi.org/10.1038/s41586-019-1722-1</a>
+</div>
+<div id="ref-Powers1973-zn" class="csl-entry">
+Powers, W. T. (1973). <em>Behavior: The control of perception</em>. Aldine Chicago. Retrieved from <a href="http://www.pctresources.com/Other/Reviews/BCP_book.pdf">http://www.pctresources.com/Other/Reviews/BCP_book.pdf</a>
+</div>
+<div id="ref-Ramirez-Zamora2016-rl" class="csl-entry">
+Ramirez-Zamora, A., Gee, L., Boyd, J., &amp; Biller, J. (2016). Treatment of impulse control disorders in parkinson’s disease: Practical considerations and future directions. <em>Expert Rev. Neurother.</em>, <em>16</em>(4), 389–399. <a href="https://doi.org/10.1586/14737175.2016.1158103">https://doi.org/10.1586/14737175.2016.1158103</a>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+<script>
+$(document).ready(function () {
+  window.initializeCodeFolding("hide" === "show");
+});
+</script>
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

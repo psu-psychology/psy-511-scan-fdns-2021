@@ -2,7 +2,7 @@
 title: "PSY 511"
 subtitle: "Chemical communication"
 author: "Rick Gilmore"
-date: "2021-10-20 13:50:10"
+date: "2021-10-20 14:27:55"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css

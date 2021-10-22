@@ -1,7 +1,7 @@
 ---
 title: "511-perception"
 author: "Rick Gilmore"
-date: "2021-10-19 08:06:37"
+date: "2021-10-20 14:28:09"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -27,7 +27,9 @@ output:
 
 # Fun
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MrHxhQPOO2c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- I can see clearly now Jimmy Cliff -->
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MrHxhQPOO2c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- See me, feel me, touch me, hear me from Tommy -->
 

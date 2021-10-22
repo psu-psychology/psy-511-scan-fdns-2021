@@ -212,6 +212,8 @@ title: "Schedule"
 - Read/Watch
     + BW 8:230-241.
     + Hubel, D. H. (1982). Exploration of the primary visual cortex, 1955-78. *Nature*, *299*(5883), 515–524. <https://www.ncbi.nlm.nih.gov/pubmed/6750409>.
+- Materials
+    - [Notes](lectures/511-perception.html#case-study-vision). [PDF](lectures/511-perception.pdf).
 
 ---
 
@@ -233,7 +235,6 @@ title: "Schedule"
     - BW 10:301-335, 11:341-368.
     + Shenoy, K. V., Sahani, M., & Churchland, M. M. (2013). Cortical control of arm movements: A dynamical systems perspective. *Annual Review of Neuroscience*, *36*, 337–359. Retrieved from <https://dx.doi.org/10.1146/annurev-neuro-062111-150509>.
 - [**Quiz 2**]() distributed. Due by 5:00 PM on 11/05.
-
 
 ---
 

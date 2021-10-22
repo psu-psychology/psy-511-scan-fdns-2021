@@ -32,7 +32,9 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE,
 
 # Fun
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MrHxhQPOO2c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- I can see clearly now Jimmy Cliff -->
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MrHxhQPOO2c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- See me, feel me, touch me, hear me from Tommy -->
 
