@@ -1,0 +1,22 @@
+---
+title: "reddish-green"
+output:
+  ioslides_presentation:
+    widescreen: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## What's a reddish-green look like? {.flexbox .vcenter}
+
+<div class="centered">
+<img src="img/reddish-green.jpg">
+</div>
+
+## What's a reddish-green look like? {.flexbox .vcenter}
+
+<div class="centered">
+<img src="img/fixation-cross.jpg">
+</div>

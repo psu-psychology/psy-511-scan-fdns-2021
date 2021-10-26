@@ -226,6 +226,8 @@ title: "Schedule"
 - Read/Watch
     - BW 10: 301:335, BW 11: 341:368.
     + Nielsen, J. B. (2016). Human spinal motor control. *Annual Review of Neuroscience*, *39*, 81–101. Retrieved from <https://dx.doi.org/10.1146/annurev-neuro-070815-013913>
+- Materials
+    - [Notes](lectures/511-action.html). [PDF](lectures/511-action.pdf).
 
 ### Friday, October 29
 

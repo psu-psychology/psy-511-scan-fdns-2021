@@ -1,7 +1,7 @@
 ---
 title: "511-perception"
 author: "Rick Gilmore"
-date: "2021-10-22 11:40:48"
+date: "2021-10-26 12:52:37"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -366,6 +366,10 @@ output:
 <p class="caption">http://apod.nasa.gov/apod/ap140605.html</p>
 </div>
 
+- Light provides fast (2.99 million m/s; 186 million mi/hr) information about surfaces at a distance
+- vs. sound (340 m/s; 767 mi/hr)
+- vs. chemical signals (min/mi)
+
 ### Reflectance spectra differ by surface
 
 <img src="https://sites.google.com/site/obeluwa/_/rsrc/1372214890170/skin/introduction-to-diffuse-reflectance-spectroscopy/sample-spectra.png" width="600px" style="display: block; margin: auto;" />
@@ -402,6 +406,13 @@ output:
 <img src="img/the-eye-ksj.jpg" width="600px" style="display: block; margin: auto;" />
 
 <img src="img/the-eye.jpg" width="600px" style="display: block; margin: auto;" />
+
+### part of a self-stabilizing system...
+
+<!-- Kestrel showing image stabilization -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JGArTWOJtXs?start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<https://www.youtube.com/embed/JGArTWOJtXs>
 
 ### Parts of the eye
 
@@ -536,6 +547,7 @@ output:
 - (Long + Medium) vs. Short cones
 - Can't really see reddish-green or bluish-yellow
     - "Oppose" one another at cellular/circuit level
+    - [DEMO](reddish-green.html)
 
 ## From eye to brain
 

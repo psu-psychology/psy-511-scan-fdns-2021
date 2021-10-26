@@ -391,6 +391,10 @@ knitr::include_graphics("img/em-spectrum.jpg")
 knitr::include_graphics("img/hud2014_1000c.jpg")
 ```
 
+- Light provides fast (2.99 million m/s; 186 million mi/hr) information about surfaces at a distance
+- vs. sound (340 m/s; 767 mi/hr)
+- vs. chemical signals (min/mi)
+
 ### Reflectance spectra differ by surface
 
 ```{r}
@@ -438,6 +442,13 @@ knitr::include_graphics("img/the-eye-ksj.jpg")
 ```{r}
 knitr::include_graphics("img/the-eye.jpg")
 ```
+
+### part of a self-stabilizing system...
+
+<!-- Kestrel showing image stabilization -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JGArTWOJtXs?start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<https://www.youtube.com/embed/JGArTWOJtXs>
 
 ### Parts of the eye
 
@@ -578,6 +589,7 @@ knitr::include_graphics("img/RGBOpponent.gif")
 - (Long + Medium) vs. Short cones
 - Can't really see reddish-green or bluish-yellow
     - "Oppose" one another at cellular/circuit level
+    - [DEMO](reddish-green.html)
 
 ## From eye to brain
 

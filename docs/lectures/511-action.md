@@ -1,7 +1,7 @@
 ---
 title: "511-action"
 author: Rick Gilmore
-date: "2021-10-22 07:39:47"
+date: "2021-10-26 12:52:49"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
