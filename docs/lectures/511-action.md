@@ -1,7 +1,7 @@
 ---
 title: "511-action"
 author: Rick Gilmore
-date: "2021-10-27 14:21:16"
+date: "2021-10-29 11:24:31"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -27,10 +27,8 @@ output:
 
 # For fun
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Gs069dndIYk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<!-- September Earth Wind & Fire -->
-
+<iframe width="420" height="315" src="https://www.youtube.com/embed/Gs069dndIYk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- September Earth Wind & Fire 3:35-->
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/XaI5IRuS2aE" frameborder="0" allowfullscreen></iframe>
 
@@ -99,6 +97,19 @@ output:
     + Reticulospinal tract
 - Involuntary movements
     + Posture, balance, arousal
+    
+## Direct cortical control
+
+- in humans; prevalence uncertain in other animals
+- For individuated ("fractionated") movements of fingers, toes, lips, but other muscles, too.
+
+<div class="figure" style="text-align: center">
+<img src="https://www.annualreviews.org/na101/home/literatum/publisher/ar/journals/content/neuro/2016/neuro.2016.39.issue-1/annurev-neuro-070815-013913/20160711/images/large/ne390081.f1.jpeg" alt="[[@Nielsen2016-hs]](http://dx.doi.org/10.1146/annurev-neuro-070815-013913)" width="600px" />
+<p class="caption">[[@Nielsen2016-hs]](http://dx.doi.org/10.1146/annurev-neuro-070815-013913)</p>
+</div>
+> Figure 1. Evidence of corticomotoneuronal connections in human subjects. Indirect, noninvasive evidence of the existence of monosynaptic connections between corticospinal neurons and spinal motoneurons may be obtained in awake human subjects by transcranial magnetic stimulation (TMS) (b,c) and coherence analysis of either cortical [electroencephalogram (EEG)] and muscular activity [electromyogram (EMG)] (d,e) or two separate recordings of muscular activity (f). (b,c) Corticospinal neurons can be excited by a brief magnetic pulse applied by a magnetic coil placed over the appropriate part of the motor cortex in awake human subjects. If the intensity of the magnetic pulse is adjusted appropriately, the evoked descending volley in the corticospinal tract may elicit a subthreshold excitatory postsynaptic potential (EPSP) in the relevant spinal motoneurons. This EPSP may be demonstrated as a change in the discharge probability of a single motor unit recorded from the muscle (b). In the illustrated example, the subject was asked to voluntarily activate the tibialis anterior (TA) muscle, and the discharges of a single motor unit were recorded by a needle electrode inserted into the muscle. TMS elicited a short-lasting (2-ms) increase of discharge probability at a latency of 45 ms (b). The short duration of this peak is consistent with the short rise time of a monosynaptic EPSP. This interpretation is further supported by the observation that stimulation of Ia afferents with known monosynaptic connections to the motoneurons elicits a peak with a similar short duration (c). Data in panels b and c modified with permission from Nielsen & Petersen (1994). (d,e) EEG recorded from the motor cortex and EMG recorded from a voluntarily activated muscle (TA in the illustrated example) show rhythmic modulation of the recorded activity at a frequency of 15–35 Hz. As shown from a coherence analysis of the two signals in panel d, some of this activity is common for the two sites, suggesting a close link between cortical and muscular activity. Panel e shows the EEG and EMG activities are not always synchronous but may show a time lag, which is in the range expected for a fast-conducting direct pathway to the motoneurons. Data in panels d and e modified with permission from Hansen et al. (2002). (f) A monosynaptic origin of corticomuscular coherence is further supported by the observation of short-term synchrony between the discharges of pairs of TA motor units, which may be related to the coherence in the 15–35-Hz frequency band. The subject was asked to voluntarily activate the TA muscle, and the discharges of two different TA motor units were recorded with needle electrodes. The short duration of the central peak of synchronization suggests that the motor unit activities are modulated by a common (monosynaptic) input from collaterals of last-order neurons, which are in all likelihood identical to corticomotoneuronal cells. The secondary peaks at lags of approximately 50–60 ms on either side of the central peak suggest that this last-order input modulates the discharge of the motor units at a frequency of about 20–30 Hz, i.e., corresponding to the coherence observed in the paired EEG-EMG recordings in panels b and c. Data in panel f modified with permission from Nielsen & Kagamihara (1994).
+>
+>[[@Nielsen2016-hs]](http://dx.doi.org/10.1146/annurev-neuro-070815-013913) 
 
 # Muscles
 
@@ -137,8 +148,8 @@ output:
 
 ## How skeletal muscles contract
 
-- Motoneuron (ventral horn of spinal cord)
-- Projects to muscle fiber
+- Motoneurons (somata in ventral horn of spinal cord)
+- Project to muscle fiber
 - Neuromuscular junction
     + Synapse between motor neuron and muscle fiber
     + Releases ACh
@@ -233,6 +244,9 @@ output:
 
 <img src="img/axon-size-speed-tradeoff.jpg" width="600px" style="display: block; margin: auto;" />
 
+## What does motor cortex "code"?
+
+
 # Disorders of movement
 
 - Parkinson's
@@ -290,17 +304,39 @@ output:
 
 ## What does motor cortex activity encode? 
 
-<div class="centered">
-Muscle activity? Limb velocity? Or...?
+- Muscle contractions?
+- Movement trajectories?
+- Representational vs. dynamical systems views
 
-<img src="http://www.annualreviews.org/na101/home/literatum/publisher/ar/journals/content/neuro/2013/neuro.2013.36.issue-1/annurev-neuro-062111-150509/20130626/images/large/ne360337.f1.jpeg" height=450px>
+<div class="figure" style="text-align: center">
+<img src="https://www.annualreviews.org/na101/home/literatum/publisher/ar/journals/content/neuro/2013/neuro.2013.36.issue-1/annurev-neuro-062111-150509/20130626/images/large/ne360337.f1.jpeg" alt="[[@Shenoy2013-zi]](http://dx.doi.org/10.1146/annurev-neuro-062111-150509)" width="600px" />
+<p class="caption">[[@Shenoy2013-zi]](http://dx.doi.org/10.1146/annurev-neuro-062111-150509)</p>
+</div>
+> Figure 1. Schematic illustrating the focus of the representational perspective and of the dynamical systems perspective. The traditional perspective has concentrated on the representation or code employed by the motor cortex. For example, does the motor cortex (upper left panel) code muscle activity (red trace) or reach velocity (black trace)? Thus, the traditional perspective attempts to determine the output or controlled parameters of the motor cortex. The dynamical systems perspective focuses less on the output itself and more on how that output is created (upper right panel). It attempts to isolate the basic patterns (blue) from which the final output might be built. It further attempts to understand the dynamics that produced that set of patterns and the role of preparatory activity in creating the right set of patterns for a particular movement. The red trace indicates the activity of the deltoid versus time during a rightward reach (e.g., Churchland et al. 2012). The black trace is the hand velocity for that same reach; the black trace between the beginning and ending reach targets is the hand path. The light and dark blue traces (upper right) illustrate a potential dynamical basis set from which the red trace might be built.
+>
+>[[@Shenoy2013-zi]](http://dx.doi.org/10.1146/annurev-neuro-062111-150509)
 
-[Shenoy et al., 2013](http://dx.doi.org/10.1146/annurev-neuro-062111-150509)
+<div class="figure" style="text-align: center">
+<img src="https://www.annualreviews.org/na101/home/literatum/publisher/ar/journals/content/neuro/2013/neuro.2013.36.issue-1/annurev-neuro-062111-150509/20130626/images/large/ne360337.f2.jpeg" alt="[[@Shenoy2013-zi]](http://dx.doi.org/10.1146/annurev-neuro-062111-150509)" width="600px" />
+<p class="caption">[[@Shenoy2013-zi]](http://dx.doi.org/10.1146/annurev-neuro-062111-150509)</p>
+</div>
+> Figure 2. Overview of experimental paradigm, behavioral measurements, muscle measurements, and neural measurements. (a) Illustration of the instructed-delay task. Monkeys sit in a primate chair ∼25 cm from a fronto-parallel display. A trial begins by fixating (eye) and touching (hand) a central target (red filled square) and holding for a few hundred milliseconds. A peripheral target (red open square) then appears, cuing the animal about where a movement must ultimately be made. After a randomized delay period (e.g., 0–1 s) a go cue is given (e.g., extinction of central fixation and touch targets) signaling that an arm movement to the peripheral target may begin. (b) Sample hand measurements and electromyographic (EMG) recordings for the same trial as in panel a. Top: Horizontal hand (black) and target (red) positions are plotted. For this experiment, the target jittered on first appearing and stabilized at the go cue. Bottom: Hand velocity superimposed on the voltage recorded from the medial deltoid. (c) Sample reach trajectories and end points in a center-out two-instructed-speed version of the instructed-delay task. Red and green traces/symbols correspond to instructed-fast and instructed-slow conditions. (d) Mean reaction time (RT) plotted versus delay-period duration. The line shows an exponential fit. (e) Examples of typical delay-period firing-rate responses in PMd. Mean ± Standard Error firing rates for four sample neurons are shown. Figure adapted from Churchland et al. (2006c).
+>
+> [[@Shenoy2013-zi]](http://dx.doi.org/10.1146/annurev-neuro-062111-150509)
+
+### Dynamical systems and [state spaces](https://en.wikipedia.org/wiki/State-space_representation)
+
+- Movement of the limbs and body
+- Activity of the muscles
+- Activity of neurons in the spinal cord
+- Activity of neurons in the brain...
+
+<div class="figure" style="text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Typical_State_Space_model.svg/944px-Typical_State_Space_model.svg.png" alt="https://en.wikipedia.org/wiki/State-space_representation" width="600px" />
+<p class="caption">https://en.wikipedia.org/wiki/State-space_representation</p>
 </div>
 
-<div class="centered">
-<img src="img/shenoy-et-al.jpg" width=800px>
-</div>
+
 
 ## What does the cerebellum do?
 
@@ -337,5 +373,13 @@ Muscle activity? Limb velocity? Or...?
 <img src="img/something-in-the-way-we-move.jpg" alt="https://www.nytimes.com/2019/10/23/well/move/something-in-the-way-we-move.html" width="600px" />
 <p class="caption">https://www.nytimes.com/2019/10/23/well/move/something-in-the-way-we-move.html</p>
 </div>
+
+<div class="figure" style="text-align: center">
+<img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41593-018-0312-0/MediaObjects/41593_2018_312_Fig2_HTML.png?as=webp" alt="[[@Shine2019-lh]](http://dx.doi.org/10.1038/s41593-018-0312-0)" width="600px" />
+<p class="caption">[[@Shine2019-lh]](http://dx.doi.org/10.1038/s41593-018-0312-0)</p>
+</div>
+> Fig. 2: The low-dimensional signature across cognitive tasks.
+> a, The procedure used to partition tPC1 into unique phases: low (blue), rise (red), high (orange), and fall (light blue). b, Scatter plot comparing the loading of tPC1 (colored according to the partition defined in a) with a temporal stability measure (defined by the similarity of the BOLD response at adjacent time points); we observed a significant positive Pearson’s correlation (r=0.58) between |tPC1| and temporal stability (n=1,939 time points), providing heuristic evidence for attractor basins at the extremes of tPC1 engagement. c, A three-dimensional scatter plot comparing the first three tPCs; each node represents one time point (colored according to the phase of tPC1), with time implicitly unfolding across the embedding space (contiguous points connected by black line). d, The low-dimensional manifold traversed by the global brain state across the first three dimensions, with arrows depicting the direction of flow along the manifold.
+> [[@Shine2019-lh]](http://dx.doi.org/10.1038/s41593-018-0312-0)
 
 # References {.smaller}
