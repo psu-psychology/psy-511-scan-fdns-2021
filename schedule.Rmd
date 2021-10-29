@@ -236,7 +236,7 @@ title: "Schedule"
 - Read/Watch
     - BW 10:301-335, 11:341-368.
     + Shenoy, K. V., Sahani, M., & Churchland, M. M. (2013). Cortical control of arm movements: A dynamical systems perspective. *Annual Review of Neuroscience*, *36*, 337–359. Retrieved from <https://dx.doi.org/10.1146/annurev-neuro-062111-150509>.
-- [**Quiz 2**]() distributed. Due by 5:00 PM on 11/05.
+- [**Quiz 2**](quiz/quiz-02/psy-511.001-21-quiz-02.docx) distributed. Due by 12:00 PM on Friday, November 5, 2021.
 
 ---
 
