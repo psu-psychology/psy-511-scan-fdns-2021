@@ -187,7 +187,7 @@ knitr::include_graphics("img/bressler-2010-fig-6.jpg")
 ### Data-driven dynamics
 
 - Cortical states have high dimensionality
-- Is there a lower-dimensional space that maps to behavior?
+- Is there a lower-dimensional space that maps onto behavior?
 
 #### [[@Shine2019-lh]](http://dx.doi.org/10.1038/s41593-018-0312-0)
 
@@ -227,15 +227,15 @@ knitr::include_graphics("https://media.springernature.com/lw685/springer-static/
 
 ## Summing up
 
-- Cognition controls
+- Cognition involves
     + Do what, where, when, and how
 - The "cognitive" cortex
 - Processing networks
     + Functional specialization
     + Dynamic interaction
-    + Nested feedback control loops
     + Low dimensional dynamics
-    
+    + Nested feedback control loops
+
 ```{r, fig.cap="[@Powers1973-zn]"}
 knitr::include_graphics("img/powers-5.2.png")
 ```
@@ -243,6 +243,31 @@ knitr::include_graphics("img/powers-5.2.png")
 ```{r, fig.cap="[@Powers1973-zn]"}
 knitr::include_graphics("img/powers-6.1.png")
 ```
+
+- What do we want to know?
+    - What parts of the nervous system are evoked by cognitive process X? (localization)
+    - How does neural data support/undermine theory X of cognition?
+    - "...our survey nevertheless still makes it clear that very few resources are currently being devoted to using neuroimaging data to test theories about cognition." [[@Tressoldi2012-zt]](http://dx.doi.org/10.1016/j.cortex.2012.05.024)
+    - Also [[@Coltheart2013-pa]](http://dx.doi.org/10.1177/1745691612469208)
+- Neuroscience can constrain models of cognition [[@White2013-ri]](http://dx.doi.org/10.1177/1745691612469029)
+    - One process or two
+    - Serial vs. parallel processing
+    
+- Show me your (cognitive) model...
+
+```{r, fig.cap="[[@Anderson2016-bx]](http://dx.doi.org/10.1177/0956797616654912)"}
+knitr::include_graphics("https://journals.sagepub.com/na101/home/literatum/publisher/sage/journals/content/pssa/2016/pssa_27_9/0956797616654912/20180821/images/large/10.1177_0956797616654912-fig1.jpeg")
+```
+> Fig. 1. Illustration showing the durations of the four stages associated with problem solving. In the four example problems, the arrows denote new mathematical operators that participants had learned. In each stage, the axial slice (x = 0 mm, y = 0 mm, z = 28 mm in Talairach space) highlights brain regions in which activation in that stage was significantly greater than the average activation during problem solving. Brain images are displayed with the left hemisphere on the right-hand side.
+>
+> [[@Anderson2016-bx]](http://dx.doi.org/10.1177/0956797616654912)
+
+```{r, fig.cap="[[@Anderson2016-bx]](http://dx.doi.org/10.1177/0956797616654912)"}
+knitr::include_graphics("https://journals.sagepub.com/na101/home/literatum/publisher/sage/journals/content/pssa/2016/pssa_27_9/0956797616654912/20180821/images/large/10.1177_0956797616654912-fig4.jpeg")
+```
+> Fig. 4. The four brain signatures placed in a 3-D space where the activity of a stage is a sum of the activity of the signature in the solving stage plus a sum of the three vectors weighted by their coordinates in the space. The heat maps illustrate the proportion of change in activation relative to baseline. The coordinates of the stages are as follows (in Talairach space)—encoding: x = 1.61, y = 0.37, z = 0.58; planning: x = 0.58, y = 0.28, z = 1.38; solving: x = 0, y = 0, z = 0; and responding: x = 0.37, y = 1.78, z = 0.28. Brain images are displayed with the left hemisphere on the right-hand side.
+>
+> [[@Anderson2016-bx]](http://dx.doi.org/10.1177/0956797616654912)
 
 # Language and the brain
 
