@@ -1,7 +1,7 @@
 ---
 title: "511-cognition-language"
 author: "Rick Gilmore"
-date: "2021-11-03 12:50:33"
+date: "2021-11-03 14:10:15"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -85,16 +85,17 @@ output:
 
 Combines...
 
-- Perception
-- Attention
-- Imagery
-- Learning and conditioning
+- [Perception](https://neurosynth.org/analyses/terms/perception/)
+- [Attention](https://neurosynth.org/analyses/terms/attention/)
+- [Imagery](https://neurosynth.org/analyses/terms/imagery/)
+- [Learning](https://neurosynth.org/analyses/terms/learning/) and [conditioning](https://neurosynth.org/analyses/terms/conditioning/)
 - Memory
-    + Episodic (events)
-    + Semantic (facts, things, entities)
-    + Procedural (actions)
+    + [Episodic (events)](https://neurosynth.org/analyses/terms/episodic%20memory/)
+    + [Semantic (facts, things, entities)](https://neurosynth.org/analyses/terms/semantic%20memory/)
+    + Procedural ([actions](https://neurosynth.org/analyses/terms/action/))
+    + [Working](https://neurosynth.org/analyses/terms/working%20memory/)
 - Problem-solving
-- Language
+- [Language](https://neurosynth.org/analyses/terms/language/)
 
 ## Cognition and the cerebral cortex
 
@@ -355,7 +356,7 @@ Combines...
 <p class="caption">Wikipedia</p>
 </div>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/f2IiMEbMnPM" frameborder="0" allowfullscreen></iframe>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/f2IiMEbMnPM" frameborder="0" allowfullscreen></iframe>
 
 ## Dual streams [[@Hickok2007-rc]](http://doi.org/10.1038/nrn2113)
 

@@ -84,16 +84,17 @@ knitr::include_graphics("img/swanson-book-eye-limb.jpg")
 
 Combines...
 
-- Perception
-- Attention
-- Imagery
-- Learning and conditioning
+- [Perception](https://neurosynth.org/analyses/terms/perception/)
+- [Attention](https://neurosynth.org/analyses/terms/attention/)
+- [Imagery](https://neurosynth.org/analyses/terms/imagery/)
+- [Learning](https://neurosynth.org/analyses/terms/learning/) and [conditioning](https://neurosynth.org/analyses/terms/conditioning/)
 - Memory
-    + Episodic (events)
-    + Semantic (facts, things, entities)
-    + Procedural (actions)
+    + [Episodic (events)](https://neurosynth.org/analyses/terms/episodic%20memory/)
+    + [Semantic (facts, things, entities)](https://neurosynth.org/analyses/terms/semantic%20memory/)
+    + Procedural ([actions](https://neurosynth.org/analyses/terms/action/))
+    + [Working](https://neurosynth.org/analyses/terms/working%20memory/)
 - Problem-solving
-- Language
+- [Language](https://neurosynth.org/analyses/terms/language/)
 
 ## Cognition and the cerebral cortex
 
@@ -336,7 +337,7 @@ knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/c/
 knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Broca%E2%80%99s_area_-_BA44_and_BA45.png/1024px-Broca%E2%80%99s_area_-_BA44_and_BA45.png")
 ```
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/f2IiMEbMnPM" frameborder="0" allowfullscreen></iframe>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/f2IiMEbMnPM" frameborder="0" allowfullscreen></iframe>
 
 ## Dual streams [[@Hickok2007-rc]](http://doi.org/10.1038/nrn2113)
 
