@@ -53,25 +53,25 @@ navbar:
       - text: "Week 8"
         menu:
           - text: "2021-10-13"
-            href: "lectures/511-perception.html"
+            href: "lectures/511-evo-devo.html"
           - text: "2021-10-15"
-            href: "lectures/511-perception.html#case-study-vision"
+            href: "lectures/511-evo-devo.html"
       - text: "Week 9"
         menu:
           - text: "2021-10-20"
-            href: "lectures/511-action.html"
+            href: "lectures/511-perception.html"
           - text: "2021-10-22"
-            href:                  
+            href: "lectures/511-perception.html#case-study-vision"                
       - text: "Week 10"
         menu:
           - text: "2021-10-27"
-            href:
+            href: "lectures/511-action.html"
           - text: "2021-10-29"
-            href:                  
+            href: "lectures/511-action.html"                
       - text: "Week 11"
         menu:
           - text: "2021-11-03"
-            href:
+            href: "lectures/511-cognition-language.html"
           - text: "2021-11-05"
             href:                  
       - text: "Week 12"

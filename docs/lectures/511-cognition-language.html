@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Rick Gilmore" />
+
+
+<title>511-cognition-language</title>
+
+<script src="511-cognition-language_files/header-attrs-2.9/header-attrs.js"></script>
+<script src="511-cognition-language_files/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="511-cognition-language_files/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
+<script src="511-cognition-language_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="511-cognition-language_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="511-cognition-language_files/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="511-cognition-language_files/navigation-1.1/tabsets.js"></script>
+<script src="511-cognition-language_files/navigation-1.1/codefolding.js"></script>
+<link href="511-cognition-language_files/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="511-cognition-language_files/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+<style type="text/css">
+/* for pandoc --citeproc since 2.11 */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="css/outline.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div id="header">
+
+<div class="btn-group pull-right float-right">
+<button type="button" class="btn btn-default btn-xs btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu dropdown-menu-right" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+</ul>
+</div>
+
+
+
+<h1 class="title toc-ignore">511-cognition-language</h1>
+<h4 class="author">Rick Gilmore</h4>
+<h4 class="date">2021-11-03 07:47:04</h4>
+
+</div>
+
+<div id="TOC">
+<ul>
+<li><a href="#the-emergence-of-complex-behavior">The emergence of complex behavior</a>
+<ul>
+<li><a href="#cambrian-explosion">Cambrian Explosion</a></li>
+<li><a href="#sparked-by-behavioral-imperatives-fox_what_2016">Sparked by behavioral imperatives? <span><span class="citation">(Fox, 2016)</span></span></a>
+<ul>
+<li><a href="#behaviors-realized-through">Behaviors realized through…</a></li>
+</ul></li>
+<li><a href="#complex-behavior-nervous-systems">Complex behavior ~ Nervous systems</a></li>
+</ul></li>
+<li><a href="#cognition">Cognition</a>
+<ul>
+<li><a href="#cognition-and-the-cerebral-cortex">Cognition and the cerebral cortex</a>
+<ul>
+<li><a href="#macrostructure">Macrostructure</a></li>
+<li><a href="#microstructure">Microstructure</a></li>
+<li><a href="#processing-networks">Processing networks</a></li>
+<li><a href="#data-driven-dynamics">Data-driven dynamics</a>
+<ul>
+<li><a href="#shine2019-lh"><span><span class="citation">(Shine et al., 2019)</span></span></a></li>
+</ul></li>
+</ul></li>
+<li><a href="#summing-up">Summing up</a></li>
+</ul></li>
+<li><a href="#language-and-the-brain">Language and the brain</a>
+<ul>
+<li><a href="#language-behavior">Language behavior</a></li>
+<li><a href="#hierarchical-structure-of-language-information">Hierarchical structure of language information</a></li>
+<li><a href="#wernicke-geschwind-wg-model">Wernicke-Geschwind (WG) model</a>
+<ul>
+<li><a href="#wernickes-area-brodmann-area-or-ba-42">Wernicke’s area (Brodmann Area or BA 42)</a></li>
+<li><a href="#brocas-area">Broca’s area</a></li>
+</ul></li>
+<li><a href="#dual-streams-hickok2007-rc">Dual streams <span><span class="citation">(Hickok &amp; Poeppel, 2007)</span></span></a>
+<ul>
+<li><a href="#metaanalytic-evidence-hagoort2014-au">Metaanalytic evidence <span><span class="citation">(Hagoort &amp; Indefrey, 2014)</span></span></a></li>
+</ul></li>
+<li><a href="#summing-up-1">Summing up</a></li>
+</ul></li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+
+<div id="the-emergence-of-complex-behavior" class="section level1">
+<h1>The emergence of complex behavior</h1>
+<div id="cambrian-explosion" class="section level2">
+<h2>Cambrian Explosion</h2>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/qNtQwUO9ff8" frameborder="0" allowfullscreen>
+</iframe>
+</div>
+<div id="sparked-by-behavioral-imperatives-fox_what_2016" class="section level2">
+<h2>Sparked by behavioral imperatives? <a href="http://doi.org/10.1038/530268a"><span class="citation">(Fox, 2016)</span></a></h2>
+<ul>
+<li>Behavior requires energy</li>
+<li>Behavior requires perception at a distance</li>
+<li>Behavior requires action</li>
+<li>Actions require
+<ul>
+<li>Problem solving, (sequence) planning</li>
+<li>Current + stored information (memory)</li>
+</ul></li>
+</ul>
+<div id="behaviors-realized-through" class="section level3">
+<h3>Behaviors realized through…</h3>
+<ul>
+<li>Perception at a distance of what/where</li>
+<li>Locomotion
+<ul>
+<li>Approach/avoid/explore</li>
+</ul></li>
+<li>Object manipulation/consumption</li>
+<li>Signaling/communication</li>
+<li>Physiological regulation</li>
+</ul>
+</div>
+</div>
+<div id="complex-behavior-nervous-systems" class="section level2">
+<h2>Complex behavior ~ Nervous systems</h2>
+<div class="figure" style="text-align: center">
+<img src="http://larrywswanson.com/wp-content/uploads/2015/06/Willis-on-Steno-circuit.jpg" alt="http://larrywswanson.com" width="600px" />
+<p class="caption">
+<a href="http://larrywswanson.com" class="uri">http://larrywswanson.com</a>
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="http://larrywswanson.com/wp-content/uploads/2015/06/Cajal-1893-Reflex.jpg" alt="http://larrywswanson.com" width="600px" />
+<p class="caption">
+<a href="http://larrywswanson.com" class="uri">http://larrywswanson.com</a>
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="http://larrywswanson.com/wp-content/uploads/2015/06/4-systems-network.jpg" alt="http://larrywswanson.com" width="600px" />
+<p class="caption">
+<a href="http://larrywswanson.com" class="uri">http://larrywswanson.com</a>
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="img/swanson-2005-fig-1.jpg" alt="[[@swanson2005anatomy]](http://dx.doi.org10.1002/cne.20733)" width="600px" />
+<p class="caption">
+<a href="http://dx.doi.org10.1002/cne.20733"><span class="citation">(Swanson, 2005)</span></a>
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="img/swanson-2005-fig-8.jpg" alt="[[@swanson2005anatomy]](http://dx.doi.org10.1002/cne.20733)" width="600px" />
+<p class="caption">
+<a href="http://dx.doi.org10.1002/cne.20733"><span class="citation">(Swanson, 2005)</span></a>
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="img/swanson-book-eye-limb.jpg" alt="[[@swanson2012brain]](https://books.google.com/books?hl=en&amp;lr=&amp;id=tAk8Rr00kykC&amp;oi=fnd&amp;pg=PP2&amp;dq=larry+swanson+book&amp;ots=5F7nEnts45&amp;sig=DJLKh5BF_8aVqpOdK28Qmh1wr5Q#v=onepage&amp;q=larry%20swanson%20book&amp;f=false)" width="600px" />
+<p class="caption">
+<a href="https://books.google.com/books?hl=en&amp;lr=&amp;id=tAk8Rr00kykC&amp;oi=fnd&amp;pg=PP2&amp;dq=larry+swanson+book&amp;ots=5F7nEnts45&amp;sig=DJLKh5BF_8aVqpOdK28Qmh1wr5Q#v=onepage&amp;q=larry%20swanson%20book&amp;f=false"><span class="citation">(Swanson, 2012)</span></a>
+</p>
+</div>
+</div>
+</div>
+<div id="cognition" class="section level1">
+<h1>Cognition</h1>
+<p>Combines…</p>
+<ul>
+<li>Perception</li>
+<li>Attention</li>
+<li>Imagery</li>
+<li>Learning and conditioning</li>
+<li>Memory
+<ul>
+<li>Episodic (events)</li>
+<li>Semantic (facts, things, entities)</li>
+<li>Procedural (actions)</li>
+</ul></li>
+<li>Problem-solving</li>
+<li>Language</li>
+</ul>
+<div id="cognition-and-the-cerebral-cortex" class="section level2">
+<h2>Cognition and the cerebral cortex</h2>
+<div class="figure" style="text-align: center">
+<img src="img/swanson-book-rat-human-cortex.jpg" alt="[[@swanson2012brain]](https://books.google.com/books?hl=en&amp;lr=&amp;id=tAk8Rr00kykC&amp;oi=fnd&amp;pg=PP2&amp;dq=larry+swanson+book&amp;ots=5F7nEnts45&amp;sig=DJLKh5BF_8aVqpOdK28Qmh1wr5Q#v=onepage&amp;q=larry%20swanson%20book&amp;f=false)" width="600px" />
+<p class="caption">
+<a href="https://books.google.com/books?hl=en&amp;lr=&amp;id=tAk8Rr00kykC&amp;oi=fnd&amp;pg=PP2&amp;dq=larry+swanson+book&amp;ots=5F7nEnts45&amp;sig=DJLKh5BF_8aVqpOdK28Qmh1wr5Q#v=onepage&amp;q=larry%20swanson%20book&amp;f=false"><span class="citation">(Swanson, 2012)</span></a>
+</p>
+</div>
+<div id="macrostructure" class="section level3">
+<h3>Macrostructure</h3>
+<ul>
+<li>Areas
+<ul>
+<li>Unimodal sensory</li>
+<li>Polymodal association</li>
+<li>Motor</li>
+</ul></li>
+<li>Connections
+<ul>
+<li>Association</li>
+<li>Commissural</li>
+</ul></li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="img/swanson-book-fig-10.5.jpg" alt="[[@swanson2012brain]](https://books.google.com/books?hl=en&amp;lr=&amp;id=tAk8Rr00kykC&amp;oi=fnd&amp;pg=PP2&amp;dq=larry+swanson+book&amp;ots=5F7nEnts45&amp;sig=DJLKh5BF_8aVqpOdK28Qmh1wr5Q#v=onepage&amp;q=larry%20swanson%20book&amp;f=false)" width="600px" />
+<p class="caption">
+<a href="https://books.google.com/books?hl=en&amp;lr=&amp;id=tAk8Rr00kykC&amp;oi=fnd&amp;pg=PP2&amp;dq=larry+swanson+book&amp;ots=5F7nEnts45&amp;sig=DJLKh5BF_8aVqpOdK28Qmh1wr5Q#v=onepage&amp;q=larry%20swanson%20book&amp;f=false"><span class="citation">(Swanson, 2012)</span></a>
+</p>
+</div>
+</div>
+<div id="microstructure" class="section level3">
+<h3>Microstructure</h3>
+<ul>
+<li>Columnar structure</li>
+<li>Cytoarchitectonic differerences (e.g. Brodmann)</li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Cajal_cortex_drawings.png/518px-Cajal_cortex_drawings.png" alt="Wikipedia" width="600px" />
+<p class="caption">
+Wikipedia
+</p>
+</div>
+<p><img src="img/layerscortex.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<table>
+<colgroup>
+<col width="20%" />
+<col width="50%" />
+<col width="29%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Layer</th>
+<th>Connection type</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>I</td>
+<td></td>
+<td>Few cell bodies</td>
+</tr>
+<tr class="even">
+<td>II</td>
+<td>Efferent</td>
+<td>Ipsilateral association via large pyramidal cells</td>
+</tr>
+<tr class="odd">
+<td>III</td>
+<td>Efferent</td>
+<td>Contralateral commissural</td>
+</tr>
+<tr class="even">
+<td>IV</td>
+<td>Afferent</td>
+<td>from thalamus; small stellate &amp; granual cells; V1 has sublayers</td>
+</tr>
+<tr class="odd">
+<td>V</td>
+<td>Efferent</td>
+<td>Superficial -&gt; Basal ganglia; Deep -&gt; brainstem, spinal cord; pyramidal cells</td>
+</tr>
+<tr class="even">
+<td>VI</td>
+<td>Efferent</td>
+<td>Thalamus</td>
+</tr>
+</tbody>
+</table>
+<div class="figure" style="text-align: center">
+<img src="img/swanson-book-fig-10.12.jpg" alt="[[@swanson2012brain]](https://books.google.com/books?hl=en&amp;lr=&amp;id=tAk8Rr00kykC&amp;oi=fnd&amp;pg=PP2&amp;dq=larry+swanson+book&amp;ots=5F7nEnts45&amp;sig=DJLKh5BF_8aVqpOdK28Qmh1wr5Q#v=onepage&amp;q=larry%20swanson%20book&amp;f=false)" width="600px" />
+<p class="caption">
+<a href="https://books.google.com/books?hl=en&amp;lr=&amp;id=tAk8Rr00kykC&amp;oi=fnd&amp;pg=PP2&amp;dq=larry+swanson+book&amp;ots=5F7nEnts45&amp;sig=DJLKh5BF_8aVqpOdK28Qmh1wr5Q#v=onepage&amp;q=larry%20swanson%20book&amp;f=false"><span class="citation">(Swanson, 2012)</span></a>
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="img/swanson-2005-fig-3.jpg" alt="[[@swanson2012brain]](https://books.google.com/books?hl=en&amp;lr=&amp;id=tAk8Rr00kykC&amp;oi=fnd&amp;pg=PP2&amp;dq=larry+swanson+book&amp;ots=5F7nEnts45&amp;sig=DJLKh5BF_8aVqpOdK28Qmh1wr5Q#v=onepage&amp;q=larry%20swanson%20book&amp;f=false)" width="600px" />
+<p class="caption">
+<a href="https://books.google.com/books?hl=en&amp;lr=&amp;id=tAk8Rr00kykC&amp;oi=fnd&amp;pg=PP2&amp;dq=larry+swanson+book&amp;ots=5F7nEnts45&amp;sig=DJLKh5BF_8aVqpOdK28Qmh1wr5Q#v=onepage&amp;q=larry%20swanson%20book&amp;f=false"><span class="citation">(Swanson, 2012)</span></a>
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="img/swanson-2005-fig-x.jpg" alt="[[@swanson2005anatomy]](http://dx.doi.org10.1002/cne.20733)" width="600px" />
+<p class="caption">
+<a href="http://dx.doi.org10.1002/cne.20733"><span class="citation">(Swanson, 2005)</span></a>
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="img/swanson-2005-fig-y.jpg" alt="[[@swanson2005anatomy]](http://dx.doi.org10.1002/cne.20733)" width="600px" />
+<p class="caption">
+<a href="http://dx.doi.org10.1002/cne.20733"><span class="citation">(Swanson, 2005)</span></a>
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="img/swanson-2005-fig-z.jpg" alt="[[@swanson2005anatomy]](http://dx.doi.org10.1002/cne.20733)" width="600px" />
+<p class="caption">
+<a href="http://dx.doi.org10.1002/cne.20733"><span class="citation">(Swanson, 2005)</span></a>
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="img/swanson-2005-fig-a.jpg" alt="[[@swanson2005anatomy]](http://dx.doi.org10.1002/cne.20733)" width="600px" />
+<p class="caption">
+<a href="http://dx.doi.org10.1002/cne.20733"><span class="citation">(Swanson, 2005)</span></a>
+</p>
+</div>
+</div>
+<div id="processing-networks" class="section level3">
+<h3>Processing networks</h3>
+<blockquote>
+<p>“<em>Although it has long been assumed that cognitive functions are attributable to the isolated operations of single brain areas, we demonstrate that the weight of evidence has now shifted in support of the view that <span class="blue">cognition results from the dynamic interactions of distributed brain areas operating in large-scale networks</span>….</em>”</p>
+</blockquote>
+<a href="http://dx.doi.org/10.1016/j.tics.2010.04.004"><span class="citation">(Bressler &amp; Menon, 2010)</span></a>
+</div>
+<div class="figure" style="text-align: center">
+<img src="img/bressler-2010-fig-a.jpg" alt="[[@bressler2010large]](http://dx.doi.org/10.1016/j.tics.2010.04.004)" width="600px" />
+<p class="caption">
+<a href="http://dx.doi.org/10.1016/j.tics.2010.04.004"><span class="citation">(Bressler &amp; Menon, 2010)</span></a>
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="img/bressler-2010-fig-2.jpg" alt="[[@bressler2010large]](http://dx.doi.org/10.1016/j.tics.2010.04.004)" width="600px" />
+<p class="caption">
+<a href="http://dx.doi.org/10.1016/j.tics.2010.04.004"><span class="citation">(Bressler &amp; Menon, 2010)</span></a>
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="img/bressler-2010-fig-5.jpg" alt="[[@bressler2010large]](http://dx.doi.org/10.1016/j.tics.2010.04.004)" width="600px" />
+<p class="caption">
+<a href="http://dx.doi.org/10.1016/j.tics.2010.04.004"><span class="citation">(Bressler &amp; Menon, 2010)</span></a>
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="img/bressler-2010-fig-6.jpg" alt="[[@bressler2010large]](http://dx.doi.org/10.1016/j.tics.2010.04.004)" width="600px" />
+<p class="caption">
+<a href="http://dx.doi.org/10.1016/j.tics.2010.04.004"><span class="citation">(Bressler &amp; Menon, 2010)</span></a>
+</p>
+</div>
+</div>
+<div id="data-driven-dynamics" class="section level3">
+<h3>Data-driven dynamics</h3>
+<ul>
+<li>Cortical states have high dimensionality</li>
+<li>Is there a lower-dimensional space that maps to behavior?</li>
+</ul>
+<div id="shine2019-lh" class="section level4">
+<h4><a href="http://dx.doi.org/10.1038/s41593-018-0312-0"><span class="citation">(Shine et al., 2019)</span></a></h4>
+<ul>
+<li>Data from <span class="math inline">\(n=200\)</span> adult participants in <a href="https://www.humanconnectome.org">Human Connectome Project (HCP)</a></li>
+<li>7 cognitive tasks</li>
+<li>Dimension reduction via principal components analysis (PCA)</li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41593-018-0312-0/MediaObjects/41593_2018_312_Fig1_HTML.png?as=webp" alt="[[@Shine2019-lh]](http://dx.doi.org/10.1038/s41593-018-0312-0)" width="600px" />
+<p class="caption">
+<a href="http://dx.doi.org/10.1038/s41593-018-0312-0"><span class="citation">(Shine et al., 2019)</span></a>
+</p>
+</div>
+<blockquote>
+<p>Fig. 1: Spatiotemporal PCA across multiple cognitive tasks. a, Spatial maps for the first five principal components (colored according to spatial weight; thresholded for visualization). b, Line plot representing the percentage of variance explained by first ten principal components; bar plot depicting the percentage (single value per component) of false nearest neighbors for first ten principal components. FNN, false nearest neighbors. c, Correspondence between convolved, concatenated task block regressor (gray) and the time course of the first five tPCs (black); color intensities of the blocks reflect the Pearson’s correlation between tPC1−5 and each of the unique task blocks (n = 100 subjects). d, Mean spatial loading of first five PCs, organized according to a set of predefined networks. DAN, dorsal attention; Vis, visual; FPN, frontoparietal; SN, salience; CO, cingulo-opercular; VAN, ventral attention; SM, somatomotor; RSp, retrosplenial; FTP, frontotemporal; DN, default mode; Aud, auditory.</p>
+<p><a href="http://dx.doi.org/10.1038/s41593-018-0312-0"><span class="citation">(Shine et al., 2019)</span></a></p>
+</blockquote>
+<ul>
+<li>Map PCAs to time series…</li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41593-018-0312-0/MediaObjects/41593_2018_312_Fig2_HTML.png?as=webp" alt="[[@Shine2019-lh]](http://dx.doi.org/10.1038/s41593-018-0312-0)" width="600px" />
+<p class="caption">
+<a href="http://dx.doi.org/10.1038/s41593-018-0312-0"><span class="citation">(Shine et al., 2019)</span></a>
+</p>
+</div>
+<blockquote>
+<p>Fig. 2: The low-dimensional signature across cognitive tasks. a, The procedure used to partition tPC1 into unique phases: low (blue), rise (red), high (orange), and fall (light blue). b, Scatter plot comparing the loading of tPC1 (colored according to the partition defined in a) with a temporal stability measure (defined by the similarity of the BOLD response at adjacent time points); we observed a significant positive Pearson’s correlation (r = 0.58) between |tPC1| and temporal stability (n=1,939 time points), providing heuristic evidence for attractor basins at the extremes of tPC1 engagement. c, A three-dimensional scatter plot comparing the first three tPCs; each node represents one time point (colored according to the phase of tPC1), with time implicitly unfolding across the embedding space (contiguous points connected by black line). d, The low-dimensional manifold traversed by the global brain state across the first three dimensions, with arrows depicting the direction of flow along the manifold.</p>
+<p><a href="http://dx.doi.org/10.1038/s41593-018-0312-0"><span class="citation">(Shine et al., 2019)</span></a></p>
+</blockquote>
+<ul>
+<li>How do these brain states map to cognition?
+<ul>
+<li>Explore overlap with <a href="https://neurosynth.org">NeuroSynth</a> ‘topic families’</li>
+</ul></li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41593-018-0312-0/MediaObjects/41593_2018_312_Fig3_HTML.png?as=webp" alt="[[@Shine2019-lh]](http://dx.doi.org/10.1038/s41593-018-0312-0)" width="600px" />
+<p class="caption">
+<a href="http://dx.doi.org/10.1038/s41593-018-0312-0"><span class="citation">(Shine et al., 2019)</span></a>
+</p>
+</div>
+<blockquote>
+<p>Fig. 3: The cognitive relevance of the low-dimensional embedding space. a, Four NeuroSynth ‘topic families’: motor (red), cognition (yellow), language (green), and memory (blue). b, Bar plot demonstrating loading (single-value) of topic families onto top five principal components. c, Scatter plot of time points of the first two tPCs, colored according to their loading onto each of the four NeuroSynth topic families. d, Mean value (resampled 100 times) of tPC1−2 for each topic family compared with a block resampled null distribution (5,000 iterations). e, Temporal conjunction between the topic families and the four phases of the tPC1 manifold; bar plots designate a single value (%) and asterisks denote P &lt; 0.01 (block resampled null model; n=5,000 iterations).</p>
+<p><a href="http://dx.doi.org/10.1038/s41593-018-0312-0"><span class="citation">(Shine et al., 2019)</span></a></p>
+</blockquote>
+<blockquote>
+<p><em>The results of our multimodal analysis revealed that the neural activity required for the execution of cognitive tasks corresponds to flow within a low-dimensional state space43. Across multiple, diverse cognitive tasks, the dynamics of large-scale brain activity engage an integrative core of brain regions that maximizes information-processing complexity and facilitates cognitive performance; only to then dissipate as the tasks conclude, flowing towards a more segregated architecture…Across multiple cognitive tasks with markedly different behavioral requirements, the dynamics of human brain activity were found to occupy a low-dimensional state space embedding that may form the functional backbone of cognition in the human brain.</em></p>
+<p><a href="http://dx.doi.org/10.1038/s41593-018-0312-0"><span class="citation">(Shine et al., 2019)</span></a></p>
+</blockquote>
+</div>
+</div>
+</div>
+<div id="summing-up" class="section level2">
+<h2>Summing up</h2>
+<ul>
+<li>Cognition controls
+<ul>
+<li>Do what, where, when, and how</li>
+</ul></li>
+<li>The “cognitive” cortex</li>
+<li>Processing networks
+<ul>
+<li>Functional specialization</li>
+<li>Dynamic interaction</li>
+<li>Nested feedback control loops</li>
+<li>Low dimensional dynamics</li>
+</ul></li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="img/powers-5.2.png" alt="[@Powers1973-zn]" width="600px" />
+<p class="caption">
+<span class="citation">(Powers, 1973)</span>
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="img/powers-6.1.png" alt="[@Powers1973-zn]" width="600px" />
+<p class="caption">
+<span class="citation">(Powers, 1973)</span>
+</p>
+</div>
+</div>
+</div>
+<div id="language-and-the-brain" class="section level1">
+<h1>Language and the brain</h1>
+<div id="language-behavior" class="section level2">
+<h2>Language behavior</h2>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/4X4Fy8YqysY?rel=0&amp;start=160" frameborder="0" allowfullscreen>
+</iframe>
+<ul>
+<li>Productive
+<ul>
+<li>Speaking (2-5 words/s), modulate prosody, often combined with gesture</li>
+<li>Writing, typing (.5-1.5 words/s)</li>
+</ul></li>
+<li>Receptive
+<ul>
+<li>Listening, responding (facial expressions, gestures, laughter, etc.)</li>
+<li>Reading (3-5 words/s)</li>
+</ul></li>
+<li>How so fast? Time for feedback?</li>
+</ul>
+</div>
+<div id="hierarchical-structure-of-language-information" class="section level2">
+<h2>Hierarchical structure of language information</h2>
+<ul>
+<li>Phonetic
+<ul>
+<li>|Ber| |wiTH| |mē|</li>
+</ul></li>
+<li>Syntactic</li>
+<li>Semantic</li>
+</ul>
+<p><img src="https://cdn.someecards.com/someecards/usercards/MjAxMi03YjFmMjM5OTA1MmVhMzI2.png" width="600px" style="display: block; margin: auto;" /></p>
+<p><img src="https://s3.amazonaws.com/contenthub-static/blog/wp-content/uploads/2017/02/BEAR-WITH-ME-.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<ul>
+<li>Pragmatic</li>
+</ul>
+</div>
+<div id="wernicke-geschwind-wg-model" class="section level2">
+<h2>Wernicke-Geschwind (WG) model</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Carl_Wernicke">Carl Wernicke</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Norman_Geschwind">Norman Geschwind</a></li>
+<li>Perception ≠ production</li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Wernickeges2.gif" alt="Wikipedia" width="600px" />
+<p class="caption">
+Wikipedia
+</p>
+</div>
+<div id="wernickes-area-brodmann-area-or-ba-42" class="section level3">
+<h3>Wernicke’s area (Brodmann Area or BA 42)</h3>
+<ul>
+<li>Adjacent to primary auditory cortex (A1; Heschl’s gyrus; BA 41)</li>
+<li>Perception</li>
+<li>Receptive or ‘fluent’ aphasia</li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Brodmann_area_41_inside_lateral_sulcus.png" alt="Wikipedia" width="600px" />
+<p class="caption">
+Wikipedia
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Human_temporal_lobe_areas.png/1024px-Human_temporal_lobe_areas.png" alt="Wikipedia" width="600px" />
+<p class="caption">
+Wikipedia
+</p>
+</div>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/dKTdMV6cOZw?rel=0" frameborder="0" allowfullscreen>
+</iframe>
+</div>
+<div id="brocas-area" class="section level3">
+<h3>Broca’s area</h3>
+<ul>
+<li>Inferior frontal gyrus, pars opercularis (BA 44) &amp; pars angularis (BA 45)<br />
+</li>
+<li>Production</li>
+<li>Expressive aphasia</li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Broca%E2%80%99s_area_-_BA44_and_BA45.png/1024px-Broca%E2%80%99s_area_-_BA44_and_BA45.png" alt="Wikipedia" width="600px" />
+<p class="caption">
+Wikipedia
+</p>
+</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/f2IiMEbMnPM" frameborder="0" allowfullscreen>
+</iframe>
+</div>
+</div>
+<div id="dual-streams-hickok2007-rc" class="section level2">
+<h2>Dual streams <a href="http://doi.org/10.1038/nrn2113"><span class="citation">(Hickok &amp; Poeppel, 2007)</span></a></h2>
+<ul>
+<li>Ventral (speech signals -&gt; semantics)</li>
+<li>Dorsal (speech signal acoustics -&gt; articulatory networks in frontal lobe)</li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="img/hickock-poeppel-2007.jpg" alt="[[@Hickok2007-rc]](http://doi.org/10.1038/nrn2113)" width="600px" />
+<p class="caption">
+<a href="http://doi.org/10.1038/nrn2113"><span class="citation">(Hickok &amp; Poeppel, 2007)</span></a>
+</p>
+</div>
+<div id="metaanalytic-evidence-hagoort2014-au" class="section level3">
+<h3>Metaanalytic evidence <a href="http://doi.org/10.1146/annurev-neuro-071013-013847"><span class="citation">(Hagoort &amp; Indefrey, 2014)</span></a></h3>
+<div class="figure" style="text-align: center">
+<img src="img/hagoort-indefrey-fig1a.jpg" alt="[[@Hagoort2014-au]](http://doi.org/10.1146/annurev-neuro-071013-013847)" width="600px" />
+<p class="caption">
+<a href="http://doi.org/10.1146/annurev-neuro-071013-013847"><span class="citation">(Hagoort &amp; Indefrey, 2014)</span></a>
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="img/hagoort-indefrey-fig1b.jpg" alt="[[@Hagoort2014-au]](http://doi.org/10.1146/annurev-neuro-071013-013847)" width="600px" />
+<p class="caption">
+<a href="http://doi.org/10.1146/annurev-neuro-071013-013847"><span class="citation">(Hagoort &amp; Indefrey, 2014)</span></a>
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="img/hagoort-indefrey-fig1c.jpg" alt="[[@Hagoort2014-au]](http://doi.org/10.1146/annurev-neuro-071013-013847)" width="600px" />
+<p class="caption">
+<a href="http://doi.org/10.1146/annurev-neuro-071013-013847"><span class="citation">(Hagoort &amp; Indefrey, 2014)</span></a>
+</p>
+</div>
+<hr />
+<blockquote>
+<p>“<em>A meta-analysis of numerous neuroimaging studies reveals a clear dorsal/ventral gradient in both left inferior frontal cortex and left posterior temporal cortex, with dorsal foci for syntactic processing and ventral foci for semantic processing. In addition…further networks need to be recruited to realize language-driven communication to its full extent.</em>”</p>
+</blockquote>
+<p><a href="http://doi.org10.1146/annurev-neuro-071013-013847"><span class="citation">(Hagoort &amp; Indefrey, 2014)</span></a></p>
+</div>
+</div>
+<div id="summing-up-1" class="section level2">
+<h2>Summing up</h2>
+<ul>
+<li>WG model incomplete, simplistic
+<ul>
+<li>Broca’s not just production; Wernicke’s not just perception</li>
+<li>Beyond single words…</li>
+</ul></li>
+<li>Rapid, fluent comprehension and production of language relies on
+<ul>
+<li>Distributed temporal/frontal networks</li>
+<li>Efficient bottom-up and top-down processing</li>
+<li>Syntactic vs. semantic/articulatory processing</li>
+</ul></li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="img/hagoort-indefrey-fig2a.jpg" alt="[[@Hagoort2014-au]](http://doi.org10.1146/annurev-neuro-071013-013847)" width="600px" />
+<p class="caption">
+<a href="http://doi.org10.1146/annurev-neuro-071013-013847"><span class="citation">(Hagoort &amp; Indefrey, 2014)</span></a>
+</p>
+</div>
+</div>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1 class="unnumbered">References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
+<div id="ref-bressler2010large" class="csl-entry">
+Bressler, S. L., &amp; Menon, V. (2010). Large-scale brain networks in cognition: Emerging methods and principles. <em>Trends in Cognitive Sciences</em>, <em>14</em>(6), 277–290. <a href="https://doi.org/10.1016/j.tics.2010.04.004">https://doi.org/10.1016/j.tics.2010.04.004</a>
+</div>
+<div id="ref-fox_what_2016" class="csl-entry">
+Fox, D. (2016). What sparked the <span>Cambrian</span> explosion? <em>Nature</em>, <em>530</em>(7590), 268–270. <a href="https://doi.org/10.1038/530268a">https://doi.org/10.1038/530268a</a>
+</div>
+<div id="ref-Hagoort2014-au" class="csl-entry">
+Hagoort, P., &amp; Indefrey, P. (2014). The neurobiology of language beyond single words. <em>Annu. Rev. Neurosci.</em>, <em>37</em>, 347–362. <a href="https://doi.org/10.1146/annurev-neuro-071013-013847">https://doi.org/10.1146/annurev-neuro-071013-013847</a>
+</div>
+<div id="ref-Hickok2007-rc" class="csl-entry">
+Hickok, G., &amp; Poeppel, D. (2007). The cortical organization of speech processing. <em>Nat. Rev. Neurosci.</em>, <em>8</em>(5), 393–402. <a href="https://doi.org/10.1038/nrn2113">https://doi.org/10.1038/nrn2113</a>
+</div>
+<div id="ref-Powers1973-zn" class="csl-entry">
+Powers, W. T. (1973). <em>Behavior: The control of perception</em>. Aldine Chicago. Retrieved from <a href="http://www.pctresources.com/Other/Reviews/BCP_book.pdf">http://www.pctresources.com/Other/Reviews/BCP_book.pdf</a>
+</div>
+<div id="ref-Shine2019-lh" class="csl-entry">
+Shine, J. M., Breakspear, M., Bell, P. T., Ehgoetz Martens, K. A., Shine, R., Koyejo, O., … Poldrack, R. A. (2019). Human cognition involves the dynamic integration of neural activity and neuromodulatory systems. <em>Nature Neuroscience</em>, <em>22</em>(2), 289–296. <a href="https://doi.org/10.1038/s41593-018-0312-0">https://doi.org/10.1038/s41593-018-0312-0</a>
+</div>
+<div id="ref-swanson2005anatomy" class="csl-entry">
+Swanson, L. W. (2005). Anatomy of the soul as reflected in the cerebral hemispheres: Neural circuits underlying voluntary control of basic motivated behaviors. <em>Journal of Comparative Neurology</em>, <em>493</em>(1), 122–131. <a href="https://doi.org/10.1002/cne.20733">https://doi.org/10.1002/cne.20733</a>
+</div>
+<div id="ref-swanson2012brain" class="csl-entry">
+Swanson, L. W. (2012). <em>Brain architecture: <span>U</span>nderstanding the basic plan</em>. Oxford University Press.
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+<script>
+$(document).ready(function () {
+  window.initializeCodeFolding("hide" === "show");
+});
+</script>
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

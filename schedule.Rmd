@@ -245,11 +245,14 @@ title: "Schedule"
 ### Wednesday, November 3
 
 - Topics
+    + Wrap-up on action
     + Cognition & language. 
 - Read/Watch
     - BW 19
     + Hagoort, P., & Indefrey, P. (2014). The neurobiology of language beyond single words. *Annual Review of Neuroscience*, *37*, 347–362. Retrieved from <https://dx.doi.org/10.1146/annurev-neuro-071013-013847>.
-- **Quiz 2 due**
+- Materials
+    - [Notes](lectures/511-cognition-language.html). [PDF](lectures/511-cognition-language.pdf).
+    
 
 ### Friday, November 5
 
