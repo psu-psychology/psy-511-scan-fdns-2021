@@ -1,7 +1,7 @@
 ---
 title: "511-cognition-language"
 author: "Rick Gilmore"
-date: "2021-11-03 14:10:15"
+date: "2021-11-05 13:30:56"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -385,6 +385,15 @@ Combines...
 <p class="caption">[[@Hagoort2014-au]](http://doi.org/10.1146/annurev-neuro-071013-013847)</p>
 </div>
 
+> Figure 1. Schematic representation of the brain showing regions with reliably reported activations for sentences compared with nonsentential stimuli (a) and sentences with high syntactic or semantic processing demands compared with simpler sentences (b,c). The left posterior inferior frontal gyrus is further subdivided into Brodmann areas (BA) 44 (above black line), BA 45 (below black line, above AC–PC line) and BA 47 (below AC–PC line). Green regions indicate a reliable number of reports. Pink regions indicate no reports in 53 studies. For details, see Supplemental Tables 2, 3, and 4. Abbreviations: AC, anterior commissure; PC, posterior commissure).
+>
+> [[@Hagoort2014-au]](http://doi.org/10.1146/annurev-neuro-071013-013847)
+
+<div class="figure" style="text-align: center">
+<img src="https://www.annualreviews.org/na101/home/literatum/publisher/ar/journals/content/neuro/2014/neuro.2014.37.issue-1/annurev-neuro-071013-013847/20140711/images/large/ne370347.f2.jpeg" alt="[[@Hagoort2014-au]](http://doi.org/10.1146/annurev-neuro-071013-013847)" width="600px" />
+<p class="caption">[[@Hagoort2014-au]](http://doi.org/10.1146/annurev-neuro-071013-013847)</p>
+</div>
+
 ---
 
 >"*A meta-analysis of numerous neuroimaging studies reveals a clear dorsal/ventral gradient in both left inferior frontal cortex and left posterior temporal cortex, with dorsal foci for syntactic processing and ventral foci for semantic processing. In addition...further networks need to be recruited to realize language-driven communication to its full extent.*"
@@ -405,5 +414,8 @@ Combines...
 <img src="img/hagoort-indefrey-fig2a.jpg" alt="[[@Hagoort2014-au]](http://doi.org10.1146/annurev-neuro-071013-013847)" width="600px" />
 <p class="caption">[[@Hagoort2014-au]](http://doi.org10.1146/annurev-neuro-071013-013847)</p>
 </div>
+> Figure 2. (a) Summary of activation patterns for sentences with high syntactic or semantic processing demands compared with simpler sentences. (b) Syntactic/semantic gradients in left inferior frontal and posterior temporal cortex based on 28 studies reporting posterior temporal cortex activation for syntactically demanding or semantically demanding sentences compared with less demanding sentences (see Supplemental Figure 13 for details). The centers represent the mean coordinates of the local maxima, and the radii represent the standard deviations of the distance between the local maxima and their means. Abbreviations: GFm, GFi, middle and inferior frontal gyri; BA, Brodmann area; GTs, GTm, GTi, superior, middle, and inferior temporal gyri; STS, ITS, superior and inferior temporal sulci; Gsm, supramarginal gyrus.
+>
+> [[@Hagoort2014-au]](http://doi.org/10.1146/annurev-neuro-071013-013847)
 
 # References
