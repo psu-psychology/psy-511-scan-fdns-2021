@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Rick Gilmore" />
+
+
+<title>511-memory</title>
+
+<script src="511-memory_files/header-attrs-2.11/header-attrs.js"></script>
+<script src="511-memory_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="511-memory_files/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
+<script src="511-memory_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="511-memory_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="511-memory_files/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="511-memory_files/navigation-1.1/tabsets.js"></script>
+<script src="511-memory_files/navigation-1.1/codefolding.js"></script>
+<link href="511-memory_files/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="511-memory_files/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+<style type="text/css">
+/* for pandoc --citeproc since 2.11 */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="css/outline.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div id="header">
+
+<div class="btn-group pull-right float-right">
+<button type="button" class="btn btn-default btn-xs btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu dropdown-menu-right" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+</ul>
+</div>
+
+
+
+<h1 class="title toc-ignore">511-memory</h1>
+<h4 class="author">Rick Gilmore</h4>
+<h4 class="date">2021-11-05 11:17:37</h4>
+
+</div>
+
+<div id="TOC">
+<ul>
+<li><a href="#fun">Fun</a></li>
+<li><a href="#big-picture-questions">Big picture questions</a>
+<ul>
+<li><a href="#memory-capacity-of-the-human-brain">Memory capacity of the human brain?</a></li>
+<li><a href="#what-is-learning">What is learning?</a></li>
+<li><a href="#what-is-memory">What is memory?</a></li>
+<li><a href="#are-there-different-types-of-memory">Are there different types of memory?</a></li>
+<li><a href="#how-do-computers-and-brains-compare">How do computers and brains compare?</a></li>
+</ul></li>
+<li><a href="#biological-bases-of-memory">Biological bases of memory</a>
+<ul>
+<li><a href="#donald-hebbs-insight">Donald Hebb’s Insight</a></li>
+<li><a href="#long-term-potentiation-ltp-as-model-of-hebbian-learning">Long-term potentiation (LTP) as model of Hebbian learning</a>
+<ul>
+<li><a href="#ltp-discovery-bliss1973-xx">LTP discovery <span><span class="citation">(Bliss &amp; Lømo, 1973)</span></span></a></li>
+<li><a href="#mechanisms-of-ltp-plasticity">Mechanisms of LTP plasticity</a></li>
+</ul></li>
+<li><a href="#pathways-to-plasticity">Pathways to plasticity</a></li>
+<li><a href="#hebbian-learning-via-nmda-receptor">‘Hebbian’ learning via NMDA receptor</a>
+<ul>
+<li><a href="#nmda-clinical-significance">NMDA clinical significance</a></li>
+</ul></li>
+<li><a href="#spike-timing-dependent-plasticity">Spike-timing-dependent plasticity</a></li>
+</ul></li>
+<li><a href="#memory-systems">Memory systems</a>
+<ul>
+<li><a href="#lashleys-search-for-the-engram">Lashley’s search for the <span>‘engram’</span></a></li>
+<li><a href="#modern-views">Modern views</a></li>
+<li><a href="#hippocampus">Hippocampus</a></li>
+<li><a href="#cerebellum">Cerebellum</a></li>
+<li><a href="#disorders-of-memory">Disorders of memory</a>
+<ul>
+<li><a href="#amnesia">Amnesia</a>
+<ul>
+<li><a href="#patient-hm-henry-g.-molaison"><span>Patient HM</span> (Henry G. Molaison)</a></li>
+<li><a href="#hms-amnesia">HM’s amnesia</a></li>
+<li><a href="#other-causes-of-amnesia">Other causes of amnesia</a></li>
+<li><a href="#patient-na">Patient NA</a></li>
+<li><a href="#spared-skills-in-amnesia">Spared skills in amnesia</a></li>
+<li><a href="#what-does-amnesia-tell-us">What does amnesia tell us?</a></li>
+</ul></li>
+<li><a href="#alzheimers-disease-ad">Alzheimer’s Disease (AD)</a>
+<ul>
+<li><a href="#progression">Progression</a></li>
+<li><a href="#treatments">Treatments</a></li>
+</ul></li>
+<li><a href="#the-other-end-of-the-spectrum">The other end of the spectrum…</a></li>
+</ul></li>
+<li><a href="#what-about-working-memory-desposito2015-zm">What about working memory? <span><span class="citation">(D’Esposito &amp; Postle, 2015)</span></span></a></li>
+</ul></li>
+<li><a href="#summary">Summary</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+
+<div id="fun" class="section level1">
+<h1>Fun</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5mlllRdIfqw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
+</div>
+<div id="big-picture-questions" class="section level1">
+<h1>Big picture questions</h1>
+<div id="memory-capacity-of-the-human-brain" class="section level2">
+<h2>Memory capacity of the human brain?</h2>
+<ul>
+<li>1e12 neurons</li>
+<li>1e3 synapses/neuron</li>
+<li>1e15 synapses or 1.25e14 bytes</li>
+<li>1e9 gigabyte, 1e12 terabyte, 1e15 petabyte</li>
+</ul>
+<p><a href="http://www.scientificamerican.com/article.cfm?id=what-is-the-memory-capacity" class="uri">http://www.scientificamerican.com/article.cfm?id=what-is-the-memory-capacity</a></p>
+</div>
+<div id="what-is-learning" class="section level2">
+<h2>What is learning?</h2>
+<p><a href="https://theelearningcoach.com/learning/10-definitions-learning/" class="uri">https://theelearningcoach.com/learning/10-definitions-learning/</a></p>
+<blockquote>
+<p>Learning is the process of acquiring new understanding, knowledge, behaviors, skills, values, attitudes, and preferences. <a href="https://en.wikipedia.org/wiki/Learning" class="uri">https://en.wikipedia.org/wiki/Learning</a></p>
+</blockquote>
+<ul>
+<li><strong>Non-associative</strong>
+<ul>
+<li><span class="math inline">\(A(t+1) = f(A(t))\)</span></li>
+<li>Habituation (<span class="math inline">\(\dot f &lt; 0\)</span>), sensitization (<span class="math inline">\(\dot f &gt; 0\)</span>)</li>
+</ul></li>
+<li><strong>Associative</strong>
+<ul>
+<li><span class="math inline">\(A \rightarrow B\)</span></li>
+<li>Classical &amp; operant/instrumental conditioning</li>
+<li>Sequence, observational, episodic, semantic…learning</li>
+</ul></li>
+</ul>
+</div>
+<div id="what-is-memory" class="section level2">
+<h2>What is memory?</h2>
+<ul>
+<li>A: Information encoding, storage, retrieval</li>
+</ul>
+</div>
+<div id="are-there-different-types-of-memory" class="section level2">
+<h2>Are there different types of memory?</h2>
+<ul>
+<li>Facts/events/places/feelings vs. skills</li>
+<li>Short vs. long-term
+<ul>
+<li>Working memory ~ short-term maintenance for guiding action</li>
+</ul></li>
+<li>Explicit (declarative: semantic vs. episodic) vs. implicit (procedural)</li>
+<li>Retrospective (from the past) vs. prospective (to be remembered)</li>
+<li>Recognition (judgment of familiarity or novelty) vs. recall</li>
+</ul>
+</div>
+<div id="how-do-computers-and-brains-compare" class="section level2">
+<h2>How do computers and brains compare?</h2>
+<table>
+<colgroup>
+<col width="57%" />
+<col width="42%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Computers</th>
+<th>Brains</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Computers have separate memory and processing stores</td>
+<td>Brains store info everywhere, but there are specialized regions</td>
+</tr>
+<tr class="even">
+<td>Computer memory has specific addresses</td>
+<td>Brains store in distributed networks</td>
+</tr>
+<tr class="odd">
+<td>Computer memory is (usually) non-volatile</td>
+<td>Memories in brains naturally fade</td>
+</tr>
+<tr class="even">
+<td>Computer memory stores all types of information–images, sounds, text, data–as binary sequences, e.g., <code>01101110</code></td>
+<td>Human memory stores all types of information in patterns of synaptic connections and ???</td>
+</tr>
+<tr class="odd">
+<td>Computers render these sequences differently based on information about the <em>type</em> of data stored</td>
+<td>Brains retrieve or recall different forms of information based on ???</td>
+</tr>
+<tr class="even">
+<td>Digital computers were inspired by mathematical models of neurons</td>
+<td>Neurons can be simulated by mathematical models implemented in computers</td>
+</tr>
+</tbody>
+</table>
+<div class="figure" style="text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Artificial_neuron.png" alt="McCulloch-Pitts [artificial neuron](https://en.wikipedia.org/wiki/Artificial_neuron)" width="600px" />
+<p class="caption">
+McCulloch-Pitts <a href="https://en.wikipedia.org/wiki/Artificial_neuron">artificial neuron</a>
+</p>
+</div>
+</div>
+</div>
+<div id="biological-bases-of-memory" class="section level1">
+<h1>Biological bases of memory</h1>
+<ul>
+<li>Changes in patterns of neural activity</li>
+<li>Changes in connectivity
+<ul>
+<li>New synapses</li>
+<li>Altered synapses (strengthened or weakened)</li>
+</ul></li>
+</ul>
+<div id="donald-hebbs-insight" class="section level2">
+<h2>Donald Hebb’s Insight</h2>
+<blockquote>
+<p>“<em>When an axon of cell A is near enough to excite cell B and repeatedly or persistently takes part in firing it, some growth process or metabolic change takes place in one or both cells such that A’s efficacy, as on of the cells firing B, is increased.</em>”</p>
+</blockquote>
+<p>(Hebb, 1949, p. 62)</p>
+<blockquote>
+<p>“<em>Neurons that fire together wire together.</em>”</p>
+</blockquote>
+<p>(Lowell &amp; Singer, 1992, p. 211)</p>
+</div>
+<div id="long-term-potentiation-ltp-as-model-of-hebbian-learning" class="section level2">
+<h2>Long-term potentiation (LTP) as model of Hebbian learning</h2>
+<blockquote>
+<p>“<em>a persistent strengthening of synapses based on recent patterns of activity. These are patterns of synaptic activity that produce a long-lasting increase in signal transmission between two neurons.[2] The opposite of LTP is long-term depression, which produces a long-lasting decrease in synaptic strength.</em>” <a href="https://en.wikipedia.org/wiki/Long-term_potentiation" class="uri">https://en.wikipedia.org/wiki/Long-term_potentiation</a></p>
+</blockquote>
+<div id="ltp-discovery-bliss1973-xx" class="section level3">
+<h3>LTP discovery <a href="http://doi.org/10.1113/jphysiol.1973.sp010273/full"><span class="citation">(Bliss &amp; Lømo, 1973)</span></a></h3>
+<ul>
+<li>Granule cell neurons in hippocampus dentate gyrus (DG)</li>
+<li><span class="math inline">\(\theta\)</span> band (10–20 Hz) stim for 10–15 sec, or 100 Hz stim for 3–4 sec</li>
+<li>shortened response latency, increased EPSP, increased population response over minutes or hours</li>
+</ul>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/LTP_exemplar.jpg/1200px-LTP_exemplar.jpg" width="600px" style="display: block; margin: auto;" /></p>
+</div>
+<div id="mechanisms-of-ltp-plasticity" class="section level3">
+<h3>Mechanisms of LTP plasticity</h3>
+<ul>
+<li>number of synaptic receptors</li>
+<li>quantity of NT released</li>
+<li>effectiveness of postsynaptic response</li>
+</ul>
+</div>
+</div>
+<div id="pathways-to-plasticity" class="section level2">
+<h2>Pathways to plasticity</h2>
+<ul>
+<li>Glu release activates
+<ul>
+<li>ionotropic AMPA Glu receptors</li>
+<li>metabotropic Glu receptors</li>
+<li>N-methyl-D-aspartate (NMDA) Glu receptors</li>
+</ul></li>
+<li><span class="math inline">\(Ca^{++}\)</span> entry via NMDA receptor activates protein kinases (CaMKII and PKAII)</li>
+<li><em>Early LTP</em> (up to few hours)
+<ul>
+<li>protein kinases <em>phosphorylate</em> (add <span class="math inline">\(P\)</span> group to) postsynaptic AMPA receptors</li>
+<li>Increase current flow through AMPA (Glu) receptors</li>
+</ul></li>
+<li><em>Late LTP</em>
+<ul>
+<li>depends on protein synthesis to generate new AMPA receptor</li>
+<li>insertion of new AMPA receptors into presynaptic membrane</li>
+</ul></li>
+<li>Retrograde signal generator influences presynaptic response</li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="http://www.pitt.edu/~super1/lecture/lec14361/img024.GIF" alt="LTP" width="600px" />
+<p class="caption">
+LTP
+</p>
+</div>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Aplysia_californica.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="https://www.nobelprize.org/images/kandel-13530-portrait-mini-2x.jpg" alt="Eric R. Kandel" width="600px" />
+<p class="caption">
+Eric R. Kandel
+</p>
+</div>
+</div>
+<div id="hebbian-learning-via-nmda-receptor" class="section level2">
+<h2>‘Hebbian’ learning via NMDA receptor</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/NMDA_receptor"><em>N-methyl-D-aspartate</em> receptor (NMDA-R)</a>
+<ul>
+<li>Name derived from agonist molecule that selectively binds to the receptor</li>
+</ul></li>
+<li>‘Coincidence’ detector
+<ul>
+<li>Sending cell has released NT</li>
+<li>Receiving cell is/has been recently active</li>
+</ul></li>
+<li>Chemically-gated AND
+<ul>
+<li>Ligand- (glutamate/aspartate + glycine) gated</li>
+<li>Sending cell active</li>
+</ul></li>
+<li>Voltage-gated
+<ul>
+<li><span class="math inline">\(Zn^{++}\)</span> or <span class="math inline">\(Mg^{++}\)</span> ion ‘plug’ removed under depolarization</li>
+<li><span class="math inline">\(Na^+\)</span> &amp; <span class="math inline">\(Ca^{++}\)</span> influx; <span class="math inline">\(K^+\)</span> outflux</li>
+<li>Receiving cell responds</li>
+</ul></li>
+</ul>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Activated_NMDAR.svg/220px-Activated_NMDAR.svg.png" width="600px" style="display: block; margin: auto;" /></p>
+<ul>
+<li>NMDA receptor function may vary by location on neuron
+<ul>
+<li>Long-term potentiation (LTP)
+<ul>
+<li>Synaptic NMDA receptors</li>
+</ul></li>
+<li>Long-term depression (LTD)
+<ul>
+<li>Extrasynaptic NMDA receptors</li>
+<li>Lowered level of synaptic receptor activation</li>
+</ul></li>
+</ul></li>
+</ul>
+<div id="nmda-clinical-significance" class="section level3">
+<h3>NMDA clinical significance</h3>
+<ul>
+<li><a href="https://medlineplus.gov/druginfo/meds/a604006.html"><em>Memantine</em></a> (Alzheimer’s Disease treatment)
+<ul>
+<li>NMDA-R antagonist</li>
+<li>Controls over-activation and <span class="math inline">\(Ca^{++}\)</span> excitotoxicity?</li>
+</ul></li>
+<li>NMDA-R implicated in effects of <em>phencylidine</em> (PCP)
+<ul>
+<li>Link to Glu hypothesis of schizophrenia?</li>
+</ul></li>
+<li><em>Ketamine</em> is NMDA receptor antagonist
+<ul>
+<li>anesthesia, sedation pain relief</li>
+<li>possible short-term relief for depression</li>
+</ul></li>
+<li>Linked to analgesic effects of nitrous oxide (laughing gas; <span class="math inline">\(NO\)</span>)</li>
+<li>Alcohol (ethanol) inhibits <a href="https://www.ncbi.nlm.nih.gov/pubmed/21204417"><span class="citation">(Ron &amp; Wang, 2011)</span></a></li>
+</ul>
+</div>
+</div>
+<div id="spike-timing-dependent-plasticity" class="section level2">
+<h2>Spike-timing-dependent plasticity</h2>
+<p>How to learn/remember “causal chains?”</p>
+<ul>
+<li>e.g., lightning THEN thunder</li>
+<li>unusual food THEN indigestion</li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="img/caporale-2008-fig-1.jpg" alt="[[@caporale2008spike]](http://dx.doi.org/10.1146/annurev.neuro.31.060407.125639)" width="600px" />
+<p class="caption">
+<a href="http://dx.doi.org/10.1146/annurev.neuro.31.060407.125639"><span class="citation">(Caporale &amp; Dan, 2008)</span></a>
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="img/caporale-2008-fig-2.jpg" alt="[[@caporale2008spike]](http://dx.doi.org/10.1146/annurev.neuro.31.060407.125639)" width="600px" />
+<p class="caption">
+<a href="http://dx.doi.org/10.1146/annurev.neuro.31.060407.125639"><span class="citation">(Caporale &amp; Dan, 2008)</span></a>
+</p>
+</div>
+<ul>
+<li>A before B: strengthen <span class="math inline">\(A \rightarrow B\)</span></li>
+<li>A after B: <span class="math inline">\(A \rightarrow B\)</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Neuroplasticity"><em>Neural Plasticity</em></a>
+<ul>
+<li>Lasting changes in neural firing, connectivity</li>
+</ul></li>
+<li>NMDA receptor a molecular mechanism for implementing LTP and spike-timing-dependent plasticity</li>
+</ul>
+</div>
+</div>
+<div id="memory-systems" class="section level1">
+<h1>Memory systems</h1>
+<div id="lashleys-search-for-the-engram" class="section level2">
+<h2>Lashley’s search for the <a href="https://en.wikipedia.org/wiki/Engram_(neuropsychology)">‘engram’</a></h2>
+<ul>
+<li>Is memory ‘localized’ like sensory and motor functions? <a href="https://doi.org/10.1002/cne.900800207"><span class="citation">(Karl S. Lashley, 1944)</span></a></li>
+</ul>
+<p><img src="img/lashley-1944.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<blockquote>
+<p>“<em>“the area subdivisions are in large part anatomically meaningless and misleading as to the presumptive functional divisions of the cortex”</em>”</p>
+</blockquote>
+<p><a href="http://dx.doi.org/10.1002/cne.900850207"><span class="citation">(K. S. Lashley &amp; Clark, 1946)</span></a></p>
+</div>
+<div id="modern-views" class="section level2">
+<h2>Modern views</h2>
+<ul>
+<li>Cerebral cortex less central to “engram-like” memory than other areas</li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="img/squire-memory-systems.gif" alt="[[@squire_memory_2004]](http://dx.doi.org/10.1016/j.nlm.2004.06.005)" width="600px" />
+<p class="caption">
+<a href="http://dx.doi.org/10.1016/j.nlm.2004.06.005"><span class="citation">(Squire, 2004)</span></a>
+</p>
+</div>
+</div>
+<div id="hippocampus" class="section level2">
+<h2>Hippocampus</h2>
+<div class="figure" style="text-align: center">
+<img src="img/hippocampus-seahorse.jpg" alt="https://upload.wikimedia.org/wikipedia/commons/5/5b/Hippocampus_and_seahorse_cropped.JPG" width="600px" />
+<p class="caption">
+<a href="https://upload.wikimedia.org/wikipedia/commons/5/5b/Hippocampus_and_seahorse_cropped.JPG" class="uri">https://upload.wikimedia.org/wikipedia/commons/5/5b/Hippocampus_and_seahorse_cropped.JPG</a>
+</p>
+</div>
+<!-- Cajal Hippocampus -->
+<p><img src="https://knowscience.org/wp-content/uploads/2015/12/hp.jpg" width="600px" style="display: block; margin: auto;" /></p>
+<ul>
+<li>Dense in NMDA receptors</li>
+<li>Central “hub” in network?
+<ul>
+<li>No, based on anatomical or functional connectivity</li>
+<li>But yes, when modeling “information flow” <a href="http://doi.org/10.1371/journal.pcbi.1003982"><span class="citation">(Mišić, Goñi, Betzel, Sporns, &amp; McIntosh, 2014)</span></a></li>
+</ul></li>
+<li>Formation, storage, consolidation of long-term episodic or declarative memories</li>
+<li>Stores info for later transfer to cortex
+<ul>
+<li>“Engrams” form in hipp &amp; PFC simultaneously, fade in PFC over time <a href="http://doi.org/10.1126/science.aam6808"><span class="citation">(Kitamura et al., 2017)</span></a></li>
+</ul></li>
+<li>Spatial navigation
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Place_cell">Place cells</a></li>
+<li><a href="http://www.scholarpedia.org/article/Grid_cells">Grid cells</a></li>
+<li><a href="http://www.scholarpedia.org/article/Head_direction_cells">Head-direction cells</a></li>
+</ul></li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="img/finite-scale-spatial-rep-F1.large.jpg" alt="[[@kjelstrup_finite_2008]](http://dx.doi.org/10.1126/science.1157086)" width="600px" />
+<p class="caption">
+<a href="http://dx.doi.org/10.1126/science.1157086"><span class="citation">(Kjelstrup et al., 2008)</span></a>
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="img/maguire-etal-2000-F1.large.jpg" alt="[[@maguire2000navigation]](http://dx.doi.org/10.1073/pnas.070039597)" width="600px" />
+<p class="caption">
+<a href="http://dx.doi.org/10.1073/pnas.070039597"><span class="citation">(Maguire et al., 2000)</span></a>
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="img/maguire-etal-2000-F2.large.jpg" alt="[[@maguire2000navigation]](http://dx.doi.org/10.1073/pnas.070039597)" width="600px" />
+<p class="caption">
+<a href="http://dx.doi.org/10.1073/pnas.070039597"><span class="citation">(Maguire et al., 2000)</span></a>
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="img/maguire-etal-2000-F3.large.jpg" alt="[[@maguire2000navigation]](http://dx.doi.org/10.1073/pnas.070039597)" width="600px" />
+<p class="caption">
+<a href="http://dx.doi.org/10.1073/pnas.070039597"><span class="citation">(Maguire et al., 2000)</span></a>
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="img/sherry-food-storing-birds-1989.jpg" alt="[[@sherry_hippocampal_1989]](http://dx.doi.org/10.1159/000116516)" width="600px" />
+<p class="caption">
+<a href="http://dx.doi.org/10.1159/000116516"><span class="citation">(Sherry, Vaccarino, Buckenham, &amp; Herz, 1989)</span></a>
+</p>
+</div>
+<ul>
+<li>(Gilmore’s view) Humans have repurposed hippocampal system for other cognitive uses, e.g., semantic memory, language</li>
+</ul>
+</div>
+<div id="cerebellum" class="section level2">
+<h2>Cerebellum</h2>
+<ul>
+<li>response timing, sequences, especially in classical conditioning paradigms <a href="http://dx.doi.org/10.1073/pnas.1621132114"><span class="citation">(Jirenhed, Rasmussen, Johansson, &amp; Hesslow, 2017)</span></a></li>
+</ul>
+</div>
+<div id="disorders-of-memory" class="section level2">
+<h2>Disorders of memory</h2>
+<div id="amnesia" class="section level3">
+<h3>Amnesia</h3>
+<ul>
+<li>Acquired loss of memory</li>
+<li>≠ normal forgetting</li>
+<li>Retrograde (‘backwards’ in time)
+<ul>
+<li>Damage to information acquired pre-injury</li>
+<li>Temporally graded</li>
+</ul></li>
+<li>Anterograde (‘forward’ in time)
+<ul>
+<li>Damage to information acquired/experienced post-injury</li>
+</ul></li>
+</ul>
+<div id="patient-hm-henry-g.-molaison" class="section level4">
+<h4><a href="https://www.pbs.org/wgbh/nova/article/corkin-hm-memory/">Patient HM</a> (Henry G. Molaison)</h4>
+<ul>
+<li>Intractable/untreatable epilepsy</li>
+<li>Bilateral resection of medial temporal lobe (1953)</li>
+<li>Epilepsy now treatable</li>
+<li>But, memory impaired</li>
+<li>Lived until 2008</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aw6JmZuLhfA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<!-- Brenda Milner on HM -->
+<div class="figure" style="text-align: center">
+<img src="https://www.pbs.org/wgbh/nova/media/images/corkin-hm-memory-08.width-800.jpg" alt="https://www.pbs.org/wgbh/nova/article/corkin-hm-memory/" width="600px" />
+<p class="caption">
+<a href="https://www.pbs.org/wgbh/nova/article/corkin-hm-memory/" class="uri">https://www.pbs.org/wgbh/nova/article/corkin-hm-memory/</a>
+</p>
+</div>
+</div>
+<div id="hms-amnesia" class="section level4">
+<h4>HM’s amnesia</h4>
+<ul>
+<li>Retrograde amnesia
+<ul>
+<li>Can’t remember 10 yrs before operation</li>
+<li>Distant past better than more recent</li>
+</ul></li>
+<li>Severe, global anterograde amnesia
+<ul>
+<li>Impaired learning of new facts, events, people</li>
+</ul></li>
+<li>But, skills (mirror learning) intact</li>
+</ul>
+<blockquote>
+<p>“<em>Every day is alone in itself, whatever enjoyment I’ve had, and whatever sorrow I’ve had…Right now, I’m wondering, have I done or said anything amiss? You see at this moment, everything looks clear to me, but what happened just before? That’s what worries me. It’s like waking from a dream. I just don’t remember.</em>”</p>
+</blockquote>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Rq9eM4ZXRgs" frameborder="0" allowfullscreen>
+</iframe>
+</div>
+<div id="other-causes-of-amnesia" class="section level4">
+<h4>Other causes of amnesia</h4>
+<ul>
+<li>Disease
+<ul>
+<li>Alzheimer’s, herpes virus</li>
+</ul></li>
+<li><a href="https://en.wikipedia.org/wiki/Korsakoff%27s_syndrome">Korsakoff’s syndrome</a>
+<ul>
+<li>Result of severe alcoholism</li>
+<li>Impairs medial thalamus &amp; mammillary bodies</li>
+</ul></li>
+</ul>
+</div>
+<div id="patient-na" class="section level4">
+<h4>Patient NA</h4>
+<ul>
+<li>Fencing accident</li>
+<li>Damage to medial thalamus</li>
+<li>Anterograde + graded retrograde amnesia</li>
+<li>Are thalamus &amp; medial temporal region connected?</li>
+</ul>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/1GfFopZSyj8" frameborder="0" allowfullscreen>
+</iframe>
+</div>
+<div id="spared-skills-in-amnesia" class="section level4">
+<h4>Spared skills in amnesia</h4>
+<ul>
+<li>Skill-learning</li>
+<li>Mirror-reading, writing</li>
+<li>Short-term memory</li>
+<li>“Cognitive” skills</li>
+<li>Priming</li>
+</ul>
+</div>
+<div id="what-does-amnesia-tell-us" class="section level4">
+<h4>What does amnesia tell us?</h4>
+<ul>
+<li>Long-term memory for facts, events, people</li>
+<li>≠ Short-term memory</li>
+<li>≠ Long-term memory for “skills”</li>
+<li>Separate memory systems in the brain?</li>
+</ul>
+</div>
+</div>
+<div id="alzheimers-disease-ad" class="section level3">
+<h3>Alzheimer’s Disease (AD)</h3>
+<ul>
+<li>Chronic, neurodegenerative disease affecting ~5 M Americans</li>
+<li>Cognitive dysfunction (memory loss, language difficulties, planning, coordination)</li>
+<li>Psychiatric symptoms and behavioral disturbances</li>
+<li>Difficulties with daily living</li>
+<li><a href="http://doi.org/10.1136/bmj.b158"><span class="citation">(Burns &amp; Iliffe, 2009)</span></a></li>
+</ul>
+<div id="progression" class="section level4">
+<h4>Progression</h4>
+<div class="figure" style="text-align: center">
+<img src="img/bmj-158-F1.large.jpg" alt="[[@burns_alzheimers_2009]](http://doi.org/10.1136/bmj.b158)" width="600px" />
+<p class="caption">
+<a href="http://doi.org/10.1136/bmj.b158"><span class="citation">(Burns &amp; Iliffe, 2009)</span></a>
+</p>
+</div>
+<ul>
+<li>Post-mortem exams show <span class="math inline">\(\beta\)</span> amyloid plaques and neurofibrillary tangles</li>
+</ul>
+<p><img src="img/20150331-mouse-brain.jpg" width="600px" style="display: block; margin: auto;" /></p>
+</div>
+<div id="treatments" class="section level4">
+<h4>Treatments</h4>
+<ul>
+<li>Acetylcholinesterase (AChE) inhbitors (e.g. Aricept)</li>
+<li>NMDA-R partial antagonists (e.g., Memantine)</li>
+<li>Drugs that address amyloid <span class="math inline">\(\beta\)</span> don’t work especially well</li>
+<li>AD the result of <a href="http://doi.org/10.1016/j.arr.2017.08.005">disordered immune response</a>?</li>
+</ul>
+</div>
+</div>
+<div id="the-other-end-of-the-spectrum" class="section level3">
+<h3>The other end of the spectrum…</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hpTCZ-hO6iI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
+</div>
+</div>
+<div id="what-about-working-memory-desposito2015-zm" class="section level2">
+<h2>What about working memory? <a href="http://doi.org/10.1146/annurev-psych-010814-015031"><span class="citation">(D’Esposito &amp; Postle, 2015)</span></a></h2>
+<ul>
+<li>LTM representations of target items + attention -&gt; elevated activation
+<ul>
+<li>Semantic items</li>
+<li>Sensorimotor items</li>
+</ul></li>
+<li>Capacity for attended items (in Focus of Attention or FoA) limited ~ 4</li>
+<li>Neural basis
+<ul>
+<li>sustained activation in PFC</li>
+<li>subthreshold activation in areas where items are stored</li>
+</ul></li>
+</ul>
+<p>Individual differences in visual WM</p>
+<div class="figure" style="text-align: center">
+<img src="https://ars.els-cdn.com/content/image/1-s2.0-S1364661313001265-gr2.jpg" alt="[[@Luck2013-uo]](http://doi.org/10.1016/j.tics.2013.06.006)" width="600px" />
+<p class="caption">
+<a href="http://doi.org/10.1016/j.tics.2013.06.006"><span class="citation">(Luck &amp; Vogel, 2013)</span></a>
+</p>
+</div>
+</div>
+</div>
+<div id="summary" class="section level1">
+<h1>Summary</h1>
+<ul>
+<li>Multiple types of learning &amp; memory</li>
+<li>Learning &amp; memory distributed across the brain</li>
+<li>Hippocampus + PFC critical areas binding together sensory/semantic info stored elsewhere</li>
+<li>Changes in synaptic #, strength, connectivity provide cellular basis</li>
+</ul>
+</div>
+<div id="references" class="section level1 unnumbered smaller">
+<h1 class="unnumbered smaller">References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
+<div id="ref-Bliss1973-xx" class="csl-entry">
+Bliss, T. V. P., &amp; Lømo, T. (1973). Long-lasting potentiation of synaptic transmission in the dentate area of the anaesthetized rabbit following stimulation of the perforant path. <em>J. Physiol.</em>, <em>232</em>(2), 331–356. Retrieved from <a href="http://onlinelibrary.wiley.com/doi/10.1113/jphysiol.1973.sp010273/full">http://onlinelibrary.wiley.com/doi/10.1113/jphysiol.1973.sp010273/full</a>
+</div>
+<div id="ref-burns_alzheimers_2009" class="csl-entry">
+Burns, A., &amp; Iliffe, S. (2009). Alzheimer’s disease. <em>BMJ</em>, <em>338</em>, b158. <a href="https://doi.org/10.1136/bmj.b158">https://doi.org/10.1136/bmj.b158</a>
+</div>
+<div id="ref-caporale2008spike" class="csl-entry">
+Caporale, N., &amp; Dan, Y. (2008). Spike timing-dependent plasticity: A hebbian learning rule. <em>Annu. Rev. Neurosci.</em>, <em>31</em>, 25–46. <a href="https://doi.org/10.1146/annurev.neuro.31.060407.125639">https://doi.org/10.1146/annurev.neuro.31.060407.125639</a>
+</div>
+<div id="ref-DEsposito2015-zm" class="csl-entry">
+D’Esposito, M., &amp; Postle, B. R. (2015). The cognitive neuroscience of working memory. <em>Annu. Rev. Psychol.</em>, <em>66</em>, 115–142. <a href="https://doi.org/10.1146/annurev-psych-010814-015031">https://doi.org/10.1146/annurev-psych-010814-015031</a>
+</div>
+<div id="ref-Jirenhed2017-fl" class="csl-entry">
+Jirenhed, D.-A., Rasmussen, A., Johansson, F., &amp; Hesslow, G. (2017). Learned response sequences in cerebellar purkinje cells. <em>Proceedings of the National Academy of Sciences of the United States of America</em>, <em>114</em>(23), 6127–6132. <a href="https://doi.org/10.1073/pnas.1621132114">https://doi.org/10.1073/pnas.1621132114</a>
+</div>
+<div id="ref-Kitamura2017-es" class="csl-entry">
+Kitamura, T., Ogawa, S. K., Roy, D. S., Okuyama, T., Morrissey, M. D., Smith, L. M., … Tonegawa, S. (2017). Engrams and circuits crucial for systems consolidation of a memory. <em>Science</em>, <em>356</em>(6333), 73–78. <a href="https://doi.org/10.1126/science.aam6808">https://doi.org/10.1126/science.aam6808</a>
+</div>
+<div id="ref-kjelstrup_finite_2008" class="csl-entry">
+Kjelstrup, K. B., Solstad, T., Brun, V. H., Hafting, T., Leutgeb, S., Witter, M. P., … Moser, M.-B. (2008). Finite <span>Scale</span> of <span>Spatial</span> <span>Representation</span> in the <span>Hippocampus</span>. <em>Science</em>, <em>321</em>(5885), 140–143. <a href="https://doi.org/10.1126/science.1157086">https://doi.org/10.1126/science.1157086</a>
+</div>
+<div id="ref-Lashley1944-fg" class="csl-entry">
+Lashley, Karl S. (1944). Studies of cerebral function in learning. <span>XIII</span>. Apparent absence of transcortical association in maze learning. <em>Journal of Comparative Neurology</em>. Retrieved from <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/cne.900800207">https://onlinelibrary.wiley.com/doi/abs/10.1002/cne.900800207</a>
+</div>
+<div id="ref-Lashley1946-pa" class="csl-entry">
+Lashley, K. S., &amp; Clark, G. (1946). The cytoarchitecture of the cerebral cortex of ateles; a critical examination of architectonic studies. <em>The Journal of Comparative Neurology</em>, <em>85</em>(2), 223–305. <a href="https://doi.org/10.1002/cne.900850207">https://doi.org/10.1002/cne.900850207</a>
+</div>
+<div id="ref-Luck2013-uo" class="csl-entry">
+Luck, S. J., &amp; Vogel, E. K. (2013). Visual working memory capacity: From psychophysics and neurobiology to individual differences. <em>Trends Cogn. Sci.</em>, <em>17</em>(8), 391–400. <a href="https://doi.org/10.1016/j.tics.2013.06.006">https://doi.org/10.1016/j.tics.2013.06.006</a>
+</div>
+<div id="ref-maguire2000navigation" class="csl-entry">
+Maguire, E. A., Gadian, D. G., Johnsrude, I. S., Good, C. D., Ashburner, J., Frackowiak, R. S., &amp; Frith, C. D. (2000). Navigation-related structural change in the hippocampi of taxi drivers. <em>Proceedings of the National Academy of Sciences</em>, <em>97</em>(8), 4398–4403. <a href="https://doi.org/10.1073/pnas.070039597">https://doi.org/10.1073/pnas.070039597</a>
+</div>
+<div id="ref-Misic2014-eq" class="csl-entry">
+Mišić, B., Goñi, J., Betzel, R. F., Sporns, O., &amp; McIntosh, A. R. (2014). A network convergence zone in the hippocampus. <em>PLoS Comput. Biol.</em>, <em>10</em>(12), e1003982. <a href="https://doi.org/10.1371/journal.pcbi.1003982">https://doi.org/10.1371/journal.pcbi.1003982</a>
+</div>
+<div id="ref-Ron2011-dh" class="csl-entry">
+Ron, D., &amp; Wang, J. (2011). The <span>NMDA</span> receptor and alcohol addiction. In A. M. Van Dongen (Ed.), <em>Biology of the <span>NMDA</span> receptor</em>. Boca Raton (FL): CRC Press/Taylor &amp; Francis. Retrieved from <a href="https://www.ncbi.nlm.nih.gov/pubmed/21204417">https://www.ncbi.nlm.nih.gov/pubmed/21204417</a>
+</div>
+<div id="ref-sherry_hippocampal_1989" class="csl-entry">
+Sherry, D. F., Vaccarino, A. L., Buckenham, K., &amp; Herz, R. S. (1989). The <span>Hippocampal</span> <span>Complex</span> of <span>Food</span>-<span>Storing</span> <span>Birds</span>. <em>Brain, Behavior and Evolution</em>, <em>34</em>(5), 308–317. <a href="https://doi.org/10.1159/000116516">https://doi.org/10.1159/000116516</a>
+</div>
+<div id="ref-squire_memory_2004" class="csl-entry">
+Squire, L. R. (2004). Memory systems of the brain: <span>A</span> brief history and current perspective. <em>Neurobiology of Learning and Memory</em>, <em>82</em>(3), 171–177. <a href="https://doi.org/10.1016/j.nlm.2004.06.005">https://doi.org/10.1016/j.nlm.2004.06.005</a>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+<script>
+$(document).ready(function () {
+  window.initializeCodeFolding("hide" === "show");
+});
+</script>
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

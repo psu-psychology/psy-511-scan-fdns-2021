@@ -253,15 +253,16 @@ title: "Schedule"
 - Materials
     - [Notes](lectures/511-cognition-language.html). [PDF](lectures/511-cognition-language.pdf).
     
-
 ### Friday, November 5
 
 - Topics
-    + Learning & memory. 
+    + Wrap-up on language
+    + Learning & memory 
 - Read/Watch
     - BW 17
     + Squire, L. R., & Wixted, J. T. (2011). The cognitive neuroscience of human memory since H.M. *Annual Review of Neuroscience*, *34*, 259–288. Retrieved from <https://dx.doi.org/10.1146/annurev-neuro-061010-113720>.
 - **Quiz 2 due**
+    - [Notes](lectures/511-memory.html). [PDF](lectures/511-memory.pdf).
 
 ---
 
