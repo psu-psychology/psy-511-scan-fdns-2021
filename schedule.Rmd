@@ -262,6 +262,7 @@ title: "Schedule"
     - BW 17
     + Squire, L. R., & Wixted, J. T. (2011). The cognitive neuroscience of human memory since H.M. *Annual Review of Neuroscience*, *34*, 259–288. Retrieved from <https://dx.doi.org/10.1146/annurev-neuro-061010-113720>.
 - **Quiz 2 due**
+- Materials
     - [Notes](lectures/511-memory.html). [PDF](lectures/511-memory.pdf).
 
 ---
@@ -271,11 +272,14 @@ title: "Schedule"
 ### Wednesday, November 10
 
 - Topics
+    + Wrap-up on learning & memory
     + Fear & stress
 - Read/Watch
     - BW 15
     - Pellman, B. A., & Kim, J. J. (2016). What can ethobehavioral studies tell us about the brain’s fear system? *Trends in Neurosciences*, *39*(6), 420–431. Retrieved from <https://dx.doi.org/10.1016/j.tins.2016.04.001>
     + Musazzi, L., Tornese, P., Sala, N., & Popoli, M. (2017). Acute or chronic? A stressful question. *Trends in Neurosciences*. Retrieved from <https://dx.doi.org/10.1016/j.tins.2017.07.002>
+- Materials
+    - [Notes](lectures/511-fear-stress-reward.html). [PDF](lectures/511-memory.pdf).
 
 ### Friday, November 12
 
