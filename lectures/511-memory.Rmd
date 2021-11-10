@@ -137,7 +137,7 @@ knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/b/
     - Increase current flow through AMPA (Glu) receptors
 - *Late LTP*
     - depends on protein synthesis to generate new AMPA receptor
-    - insertion of new AMPA receptors into presynaptic membrane
+    - insertion of new AMPA receptors into postsynaptic membrane
 - Retrograde signal generator influences presynaptic response
 
 ```{r, fig.cap="LTP"}
@@ -241,8 +241,8 @@ knitr::include_graphics("img/hippocampus-seahorse.jpg")
 ```
 
 <!-- Cajal Hippocampus -->
-```{r}
-knitr::include_graphics("https://knowscience.org/wp-content/uploads/2015/12/hp.jpg")
+```{r, fig.cap="Santiago Ramon Y Cajal; Source: Wikipedia"}
+knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/2/25/CajalHippocampus_%28modified%29.png")
 ```
 
 - Dense in NMDA receptors

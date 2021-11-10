@@ -1,7 +1,7 @@
 ---
 title: "511-memory"
 author: "Rick Gilmore"
-date: "2021-11-05 11:17:37"
+date: "2021-11-10 15:53:53"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -131,7 +131,7 @@ output:
     - Increase current flow through AMPA (Glu) receptors
 - *Late LTP*
     - depends on protein synthesis to generate new AMPA receptor
-    - insertion of new AMPA receptors into presynaptic membrane
+    - insertion of new AMPA receptors into postsynaptic membrane
 - Retrograde signal generator influences presynaptic response
 
 <div class="figure" style="text-align: center">
@@ -235,7 +235,10 @@ How to learn/remember "causal chains"?
 </div>
 
 <!-- Cajal Hippocampus -->
-<img src="https://knowscience.org/wp-content/uploads/2015/12/hp.jpg" width="600px" style="display: block; margin: auto;" />
+<div class="figure" style="text-align: center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/25/CajalHippocampus_%28modified%29.png" alt="Santiago Ramon Y Cajal; Source: Wikipedia" width="600px" />
+<p class="caption">Santiago Ramon Y Cajal; Source: Wikipedia</p>
+</div>
 
 - Dense in NMDA receptors
 - Central "hub" in network?
