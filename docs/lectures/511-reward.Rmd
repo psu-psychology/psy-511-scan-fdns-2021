@@ -183,5 +183,11 @@ knitr::include_graphics("img/fnins-07-00256-g001.jpg")
 
 - Action -> Perception -> $\uparrow p(A)$ + Feelings
 - But, where/how are actions and perceptions/outcomes stored and compared?
+- Requires memory system to store
+    - Previous actions
+- Compare with predictions of future sensory states, including rewards
+    - $S(t+1) \vert A(t)$
+- Is successful sensory prediction intrinsically 'rewarding'?
+- Reinforcement learning vs. Supervised learning vs. Unsupervised learning
 
 # References

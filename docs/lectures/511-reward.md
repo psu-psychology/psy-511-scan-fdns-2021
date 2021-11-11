@@ -1,7 +1,7 @@
 ---
 title: "511-reward"
 author: "Rick Gilmore"
-date: "2021-11-11 13:45:45"
+date: "2021-11-11 14:11:46"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -17,9 +17,9 @@ output:
 
 
 
-# Pleasure/reward
+# From conceptual category to brain circuitry
 
-## From conceptual category to brain circuitry
+- Explicit vs. implicit
 
 <div class="figure" style="text-align: center">
 <img src="https://ars.els-cdn.com/content/image/1-s2.0-S1364661309001727-gr1.jpg" alt="[[@kringelbach2009towards]](http://dx.doi.org/10.1016/j.tics.2009.08.006)" width="700px" />
@@ -28,8 +28,6 @@ output:
 
 >*Figure 1. Measuring reward and hedonia. Reward and pleasure are multifaceted psychological concepts. Major processes within reward (first column) consist of motivation or wanting (white), learning (blue), and – most relevant to happiness – pleasure, liking or affect (light blue). Each of these contains explicit (top rows, light yellow) and implicit (bottom rows, yellow) psychological components (second column) that constantly interact and require careful scientific experimentation to tease apart. Explicit processes are consciously experienced (e.g. explicit pleasure and happiness, desire, or expectation), whereas implicit psychological processes are potentially unconscious in the sense that they can operate at a level not always directly accessible to conscious experience (implicit incentive salience, habits and ‘liking’ reactions), and must be further translated by other mechanisms into subjective feelings. Measurements or behavioral procedures that are especially sensitive markers of each of the processes are listed (third column). Examples of some of the brain regions and neurotransmitters are listed (fourth column), as well as specific examples of measurements (fifth column), such as an example of how highest subjective life satisfaction does not lead to the highest salaries (top) [93]. Another example shows the incentive-sensitization model of addiction and how ‘wanting’ to take drugs may grow over time independently of ‘liking’ and ‘learning’ drug pleasure as an individual becomes an addict (bottom) [94].*
 
-## Neuroanatomy of 'pleasure'
-
 <div class="figure" style="text-align: center">
 <img src="img/kringelbach-2009-fig-2.jpg" alt="[[@kringelbach2009towards]](http://dx.doi.org/10.1016/j.tics.2009.08.006)" width="700px" />
 <p class="caption">[[@kringelbach2009towards]](http://dx.doi.org/10.1016/j.tics.2009.08.006)</p>
@@ -37,9 +35,9 @@ output:
 
 >*Figure 2. Hedonic brain circuitry. The schematic figure shows the brain regions for causing and coding fundamental pleasure in rodents and humans. (a) Facial ‘liking’ and ‘disliking’ expressions elicited by sweet and bitter taste are similar in rodents and human infants. (b, d) Pleasure causation has been identified in rodents as arising from interlinked subcortical hedonic hotspots, such as in nucleus accumbens and ventral pallidum, where neural activation may increase ‘liking’ expressions to sweetness. Similar pleasure coding and incentive salience networks have also been identified in humans. (c) The so-called ‘pleasure’ electrodes in rodents and humans are unlikely to have elicited true pleasure but perhaps only incentive salience or ‘wanting’. (d) The cortical localization of pleasure coding might reach an apex in various regions of the orbitofrontal cortex, which differentiate subjective pleasantness from valence processing for aspects of the same stimulus, such as a pleasant food.*
 
-- Analogous circuits mediating facial expressions of "liking" and "disliking"
+- Analogous circuits mediating facial expressions of "liking" and "disliking" across mammals
 
-## Reward
+# Studying 'reward'
 
 - A *reward* reinforces (makes more prevalent/probable) some behavior
 
@@ -123,6 +121,7 @@ output:
 
 - GABA releasing neurons also play a role
 - DA + GABA or DA + Glu co-release
+- GABA neurons active during delays...
 
 <div class="figure" style="text-align: center">
 <img src="http://www.annualreviews.org/na101/home/literatum/publisher/ar/journals/content/neuro/2017/neuro.2017.40.issue-1/annurev-neuro-072116-031109/20170719/images/large/ne400373.f1.jpeg" alt="[[@Watabe-Uchida2017-gi]](https://doi.org/10.1146/annurev-neuro-072116-031109)" width="700px" />
@@ -161,7 +160,6 @@ output:
 <p class="caption">[[@Watabe-Uchida2017-gi]](https://doi.org/10.1146/annurev-neuro-072116-031109)</p>
 </div>
 
-
 ### Other psychopharmacological components
 
 - Serotonin (5-HT)
@@ -189,5 +187,16 @@ output:
 <img src="img/fnins-07-00256-g001.jpg" alt="[[@flores_cannabinoid-hypocretin_2013]](http://dx.doi.org/10.3389/fnins.2013.00256)" width="700px" />
 <p class="caption">[[@flores_cannabinoid-hypocretin_2013]](http://dx.doi.org/10.3389/fnins.2013.00256)</p>
 </div>
+
+# Linking action \& perception
+
+- Action -> Perception -> $\uparrow p(A)$ + Feelings
+- But, where/how are actions and perceptions/outcomes stored and compared?
+- Requires memory system to store
+    - Previous actions
+- Compare with predictions of future sensory states, including rewards
+    - $S(t+1) \vert A(t)$
+- Is successful sensory prediction intrinsically 'rewarding'?
+- Reinforcement learning vs. Supervised learning vs. Unsupervised learning
 
 # References
