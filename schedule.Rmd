@@ -279,7 +279,7 @@ title: "Schedule"
     - Pellman, B. A., & Kim, J. J. (2016). What can ethobehavioral studies tell us about the brain’s fear system? *Trends in Neurosciences*, *39*(6), 420–431. Retrieved from <https://dx.doi.org/10.1016/j.tins.2016.04.001>
     + Musazzi, L., Tornese, P., Sala, N., & Popoli, M. (2017). Acute or chronic? A stressful question. *Trends in Neurosciences*. Retrieved from <https://dx.doi.org/10.1016/j.tins.2017.07.002>
 - Materials
-    - [Notes](lectures/511-fear-stress-reward.html). [PDF](lectures/511-memory.pdf).
+    - [Notes](lectures/511-fear-stress.html). [PDF](lectures/511-fear-stress.pdf).
 
 ### Friday, November 12
 
@@ -289,12 +289,14 @@ title: "Schedule"
     - BW 15
     - Hu, H. (2016). Reward and aversion. *Annual Review of Neuroscience*, *39*, 297–324. Retrieved from <https://dx.doi.org/10.1146/annurev-neuro-070815-014106>
     + Watabe-Uchida, M., Eshel, N., & Uchida, N. (2017). Neural circuitry of reward prediction error. *Annual Review of Neuroscience*, *40*, 373–394. Retrieved from <https://dx.doi.org/10.1146/annurev-neuro-072116-031109>.
-
+- Materials
+    - [Notes](lectures/511-reward.html). [PDF](lectures/511-reward.pdf).
+    
 ---
 
 ## Week 13
 
-### Thursday, November 19
+### Wednesday, November 17
 
 - Topics
     + Disorder and Disease. 
@@ -305,7 +307,7 @@ title: "Schedule"
     + Namkung, H., Kim, S.-H., & Sawa, A. (2017). The insula: An underestimated brain area in clinical neuroscience, psychiatry, and neurology. *Trends in Neurosciences*, *40*(4), 200–207. Retrieved from <https://dx.doi.org/10.1016/j.tins.2017.02.002>.
     + Volk, L., Chiu, S.-L., Sharma, K., & Huganir, R. L. (2015). Glutamate synapses in human cognitive disorders. *Annual Review of Neuroscience*, *38*, 127–149. Retrieved from <https://dx.doi.org/10.1146/annurev-neuro-071714-033821>.
 
-### Thursday, November 19
+### Friday, November 19
 
 - Topics
     + Disorder and Disease II 

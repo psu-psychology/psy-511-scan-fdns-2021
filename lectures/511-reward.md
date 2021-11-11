@@ -1,0 +1,193 @@
+---
+title: "511-reward"
+author: "Rick Gilmore"
+date: "2021-11-11 13:45:45"
+bibliography: bib/bibliography.bib
+csl: bib/apa.csl
+css: css/outline.css
+output:
+  html_document:
+    keep_md: true
+    theme: lumen
+    toc: yes
+    toc_depth: 5
+    toc_float: no
+    code_folding: hide
+---
+
+
+
+# Pleasure/reward
+
+## From conceptual category to brain circuitry
+
+<div class="figure" style="text-align: center">
+<img src="https://ars.els-cdn.com/content/image/1-s2.0-S1364661309001727-gr1.jpg" alt="[[@kringelbach2009towards]](http://dx.doi.org/10.1016/j.tics.2009.08.006)" width="700px" />
+<p class="caption">[[@kringelbach2009towards]](http://dx.doi.org/10.1016/j.tics.2009.08.006)</p>
+</div>
+
+>*Figure 1. Measuring reward and hedonia. Reward and pleasure are multifaceted psychological concepts. Major processes within reward (first column) consist of motivation or wanting (white), learning (blue), and – most relevant to happiness – pleasure, liking or affect (light blue). Each of these contains explicit (top rows, light yellow) and implicit (bottom rows, yellow) psychological components (second column) that constantly interact and require careful scientific experimentation to tease apart. Explicit processes are consciously experienced (e.g. explicit pleasure and happiness, desire, or expectation), whereas implicit psychological processes are potentially unconscious in the sense that they can operate at a level not always directly accessible to conscious experience (implicit incentive salience, habits and ‘liking’ reactions), and must be further translated by other mechanisms into subjective feelings. Measurements or behavioral procedures that are especially sensitive markers of each of the processes are listed (third column). Examples of some of the brain regions and neurotransmitters are listed (fourth column), as well as specific examples of measurements (fifth column), such as an example of how highest subjective life satisfaction does not lead to the highest salaries (top) [93]. Another example shows the incentive-sensitization model of addiction and how ‘wanting’ to take drugs may grow over time independently of ‘liking’ and ‘learning’ drug pleasure as an individual becomes an addict (bottom) [94].*
+
+## Neuroanatomy of 'pleasure'
+
+<div class="figure" style="text-align: center">
+<img src="img/kringelbach-2009-fig-2.jpg" alt="[[@kringelbach2009towards]](http://dx.doi.org/10.1016/j.tics.2009.08.006)" width="700px" />
+<p class="caption">[[@kringelbach2009towards]](http://dx.doi.org/10.1016/j.tics.2009.08.006)</p>
+</div>
+
+>*Figure 2. Hedonic brain circuitry. The schematic figure shows the brain regions for causing and coding fundamental pleasure in rodents and humans. (a) Facial ‘liking’ and ‘disliking’ expressions elicited by sweet and bitter taste are similar in rodents and human infants. (b, d) Pleasure causation has been identified in rodents as arising from interlinked subcortical hedonic hotspots, such as in nucleus accumbens and ventral pallidum, where neural activation may increase ‘liking’ expressions to sweetness. Similar pleasure coding and incentive salience networks have also been identified in humans. (c) The so-called ‘pleasure’ electrodes in rodents and humans are unlikely to have elicited true pleasure but perhaps only incentive salience or ‘wanting’. (d) The cortical localization of pleasure coding might reach an apex in various regions of the orbitofrontal cortex, which differentiate subjective pleasantness from valence processing for aspects of the same stimulus, such as a pleasant food.*
+
+- Analogous circuits mediating facial expressions of "liking" and "disliking"
+
+## Reward
+
+- A *reward* reinforces (makes more prevalent/probable) some behavior
+
+## Intracranial self-stimulation (ICSS)
+
+- Chemical or electrical
+- Milner and Olds [[@milner_discovery_1989]](http://doi.org/10.1016/S0149-7634(89)80013-2) discovered 'rewarding' power of electrical self-stimulation
+- [[@heath1963electrical]](http://doi.org/10.1176/ajp.120.6.571) studied effects in human patients.
+- 50+ sites elicit
+    - Increase in self-stimulation or
+    - Conditioned place preferences
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/de_b7k9kQp0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+- Electrical stimulation specific? Can activate cell bodies and/or fibers of passage.
+- Optogenetic techniques more spatially precise
+
+<https://youtu.be/de_b7k9kQp0>
+
+<div class="figure" style="text-align: center">
+<img src="img/nestler-fig-1.jpg" alt="[[@nestler2006mesolimbic]](http://dx.doi.org/10.1016/j.biopsych.2005.09.018)" width="700px" />
+<p class="caption">[[@nestler2006mesolimbic]](http://dx.doi.org/10.1016/j.biopsych.2005.09.018)</p>
+</div>
+
+- Lateral Hypothalamus (Hyp)
+- Medial forebrain bundle (MFB)
+- Ventral tegmental area (VTA) in midbrain
+- Nucleus accumbens (nAcc)
+- Dorsal Raphe Nucleus/Locus Coeruleus (DR/LC)
+- Amygdala (Amy)
+- Hippocampus (HP)
+- Prefrontal cortex (PFC)
+
+<div class="figure" style="text-align: center">
+<img src="img/kohls-fig-2.jpg" alt="[[@kohls2012social]](http://dx.doi.org/10.1186/1866-1955-4-10)" width="700px" />
+<p class="caption">[[@kohls2012social]](http://dx.doi.org/10.1186/1866-1955-4-10)</p>
+</div>
+
+## Pharmacological signals
+
+### Norepinephrine (NE)
+
+- NE potentiates ICSS; NE deploetion or NE-R antagonists block
+- NE also increases sleepiness
+
+### Dopamine (DA)
+
+- Blocking DA receptors or depleting DA reduces ICSS
+- DA release accentuates responses to cocaine, amphetamine
+
+#### DA projection pathways
+
+<div class="figure" style="text-align: center">
+<img src="https://commons.wikimedia.org/wiki/File:Dopaminergic_pathways.svg#/media/File:Dopaminergic_pathways.svg" alt="https://en.wikipedia.org/wiki/Dopaminergic_pathways" width="700px" />
+<p class="caption">https://en.wikipedia.org/wiki/Dopaminergic_pathways</p>
+</div>
+
+- Lesions to Nucleus Accumbens alter cocaine self-administration
+
+#### What does DA signal?
+
+- Hedonia and anhedonia?
+    - But DA depletion does not alter orofacial responses to sweet vs. bitter
+    - "Reward" not unitary?
+    - Liking ≠ wanting [[@Berridge2015-wb]](http://dx.doi.org/10.1016/j.neuron.2015.02.018)
+- Incentive salience?
+    - Make salient potential "pleasure" from future experience of X...
+- Reward prediction error (RPE)
+    - DA neuron fire only to *unexpected*/*unpredicted* reward outcomes
+    - $D \leftarrow R_{occurred} - R_{predicted}$
+
+<div class="figure" style="text-align: center">
+<img src="http://www.annualreviews.org/na101/home/literatum/publisher/ar/journals/content/neuro/2016/neuro.2016.39.issue-1/annurev-neuro-070815-014106/20160711/images/large/ne390297.f1.jpeg" alt="[[@Hu2016-yw]](https://doi.org/10.1146/annurev-neuro-070815-014106)" width="700px" />
+<p class="caption">[[@Hu2016-yw]](https://doi.org/10.1146/annurev-neuro-070815-014106)</p>
+</div>
+> Figure 1. Characteristic response to reward and punishment by different neurons. (a) Ventral tegmental area (VTA) dopamine (DA) neurons encode reward prediction error (RPE) signals, showing excitatory responses only when the reward is not fully predicted (Cohen et al. 2012, Schultz 1998). (b) VTA GABA neurons encode reward expectation, contributing to RPE calculation by serving as a source of subtraction (Eshel et al. 2015). (c) Lateral habenula (LHb) neurons show mirror-inverted phasic responses to DA neurons, potentially providing a source of negative RPE signals (Matsumoto & Hikosaka 2009a). (d,e) Recordings from dorsal raphe nucleus (DRN) serotonergic (5-HT) neurons reveal diverse responses to reward and punishment, with a substantial subset showing excitatory responses to reward even when reward is predicted (Cohen et al. 2015, Li et al. 2016, Liu et al. 2014). (f) DRN GABA neurons are inhibited by reward seeking and activated by aversive stimuli. Green, red, and blue dashed lines indicate the timing of reward cue, reward delivery, and punishment delivery, respectively. Purple dashed lines indicate entry into a reward zone in a sucrose-foraging task. The responses of DRN 5-HT and GABA neurons to unexpected reward and punishment are derived from calcium-imaging fiber photometry experiments. All others are from single-unit electrophysiological recordings.
+>
+> [[@Hu2016-yw]](https://doi.org/10.1146/annurev-neuro-070815-014106)
+
+**DA and GABA signaling**
+
+- GABA releasing neurons also play a role
+- DA + GABA or DA + Glu co-release
+
+<div class="figure" style="text-align: center">
+<img src="http://www.annualreviews.org/na101/home/literatum/publisher/ar/journals/content/neuro/2017/neuro.2017.40.issue-1/annurev-neuro-072116-031109/20170719/images/large/ne400373.f1.jpeg" alt="[[@Watabe-Uchida2017-gi]](https://doi.org/10.1146/annurev-neuro-072116-031109)" width="700px" />
+<p class="caption">[[@Watabe-Uchida2017-gi]](https://doi.org/10.1146/annurev-neuro-072116-031109)</p>
+</div>
+
+> Figure 1. Firing patterns of identified dopamine and GABA neurons in VTA. (a) VTA neurons were recorded while mice performed an odor-outcome association task in which different odors predicted different outcomes (see legend on right). Odors were presented for 1 s (gray shading), and outcomes were presented after a 1-s delay. Neuron types were identified based on their optogenetic responses. Dopamine neurons (left) showed phasic excitations to reward-predictive cues and reward. GABA neurons (right) showed sustained activation during the delay. Data from Cohen et al. (2012). (b) Reward expectation modulates dopamine neuron firing. The plot on the left shows when outcome was presented, and the right-hand plot shows when outcome was omitted. Different odors predicted reward with different probabilities. Higher reward probability increased cue responses but suppressed reward responses. Data from Tian & Uchida (2015). Also see Fiorillo et al. (2003) and Matsumoto & Hikosaka (2009a,b). (c) Reward context-dependent modulation of dopamine responses to air puff–predictive cues and air puff. The task conditions during recording differed only in the probability of reward. Dopamine neurons showed both excitation and inhibition in high-reward contexts (left) but only inhibition in low-reward contexts (right). The response in reward trials is not shown. Data from Matsumoto et al. (2016). Abbreviations: CS, conditioned stimulus; VTA, ventral tegmental area.
+
+**Expectation modulates DA signaling**
+
+<div class="figure" style="text-align: center">
+<img src="http://www.annualreviews.org/na101/home/literatum/publisher/ar/journals/content/neuro/2017/neuro.2017.40.issue-1/annurev-neuro-072116-031109/20170719/images/large/ne400373.f2.jpeg" alt="[[@Watabe-Uchida2017-gi]](https://doi.org/10.1146/annurev-neuro-072116-031109)" width="700px" />
+<p class="caption">[[@Watabe-Uchida2017-gi]](https://doi.org/10.1146/annurev-neuro-072116-031109)</p>
+</div>
+> Figure 2. Subtractive computation in dopamine neurons. (a) In one task condition (no odor, black), different amounts of reward were presented without any predictive cue. In another condition (odor A, orange), the timing of reward was predicted by an odor. (b) Prediction. Division should change the slope of the curve, whereas subtraction should cause a downward shift. (c) Average response of 40 optogenetically identified dopamine neurons. Prediction caused a subtractive shift. Data from Eshel et al. (2015). (d) Three example neurons. Although individual neurons exhibited diversity with respect to response magnitudes, their response functions were scaled versions of one another. Data from Eshel et al. (2016).
+
+**DA network**
+
+<div class="figure" style="text-align: center">
+<img src="http://www.annualreviews.org/na101/home/literatum/publisher/ar/journals/content/neuro/2017/neuro.2017.40.issue-1/annurev-neuro-072116-031109/20170719/images/large/ne400373.f4.jpeg" alt="[[@Watabe-Uchida2017-gi]](https://doi.org/10.1146/annurev-neuro-072116-031109)" width="700px" />
+<p class="caption">[[@Watabe-Uchida2017-gi]](https://doi.org/10.1146/annurev-neuro-072116-031109)</p>
+</div>
+
+<div class="figure" style="text-align: center">
+<img src="img/watanabe-Uchida-fig-4-cap.jpg" alt="[[@Watabe-Uchida2017-gi]](https://doi.org/10.1146/annurev-neuro-072116-031109)" width="700px" />
+<p class="caption">[[@Watabe-Uchida2017-gi]](https://doi.org/10.1146/annurev-neuro-072116-031109)</p>
+</div>
+> Figure 4. Monosynaptic input to dopamine neurons. (a) Monosynaptic inputs to VTA and SNc dopamine neurons (blue and red, respectively). Inputs were labeled through transsynaptic retrograde tracing using rabies virus. Data from Watabe-Uchida et al. (2012). (b) Schematic summary of panel a. The thickness of each line indicates the extent of inputs from each area (percentage of total inputs). (c) Firing patterns of monosynaptic inputs in a classical conditioning paradigm. Monosynaptic inputs to dopamine neurons were labeled by channelrhodopsin-2 using rabies virus. Optogenetics were used to identify these inputs in seven brain areas while mice performed a task. Data from Tian et al. (2016). Abbreviations: Acb, nucleus accumbens; BNST, bed nucleus of stria terminalis; Ce, central amygdala; DA, dopamine; DB, diagonal band of Broca; DR, dorsal raphe; DS, dorsal striatum; EA, extended amygdala; EP, entopeduncular nucleus (internal segment of the globus pallidus); GP, globus pallidus (external segment of the globus pallidus); IPAC, interstitial nucleus of the posterior limb of the anterior commissure; LDTg, laterodorsal tegmental nucleus; LH, lateral hypothalamus; LO, lateral orbitofrontal cortex; LPO, lateral preoptic area; M1, primary motor cortex; M2, secondary motor cortex; MPA, medial preoptic area; mRt, reticular formation; Pa, paraventricular hypothalamic nucleus; PAG, periaqueductal gray; PB, parabrachial nucleus; PPTg, pedunculopontine tegmental nucleus; PSTh, parasubthalamic nucleus; RMTg, rostromedial tegmental nucleus; S1, primary somatosensory cortex; SC, superior colliculus; SNc, substantia nigra pars compacta; STh, subthalamic nucleus; Tu, olfactory tubercle; VP, ventral pallidum; VTA, ventral tegmental area; ZI, zona incerta.
+>
+> [[@Watabe-Uchida2017-gi]](https://doi.org/10.1146/annurev-neuro-072116-031109)
+
+**Reward & Aversion Networks**
+
+<div class="figure" style="text-align: center">
+<img src="http://www.annualreviews.org/na101/home/literatum/publisher/ar/journals/content/neuro/2016/neuro.2016.39.issue-1/annurev-neuro-070815-014106/20160711/images/large/ne390297.f3.jpeg" alt="[[@Watabe-Uchida2017-gi]](https://doi.org/10.1146/annurev-neuro-072116-031109)" width="700px" />
+<p class="caption">[[@Watabe-Uchida2017-gi]](https://doi.org/10.1146/annurev-neuro-072116-031109)</p>
+</div>
+
+
+### Other psychopharmacological components
+
+- Serotonin (5-HT)
+    - But linked to behavioral inhibition, reward suppression
+    - Influence on reward via network involving other NTs
+- ACh
+
+<div class="figure" style="text-align: center">
+<img src="img/ncpneuro0775-f4.jpg" alt="[[@cock_sleep_2008]](http://dx.doi.org/10.1038/ncpneuro0775)" width="700px" />
+<p class="caption">[[@cock_sleep_2008]](http://dx.doi.org/10.1038/ncpneuro0775)</p>
+</div>
+
+- Opioids, endogenous morphine-like NTs (endorphins)
+
+<div class="figure" style="text-align: center">
+<img src="img/endorphins-niaa.gif" alt="[[@clapp-niaa]](http://pubs.niaaa.nih.gov/publications/arh314/310-339.htm)" width="700px" />
+<p class="caption">[[@clapp-niaa]](http://pubs.niaaa.nih.gov/publications/arh314/310-339.htm)</p>
+</div>
+
+- Cannabinoids = psychoactive compounds found in cannibis
+- Endocannabinoids (endogenous cannabinoid system)
+    - Cannabinoid CB1 receptors in CNS; CB2 in body, immune system
+
+<div class="figure" style="text-align: center">
+<img src="img/fnins-07-00256-g001.jpg" alt="[[@flores_cannabinoid-hypocretin_2013]](http://dx.doi.org/10.3389/fnins.2013.00256)" width="700px" />
+<p class="caption">[[@flores_cannabinoid-hypocretin_2013]](http://dx.doi.org/10.3389/fnins.2013.00256)</p>
+</div>
+
+# References
