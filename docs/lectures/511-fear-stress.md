@@ -1,7 +1,7 @@
 ---
 title: "511-fear-stress"
 author: "Rick Gilmore"
-date: "2021-11-12 11:51:19"
+date: "2021-11-12 11:53:49"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -259,7 +259,7 @@ output:
 ### Neurochemical factors
 
 - Cortisol enhances glutamate release in rodent model of PTSD--reviewed in [[@Musazzi2017-lr]](https://doi.org/10.1016/j.tins.2017.07.002)
-- Corticosteroid antagonists block this
+- Corticosteroid antagonists block
 - Ketamine (NMDA receptor antagonist) may act via similar mechanisms
 
 <div class="figure" style="text-align: center">
