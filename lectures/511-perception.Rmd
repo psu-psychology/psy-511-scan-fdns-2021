@@ -218,6 +218,14 @@ knitr::include_graphics("img/biopsych-table-8.1.jpg")
     - ANS responses
 - Body position & movement (proprioception)
     - Receptors in muscles, joints, skin
+    
+```{r, fig.cap="[[@Namkung2017-gc]](http://dx.doi.org/10.1016/j.tins.2017.02.002)"}
+knitr::include_graphics("https://ars.els-cdn.com/content/image/1-s2.0-S0166223617300176-gr2.jpg")
+```
+> Figure 2. Interoceptive Information and Its Integration with Emotional, Cognitive, and Motivational Signals from an Array of Cortical and Subcortical Regions. Interoceptive information of constantly changing body states arrives in the posterior insula by ascending sensory inputs from dedicated spinal and brainstem pathways via specific thalamic relays. This information is projected rostrally onto the anterior insula, where it is integrated with emotional, cognitive, and motivational signals from an array of cortical and subcortical regions. As a result, the anterior insula supports unique subjective feeling states. The anterior insula regulates the introduction of subjective feelings into cognitive and motivational processes by virtue of its cortical location at the cross-roads of numerous pathways involved in higher cognition and motivation. Abbreviations: AI, anterior insula; AMG, amygdala; dACC, dorsal anterior cingulate cortex; DLPFC, dorsolateral prefrontal cortex; PI, posterior insula; THAL, thalamus; VMPFC, ventromedial prefrontal cortex; VS, ventral striatum.
+>
+> [[@Namkung2017-gc]](http://dx.doi.org/10.1016/j.tins.2017.02.002)
+
 
 ## Features of sensory signals
 

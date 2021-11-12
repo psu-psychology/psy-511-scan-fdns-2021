@@ -675,6 +675,10 @@ knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/b/b4/Sob
 - Primary gustatory cortex
 - Self-awareness, interpersonal experiences, motor control, interoception
 
+```{r, fig.cap="[[@Namkung2017-gc]](http://dx.doi.org/10.1016/j.tins.2017.02.002)"}
+knitr::include_graphics("https://ars.els-cdn.com/content/image/1-s2.0-S0166223617300176-gr1.jpg")
+```
+
 ##### Brodmann Areas
 
 - [Korbinian Brodmann](https://en.wikipedia.org/wiki/Korbinian_Brodmann)

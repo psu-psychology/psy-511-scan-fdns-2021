@@ -1,7 +1,7 @@
 ---
 title: "511-fear-stress"
 author: "Rick Gilmore"
-date: "2021-11-11 13:56:09"
+date: "2021-11-12 11:51:19"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -94,7 +94,6 @@ output:
 > Our meta-analytic evidence is inconsistent with the locationist account that the ACC is the brain basis of sadness, but more consistent with a psychological constructionist hypothesis of ACC function. As compared to voxels within other brain regions, voxels within the sACC, pACC and aMCC did not have more consistent increases when participants were experiencing or perceiving instances of sadness than during any other emotion category (Fig. 6).
 
 # Fear
-
 
 ## Animal models
 
@@ -259,7 +258,7 @@ output:
 
 ### Neurochemical factors
 
-- Cortisol enhances glutamate release
+- Cortisol enhances glutamate release in rodent model of PTSD--reviewed in [[@Musazzi2017-lr]](https://doi.org/10.1016/j.tins.2017.07.002)
 - Corticosteroid antagonists block this
 - Ketamine (NMDA receptor antagonist) may act via similar mechanisms
 

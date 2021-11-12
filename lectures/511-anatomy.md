@@ -2,7 +2,7 @@
 title: "PSY 511"
 subtitle: "Neuroanatomy"
 author: "Rick Gilmore"
-date: "2021-10-06 13:53:22"
+date: "2021-11-12 11:48:05"
 bibliography: bib/bibliography.bib
 csl: bib/apa.csl
 css: css/outline.css
@@ -43,7 +43,7 @@ output:
 ## Harvard Brain Atlas
 
 <div class="figure" style="text-align: center">
-<iframe src="http://www.med.harvard.edu/aanlib/cases/caseNA/pb9.htm" width="100%" height="400px"></iframe>
+<iframe src="http://www.med.harvard.edu/aanlib/cases/caseNA/pb9.htm" width="100%" height="400px" data-external="1"></iframe>
 <p class="caption">http://www.med.harvard.edu/aanlib/cases/caseNA/pb9.htm</p>
 </div>
 
@@ -606,6 +606,11 @@ output:
 
 - Primary gustatory cortex
 - Self-awareness, interpersonal experiences, motor control, interoception
+
+<div class="figure" style="text-align: center">
+<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0166223617300176-gr1.jpg" alt="[[@Namkung2017-gc]](http://dx.doi.org/10.1016/j.tins.2017.02.002)"  />
+<p class="caption">[[@Namkung2017-gc]](http://dx.doi.org/10.1016/j.tins.2017.02.002)</p>
+</div>
 
 ##### Brodmann Areas
 

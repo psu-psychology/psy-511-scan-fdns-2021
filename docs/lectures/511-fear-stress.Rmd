@@ -94,7 +94,6 @@ knitr::include_graphics("img/lindquist-etal-2012-fig-s3.png")
 
 # Fear
 
-
 ## Animal models
 
 ```{r}
@@ -246,7 +245,7 @@ knitr::include_graphics("https://ars.els-cdn.com/content/image/1-s2.0-S016622361
 
 ### Neurochemical factors
 
-- Cortisol enhances glutamate release
+- Cortisol enhances glutamate release in rodent model of PTSD--reviewed in [[@Musazzi2017-lr]](https://doi.org/10.1016/j.tins.2017.07.002)
 - Corticosteroid antagonists block this
 - Ketamine (NMDA receptor antagonist) may act via similar mechanisms
 
