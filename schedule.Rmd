@@ -313,7 +313,7 @@ title: "Schedule"
     + BW 16
     + Pawluski, J. L., Lonstein, J. S., & Fleming, A. S. (2017). The neurobiology of postpartum anxiety and depression. *Trends in Neurosciences*, *40*(2), 106–120. Retrieved from <https://dx.doi.org/10.1016/j.tins.2016.11.009>.
     + Namkung, H., Kim, S.-H., & Sawa, A. (2017). The insula: An underestimated brain area in clinical neuroscience, psychiatry, and neurology. *Trends in Neurosciences*, *40*(4), 200–207. Retrieved from <https://dx.doi.org/10.1016/j.tins.2017.02.002>.
-+ [**Quiz 3**](quiz/quiz-03/511.001-21-quiz-03.docx) distributed. Due 5:00 PM on **Friday, December 3, 2021**.
++ [**Quiz 3**](quiz/quiz-03/psy-511.001-21-quiz-03.docx) distributed. Due 5:00 PM on **Friday, December 3, 2021**.
 
 ---
 
