@@ -24,7 +24,7 @@ title: "Schedule"
     + Levels of analysis
     + Does neuroscience need behavior? Does behavioral science need the brain?
 - Read/Watch
-    - Churchland, P. S., & Sejnowski, T. J. (1988). Perspectives on cognitive neuroscience. Science, 242(4879), 741–745. https://www.ncbi.nlm.nih.gov/pubmed/3055294.
+    - Churchland, P. S., & Sejnowski, T. J. (1988). Perspectives on cognitive neuroscience. *Science*, *242*(4879), 741–745. https://www.ncbi.nlm.nih.gov/pubmed/3055294.
     - Krakauer, J. W., Ghazanfar, A. A., Gomez-Marin, A., MacIver, M. A., & Poeppel, D. (2017). Neuroscience needs behavior: Correcting a reductionist bias. *Neuron*, *93*(3), 480–490. <https://dx.doi.org/10.1016/j.neuron.2016.12.041>.
 - Materials
     - [Notes](lectures/511-levels.html). [PDF](lectures/511-levels.pdf)
@@ -66,7 +66,7 @@ title: "Schedule"
 - Read/Watch
     + BW[^1] 2:36-51.
     + BW 3:61-78.
-    + (Optional) Zeng, H., & Sanes, J. R. (2017). Neuronal cell-type classification: challenges, opportunities and the path forward. *Nature Reviews Neuroscience*. Retrieved from <https://dx.doi.org/10.1038/nrn.2017.85>.
+    + (Optional) Zeng, H., & Sanes, J. R. (2017). Neuronal cell-type classification: challenges, opportunities and the path forward. *Nature Reviews Neuroscience*, *18*(9), 530–546. <https://doi.org/10.1038/nrn.2017.85>.
     + (Optional) Oliveira, J. F., Sardinha, V. M., Guerra-Gomes, S., Araque, A., & Sousa, N. (2015). Do stars govern our actions? Astrocyte involvement in rodent behavior. *Trends in Neurosciences*, *38*(9), 535–549. Retrieved from <https://dx.doi.org/10.1016/j.tins.2015.07.006>.
 - Materials
     - [Notes](lectures/511-cells.html). [PDF](lectures/511-cells.pdf)
@@ -162,7 +162,7 @@ title: "Schedule"
     + Evolution of the nervous system
 - Reading
     + BW 6 & 7. 
-    + Optional [Hofman 2014](https://www.frontiersin.org/Journal/Abstract.aspx?s=742&name=neuroanatomy&ART_DOI=10.3389/fnana.2014.00015).
+    + Optional Hofman, M. A. (2014). Evolution of the human brain: When bigger is better. *Frontiers in Neuroanatomy*, *8*, 15. https://doi.org/10.3389/fnana.2014.00015.
 - Materials
     - [Notes](lectures/511-evo-devo.html). [PDF](lectures/511-evo-devo.pdf).
 
@@ -175,7 +175,7 @@ title: "Schedule"
 - Topics
     + Development of the human brain
 - Read/Watch
-    + Rakic, P. (2009). Evolution of the neocortex: a perspective from developmental biology. Nature Reviews Neuroscience, 10(10), 724–735. Retrieved October 5, 2015, from <https://www.nature.com/nrn/journal/v10/n10/abs/nrn2719.html>.
+    + Rakic, P. (2009). Evolution of the neocortex: a perspective from developmental biology. *Nature Reviews Neuroscience*, *10*(10), 724–735. Retrieved October 5, 2015, from <https://www.nature.com/nrn/journal/v10/n10/abs/nrn2719.html>.
     + Cao, M., Huang, H., & He, Y. (2017). Developmental connectomics from infancy through early childhood. *Trends in Neurosciences*, *40*(8), 494–506. Retrieved from <https://dx.doi.org/10.1016/j.tins.2017.06.003>.
 - Materials
     - [Notes](lectures/511-evo-devo.html). [PDF](lectures/511-evo-devo.pdf).
@@ -186,7 +186,7 @@ title: "Schedule"
 - Topics
     + Development of the human brain II
 - Read/Watch
-    + Rakic, P. (2009). Evolution of the neocortex: a perspective from developmental biology. Nature Reviews Neuroscience, 10(10), 724–735. Retrieved October 5, 2015, from <https://www.nature.com/nrn/journal/v10/n10/abs/nrn2719.html>.
+    + Rakic, P. (2009). Evolution of the neocortex: a perspective from developmental biology. *Nature Reviews Neuroscience*, *10*(10), 724–735. Retrieved October 5, 2015, from <https://www.nature.com/nrn/journal/v10/n10/abs/nrn2719.html>.
     + Cao, M., Huang, H., & He, Y. (2017). Developmental connectomics from infancy through early childhood. *Trends in Neurosciences*, *40*(8), 494–506. Retrieved from <https://dx.doi.org/10.1016/j.tins.2017.06.003>.
 - Materials
     - [Notes](lectures/511-evo-devo.html). [PDF](lectures/511-evo-devo.pdf).
@@ -201,7 +201,7 @@ title: "Schedule"
     + Perception.
 - Read/Watch
     + BW 8:230-241.
-    + Murray, M. M., Lewkowicz, D. J., Amedi, A., & Wallace, M. T. (2016). Multisensory Processes: A Balancing Act across the Lifespan. *Trends in Neurosciences*, *39*(8), 567–579. Retrieved July 28, 2016, from <https://www.sciencedirect.com/science/article/pii/S0166223616300480>.
+    + Murray, M. M., Lewkowicz, D. J., Amedi, A., & Wallace, M. T. (2016). Multisensory processes: A balancing act across the lifespan. *Trends in Neurosciences*, *39*(8), 567–579. Retrieved July 28, 2016, from <https://www.sciencedirect.com/science/article/pii/S0166223616300480>.
 - Materials
     - [Notes](lectures/511-perception.html). [PDF](lectures/511-perception.pdf).
     
